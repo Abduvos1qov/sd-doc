@@ -19,3 +19,6 @@ Thumbs.db
 
 # Local env
 .env*
+
+# Phase 31 — RAG index (regenerated on demand)
+build/rag-index.jsonl

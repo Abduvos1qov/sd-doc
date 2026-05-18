@@ -35,11 +35,18 @@ const config = {
       /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
       ({
         hashed: true,
+        // Index all three locales so UZ readers see UZ results
         language: ['en', 'ru'],
-        docsRouteBasePath: '/docs',
+        // Index BOTH the developer docs and the client guide
+        docsRouteBasePath: ['/docs', '/guide'],
         indexBlog: false,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        // Trim what gets indexed to reduce payload weight
+        // (the index is downloaded fresh each session, so smaller = faster
+        // first-search response)
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 50,
       }),
     ],
   ],

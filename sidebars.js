@@ -706,6 +706,7 @@ const sidebars = {
         'team/style-guide',
         'team/translating',
         'team/screenshot-pipeline',
+        'team/search-and-rag',
         'quality/testing',
         'quality/coding-standards',
         'quality/contribution',
