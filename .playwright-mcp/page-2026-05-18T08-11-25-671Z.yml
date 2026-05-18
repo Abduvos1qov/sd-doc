@@ -1,0 +1,336 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e105]:
+          - button "Экспедитор" [ref=e106] [cursor=pointer]:
+            - generic [ref=e107]: Экспедитор
+          - text:                        
+        - generic [ref=e110]:
+          - button "Категория" [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: Категория
+          - text:               
+        - generic [ref=e115]:
+          - button "Продукты" [ref=e116] [cursor=pointer]:
+            - generic [ref=e117]: Продукты
+          - text:                                                                                                                                                                                                                                    
+        - generic [ref=e120]:
+          - button "Отгружен, Доставлен" [ref=e121] [cursor=pointer]:
+            - generic [ref=e122]: Отгружен, Доставлен
+          - text:     
+        - generic [ref=e125]:
+          - button "Дата отгрузки" [ref=e126] [cursor=pointer]:
+            - generic [ref=e127]: Дата отгрузки
+          - text:   
+        - generic [ref=e130] [cursor=pointer]:
+          - generic [ref=e131]: 
+          - text: май 18 - май 18
+          - generic [ref=e132]: 
+        - button "Склад" [ref=e135] [cursor=pointer]
+      - separator [ref=e137]
+      - generic [ref=e138]:
+        - button "Скачать в excel (.xlsx)" [ref=e139] [cursor=pointer]
+        - table [ref=e140]:
+          - rowgroup [ref=e141]:
+            - row "Навои водитель first Sherzod Exp mir lot maksim Доставка Muslimbek M -driver ltt Dostavka №1( не трогать) Dostavka 22222 eradil2002 New driver Мадаминбек Dostavka Vozvrata Pagination deli Abdulbosit Sardor test den kir Без экспедитора" [ref=e142]:
+              - columnheader [ref=e143]
+              - columnheader "Навои водитель" [ref=e144]
+              - columnheader "first" [ref=e145]
+              - columnheader "Sherzod Exp" [ref=e146]
+              - columnheader "mir" [ref=e147]
+              - columnheader "lot" [ref=e148]
+              - columnheader "maksim" [ref=e149]
+              - columnheader "Доставка" [ref=e150]
+              - columnheader "Muslimbek" [ref=e151]
+              - columnheader "M -driver" [ref=e152]
+              - columnheader "ltt" [ref=e153]
+              - columnheader "Dostavka №1( не трогать)" [ref=e154]
+              - columnheader "Dostavka 22222" [ref=e155]
+              - columnheader "eradil2002" [ref=e156]
+              - columnheader "New driver" [ref=e157]
+              - columnheader "Мадаминбек" [ref=e158]
+              - columnheader "Dostavka Vozvrata" [ref=e159]
+              - columnheader "Pagination" [ref=e160]
+              - columnheader "deli" [ref=e161]
+              - columnheader "Abdulbosit" [ref=e162]
+              - columnheader "Sardor test" [ref=e163]
+              - columnheader "den" [ref=e164]
+              - columnheader "kir" [ref=e165]
+              - columnheader "Без экспедитора" [ref=e166]
+            - row "Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма Блок Объем Количество Сумма" [ref=e167]:
+              - columnheader [ref=e168]
+              - columnheader [ref=e169]
+              - columnheader "Блок" [ref=e170]
+              - columnheader "Объем" [ref=e171]
+              - columnheader "Количество" [ref=e172]
+              - columnheader "Сумма" [ref=e173]
+              - columnheader "Блок" [ref=e174]
+              - columnheader "Объем" [ref=e175]
+              - columnheader "Количество" [ref=e176]
+              - columnheader "Сумма" [ref=e177]
+              - columnheader "Блок" [ref=e178]
+              - columnheader "Объем" [ref=e179]
+              - columnheader "Количество" [ref=e180]
+              - columnheader "Сумма" [ref=e181]
+              - columnheader "Блок" [ref=e182]
+              - columnheader "Объем" [ref=e183]
+              - columnheader "Количество" [ref=e184]
+              - columnheader "Сумма" [ref=e185]
+              - columnheader "Блок" [ref=e186]
+              - columnheader "Объем" [ref=e187]
+              - columnheader "Количество" [ref=e188]
+              - columnheader "Сумма" [ref=e189]
+              - columnheader "Блок" [ref=e190]
+              - columnheader "Объем" [ref=e191]
+              - columnheader "Количество" [ref=e192]
+              - columnheader "Сумма" [ref=e193]
+              - columnheader "Блок" [ref=e194]
+              - columnheader "Объем" [ref=e195]
+              - columnheader "Количество" [ref=e196]
+              - columnheader "Сумма" [ref=e197]
+              - columnheader "Блок" [ref=e198]
+              - columnheader "Объем" [ref=e199]
+              - columnheader "Количество" [ref=e200]
+              - columnheader "Сумма" [ref=e201]
+              - columnheader "Блок" [ref=e202]
+              - columnheader "Объем" [ref=e203]
+              - columnheader "Количество" [ref=e204]
+              - columnheader "Сумма" [ref=e205]
+              - columnheader "Блок" [ref=e206]
+              - columnheader "Объем" [ref=e207]
+              - columnheader "Количество" [ref=e208]
+              - columnheader "Сумма" [ref=e209]
+              - columnheader "Блок" [ref=e210]
+              - columnheader "Объем" [ref=e211]
+              - columnheader "Количество" [ref=e212]
+              - columnheader "Сумма" [ref=e213]
+              - columnheader "Блок" [ref=e214]
+              - columnheader "Объем" [ref=e215]
+              - columnheader "Количество" [ref=e216]
+              - columnheader "Сумма" [ref=e217]
+              - columnheader "Блок" [ref=e218]
+              - columnheader "Объем" [ref=e219]
+              - columnheader "Количество" [ref=e220]
+              - columnheader "Сумма" [ref=e221]
+              - columnheader "Блок" [ref=e222]
+              - columnheader "Объем" [ref=e223]
+              - columnheader "Количество" [ref=e224]
+              - columnheader "Сумма" [ref=e225]
+              - columnheader "Блок" [ref=e226]
+              - columnheader "Объем" [ref=e227]
+              - columnheader "Количество" [ref=e228]
+              - columnheader "Сумма" [ref=e229]
+              - columnheader "Блок" [ref=e230]
+              - columnheader "Объем" [ref=e231]
+              - columnheader "Количество" [ref=e232]
+              - columnheader "Сумма" [ref=e233]
+              - columnheader "Блок" [ref=e234]
+              - columnheader "Объем" [ref=e235]
+              - columnheader "Количество" [ref=e236]
+              - columnheader "Сумма" [ref=e237]
+              - columnheader "Блок" [ref=e238]
+              - columnheader "Объем" [ref=e239]
+              - columnheader "Количество" [ref=e240]
+              - columnheader "Сумма" [ref=e241]
+              - columnheader "Блок" [ref=e242]
+              - columnheader "Объем" [ref=e243]
+              - columnheader "Количество" [ref=e244]
+              - columnheader "Сумма" [ref=e245]
+              - columnheader "Блок" [ref=e246]
+              - columnheader "Объем" [ref=e247]
+              - columnheader "Количество" [ref=e248]
+              - columnheader "Сумма" [ref=e249]
+              - columnheader "Блок" [ref=e250]
+              - columnheader "Объем" [ref=e251]
+              - columnheader "Количество" [ref=e252]
+              - columnheader "Сумма" [ref=e253]
+              - columnheader "Блок" [ref=e254]
+              - columnheader "Объем" [ref=e255]
+              - columnheader "Количество" [ref=e256]
+              - columnheader "Сумма" [ref=e257]
+              - columnheader "Блок" [ref=e258]
+              - columnheader "Объем" [ref=e259]
+              - columnheader "Количество" [ref=e260]
+              - columnheader "Сумма" [ref=e261]
+          - rowgroup
+          - rowgroup [ref=e262]:
+            - row "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e263]:
+              - columnheader [ref=e264]
+              - columnheader [ref=e265]
+              - columnheader [ref=e266]
+              - columnheader [ref=e267]
+              - columnheader "0" [ref=e268]
+              - columnheader [ref=e269]
+              - columnheader [ref=e270]
+              - columnheader [ref=e271]
+              - columnheader "0" [ref=e272]
+              - columnheader [ref=e273]
+              - columnheader [ref=e274]
+              - columnheader [ref=e275]
+              - columnheader "0" [ref=e276]
+              - columnheader [ref=e277]
+              - columnheader [ref=e278]
+              - columnheader [ref=e279]
+              - columnheader "0" [ref=e280]
+              - columnheader [ref=e281]
+              - columnheader [ref=e282]
+              - columnheader [ref=e283]
+              - columnheader "0" [ref=e284]
+              - columnheader [ref=e285]
+              - columnheader [ref=e286]
+              - columnheader [ref=e287]
+              - columnheader "0" [ref=e288]
+              - columnheader [ref=e289]
+              - columnheader [ref=e290]
+              - columnheader [ref=e291]
+              - columnheader "0" [ref=e292]
+              - columnheader [ref=e293]
+              - columnheader [ref=e294]
+              - columnheader [ref=e295]
+              - columnheader "0" [ref=e296]
+              - columnheader [ref=e297]
+              - columnheader [ref=e298]
+              - columnheader [ref=e299]
+              - columnheader "0" [ref=e300]
+              - columnheader [ref=e301]
+              - columnheader [ref=e302]
+              - columnheader [ref=e303]
+              - columnheader "0" [ref=e304]
+              - columnheader [ref=e305]
+              - columnheader [ref=e306]
+              - columnheader [ref=e307]
+              - columnheader "0" [ref=e308]
+              - columnheader [ref=e309]
+              - columnheader [ref=e310]
+              - columnheader [ref=e311]
+              - columnheader "0" [ref=e312]
+              - columnheader [ref=e313]
+              - columnheader [ref=e314]
+              - columnheader [ref=e315]
+              - columnheader "0" [ref=e316]
+              - columnheader [ref=e317]
+              - columnheader [ref=e318]
+              - columnheader [ref=e319]
+              - columnheader "0" [ref=e320]
+              - columnheader [ref=e321]
+              - columnheader [ref=e322]
+              - columnheader [ref=e323]
+              - columnheader "0" [ref=e324]
+              - columnheader [ref=e325]
+              - columnheader [ref=e326]
+              - columnheader [ref=e327]
+              - columnheader "0" [ref=e328]
+              - columnheader [ref=e329]
+              - columnheader [ref=e330]
+              - columnheader [ref=e331]
+              - columnheader "0" [ref=e332]
+              - columnheader [ref=e333]
+              - columnheader [ref=e334]
+              - columnheader [ref=e335]
+              - columnheader "0" [ref=e336]
+              - columnheader [ref=e337]
+              - columnheader [ref=e338]
+              - columnheader [ref=e339]
+              - columnheader "0" [ref=e340]
+              - columnheader [ref=e341]
+              - columnheader [ref=e342]
+              - columnheader [ref=e343]
+              - columnheader "0" [ref=e344]
+              - columnheader [ref=e345]
+              - columnheader [ref=e346]
+              - columnheader [ref=e347]
+              - columnheader "0" [ref=e348]
+              - columnheader [ref=e349]
+              - columnheader [ref=e350]
+              - columnheader [ref=e351]
+              - columnheader "0" [ref=e352]
+              - columnheader [ref=e353]
+              - columnheader [ref=e354]
+              - columnheader [ref=e355]
+              - columnheader "0" [ref=e356]
+  - text:   

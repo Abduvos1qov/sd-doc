@@ -1,0 +1,3 @@
+[     111ms] [LOG] loading translations for module: clients lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     371ms] [LOG] rendering datatable... @ http://localhost:8080/clients/approval:5689
+[     394ms] [LOG] loading translations for module: clients lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34

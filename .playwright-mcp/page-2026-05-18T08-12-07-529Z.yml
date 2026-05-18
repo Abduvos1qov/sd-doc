@@ -1,0 +1,142 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - generic [ref=e103]: Списание
+      - link " Добавить" [ref=e104] [cursor=pointer]:
+        - /url: /stock/excretion/create
+        - generic [ref=e105]: 
+        - text: Добавить
+      - link " Отчет за период" [ref=e106] [cursor=pointer]:
+        - /url: /stock/excretion/report
+        - generic [ref=e107]: 
+        - text: Отчет за период
+      - generic [ref=e110]:
+        - generic [ref=e112]:
+          - button "Склад" [ref=e113] [cursor=pointer]:
+            - generic [ref=e114]: Склад
+          - text:                                                       
+        - generic [ref=e117]:
+          - button "Выберите тип цены для оценки" [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]: Выберите тип цены для оценки
+          - text:                       
+        - generic [ref=e121]:
+          - generic [ref=e122] [cursor=pointer]:
+            - generic [ref=e123]: 
+            - text: май 1 - май 31
+            - generic [ref=e124]: 
+          - button "Фильтр" [ref=e125] [cursor=pointer]
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - button "По 20" [ref=e130] [cursor=pointer]
+          - button "Показ./Скр. столбцы" [ref=e131] [cursor=pointer]
+          - button "Excel" [ref=e132] [cursor=pointer]
+        - generic [ref=e134]:
+          - text: "Быстрый поиск:"
+          - searchbox "Быстрый поиск:" [ref=e135]
+        - grid [ref=e136]:
+          - rowgroup [ref=e137]:
+            - 'row "Дата списания: активировать для сортировки столбцы по возрастанию Дата создания: активировать для сортировки столбцы по возрастанию Количество: активировать для сортировки столбцы по возрастанию Склад: активировать для сортировки столбцы по возрастанию Сумма (Оценка): активировать для сортировки столбцы по возрастанию Комментарии: активировать для сортировки столбцы по возрастанию : активировать для сортировки столбцы по возрастанию" [ref=e138]':
+              - 'columnheader "Дата списания: активировать для сортировки столбцы по возрастанию" [ref=e139] [cursor=pointer]': Дата списания
+              - 'columnheader "Дата создания: активировать для сортировки столбцы по возрастанию" [ref=e140] [cursor=pointer]': Дата создания
+              - 'columnheader "Количество: активировать для сортировки столбцы по возрастанию" [ref=e141] [cursor=pointer]': Количество
+              - 'columnheader "Склад: активировать для сортировки столбцы по возрастанию" [ref=e142] [cursor=pointer]': Склад
+              - 'columnheader "Сумма (Оценка): активировать для сортировки столбцы по возрастанию" [ref=e143] [cursor=pointer]': Сумма (Оценка)
+              - 'columnheader "Комментарии: активировать для сортировки столбцы по возрастанию" [ref=e144] [cursor=pointer]': Комментарии
+              - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e145] [cursor=pointer]'
+          - rowgroup [ref=e146]:
+            - row "В таблице отсутствуют данные" [ref=e147]:
+              - gridcell "В таблице отсутствуют данные" [ref=e148]
+        - status [ref=e149]: 0 - 0 / 0
+        - list [ref=e151]:
+          - listitem [ref=e152]:
+            - link "Пред." [ref=e153]:
+              - /url: "#"
+          - listitem [ref=e154]:
+            - link "След." [ref=e155]:
+              - /url: "#"
+  - text:    

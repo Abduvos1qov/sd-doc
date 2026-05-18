@@ -1,0 +1,5 @@
+[      93ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/orders/list/idokon:0
+[     103ms] [LOG] loading translations for module: main lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     135ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/main.json:0
+[     500ms] [LOG] loading translations for module: main lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     544ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/main.json:0

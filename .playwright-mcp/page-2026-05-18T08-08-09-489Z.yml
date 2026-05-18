@@ -1,0 +1,2372 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - link "Создать скидку" [ref=e103] [cursor=pointer]:
+        - /url: /settings/skidka/create
+        - generic [ref=e104]: Создать скидку
+      - separator [ref=e105]
+      - table [ref=e107]:
+        - rowgroup [ref=e108]:
+          - row "Название Тип скидки Сумма/Объём/Кол Процент скидки Действителен с Действителен по Активность" [ref=e109]:
+            - columnheader "Название" [ref=e110]
+            - columnheader "Тип скидки" [ref=e111]
+            - columnheader "Сумма/Объём/Кол" [ref=e112]
+            - columnheader "Процент скидки" [ref=e113]
+            - columnheader "Действителен с" [ref=e114]
+            - columnheader "Действителен по" [ref=e115]
+            - columnheader "Активность" [ref=e116]
+            - columnheader [ref=e117]
+        - rowgroup [ref=e118]:
+          - row "5% Скидка за сумму 250000.00 10.00 5.00 0.00 2026-01-30 14:49:00 2026-02-28 14:49:00 Активный " [ref=e119]:
+            - cell "5%" [ref=e120]:
+              - link "5%" [ref=e121] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_203
+            - cell "Скидка за сумму" [ref=e122]
+            - cell "250000.00 10.00" [ref=e123]:
+              - text: "250000.00"
+              - text: "10.00"
+            - cell "5.00 0.00" [ref=e124]:
+              - text: "5.00"
+              - text: "0.00"
+            - cell "2026-01-30 14:49:00" [ref=e125]
+            - cell "2026-02-28 14:49:00" [ref=e126]
+            - rowheader "Активный" [ref=e127]:
+              - button "Активный" [ref=e129] [cursor=pointer]: Активный
+            - columnheader "" [ref=e131]:
+              - link "" [ref=e132] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_203
+                - generic [ref=e133]: 
+          - row "Karakol Test скидка 3-7- FR BC 2 Скидка за сумму 15000.00 10000.00 5000.00 3000.00 7.00 6.00 5.00 3.00 2026-01-19 00:00:00 2026-01-30 23:59:00 Активный " [ref=e134]:
+            - cell "Karakol Test скидка 3-7- FR BC 2" [ref=e135]:
+              - link "Karakol Test скидка 3-7- FR BC 2" [ref=e136] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_199
+            - cell "Скидка за сумму" [ref=e137]
+            - cell "15000.00 10000.00 5000.00 3000.00" [ref=e138]:
+              - text: "15000.00"
+              - text: "10000.00"
+              - text: "5000.00"
+              - text: "3000.00"
+            - cell "7.00 6.00 5.00 3.00" [ref=e139]:
+              - text: "7.00"
+              - text: "6.00"
+              - text: "5.00"
+              - text: "3.00"
+            - cell "2026-01-19 00:00:00" [ref=e140]
+            - cell "2026-01-30 23:59:00" [ref=e141]
+            - rowheader "Активный" [ref=e142]:
+              - button "Активный" [ref=e144] [cursor=pointer]: Активный
+            - columnheader "" [ref=e146]:
+              - link "" [ref=e147] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_199
+                - generic [ref=e148]: 
+          - row "Test avto skidka edit asd Скидка за количество 3.00 50.00 2026-01-01 00:00:00 2026-02-28 23:59:00 Активный " [ref=e149]:
+            - cell "Test avto skidka edit asd" [ref=e150]:
+              - link "Test avto skidka edit asd" [ref=e151] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_198
+            - cell "Скидка за количество" [ref=e152]
+            - cell "3.00" [ref=e153]: "3.00"
+            - cell "50.00" [ref=e154]: "50.00"
+            - cell "2026-01-01 00:00:00" [ref=e155]
+            - cell "2026-02-28 23:59:00" [ref=e156]
+            - rowheader "Активный" [ref=e157]:
+              - button "Активный" [ref=e159] [cursor=pointer]: Активный
+            - columnheader "" [ref=e161]:
+              - link "" [ref=e162] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_198
+                - generic [ref=e163]: 
+          - row "Скидка за количество Скидка за количество 5.00 20.00 2026-01-01 00:00:00 2027-01-01 23:59:00 Неактивный " [ref=e164]:
+            - cell "Скидка за количество" [ref=e165]:
+              - link "Скидка за количество" [ref=e166] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_197
+            - cell "Скидка за количество" [ref=e167]
+            - cell "5.00" [ref=e168]: "5.00"
+            - cell "20.00" [ref=e169]: "20.00"
+            - cell "2026-01-01 00:00:00" [ref=e170]
+            - cell "2027-01-01 23:59:00" [ref=e171]
+            - rowheader "Неактивный" [ref=e172]:
+              - button "Неактивный" [ref=e174] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e176]:
+              - link "" [ref=e177] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_197
+                - generic [ref=e178]: 
+          - row "Desam 6% MML товары (По мин. кол-во) 1.00 6.00 2025-12-08 00:00:00 2025-12-13 23:59:00 Активный " [ref=e179]:
+            - cell "Desam 6%" [ref=e180]:
+              - link "Desam 6%" [ref=e181] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_196
+            - cell "MML товары (По мин. кол-во)" [ref=e182]
+            - cell "1.00" [ref=e183]: "1.00"
+            - cell "6.00" [ref=e184]: "6.00"
+            - cell "2025-12-08 00:00:00" [ref=e185]
+            - cell "2025-12-13 23:59:00" [ref=e186]
+            - rowheader "Активный" [ref=e187]:
+              - button "Активный" [ref=e189] [cursor=pointer]: Активный
+            - columnheader "" [ref=e191]:
+              - link "" [ref=e192] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_196
+                - generic [ref=e193]: 
+          - row "Desam 4% MML товары (По мин. кол-во) 1.00 4.00 2025-12-08 00:00:00 2025-12-13 23:59:00 Активный " [ref=e194]:
+            - cell "Desam 4%" [ref=e195]:
+              - link "Desam 4%" [ref=e196] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_195
+            - cell "MML товары (По мин. кол-во)" [ref=e197]
+            - cell "1.00" [ref=e198]: "1.00"
+            - cell "4.00" [ref=e199]: "4.00"
+            - cell "2025-12-08 00:00:00" [ref=e200]
+            - cell "2025-12-13 23:59:00" [ref=e201]
+            - rowheader "Активный" [ref=e202]:
+              - button "Активный" [ref=e204] [cursor=pointer]: Активный
+            - columnheader "" [ref=e206]:
+              - link "" [ref=e207] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_195
+                - generic [ref=e208]: 
+          - row "desam test Скидка за количество 3.00 3.00 2025-12-11 00:00:00 2025-12-31 23:59:00 Неактивный " [ref=e209]:
+            - cell "desam test" [ref=e210]:
+              - link "desam test" [ref=e211] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_194
+            - cell "Скидка за количество" [ref=e212]
+            - cell "3.00" [ref=e213]: "3.00"
+            - cell "3.00" [ref=e214]: "3.00"
+            - cell "2025-12-11 00:00:00" [ref=e215]
+            - cell "2025-12-31 23:59:00" [ref=e216]
+            - rowheader "Неактивный" [ref=e217]:
+              - button "Неактивный" [ref=e219] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e221]:
+              - link "" [ref=e222] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_194
+                - generic [ref=e223]: 
+          - row "Скидка для проверки категории клиента Скидка за количество 1.00 13.00 2025-12-01 00:00:00 2025-12-14 23:59:00 Неактивный " [ref=e224]:
+            - cell "Скидка для проверки категории клиента" [ref=e225]:
+              - link "Скидка для проверки категории клиента" [ref=e226] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_193
+            - cell "Скидка за количество" [ref=e227]
+            - cell "1.00" [ref=e228]: "1.00"
+            - cell "13.00" [ref=e229]: "13.00"
+            - cell "2025-12-01 00:00:00" [ref=e230]
+            - cell "2025-12-14 23:59:00" [ref=e231]
+            - rowheader "Неактивный" [ref=e232]:
+              - button "Неактивный" [ref=e234] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e236]:
+              - link "" [ref=e237] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_193
+                - generic [ref=e238]: 
+          - row "Скидка за сумму 12% Скидка за сумму 10000.00 12.00 2025-11-17 00:00:00 2025-11-21 23:59:00 Активный " [ref=e239]:
+            - cell "Скидка за сумму 12%" [ref=e240]:
+              - link "Скидка за сумму 12%" [ref=e241] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_192
+            - cell "Скидка за сумму" [ref=e242]
+            - cell "10000.00" [ref=e243]: "10000.00"
+            - cell "12.00" [ref=e244]: "12.00"
+            - cell "2025-11-17 00:00:00" [ref=e245]
+            - cell "2025-11-21 23:59:00" [ref=e246]
+            - rowheader "Активный" [ref=e247]:
+              - button "Активный" [ref=e249] [cursor=pointer]: Активный
+            - columnheader "" [ref=e251]:
+              - link "" [ref=e252] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_192
+                - generic [ref=e253]: 
+          - row "Skidka son Скидка за количество 24.00 1.00 2025-11-06 00:00:00 2026-01-04 23:59:00 Неактивный " [ref=e254]:
+            - cell "Skidka son" [ref=e255]:
+              - link "Skidka son" [ref=e256] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_191
+            - cell "Скидка за количество" [ref=e257]
+            - cell "24.00" [ref=e258]: "24.00"
+            - cell "1.00" [ref=e259]: "1.00"
+            - cell "2025-11-06 00:00:00" [ref=e260]
+            - cell "2026-01-04 23:59:00" [ref=e261]
+            - rowheader "Неактивный" [ref=e262]:
+              - button "Неактивный" [ref=e264] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e266]:
+              - link "" [ref=e267] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_191
+                - generic [ref=e268]: 
+          - row "Skidka komlekt Скидка на комплект (кол-во) 10.00 25.00 2025-11-03 00:00:00 2026-01-04 23:59:00 Неактивный " [ref=e269]:
+            - cell "Skidka komlekt" [ref=e270]:
+              - link "Skidka komlekt" [ref=e271] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_190
+            - cell "Скидка на комплект (кол-во)" [ref=e272]
+            - cell "10.00" [ref=e273]: "10.00"
+            - cell "25.00" [ref=e274]: "25.00"
+            - cell "2025-11-03 00:00:00" [ref=e275]
+            - cell "2026-01-04 23:59:00" [ref=e276]
+            - rowheader "Неактивный" [ref=e277]:
+              - button "Неактивный" [ref=e279] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e281]:
+              - link "" [ref=e282] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_190
+                - generic [ref=e283]: 
+          - row "skidka obem Скидка за объем 5.00 8.00 2025-11-01 00:00:00 2026-01-04 23:59:00 Неактивный " [ref=e284]:
+            - cell "skidka obem" [ref=e285]:
+              - link "skidka obem" [ref=e286] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_189
+            - cell "Скидка за объем" [ref=e287]
+            - cell "5.00" [ref=e288]: "5.00"
+            - cell "8.00" [ref=e289]: "8.00"
+            - cell "2025-11-01 00:00:00" [ref=e290]
+            - cell "2026-01-04 23:59:00" [ref=e291]
+            - rowheader "Неактивный" [ref=e292]:
+              - button "Неактивный" [ref=e294] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e296]:
+              - link "" [ref=e297] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_189
+                - generic [ref=e298]: 
+          - row "Summma skidka Скидка за сумму 10000.00 2.00 2025-11-03 00:00:00 2026-01-04 23:59:00 Неактивный " [ref=e299]:
+            - cell "Summma skidka" [ref=e300]:
+              - link "Summma skidka" [ref=e301] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_188
+            - cell "Скидка за сумму" [ref=e302]
+            - cell "10000.00" [ref=e303]: "10000.00"
+            - cell "2.00" [ref=e304]: "2.00"
+            - cell "2025-11-03 00:00:00" [ref=e305]
+            - cell "2026-01-04 23:59:00" [ref=e306]
+            - rowheader "Неактивный" [ref=e307]:
+              - button "Неактивный" [ref=e309] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e311]:
+              - link "" [ref=e312] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_188
+                - generic [ref=e313]: 
+          - row "Summma skidka Скидка за сумму 10000.00 2.00 2025-11-06 00:00:00 2025-11-22 23:59:00 Активный " [ref=e314]:
+            - cell "Summma skidka" [ref=e315]:
+              - link "Summma skidka" [ref=e316] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_187
+            - cell "Скидка за сумму" [ref=e317]
+            - cell "10000.00" [ref=e318]: "10000.00"
+            - cell "2.00" [ref=e319]: "2.00"
+            - cell "2025-11-06 00:00:00" [ref=e320]
+            - cell "2025-11-22 23:59:00" [ref=e321]
+            - rowheader "Активный" [ref=e322]:
+              - button "Активный" [ref=e324] [cursor=pointer]: Активный
+            - columnheader "" [ref=e326]:
+              - link "" [ref=e327] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_187
+                - generic [ref=e328]: 
+          - row "Бишкек 3-4-5% (25) ВС Скидка за сумму 3000.00 2000.00 1000.00 5.00 4.00 3.00 2025-10-29 00:00:00 2025-11-01 23:59:00 Активный " [ref=e329]:
+            - cell "Бишкек 3-4-5% (25) ВС" [ref=e330]:
+              - link "Бишкек 3-4-5% (25) ВС" [ref=e331] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_184
+            - cell "Скидка за сумму" [ref=e332]
+            - cell "3000.00 2000.00 1000.00" [ref=e333]:
+              - text: "3000.00"
+              - text: "2000.00"
+              - text: "1000.00"
+            - cell "5.00 4.00 3.00" [ref=e334]:
+              - text: "5.00"
+              - text: "4.00"
+              - text: "3.00"
+            - cell "2025-10-29 00:00:00" [ref=e335]
+            - cell "2025-11-01 23:59:00" [ref=e336]
+            - rowheader "Активный" [ref=e337]:
+              - button "Активный" [ref=e339] [cursor=pointer]: Активный
+            - columnheader "" [ref=e341]:
+              - link "" [ref=e342] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_184
+                - generic [ref=e343]: 
+          - row "Скидка для Без агента Скидка за сумму 10000.00 25.00 2025-10-27 10:13:00 2025-11-01 10:13:00 Неактивный " [ref=e344]:
+            - cell "Скидка для Без агента" [ref=e345]:
+              - link "Скидка для Без агента" [ref=e346] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_183
+            - cell "Скидка за сумму" [ref=e347]
+            - cell "10000.00" [ref=e348]: "10000.00"
+            - cell "25.00" [ref=e349]: "25.00"
+            - cell "2025-10-27 10:13:00" [ref=e350]
+            - cell "2025-11-01 10:13:00" [ref=e351]
+            - rowheader "Неактивный" [ref=e352]:
+              - button "Неактивный" [ref=e354] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e356]:
+              - link "" [ref=e357] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_183
+                - generic [ref=e358]: 
+          - row "Yokobaby BC 18-20 Скидка за сумму 3000.00 410.00 20.00 18.00 2025-10-19 00:00:00 2025-10-26 23:59:00 Активный " [ref=e359]:
+            - cell "Yokobaby BC 18-20" [ref=e360]:
+              - link "Yokobaby BC 18-20" [ref=e361] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_181
+            - cell "Скидка за сумму" [ref=e362]
+            - cell "3000.00 410.00" [ref=e363]:
+              - text: "3000.00"
+              - text: "410.00"
+            - cell "20.00 18.00" [ref=e364]:
+              - text: "20.00"
+              - text: "18.00"
+            - cell "2025-10-19 00:00:00" [ref=e365]
+            - cell "2025-10-26 23:59:00" [ref=e366]
+            - rowheader "Активный" [ref=e367]:
+              - button "Активный" [ref=e369] [cursor=pointer]: Активный
+            - columnheader "" [ref=e371]:
+              - link "" [ref=e372] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_181
+                - generic [ref=e373]: 
+          - row "d0_42490 кепка Скидка за количество 10.00 25.00 2025-10-14 00:00:00 2025-10-19 23:59:00 Активный " [ref=e374]:
+            - cell "d0_42490 кепка" [ref=e375]:
+              - link "d0_42490 кепка" [ref=e376] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_180
+            - cell "Скидка за количество" [ref=e377]
+            - cell "10.00" [ref=e378]: "10.00"
+            - cell "25.00" [ref=e379]: "25.00"
+            - cell "2025-10-14 00:00:00" [ref=e380]
+            - cell "2025-10-19 23:59:00" [ref=e381]
+            - rowheader "Активный" [ref=e382]:
+              - button "Активный" [ref=e384] [cursor=pointer]: Активный
+            - columnheader "" [ref=e386]:
+              - link "" [ref=e387] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_180
+                - generic [ref=e388]: 
+          - row "delete Скидка за количество 111111111.00 11.00 2025-10-08 11:14:00 2025-10-08 11:14:00 Активный " [ref=e389]:
+            - cell "delete" [ref=e390]:
+              - link "delete" [ref=e391] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_179
+            - cell "Скидка за количество" [ref=e392]
+            - cell "111111111.00" [ref=e393]: "111111111.00"
+            - cell "11.00" [ref=e394]: "11.00"
+            - cell "2025-10-08 11:14:00" [ref=e395]
+            - cell "2025-10-08 11:14:00" [ref=e396]
+            - rowheader "Активный" [ref=e397]:
+              - button "Активный" [ref=e399] [cursor=pointer]: Активный
+            - columnheader "" [ref=e401]:
+              - link "" [ref=e402] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_179
+                - generic [ref=e403]: 
+          - row "test Скидка за количество 8888888.00 4.00 2025-10-08 11:12:00 2025-10-25 11:12:00 Активный " [ref=e404]:
+            - cell "test" [ref=e405]:
+              - link "test" [ref=e406] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_178
+            - cell "Скидка за количество" [ref=e407]
+            - cell "8888888.00" [ref=e408]: "8888888.00"
+            - cell "4.00" [ref=e409]: "4.00"
+            - cell "2025-10-08 11:12:00" [ref=e410]
+            - cell "2025-10-25 11:12:00" [ref=e411]
+            - rowheader "Активный" [ref=e412]:
+              - button "Активный" [ref=e414] [cursor=pointer]: Активный
+            - columnheader "" [ref=e416]:
+              - link "" [ref=e417] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_178
+                - generic [ref=e418]: 
+          - row "удалить!!! Скидка за количество 111111111.00 11.00 2025-10-08 11:10:00 2025-10-08 11:10:00 Активный " [ref=e419]:
+            - cell "удалить!!!" [ref=e420]:
+              - link "удалить!!!" [ref=e421] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_177
+            - cell "Скидка за количество" [ref=e422]
+            - cell "111111111.00" [ref=e423]: "111111111.00"
+            - cell "11.00" [ref=e424]: "11.00"
+            - cell "2025-10-08 11:10:00" [ref=e425]
+            - cell "2025-10-08 11:10:00" [ref=e426]
+            - rowheader "Активный" [ref=e427]:
+              - button "Активный" [ref=e429] [cursor=pointer]: Активный
+            - columnheader "" [ref=e431]:
+              - link "" [ref=e432] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_177
+                - generic [ref=e433]: 
+          - row "удалить!!!! Скидка за количество 111111.00 1.00 2025-10-08 10:55:00 2025-10-08 10:55:00 Активный " [ref=e434]:
+            - cell "удалить!!!!" [ref=e435]:
+              - link "удалить!!!!" [ref=e436] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_176
+            - cell "Скидка за количество" [ref=e437]
+            - cell "111111.00" [ref=e438]: "111111.00"
+            - cell "1.00" [ref=e439]: "1.00"
+            - cell "2025-10-08 10:55:00" [ref=e440]
+            - cell "2025-10-08 10:55:00" [ref=e441]
+            - rowheader "Активный" [ref=e442]:
+              - button "Активный" [ref=e444] [cursor=pointer]: Активный
+            - columnheader "" [ref=e446]:
+              - link "" [ref=e447] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_176
+                - generic [ref=e448]: 
+          - row "Скидка экспедитора 3 Скидка за сумму 30000.00 30.00 2025-09-16 16:38:00 2025-09-19 16:38:00 Активный " [ref=e449]:
+            - cell "Скидка экспедитора 3" [ref=e450]:
+              - link "Скидка экспедитора 3" [ref=e451] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_175
+            - cell "Скидка за сумму" [ref=e452]
+            - cell "30000.00" [ref=e453]: "30000.00"
+            - cell "30.00" [ref=e454]: "30.00"
+            - cell "2025-09-16 16:38:00" [ref=e455]
+            - cell "2025-09-19 16:38:00" [ref=e456]
+            - rowheader "Активный" [ref=e457]:
+              - button "Активный" [ref=e459] [cursor=pointer]: Активный
+            - columnheader "" [ref=e461]:
+              - link "" [ref=e462] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_175
+                - generic [ref=e463]: 
+          - row "Скидка экспедитора 2 Скидка за сумму 100000.00 20.00 2025-09-16 15:54:00 2025-09-19 15:54:00 Активный " [ref=e464]:
+            - cell "Скидка экспедитора 2" [ref=e465]:
+              - link "Скидка экспедитора 2" [ref=e466] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_174
+            - cell "Скидка за сумму" [ref=e467]
+            - cell "100000.00" [ref=e468]: "100000.00"
+            - cell "20.00" [ref=e469]: "20.00"
+            - cell "2025-09-16 15:54:00" [ref=e470]
+            - cell "2025-09-19 15:54:00" [ref=e471]
+            - rowheader "Активный" [ref=e472]:
+              - button "Активный" [ref=e474] [cursor=pointer]: Активный
+            - columnheader "" [ref=e476]:
+              - link "" [ref=e477] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_174
+                - generic [ref=e478]: 
+          - row "Скидка экспедитора 1 Скидка за сумму 2000.00 1.00 7.00 5.00 2025-09-16 15:49:00 2025-09-20 15:49:00 Активный " [ref=e479]:
+            - cell "Скидка экспедитора 1" [ref=e480]:
+              - link "Скидка экспедитора 1" [ref=e481] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_172
+            - cell "Скидка за сумму" [ref=e482]
+            - cell "2000.00 1.00" [ref=e483]:
+              - text: "2000.00"
+              - text: "1.00"
+            - cell "7.00 5.00" [ref=e484]:
+              - text: "7.00"
+              - text: "5.00"
+            - cell "2025-09-16 15:49:00" [ref=e485]
+            - cell "2025-09-20 15:49:00" [ref=e486]
+            - rowheader "Активный" [ref=e487]:
+              - button "Активный" [ref=e489] [cursor=pointer]: Активный
+            - columnheader "" [ref=e491]:
+              - link "" [ref=e492] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_172
+                - generic [ref=e493]: 
+          - row "Скидка возврат Скидка за количество 1.00 50.00 2025-08-25 18:35:00 2026-01-01 11:26:00 Неактивный " [ref=e494]:
+            - cell "Скидка возврат" [ref=e495]:
+              - link "Скидка возврат" [ref=e496] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_171
+            - cell "Скидка за количество" [ref=e497]
+            - cell "1.00" [ref=e498]: "1.00"
+            - cell "50.00" [ref=e499]: "50.00"
+            - cell "2025-08-25 18:35:00" [ref=e500]
+            - cell "2026-01-01 11:26:00" [ref=e501]
+            - rowheader "Неактивный" [ref=e502]:
+              - button "Неактивный" [ref=e504] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e506]:
+              - link "" [ref=e507] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_171
+                - generic [ref=e508]: 
+          - row "Скидка за закуп FR (3) Скидка за сумму 15000.00 10000.00 3000.00 2000.00 1000.00 7.00 6.00 5.00 4.00 3.00 2025-08-18 15:30:00 2025-08-24 15:30:00 Активный " [ref=e509]:
+            - cell "Скидка за закуп FR (3)" [ref=e510]:
+              - link "Скидка за закуп FR (3)" [ref=e511] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_166
+            - cell "Скидка за сумму" [ref=e512]
+            - cell "15000.00 10000.00 3000.00 2000.00 1000.00" [ref=e513]:
+              - text: "15000.00"
+              - text: "10000.00"
+              - text: "3000.00"
+              - text: "2000.00"
+              - text: "1000.00"
+            - cell "7.00 6.00 5.00 4.00 3.00" [ref=e514]:
+              - text: "7.00"
+              - text: "6.00"
+              - text: "5.00"
+              - text: "4.00"
+              - text: "3.00"
+            - cell "2025-08-18 15:30:00" [ref=e515]
+            - cell "2025-08-24 15:30:00" [ref=e516]
+            - rowheader "Активный" [ref=e517]:
+              - button "Активный" [ref=e519] [cursor=pointer]: Активный
+            - columnheader "" [ref=e521]:
+              - link "" [ref=e522] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_166
+                - generic [ref=e523]: 
+          - row "ffffffffffff Скидка за количество 15.00 12.00 3.00 2.00 2025-08-11 11:49:00 2025-08-31 11:49:00 Неактивный " [ref=e524]:
+            - cell "ffffffffffff" [ref=e525]:
+              - link "ffffffffffff" [ref=e526] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_164
+            - cell "Скидка за количество" [ref=e527]
+            - cell "15.00 12.00" [ref=e528]:
+              - text: "15.00"
+              - text: "12.00"
+            - cell "3.00 2.00" [ref=e529]:
+              - text: "3.00"
+              - text: "2.00"
+            - cell "2025-08-11 11:49:00" [ref=e530]
+            - cell "2025-08-31 11:49:00" [ref=e531]
+            - rowheader "Неактивный" [ref=e532]:
+              - button "Неактивный" [ref=e534] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e536]:
+              - link "" [ref=e537] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_164
+                - generic [ref=e538]: 
+          - row "Скидка на все 10 Скидка за сумму 1000.00 10.00 2025-08-03 13:51:00 2025-08-10 13:51:00 Активный " [ref=e539]:
+            - cell "Скидка на все 10" [ref=e540]:
+              - link "Скидка на все 10" [ref=e541] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_163
+            - cell "Скидка за сумму" [ref=e542]
+            - cell "1000.00" [ref=e543]: "1000.00"
+            - cell "10.00" [ref=e544]: "10.00"
+            - cell "2025-08-03 13:51:00" [ref=e545]
+            - cell "2025-08-10 13:51:00" [ref=e546]
+            - rowheader "Активный" [ref=e547]:
+              - button "Активный" [ref=e549] [cursor=pointer]: Активный
+            - columnheader "" [ref=e551]:
+              - link "" [ref=e552] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_163
+                - generic [ref=e553]: 
+          - row "clone clone Скидка за количество 5.00 21.00 2024-12-03 15:08:00 2024-12-14 18:20:00 Неактивный " [ref=e554]:
+            - cell "clone clone" [ref=e555]:
+              - link "clone clone" [ref=e556] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_162
+            - cell "Скидка за количество" [ref=e557]
+            - cell "5.00" [ref=e558]: "5.00"
+            - cell "21.00" [ref=e559]: "21.00"
+            - cell "2024-12-03 15:08:00" [ref=e560]
+            - cell "2024-12-14 18:20:00" [ref=e561]
+            - rowheader "Неактивный" [ref=e562]:
+              - button "Неактивный" [ref=e564] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e566]:
+              - link "" [ref=e567] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_162
+                - generic [ref=e568]: 
+          - row "28/07/2025 Скидка за количество 10.00 20.00 0000-00-00 00:00:00 0000-00-00 00:00:00 Активный " [ref=e569]:
+            - cell "28/07/2025" [ref=e570]:
+              - link "28/07/2025" [ref=e571] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_161
+            - cell "Скидка за количество" [ref=e572]
+            - cell "10.00" [ref=e573]: "10.00"
+            - cell "20.00" [ref=e574]: "20.00"
+            - cell "0000-00-00 00:00:00" [ref=e575]
+            - cell "0000-00-00 00:00:00" [ref=e576]
+            - rowheader "Активный" [ref=e577]:
+              - button "Активный" [ref=e579] [cursor=pointer]: Активный
+            - columnheader "" [ref=e581]:
+              - link "" [ref=e582] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_161
+                - generic [ref=e583]: 
+          - row "tttttt Скидка за количество 1.00 1.50 0000-00-00 00:00:00 0000-00-00 00:00:00 Неактивный " [ref=e584]:
+            - cell "tttttt" [ref=e585]:
+              - link "tttttt" [ref=e586] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_160
+            - cell "Скидка за количество" [ref=e587]
+            - cell "1.00" [ref=e588]: "1.00"
+            - cell "1.50" [ref=e589]: "1.50"
+            - cell "0000-00-00 00:00:00" [ref=e590]
+            - cell "0000-00-00 00:00:00" [ref=e591]
+            - rowheader "Неактивный" [ref=e592]:
+              - button "Неактивный" [ref=e594] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e596]:
+              - link "" [ref=e597] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_160
+                - generic [ref=e598]: 
+          - row "СЗК 5 - 10% Скидка за количество 10.00 10.00 2025-06-09 17:25:00 2025-06-14 17:25:00 Активный " [ref=e599]:
+            - cell "СЗК 5 - 10%" [ref=e600]:
+              - link "СЗК 5 - 10%" [ref=e601] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_159
+            - cell "Скидка за количество" [ref=e602]
+            - cell "10.00" [ref=e603]: "10.00"
+            - cell "10.00" [ref=e604]: "10.00"
+            - cell "2025-06-09 17:25:00" [ref=e605]
+            - cell "2025-06-14 17:25:00" [ref=e606]
+            - rowheader "Активный" [ref=e607]:
+              - button "Активный" [ref=e609] [cursor=pointer]: Активный
+            - columnheader "" [ref=e611]:
+              - link "" [ref=e612] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_159
+                - generic [ref=e613]: 
+          - row "complekt 3 Скидка на комплект (кол-во) 4.00 3.00 2025-05-29 11:05:00 2025-06-07 11:05:00 Активный " [ref=e614]:
+            - cell "complekt 3" [ref=e615]:
+              - link "complekt 3" [ref=e616] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_158
+            - cell "Скидка на комплект (кол-во)" [ref=e617]
+            - cell "4.00" [ref=e618]: "4.00"
+            - cell "3.00" [ref=e619]: "3.00"
+            - cell "2025-05-29 11:05:00" [ref=e620]
+            - cell "2025-06-07 11:05:00" [ref=e621]
+            - rowheader "Активный" [ref=e622]:
+              - button "Активный" [ref=e624] [cursor=pointer]: Активный
+            - columnheader "" [ref=e626]:
+              - link "" [ref=e627] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_158
+                - generic [ref=e628]: 
+          - row "complekt 2 Скидка на комплект (кол-во) 4.00 17.00 2025-05-29 10:00:00 2025-05-31 10:00:00 Активный " [ref=e629]:
+            - cell "complekt 2" [ref=e630]:
+              - link "complekt 2" [ref=e631] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_157
+            - cell "Скидка на комплект (кол-во)" [ref=e632]
+            - cell "4.00" [ref=e633]: "4.00"
+            - cell "17.00" [ref=e634]: "17.00"
+            - cell "2025-05-29 10:00:00" [ref=e635]
+            - cell "2025-05-31 10:00:00" [ref=e636]
+            - rowheader "Активный" [ref=e637]:
+              - button "Активный" [ref=e639] [cursor=pointer]: Активный
+            - columnheader "" [ref=e641]:
+              - link "" [ref=e642] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_157
+                - generic [ref=e643]: 
+          - row "complekt Скидка на комплект (кол-во) 4.00 7.00 2025-05-29 09:57:00 2025-05-31 09:57:00 Активный " [ref=e644]:
+            - cell "complekt" [ref=e645]:
+              - link "complekt" [ref=e646] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_156
+            - cell "Скидка на комплект (кол-во)" [ref=e647]
+            - cell "4.00" [ref=e648]: "4.00"
+            - cell "7.00" [ref=e649]: "7.00"
+            - cell "2025-05-29 09:57:00" [ref=e650]
+            - cell "2025-05-31 09:57:00" [ref=e651]
+            - rowheader "Активный" [ref=e652]:
+              - button "Активный" [ref=e654] [cursor=pointer]: Активный
+            - columnheader "" [ref=e656]:
+              - link "" [ref=e657] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_156
+                - generic [ref=e658]: 
+          - row "mml summa 2 MML товары (По мин. сумма) 15000.00 7.00 2025-05-23 16:08:00 2025-05-31 16:08:00 Активный " [ref=e659]:
+            - cell "mml summa 2" [ref=e660]:
+              - link "mml summa 2" [ref=e661] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_155
+            - cell "MML товары (По мин. сумма)" [ref=e662]
+            - cell "15000.00" [ref=e663]: "15000.00"
+            - cell "7.00" [ref=e664]: "7.00"
+            - cell "2025-05-23 16:08:00" [ref=e665]
+            - cell "2025-05-31 16:08:00" [ref=e666]
+            - rowheader "Активный" [ref=e667]:
+              - button "Активный" [ref=e669] [cursor=pointer]: Активный
+            - columnheader "" [ref=e671]:
+              - link "" [ref=e672] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_155
+                - generic [ref=e673]: 
+          - row "mml summa MML товары (По мин. сумма) 10000.00 5.00 2025-05-23 11:49:00 2025-05-31 11:49:00 Активный " [ref=e674]:
+            - cell "mml summa" [ref=e675]:
+              - link "mml summa" [ref=e676] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_154
+            - cell "MML товары (По мин. сумма)" [ref=e677]
+            - cell "10000.00" [ref=e678]: "10000.00"
+            - cell "5.00" [ref=e679]: "5.00"
+            - cell "2025-05-23 11:49:00" [ref=e680]
+            - cell "2025-05-31 11:49:00" [ref=e681]
+            - rowheader "Активный" [ref=e682]:
+              - button "Активный" [ref=e684] [cursor=pointer]: Активный
+            - columnheader "" [ref=e686]:
+              - link "" [ref=e687] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_154
+                - generic [ref=e688]: 
+          - row "test mml MML товары (По мин. кол-во) 3.00 3.00 2025-05-23 10:56:00 2025-05-30 10:56:00 Активный " [ref=e689]:
+            - cell "test mml" [ref=e690]:
+              - link "test mml" [ref=e691] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_153
+            - cell "MML товары (По мин. кол-во)" [ref=e692]
+            - cell "3.00" [ref=e693]: "3.00"
+            - cell "3.00" [ref=e694]: "3.00"
+            - cell "2025-05-23 10:56:00" [ref=e695]
+            - cell "2025-05-30 10:56:00" [ref=e696]
+            - rowheader "Активный" [ref=e697]:
+              - button "Активный" [ref=e699] [cursor=pointer]: Активный
+            - columnheader "" [ref=e701]:
+              - link "" [ref=e702] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_153
+                - generic [ref=e703]: 
+          - row "Скидка частичного возврата Скидка за количество 10.00 20.00 2025-05-21 10:33:00 2025-05-24 10:33:00 Неактивный " [ref=e704]:
+            - cell "Скидка частичного возврата" [ref=e705]:
+              - link "Скидка частичного возврата" [ref=e706] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_152
+            - cell "Скидка за количество" [ref=e707]
+            - cell "10.00" [ref=e708]: "10.00"
+            - cell "20.00" [ref=e709]: "20.00"
+            - cell "2025-05-21 10:33:00" [ref=e710]
+            - cell "2025-05-24 10:33:00" [ref=e711]
+            - rowheader "Неактивный" [ref=e712]:
+              - button "Неактивный" [ref=e714] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e716]:
+              - link "" [ref=e717] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_152
+                - generic [ref=e718]: 
+          - row "СЗК 33 5-10% Скидка за количество 5.00 10.00 2025-05-12 15:39:00 2025-05-18 17:29:00 Активный " [ref=e719]:
+            - cell "СЗК 33 5-10%" [ref=e720]:
+              - link "СЗК 33 5-10%" [ref=e721] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_151
+            - cell "Скидка за количество" [ref=e722]
+            - cell "5.00" [ref=e723]: "5.00"
+            - cell "10.00" [ref=e724]: "10.00"
+            - cell "2025-05-12 15:39:00" [ref=e725]
+            - cell "2025-05-18 17:29:00" [ref=e726]
+            - rowheader "Активный" [ref=e727]:
+              - button "Активный" [ref=e729] [cursor=pointer]: Активный
+            - columnheader "" [ref=e731]:
+              - link "" [ref=e732] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_151
+                - generic [ref=e733]: 
+          - row "SD Баг тест 3-4-5% Скидка за сумму 3000.00 2000.00 1000.00 5.00 4.00 3.00 2025-05-10 14:55:00 2025-05-14 14:55:00 Активный " [ref=e734]:
+            - cell "SD Баг тест 3-4-5%" [ref=e735]:
+              - link "SD Баг тест 3-4-5%" [ref=e736] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_148
+            - cell "Скидка за сумму" [ref=e737]
+            - cell "3000.00 2000.00 1000.00" [ref=e738]:
+              - text: "3000.00"
+              - text: "2000.00"
+              - text: "1000.00"
+            - cell "5.00 4.00 3.00" [ref=e739]:
+              - text: "5.00"
+              - text: "4.00"
+              - text: "3.00"
+            - cell "2025-05-10 14:55:00" [ref=e740]
+            - cell "2025-05-14 14:55:00" [ref=e741]
+            - rowheader "Активный" [ref=e742]:
+              - button "Активный" [ref=e744] [cursor=pointer]: Активный
+            - columnheader "" [ref=e746]:
+              - link "" [ref=e747] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_148
+                - generic [ref=e748]: 
+          - row "Скидка за сумму 2 Скидка за сумму 1000.00 10.00 2025-04-30 18:13:00 2025-05-09 18:13:00 Активный " [ref=e749]:
+            - cell "Скидка за сумму 2" [ref=e750]:
+              - link "Скидка за сумму 2" [ref=e751] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_147
+            - cell "Скидка за сумму" [ref=e752]
+            - cell "1000.00" [ref=e753]: "1000.00"
+            - cell "10.00" [ref=e754]: "10.00"
+            - cell "2025-04-30 18:13:00" [ref=e755]
+            - cell "2025-05-09 18:13:00" [ref=e756]
+            - rowheader "Активный" [ref=e757]:
+              - button "Активный" [ref=e759] [cursor=pointer]: Активный
+            - columnheader "" [ref=e761]:
+              - link "" [ref=e762] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_147
+                - generic [ref=e763]: 
+          - row "Скидка за сумму Скидка за сумму 200000.00 10000.00 10.00 5.00 2025-04-30 18:01:00 2025-10-17 17:29:00 Активный " [ref=e764]:
+            - cell "Скидка за сумму" [ref=e765]:
+              - link "Скидка за сумму" [ref=e766] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_145
+            - cell "Скидка за сумму" [ref=e767]
+            - cell "200000.00 10000.00" [ref=e768]:
+              - text: "200000.00"
+              - text: "10000.00"
+            - cell "10.00 5.00" [ref=e769]:
+              - text: "10.00"
+              - text: "5.00"
+            - cell "2025-04-30 18:01:00" [ref=e770]
+            - cell "2025-10-17 17:29:00" [ref=e771]
+            - rowheader "Активный" [ref=e772]:
+              - button "Активный" [ref=e774] [cursor=pointer]: Активный
+            - columnheader "" [ref=e776]:
+              - link "" [ref=e777] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_145
+                - generic [ref=e778]: 
+          - row "СЗС 0.33 2 вида Скидка за сумму 1000000.00 300000.00 5.00 2.00 2025-04-14 12:22:00 2025-04-20 12:22:00 Активный " [ref=e779]:
+            - cell "СЗС 0.33 2 вида" [ref=e780]:
+              - link "СЗС 0.33 2 вида" [ref=e781] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_143
+            - cell "Скидка за сумму" [ref=e782]
+            - cell "1000000.00 300000.00" [ref=e783]:
+              - text: "1000000.00"
+              - text: "300000.00"
+            - cell "5.00 2.00" [ref=e784]:
+              - text: "5.00"
+              - text: "2.00"
+            - cell "2025-04-14 12:22:00" [ref=e785]
+            - cell "2025-04-20 12:22:00" [ref=e786]
+            - rowheader "Активный" [ref=e787]:
+              - button "Активный" [ref=e789] [cursor=pointer]: Активный
+            - columnheader "" [ref=e791]:
+              - link "" [ref=e792] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_143
+                - generic [ref=e793]: 
+          - row "2 тоара 2 цслоия Скидка за сумму 500000.00 100000.00 8.00 5.00 2025-04-08 12:45:00 2025-04-13 12:45:00 Активный " [ref=e794]:
+            - cell "2 тоара 2 цслоия" [ref=e795]:
+              - link "2 тоара 2 цслоия" [ref=e796] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_141
+            - cell "Скидка за сумму" [ref=e797]
+            - cell "500000.00 100000.00" [ref=e798]:
+              - text: "500000.00"
+              - text: "100000.00"
+            - cell "8.00 5.00" [ref=e799]:
+              - text: "8.00"
+              - text: "5.00"
+            - cell "2025-04-08 12:45:00" [ref=e800]
+            - cell "2025-04-13 12:45:00" [ref=e801]
+            - rowheader "Активный" [ref=e802]:
+              - button "Активный" [ref=e804] [cursor=pointer]: Активный
+            - columnheader "" [ref=e806]:
+              - link "" [ref=e807] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_141
+                - generic [ref=e808]: 
+          - row "Сумма 2 товара 3 параметра Скидка за сумму 50000.00 100000.00 8.00 5.00 2025-04-09 12:42:00 2025-04-13 12:42:00 Неактивный " [ref=e809]:
+            - cell "Сумма 2 товара 3 параметра" [ref=e810]:
+              - link "Сумма 2 товара 3 параметра" [ref=e811] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_139
+            - cell "Скидка за сумму" [ref=e812]
+            - cell "50000.00 100000.00" [ref=e813]:
+              - text: "50000.00"
+              - text: "100000.00"
+            - cell "8.00 5.00" [ref=e814]:
+              - text: "8.00"
+              - text: "5.00"
+            - cell "2025-04-09 12:42:00" [ref=e815]
+            - cell "2025-04-13 12:42:00" [ref=e816]
+            - rowheader "Неактивный" [ref=e817]:
+              - button "Неактивный" [ref=e819] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e821]:
+              - link "" [ref=e822] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_139
+                - generic [ref=e823]: 
+          - row "СЗС 2 усливия фанта .033 Скидка за сумму 500000.00 100000.00 8.00 5.00 2025-04-07 11:56:00 2025-04-13 11:56:00 Неактивный " [ref=e824]:
+            - cell "СЗС 2 усливия фанта .033" [ref=e825]:
+              - link "СЗС 2 усливия фанта .033" [ref=e826] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_137
+            - cell "Скидка за сумму" [ref=e827]
+            - cell "500000.00 100000.00" [ref=e828]:
+              - text: "500000.00"
+              - text: "100000.00"
+            - cell "8.00 5.00" [ref=e829]:
+              - text: "8.00"
+              - text: "5.00"
+            - cell "2025-04-07 11:56:00" [ref=e830]
+            - cell "2025-04-13 11:56:00" [ref=e831]
+            - rowheader "Неактивный" [ref=e832]:
+              - button "Неактивный" [ref=e834] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e836]:
+              - link "" [ref=e837] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_137
+                - generic [ref=e838]: 
+          - row "tyhyh Скидка за количество 54.00 34.00 8.00 7.00 2025-04-09 12:51:00 2025-04-30 12:51:00 Неактивный " [ref=e839]:
+            - cell "tyhyh" [ref=e840]:
+              - link "tyhyh" [ref=e841] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_131
+            - cell "Скидка за количество" [ref=e842]
+            - cell "54.00 34.00" [ref=e843]:
+              - text: "54.00"
+              - text: "34.00"
+            - cell "8.00 7.00" [ref=e844]:
+              - text: "8.00"
+              - text: "7.00"
+            - cell "2025-04-09 12:51:00" [ref=e845]
+            - cell "2025-04-30 12:51:00" [ref=e846]
+            - rowheader "Неактивный" [ref=e847]:
+              - button "Неактивный" [ref=e849] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e851]:
+              - link "" [ref=e852] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_131
+                - generic [ref=e853]: 
+          - row "copy 22 Скидка за количество 5.00 4.00 2025-04-09 13:05:00 2025-04-30 13:05:00 Неактивный " [ref=e854]:
+            - cell "copy 22" [ref=e855]:
+              - link "copy 22" [ref=e856] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_135
+            - cell "Скидка за количество" [ref=e857]
+            - cell "5.00" [ref=e858]: "5.00"
+            - cell "4.00" [ref=e859]: "4.00"
+            - cell "2025-04-09 13:05:00" [ref=e860]
+            - cell "2025-04-30 13:05:00" [ref=e861]
+            - rowheader "Неактивный" [ref=e862]:
+              - button "Неактивный" [ref=e864] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e866]:
+              - link "" [ref=e867] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_135
+                - generic [ref=e868]: 
+          - row "copy Скидка за количество 50.00 100.00 7.00 14.00 2025-04-09 13:01:00 2025-04-30 13:01:00 Неактивный " [ref=e869]:
+            - cell "copy" [ref=e870]:
+              - link "copy" [ref=e871] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_132
+            - cell "Скидка за количество" [ref=e872]
+            - cell "50.00 100.00" [ref=e873]:
+              - text: "50.00"
+              - text: "100.00"
+            - cell "7.00 14.00" [ref=e874]:
+              - text: "7.00"
+              - text: "14.00"
+            - cell "2025-04-09 13:01:00" [ref=e875]
+            - cell "2025-04-30 13:01:00" [ref=e876]
+            - rowheader "Неактивный" [ref=e877]:
+              - button "Неактивный" [ref=e879] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e881]:
+              - link "" [ref=e882] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_132
+                - generic [ref=e883]: 
+          - row "СЗК лимит по складам фанта 0.33 Скидка за количество 3.00 7.00 2025-04-07 09:51:00 2025-09-10 15:48:00 Неактивный " [ref=e884]:
+            - cell "СЗК лимит по складам фанта 0.33" [ref=e885]:
+              - link "СЗК лимит по складам фанта 0.33" [ref=e886] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_128
+            - cell "Скидка за количество" [ref=e887]
+            - cell "3.00" [ref=e888]: "3.00"
+            - cell "7.00" [ref=e889]: "7.00"
+            - cell "2025-04-07 09:51:00" [ref=e890]
+            - cell "2025-09-10 15:48:00" [ref=e891]
+            - rowheader "Неактивный" [ref=e892]:
+              - button "Неактивный" [ref=e894] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e896]:
+              - link "" [ref=e897] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_128
+                - generic [ref=e898]: 
+          - row "ddddddddddddddd Скидка за количество 5.00 4.00 2025-04-03 12:13:00 2025-09-10 15:48:00 Неактивный " [ref=e899]:
+            - cell "ddddddddddddddd" [ref=e900]:
+              - link "ddddddddddddddd" [ref=e901] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_127
+            - cell "Скидка за количество" [ref=e902]
+            - cell "5.00" [ref=e903]: "5.00"
+            - cell "4.00" [ref=e904]: "4.00"
+            - cell "2025-04-03 12:13:00" [ref=e905]
+            - cell "2025-09-10 15:48:00" [ref=e906]
+            - rowheader "Неактивный" [ref=e907]:
+              - button "Неактивный" [ref=e909] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e911]:
+              - link "" [ref=e912] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_127
+                - generic [ref=e913]: 
+          - row "BMW bechora Скидка за количество 1.00 10.00 2025-04-01 18:35:00 2026-04-01 18:35:00 Неактивный " [ref=e914]:
+            - cell "BMW bechora" [ref=e915]:
+              - link "BMW bechora" [ref=e916] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_126
+            - cell "Скидка за количество" [ref=e917]
+            - cell "1.00" [ref=e918]: "1.00"
+            - cell "10.00" [ref=e919]: "10.00"
+            - cell "2025-04-01 18:35:00" [ref=e920]
+            - cell "2026-04-01 18:35:00" [ref=e921]
+            - rowheader "Неактивный" [ref=e922]:
+              - button "Неактивный" [ref=e924] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e926]:
+              - link "" [ref=e927] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_126
+                - generic [ref=e928]: 
+          - row "avto Скидка за количество 2.00 1.00 2025-03-12 17:39:00 2025-03-22 17:39:00 Активный " [ref=e929]:
+            - cell "avto" [ref=e930]:
+              - link "avto" [ref=e931] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_125
+            - cell "Скидка за количество" [ref=e932]
+            - cell "2.00" [ref=e933]: "2.00"
+            - cell "1.00" [ref=e934]: "1.00"
+            - cell "2025-03-12 17:39:00" [ref=e935]
+            - cell "2025-03-22 17:39:00" [ref=e936]
+            - rowheader "Активный" [ref=e937]:
+              - button "Активный" [ref=e939] [cursor=pointer]: Активный
+            - columnheader "" [ref=e941]:
+              - link "" [ref=e942] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_125
+                - generic [ref=e943]: 
+          - row "СЗС от 200000 спрайт 0.33 Скидка за сумму 200000.00 17.00 2025-03-17 10:07:00 2026-01-01 11:26:00 Неактивный " [ref=e944]:
+            - cell "СЗС от 200000 спрайт 0.33" [ref=e945]:
+              - link "СЗС от 200000 спрайт 0.33" [ref=e946] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_124
+            - cell "Скидка за сумму" [ref=e947]
+            - cell "200000.00" [ref=e948]: "200000.00"
+            - cell "17.00" [ref=e949]: "17.00"
+            - cell "2025-03-17 10:07:00" [ref=e950]
+            - cell "2026-01-01 11:26:00" [ref=e951]
+            - rowheader "Неактивный" [ref=e952]:
+              - button "Неактивный" [ref=e954] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e956]:
+              - link "" [ref=e957] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_124
+                - generic [ref=e958]: 
+          - row "СЗК от 200 фанта 0.33 Скидка за количество 200.00 11.00 2025-03-17 10:06:00 2026-01-01 11:26:00 Неактивный " [ref=e959]:
+            - cell "СЗК от 200 фанта 0.33" [ref=e960]:
+              - link "СЗК от 200 фанта 0.33" [ref=e961] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_122
+            - cell "Скидка за количество" [ref=e962]
+            - cell "200.00" [ref=e963]: "200.00"
+            - cell "11.00" [ref=e964]: "11.00"
+            - cell "2025-03-17 10:06:00" [ref=e965]
+            - cell "2026-01-01 11:26:00" [ref=e966]
+            - rowheader "Неактивный" [ref=e967]:
+              - button "Неактивный" [ref=e969] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e971]:
+              - link "" [ref=e972] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_122
+                - generic [ref=e973]: 
+          - row "qwe Скидка за количество 1.00 0.55 2025-03-04 12:31:00 2026-01-01 11:26:00 Неактивный " [ref=e974]:
+            - cell "qwe" [ref=e975]:
+              - link "qwe" [ref=e976] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_120
+            - cell "Скидка за количество" [ref=e977]
+            - cell "1.00" [ref=e978]: "1.00"
+            - cell "0.55" [ref=e979]: "0.55"
+            - cell "2025-03-04 12:31:00" [ref=e980]
+            - cell "2026-01-01 11:26:00" [ref=e981]
+            - rowheader "Неактивный" [ref=e982]:
+              - button "Неактивный" [ref=e984] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e986]:
+              - link "" [ref=e987] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_120
+                - generic [ref=e988]: 
+          - row "Скидка на Fanta жб 0.33, длинное название проверить по задаче 594. Скидка за количество 1.00 5.00 2025-03-12 10:55:00 2026-01-01 11:26:00 Неактивный " [ref=e989]:
+            - cell "Скидка на Fanta жб 0.33, длинное название проверить по задаче 594." [ref=e990]:
+              - link "Скидка на Fanta жб 0.33, длинное название проверить по задаче 594." [ref=e991] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_119
+            - cell "Скидка за количество" [ref=e992]
+            - cell "1.00" [ref=e993]: "1.00"
+            - cell "5.00" [ref=e994]: "5.00"
+            - cell "2025-03-12 10:55:00" [ref=e995]
+            - cell "2026-01-01 11:26:00" [ref=e996]
+            - rowheader "Неактивный" [ref=e997]:
+              - button "Неактивный" [ref=e999] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1001]:
+              - link "" [ref=e1002] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_119
+                - generic [ref=e1003]: 
+          - row "Авто скидка Android/Iphone Скидка за количество 1.00 25.00 2025-03-06 13:58:00 2026-01-01 11:26:00 Неактивный " [ref=e1004]:
+            - cell "Авто скидка Android/Iphone" [ref=e1005]:
+              - link "Авто скидка Android/Iphone" [ref=e1006] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_118
+            - cell "Скидка за количество" [ref=e1007]
+            - cell "1.00" [ref=e1008]: "1.00"
+            - cell "25.00" [ref=e1009]: "25.00"
+            - cell "2025-03-06 13:58:00" [ref=e1010]
+            - cell "2026-01-01 11:26:00" [ref=e1011]
+            - rowheader "Неактивный" [ref=e1012]:
+              - button "Неактивный" [ref=e1014] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1016]:
+              - link "" [ref=e1017] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_118
+                - generic [ref=e1018]: 
+          - row "Доп скидка 2 Скидка за сумму 1.00 70.00 2025-03-05 11:09:00 2026-01-01 11:26:00 Неактивный " [ref=e1019]:
+            - cell "Доп скидка 2" [ref=e1020]:
+              - link "Доп скидка 2" [ref=e1021] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_117
+            - cell "Скидка за сумму" [ref=e1022]
+            - cell "1.00" [ref=e1023]: "1.00"
+            - cell "70.00" [ref=e1024]: "70.00"
+            - cell "2025-03-05 11:09:00" [ref=e1025]
+            - cell "2026-01-01 11:26:00" [ref=e1026]
+            - rowheader "Неактивный" [ref=e1027]:
+              - button "Неактивный" [ref=e1029] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1031]:
+              - link "" [ref=e1032] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_117
+                - generic [ref=e1033]: 
+          - row "Доп скидка Скидка за сумму 1.00 20.00 2025-03-05 11:02:00 2026-01-01 11:26:00 Неактивный " [ref=e1034]:
+            - cell "Доп скидка" [ref=e1035]:
+              - link "Доп скидка" [ref=e1036] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_116
+            - cell "Скидка за сумму" [ref=e1037]
+            - cell "1.00" [ref=e1038]: "1.00"
+            - cell "20.00" [ref=e1039]: "20.00"
+            - cell "2025-03-05 11:02:00" [ref=e1040]
+            - cell "2026-01-01 11:26:00" [ref=e1041]
+            - rowheader "Неактивный" [ref=e1042]:
+              - button "Неактивный" [ref=e1044] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1046]:
+              - link "" [ref=e1047] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_116
+                - generic [ref=e1048]: 
+          - row "Test КЗ 65 Скидка за сумму 1.00 64.00 2025-03-05 13:06:00 2026-01-01 11:26:00 Неактивный " [ref=e1049]:
+            - cell "Test КЗ 65" [ref=e1050]:
+              - link "Test КЗ 65" [ref=e1051] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_115
+            - cell "Скидка за сумму" [ref=e1052]
+            - cell "1.00" [ref=e1053]: "1.00"
+            - cell "64.00" [ref=e1054]: "64.00"
+            - cell "2025-03-05 13:06:00" [ref=e1055]
+            - cell "2026-01-01 11:26:00" [ref=e1056]
+            - rowheader "Неактивный" [ref=e1057]:
+              - button "Неактивный" [ref=e1059] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1061]:
+              - link "" [ref=e1062] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_115
+                - generic [ref=e1063]: 
+          - row "Test КЗ Скидка за сумму 1.00 60.00 2025-03-04 12:55:00 2026-01-01 11:26:00 Неактивный " [ref=e1064]:
+            - cell "Test КЗ" [ref=e1065]:
+              - link "Test КЗ" [ref=e1066] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_114
+            - cell "Скидка за сумму" [ref=e1067]
+            - cell "1.00" [ref=e1068]: "1.00"
+            - cell "60.00" [ref=e1069]: "60.00"
+            - cell "2025-03-04 12:55:00" [ref=e1070]
+            - cell "2026-01-01 11:26:00" [ref=e1071]
+            - rowheader "Неактивный" [ref=e1072]:
+              - button "Неактивный" [ref=e1074] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1076]:
+              - link "" [ref=e1077] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_114
+                - generic [ref=e1078]: 
+          - row "СЗК нескафе мягкий Скидка за количество 5.00 11.00 2025-02-05 11:12:00 2026-01-01 11:26:00 Неактивный " [ref=e1079]:
+            - cell "СЗК нескафе мягкий" [ref=e1080]:
+              - link "СЗК нескафе мягкий" [ref=e1081] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_113
+            - cell "Скидка за количество" [ref=e1082]
+            - cell "5.00" [ref=e1083]: "5.00"
+            - cell "11.00" [ref=e1084]: "11.00"
+            - cell "2025-02-05 11:12:00" [ref=e1085]
+            - cell "2026-01-01 11:26:00" [ref=e1086]
+            - rowheader "Неактивный" [ref=e1087]:
+              - button "Неактивный" [ref=e1089] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1091]:
+              - link "" [ref=e1092] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_113
+                - generic [ref=e1093]: 
+          - row "rgergerge Скидка за объем 7.00 5.00 9.00 2.00 2025-02-05 10:44:00 2026-01-01 11:26:00 Неактивный " [ref=e1094]:
+            - cell "rgergerge" [ref=e1095]:
+              - link "rgergerge" [ref=e1096] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_111
+            - cell "Скидка за объем" [ref=e1097]
+            - cell "7.00 5.00" [ref=e1098]:
+              - text: "7.00"
+              - text: "5.00"
+            - cell "9.00 2.00" [ref=e1099]:
+              - text: "9.00"
+              - text: "2.00"
+            - cell "2025-02-05 10:44:00" [ref=e1100]
+            - cell "2026-01-01 11:26:00" [ref=e1101]
+            - rowheader "Неактивный" [ref=e1102]:
+              - button "Неактивный" [ref=e1104] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1106]:
+              - link "" [ref=e1107] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_111
+                - generic [ref=e1108]: 
+          - row "asdfsdf Скидка за сумму 111111.00 100000.00 2.00 4.00 2025-02-05 10:30:00 2026-01-01 11:26:00 Неактивный " [ref=e1109]:
+            - cell "asdfsdf" [ref=e1110]:
+              - link "asdfsdf" [ref=e1111] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_109
+            - cell "Скидка за сумму" [ref=e1112]
+            - cell "111111.00 100000.00" [ref=e1113]:
+              - text: "111111.00"
+              - text: "100000.00"
+            - cell "2.00 4.00" [ref=e1114]:
+              - text: "2.00"
+              - text: "4.00"
+            - cell "2025-02-05 10:30:00" [ref=e1115]
+            - cell "2026-01-01 11:26:00" [ref=e1116]
+            - rowheader "Неактивный" [ref=e1117]:
+              - button "Неактивный" [ref=e1119] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1121]:
+              - link "" [ref=e1122] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_109
+                - generic [ref=e1123]: 
+          - row "автоскидка пуст 111 Скидка за количество 1.00 10.00 2025-01-12 14:20:00 2026-01-01 11:26:00 Неактивный " [ref=e1124]:
+            - cell "автоскидка пуст 111" [ref=e1125]:
+              - link "автоскидка пуст 111" [ref=e1126] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_108
+            - cell "Скидка за количество" [ref=e1127]
+            - cell "1.00" [ref=e1128]: "1.00"
+            - cell "10.00" [ref=e1129]: "10.00"
+            - cell "2025-01-12 14:20:00" [ref=e1130]
+            - cell "2026-01-01 11:26:00" [ref=e1131]
+            - rowheader "Неактивный" [ref=e1132]:
+              - button "Неактивный" [ref=e1134] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1136]:
+              - link "" [ref=e1137] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_108
+                - generic [ref=e1138]: 
+          - row "Madaminbek Auto discount Скидка за количество 3.00 10.00 2025-01-01 11:19:00 2026-01-01 11:26:00 Неактивный " [ref=e1139]:
+            - cell "Madaminbek Auto discount" [ref=e1140]:
+              - link "Madaminbek Auto discount" [ref=e1141] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_107
+            - cell "Скидка за количество" [ref=e1142]
+            - cell "3.00" [ref=e1143]: "3.00"
+            - cell "10.00" [ref=e1144]: "10.00"
+            - cell "2025-01-01 11:19:00" [ref=e1145]
+            - cell "2026-01-01 11:26:00" [ref=e1146]
+            - rowheader "Неактивный" [ref=e1147]:
+              - button "Неактивный" [ref=e1149] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1151]:
+              - link "" [ref=e1152] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_107
+                - generic [ref=e1153]: 
+          - row "Автоскидка 0.33 5 - 21% Скидка за количество 5.00 21.00 2024-12-03 15:08:00 2026-01-01 11:26:00 Неактивный " [ref=e1154]:
+            - cell "Автоскидка 0.33 5 - 21%" [ref=e1155]:
+              - link "Автоскидка 0.33 5 - 21%" [ref=e1156] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_106
+            - cell "Скидка за количество" [ref=e1157]
+            - cell "5.00" [ref=e1158]: "5.00"
+            - cell "21.00" [ref=e1159]: "21.00"
+            - cell "2024-12-03 15:08:00" [ref=e1160]
+            - cell "2026-01-01 11:26:00" [ref=e1161]
+            - rowheader "Неактивный" [ref=e1162]:
+              - button "Неактивный" [ref=e1164] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1166]:
+              - link "" [ref=e1167] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_106
+                - generic [ref=e1168]: 
+          - row "fghfgh MML категория (По общ. кол-во) 34.00 0.00 2024-11-14 17:13:00 2026-01-01 11:26:00 Неактивный " [ref=e1169]:
+            - cell "fghfgh" [ref=e1170]:
+              - link "fghfgh" [ref=e1171] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_105
+            - cell "MML категория (По общ. кол-во)" [ref=e1172]
+            - cell "34.00" [ref=e1173]: "34.00"
+            - cell "0.00" [ref=e1174]: "0.00"
+            - cell "2024-11-14 17:13:00" [ref=e1175]
+            - cell "2026-01-01 11:26:00" [ref=e1176]
+            - rowheader "Неактивный" [ref=e1177]:
+              - button "Неактивный" [ref=e1179] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1181]:
+              - link "" [ref=e1182] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_105
+                - generic [ref=e1183]: 
+          - row "sdfsdf Скидка за количество 3.00 4.00 2024-11-13 17:12:00 2026-01-01 11:26:00 Неактивный " [ref=e1184]:
+            - cell "sdfsdf" [ref=e1185]:
+              - link "sdfsdf" [ref=e1186] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_104
+            - cell "Скидка за количество" [ref=e1187]
+            - cell "3.00" [ref=e1188]: "3.00"
+            - cell "4.00" [ref=e1189]: "4.00"
+            - cell "2024-11-13 17:12:00" [ref=e1190]
+            - cell "2026-01-01 11:26:00" [ref=e1191]
+            - rowheader "Неактивный" [ref=e1192]:
+              - button "Неактивный" [ref=e1194] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1196]:
+              - link "" [ref=e1197] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_104
+                - generic [ref=e1198]: 
+          - row "Кол-во 80 Скидка за количество 80.00 21.00 2024-11-11 13:04:00 2026-01-01 11:26:00 Неактивный " [ref=e1199]:
+            - cell "Кол-во 80" [ref=e1200]:
+              - link "Кол-во 80" [ref=e1201] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_101
+            - cell "Скидка за количество" [ref=e1202]
+            - cell "80.00" [ref=e1203]: "80.00"
+            - cell "21.00" [ref=e1204]: "21.00"
+            - cell "2024-11-11 13:04:00" [ref=e1205]
+            - cell "2026-01-01 11:26:00" [ref=e1206]
+            - rowheader "Неактивный" [ref=e1207]:
+              - button "Неактивный" [ref=e1209] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1211]:
+              - link "" [ref=e1212] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_101
+                - generic [ref=e1213]: 
+          - row "Скидка кол-во 50-100 Скидка за количество 100.00 50.00 14.00 7.00 2024-11-11 12:58:00 2026-01-01 11:26:00 Неактивный " [ref=e1214]:
+            - cell "Скидка кол-во 50-100" [ref=e1215]:
+              - link "Скидка кол-во 50-100" [ref=e1216] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_99
+            - cell "Скидка за количество" [ref=e1217]
+            - cell "100.00 50.00" [ref=e1218]:
+              - text: "100.00"
+              - text: "50.00"
+            - cell "14.00 7.00" [ref=e1219]:
+              - text: "14.00"
+              - text: "7.00"
+            - cell "2024-11-11 12:58:00" [ref=e1220]
+            - cell "2026-01-01 11:26:00" [ref=e1221]
+            - rowheader "Неактивный" [ref=e1222]:
+              - button "Неактивный" [ref=e1224] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1226]:
+              - link "" [ref=e1227] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_99
+                - generic [ref=e1228]: 
+          - row "Сумма нап 500к - 1000к Скидка за сумму 1000000.00 500000.00 10.00 5.00 2024-11-11 12:55:00 2024-11-14 12:55:00 Неактивный " [ref=e1229]:
+            - cell "Сумма нап 500к - 1000к" [ref=e1230]:
+              - link "Сумма нап 500к - 1000к" [ref=e1231] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_97
+            - cell "Скидка за сумму" [ref=e1232]
+            - cell "1000000.00 500000.00" [ref=e1233]:
+              - text: "1000000.00"
+              - text: "500000.00"
+            - cell "10.00 5.00" [ref=e1234]:
+              - text: "10.00"
+              - text: "5.00"
+            - cell "2024-11-11 12:55:00" [ref=e1235]
+            - cell "2024-11-14 12:55:00" [ref=e1236]
+            - rowheader "Неактивный" [ref=e1237]:
+              - button "Неактивный" [ref=e1239] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1241]:
+              - link "" [ref=e1242] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_97
+                - generic [ref=e1243]: 
+          - row "Сумма Напитки 120000 - 500000 5 - 10% Скидка за сумму 500000.00 120000.00 10.00 5.00 2024-11-04 17:10:00 2024-11-10 17:10:00 Активный " [ref=e1244]:
+            - cell "Сумма Напитки 120000 - 500000 5 - 10%" [ref=e1245]:
+              - link "Сумма Напитки 120000 - 500000 5 - 10%" [ref=e1246] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_95
+            - cell "Скидка за сумму" [ref=e1247]
+            - cell "500000.00 120000.00" [ref=e1248]:
+              - text: "500000.00"
+              - text: "120000.00"
+            - cell "10.00 5.00" [ref=e1249]:
+              - text: "10.00"
+              - text: "5.00"
+            - cell "2024-11-04 17:10:00" [ref=e1250]
+            - cell "2024-11-10 17:10:00" [ref=e1251]
+            - rowheader "Активный" [ref=e1252]:
+              - button "Активный" [ref=e1254] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1256]:
+              - link "" [ref=e1257] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_95
+                - generic [ref=e1258]: 
+          - row "Скидка Напитки 10 - 20 шт 7% -14% Скидка за количество 50.00 10.00 14.00 7.00 2024-11-04 17:09:00 2024-11-09 17:09:00 Активный " [ref=e1259]:
+            - cell "Скидка Напитки 10 - 20 шт 7% -14%" [ref=e1260]:
+              - link "Скидка Напитки 10 - 20 шт 7% -14%" [ref=e1261] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_93
+            - cell "Скидка за количество" [ref=e1262]
+            - cell "50.00 10.00" [ref=e1263]:
+              - text: "50.00"
+              - text: "10.00"
+            - cell "14.00 7.00" [ref=e1264]:
+              - text: "14.00"
+              - text: "7.00"
+            - cell "2024-11-04 17:09:00" [ref=e1265]
+            - cell "2024-11-09 17:09:00" [ref=e1266]
+            - rowheader "Активный" [ref=e1267]:
+              - button "Активный" [ref=e1269] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1271]:
+              - link "" [ref=e1272] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_93
+                - generic [ref=e1273]: 
+          - row "rthrwth Скидка за количество 34.00 3.00 0000-00-00 00:00:00 2024-11-30 11:35:00 Неактивный " [ref=e1274]:
+            - cell "rthrwth" [ref=e1275]:
+              - link "rthrwth" [ref=e1276] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_92
+            - cell "Скидка за количество" [ref=e1277]
+            - cell "34.00" [ref=e1278]: "34.00"
+            - cell "3.00" [ref=e1279]: "3.00"
+            - cell "0000-00-00 00:00:00" [ref=e1280]
+            - cell "2024-11-30 11:35:00" [ref=e1281]
+            - rowheader "Неактивный" [ref=e1282]:
+              - button "Неактивный" [ref=e1284] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1286]:
+              - link "" [ref=e1287] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_92
+                - generic [ref=e1288]: 
+          - row "wedwed Скидка за количество 24.00 4.00 2024-11-05 10:27:00 2024-11-30 10:27:00 Неактивный " [ref=e1289]:
+            - cell "wedwed" [ref=e1290]:
+              - link "wedwed" [ref=e1291] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_91
+            - cell "Скидка за количество" [ref=e1292]
+            - cell "24.00" [ref=e1293]: "24.00"
+            - cell "4.00" [ref=e1294]: "4.00"
+            - cell "2024-11-05 10:27:00" [ref=e1295]
+            - cell "2024-11-30 10:27:00" [ref=e1296]
+            - rowheader "Неактивный" [ref=e1297]:
+              - button "Неактивный" [ref=e1299] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1301]:
+              - link "" [ref=e1302] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_91
+                - generic [ref=e1303]: 
+          - row "Тест Скидка за количество 50.00 10.00 0000-00-00 00:00:00 2024-11-30 11:35:00 Неактивный " [ref=e1304]:
+            - cell "Тест" [ref=e1305]:
+              - link "Тест" [ref=e1306] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_90
+            - cell "Скидка за количество" [ref=e1307]
+            - cell "50.00" [ref=e1308]: "50.00"
+            - cell "10.00" [ref=e1309]: "10.00"
+            - cell "0000-00-00 00:00:00" [ref=e1310]
+            - cell "2024-11-30 11:35:00" [ref=e1311]
+            - rowheader "Неактивный" [ref=e1312]:
+              - button "Неактивный" [ref=e1314] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1316]:
+              - link "" [ref=e1317] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_90
+                - generic [ref=e1318]: 
+          - row "sdvsdv Скидка за сумму 1234.00 123.00 4.00 2.00 2024-11-04 12:35:00 2024-11-24 12:35:00 Неактивный " [ref=e1319]:
+            - cell "sdvsdv" [ref=e1320]:
+              - link "sdvsdv" [ref=e1321] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_88
+            - cell "Скидка за сумму" [ref=e1322]
+            - cell "1234.00 123.00" [ref=e1323]:
+              - text: "1234.00"
+              - text: "123.00"
+            - cell "4.00 2.00" [ref=e1324]:
+              - text: "4.00"
+              - text: "2.00"
+            - cell "2024-11-04 12:35:00" [ref=e1325]
+            - cell "2024-11-24 12:35:00" [ref=e1326]
+            - rowheader "Неактивный" [ref=e1327]:
+              - button "Неактивный" [ref=e1329] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1331]:
+              - link "" [ref=e1332] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_88
+                - generic [ref=e1333]: 
+          - row "sdfsdf Скидка на комплект (кол-во) 12.00 23.00 12.00 23.00 2024-11-04 12:10:00 2024-11-30 12:10:00 Неактивный " [ref=e1334]:
+            - cell "sdfsdf" [ref=e1335]:
+              - link "sdfsdf" [ref=e1336] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_81
+            - cell "Скидка на комплект (кол-во)" [ref=e1337]
+            - cell "12.00 23.00" [ref=e1338]:
+              - text: "12.00"
+              - text: "23.00"
+            - cell "12.00 23.00" [ref=e1339]:
+              - text: "12.00"
+              - text: "23.00"
+            - cell "2024-11-04 12:10:00" [ref=e1340]
+            - cell "2024-11-30 12:10:00" [ref=e1341]
+            - rowheader "Неактивный" [ref=e1342]:
+              - button "Неактивный" [ref=e1344] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1346]:
+              - link "" [ref=e1347] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_81
+                - generic [ref=e1348]: 
+          - row "dfbdfbdfbdfb Скидка за сумму 1111.00 2222222.00 22.00 33.00 2024-11-04 12:31:00 2024-11-30 12:31:00 Неактивный " [ref=e1349]:
+            - cell "dfbdfbdfbdfb" [ref=e1350]:
+              - link "dfbdfbdfbdfb" [ref=e1351] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_85
+            - cell "Скидка за сумму" [ref=e1352]
+            - cell "1111.00 2222222.00" [ref=e1353]:
+              - text: "1111.00"
+              - text: "2222222.00"
+            - cell "22.00 33.00" [ref=e1354]:
+              - text: "22.00"
+              - text: "33.00"
+            - cell "2024-11-04 12:31:00" [ref=e1355]
+            - cell "2024-11-30 12:31:00" [ref=e1356]
+            - rowheader "Неактивный" [ref=e1357]:
+              - button "Неактивный" [ref=e1359] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1361]:
+              - link "" [ref=e1362] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_85
+                - generic [ref=e1363]: 
+          - row "ascsacasc Скидка за сумму 123123.00 12.00 2024-11-04 12:22:00 2024-11-30 12:22:00 Неактивный " [ref=e1364]:
+            - cell "ascsacasc" [ref=e1365]:
+              - link "ascsacasc" [ref=e1366] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_84
+            - cell "Скидка за сумму" [ref=e1367]
+            - cell "123123.00" [ref=e1368]: "123123.00"
+            - cell "12.00" [ref=e1369]: "12.00"
+            - cell "2024-11-04 12:22:00" [ref=e1370]
+            - cell "2024-11-30 12:22:00" [ref=e1371]
+            - rowheader "Неактивный" [ref=e1372]:
+              - button "Неактивный" [ref=e1374] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1376]:
+              - link "" [ref=e1377] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_84
+                - generic [ref=e1378]: 
+          - row "sdfsdf Скидка за количество 12.00 3.00 2024-11-04 12:20:00 2024-11-30 12:20:00 Неактивный " [ref=e1379]:
+            - cell "sdfsdf" [ref=e1380]:
+              - link "sdfsdf" [ref=e1381] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_83
+            - cell "Скидка за количество" [ref=e1382]
+            - cell "12.00" [ref=e1383]: "12.00"
+            - cell "3.00" [ref=e1384]: "3.00"
+            - cell "2024-11-04 12:20:00" [ref=e1385]
+            - cell "2024-11-30 12:20:00" [ref=e1386]
+            - rowheader "Неактивный" [ref=e1387]:
+              - button "Неактивный" [ref=e1389] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1391]:
+              - link "" [ref=e1392] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_83
+                - generic [ref=e1393]: 
+          - row "fgnfgnfgn Скидка за сумму 123123.00 343434.00 4.00 5.00 2024-11-04 12:02:00 2024-11-30 12:02:00 Неактивный " [ref=e1394]:
+            - cell "fgnfgnfgn" [ref=e1395]:
+              - link "fgnfgnfgn" [ref=e1396] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_80
+            - cell "Скидка за сумму" [ref=e1397]
+            - cell "123123.00 343434.00" [ref=e1398]:
+              - text: "123123.00"
+              - text: "343434.00"
+            - cell "4.00 5.00" [ref=e1399]:
+              - text: "4.00"
+              - text: "5.00"
+            - cell "2024-11-04 12:02:00" [ref=e1400]
+            - cell "2024-11-30 12:02:00" [ref=e1401]
+            - rowheader "Неактивный" [ref=e1402]:
+              - button "Неактивный" [ref=e1404] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1406]:
+              - link "" [ref=e1407] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_80
+                - generic [ref=e1408]: 
+          - row "ergergeg Скидка за количество 12.00 3.00 2024-11-04 11:52:00 2024-11-30 11:52:00 Неактивный " [ref=e1409]:
+            - cell "ergergeg" [ref=e1410]:
+              - link "ergergeg" [ref=e1411] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_79
+            - cell "Скидка за количество" [ref=e1412]
+            - cell "12.00" [ref=e1413]: "12.00"
+            - cell "3.00" [ref=e1414]: "3.00"
+            - cell "2024-11-04 11:52:00" [ref=e1415]
+            - cell "2024-11-30 11:52:00" [ref=e1416]
+            - rowheader "Неактивный" [ref=e1417]:
+              - button "Неактивный" [ref=e1419] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1421]:
+              - link "" [ref=e1422] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_79
+                - generic [ref=e1423]: 
+          - row "rtgrtgrt Скидка на комплект (кол-во) 3.00 6.00 2024-10-31 10:37:00 2024-11-10 10:37:00 Неактивный " [ref=e1424]:
+            - cell "rtgrtgrt" [ref=e1425]:
+              - link "rtgrtgrt" [ref=e1426] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_78
+            - cell "Скидка на комплект (кол-во)" [ref=e1427]
+            - cell "3.00" [ref=e1428]: "3.00"
+            - cell "6.00" [ref=e1429]: "6.00"
+            - cell "2024-10-31 10:37:00" [ref=e1430]
+            - cell "2024-11-10 10:37:00" [ref=e1431]
+            - rowheader "Неактивный" [ref=e1432]:
+              - button "Неактивный" [ref=e1434] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1436]:
+              - link "" [ref=e1437] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_78
+                - generic [ref=e1438]: 
+          - row "ПЭТ 10 -2% Скидка за количество 10.00 2.00 2024-10-28 10:27:00 2024-11-03 10:31:00 Неактивный " [ref=e1439]:
+            - cell "ПЭТ 10 -2%" [ref=e1440]:
+              - link "ПЭТ 10 -2%" [ref=e1441] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_77
+            - cell "Скидка за количество" [ref=e1442]
+            - cell "10.00" [ref=e1443]: "10.00"
+            - cell "2.00" [ref=e1444]: "2.00"
+            - cell "2024-10-28 10:27:00" [ref=e1445]
+            - cell "2024-11-03 10:31:00" [ref=e1446]
+            - rowheader "Неактивный" [ref=e1447]:
+              - button "Неактивный" [ref=e1449] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1451]:
+              - link "" [ref=e1452] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_77
+                - generic [ref=e1453]: 
+          - row "Комплект Напитки и шоколад 5, мин 4, 7% Скидка на комплект (кол-во) 5.00 7.00 2024-10-28 10:24:00 2024-11-03 10:24:00 Неактивный " [ref=e1454]:
+            - cell "Комплект Напитки и шоколад 5, мин 4, 7%" [ref=e1455]:
+              - link "Комплект Напитки и шоколад 5, мин 4, 7%" [ref=e1456] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_76
+            - cell "Скидка на комплект (кол-во)" [ref=e1457]
+            - cell "5.00" [ref=e1458]: "5.00"
+            - cell "7.00" [ref=e1459]: "7.00"
+            - cell "2024-10-28 10:24:00" [ref=e1460]
+            - cell "2024-11-03 10:24:00" [ref=e1461]
+            - rowheader "Неактивный" [ref=e1462]:
+              - button "Неактивный" [ref=e1464] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1466]:
+              - link "" [ref=e1467] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_76
+                - generic [ref=e1468]: 
+          - row "Комплект Напитки и шоколад 5, мин 4, 7% Скидка на комплект (кол-во) 5.00 7.00 2024-10-28 10:27:00 2024-11-03 10:27:00 Активный " [ref=e1469]:
+            - cell "Комплект Напитки и шоколад 5, мин 4, 7%" [ref=e1470]:
+              - link "Комплект Напитки и шоколад 5, мин 4, 7%" [ref=e1471] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_74
+            - cell "Скидка на комплект (кол-во)" [ref=e1472]
+            - cell "5.00" [ref=e1473]: "5.00"
+            - cell "7.00" [ref=e1474]: "7.00"
+            - cell "2024-10-28 10:27:00" [ref=e1475]
+            - cell "2024-11-03 10:27:00" [ref=e1476]
+            - rowheader "Активный" [ref=e1477]:
+              - button "Активный" [ref=e1479] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1481]:
+              - link "" [ref=e1482] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_74
+                - generic [ref=e1483]: 
+          - row "sdfsdf Скидка на комплект (кол-во) 23.00 12.00 5.00 3.00 2024-10-30 16:34:00 2024-11-10 16:34:00 Неактивный " [ref=e1484]:
+            - cell "sdfsdf" [ref=e1485]:
+              - link "sdfsdf" [ref=e1486] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_72
+            - cell "Скидка на комплект (кол-во)" [ref=e1487]
+            - cell "23.00 12.00" [ref=e1488]:
+              - text: "23.00"
+              - text: "12.00"
+            - cell "5.00 3.00" [ref=e1489]:
+              - text: "5.00"
+              - text: "3.00"
+            - cell "2024-10-30 16:34:00" [ref=e1490]
+            - cell "2024-11-10 16:34:00" [ref=e1491]
+            - rowheader "Неактивный" [ref=e1492]:
+              - button "Неактивный" [ref=e1494] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1496]:
+              - link "" [ref=e1497] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_72
+                - generic [ref=e1498]: 
+          - row "sdvsdv Скидка на комплект (кол-во) 12.00 3.00 2024-10-30 16:34:00 2024-11-10 16:34:00 Неактивный " [ref=e1499]:
+            - cell "sdvsdv" [ref=e1500]:
+              - link "sdvsdv" [ref=e1501] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_68
+            - cell "Скидка на комплект (кол-во)" [ref=e1502]
+            - cell "12.00" [ref=e1503]: "12.00"
+            - cell "3.00" [ref=e1504]: "3.00"
+            - cell "2024-10-30 16:34:00" [ref=e1505]
+            - cell "2024-11-10 16:34:00" [ref=e1506]
+            - rowheader "Неактивный" [ref=e1507]:
+              - button "Неактивный" [ref=e1509] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1511]:
+              - link "" [ref=e1512] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_68
+                - generic [ref=e1513]: 
+          - row "234ewqeqw Скидка за количество 12.00 12.00 3.00 3.00 2024-10-30 13:31:00 2024-11-10 13:31:00 Неактивный " [ref=e1514]:
+            - cell "234ewqeqw" [ref=e1515]:
+              - link "234ewqeqw" [ref=e1516] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_66
+            - cell "Скидка за количество" [ref=e1517]
+            - cell "12.00 12.00" [ref=e1518]:
+              - text: "12.00"
+              - text: "12.00"
+            - cell "3.00 3.00" [ref=e1519]:
+              - text: "3.00"
+              - text: "3.00"
+            - cell "2024-10-30 13:31:00" [ref=e1520]
+            - cell "2024-11-10 13:31:00" [ref=e1521]
+            - rowheader "Неактивный" [ref=e1522]:
+              - button "Неактивный" [ref=e1524] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1526]:
+              - link "" [ref=e1527] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_66
+                - generic [ref=e1528]: 
+          - row "sdfsdfsadfas Скидка за количество 24.00 33.00 5.00 3.00 2024-10-30 13:06:00 2024-11-10 13:06:00 Неактивный " [ref=e1529]:
+            - cell "sdfsdfsadfas" [ref=e1530]:
+              - link "sdfsdfsadfas" [ref=e1531] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_64
+            - cell "Скидка за количество" [ref=e1532]
+            - cell "24.00 33.00" [ref=e1533]:
+              - text: "24.00"
+              - text: "33.00"
+            - cell "5.00 3.00" [ref=e1534]:
+              - text: "5.00"
+              - text: "3.00"
+            - cell "2024-10-30 13:06:00" [ref=e1535]
+            - cell "2024-11-10 13:06:00" [ref=e1536]
+            - rowheader "Неактивный" [ref=e1537]:
+              - button "Неактивный" [ref=e1539] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1541]:
+              - link "" [ref=e1542] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_64
+                - generic [ref=e1543]: 
+          - row "rtrtgrtg Скидка за количество 343.00 3.00 2024-10-30 13:12:00 2024-11-10 13:12:00 Неактивный " [ref=e1544]:
+            - cell "rtrtgrtg" [ref=e1545]:
+              - link "rtrtgrtg" [ref=e1546] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_63
+            - cell "Скидка за количество" [ref=e1547]
+            - cell "343.00" [ref=e1548]: "343.00"
+            - cell "3.00" [ref=e1549]: "3.00"
+            - cell "2024-10-30 13:12:00" [ref=e1550]
+            - cell "2024-11-10 13:12:00" [ref=e1551]
+            - rowheader "Неактивный" [ref=e1552]:
+              - button "Неактивный" [ref=e1554] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1556]:
+              - link "" [ref=e1557] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_63
+                - generic [ref=e1558]: 
+          - row "zxczxczxczxc Скидка за количество 10.00 4.00 2024-10-29 15:02:00 2024-11-10 15:02:00 Неактивный " [ref=e1559]:
+            - cell "zxczxczxczxc" [ref=e1560]:
+              - link "zxczxczxczxc" [ref=e1561] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_60
+            - cell "Скидка за количество" [ref=e1562]
+            - cell "10.00" [ref=e1563]: "10.00"
+            - cell "4.00" [ref=e1564]: "4.00"
+            - cell "2024-10-29 15:02:00" [ref=e1565]
+            - cell "2024-11-10 15:02:00" [ref=e1566]
+            - rowheader "Неактивный" [ref=e1567]:
+              - button "Неактивный" [ref=e1569] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1571]:
+              - link "" [ref=e1572] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_60
+                - generic [ref=e1573]: 
+          - row "Chegirma Скидка за сумму 2.00 3.00 2024-10-01 11:26:00 2024-10-18 11:26:00 Активный " [ref=e1574]:
+            - cell "Chegirma" [ref=e1575]:
+              - link "Chegirma" [ref=e1576] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_56
+            - cell "Скидка за сумму" [ref=e1577]
+            - cell "2.00" [ref=e1578]: "2.00"
+            - cell "3.00" [ref=e1579]: "3.00"
+            - cell "2024-10-01 11:26:00" [ref=e1580]
+            - cell "2024-10-18 11:26:00" [ref=e1581]
+            - rowheader "Активный" [ref=e1582]:
+              - button "Активный" [ref=e1584] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1586]:
+              - link "" [ref=e1587] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_56
+                - generic [ref=e1588]: 
+          - row "ММЛ MML товары (По мин. кол-во) 5.00 10.00 2024-10-01 10:04:00 2024-10-31 10:04:00 Активный " [ref=e1589]:
+            - cell "ММЛ" [ref=e1590]:
+              - link "ММЛ" [ref=e1591] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_55
+            - cell "MML товары (По мин. кол-во)" [ref=e1592]
+            - cell "5.00" [ref=e1593]: "5.00"
+            - cell "10.00" [ref=e1594]: "10.00"
+            - cell "2024-10-01 10:04:00" [ref=e1595]
+            - cell "2024-10-31 10:04:00" [ref=e1596]
+            - rowheader "Активный" [ref=e1597]:
+              - button "Активный" [ref=e1599] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1601]:
+              - link "" [ref=e1602] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_55
+                - generic [ref=e1603]: 
+          - row "teeeeeeeeeeeeeeeeeeeeeest MML товары (По мин. кол-во) 2.00 12.00 2024-10-09 16:40:00 2024-10-31 16:40:00 Неактивный " [ref=e1604]:
+            - cell "teeeeeeeeeeeeeeeeeeeeeest" [ref=e1605]:
+              - link "teeeeeeeeeeeeeeeeeeeeeest" [ref=e1606] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_54
+            - cell "MML товары (По мин. кол-во)" [ref=e1607]
+            - cell "2.00" [ref=e1608]: "2.00"
+            - cell "12.00" [ref=e1609]: "12.00"
+            - cell "2024-10-09 16:40:00" [ref=e1610]
+            - cell "2024-10-31 16:40:00" [ref=e1611]
+            - rowheader "Неактивный" [ref=e1612]:
+              - button "Неактивный" [ref=e1614] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1616]:
+              - link "" [ref=e1617] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_54
+                - generic [ref=e1618]: 
+          - row "auto 5% 10000 sum Скидка за сумму 10000.00 5.00 2024-01-17 00:00:00 2024-10-17 09:42:00 Неактивный " [ref=e1619]:
+            - cell "auto 5% 10000 sum" [ref=e1620]:
+              - link "auto 5% 10000 sum" [ref=e1621] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_53
+            - cell "Скидка за сумму" [ref=e1622]
+            - cell "10000.00" [ref=e1623]: "10000.00"
+            - cell "5.00" [ref=e1624]: "5.00"
+            - cell "2024-01-17 00:00:00" [ref=e1625]
+            - cell "2024-10-17 09:42:00" [ref=e1626]
+            - rowheader "Неактивный" [ref=e1627]:
+              - button "Неактивный" [ref=e1629] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1631]:
+              - link "" [ref=e1632] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_53
+                - generic [ref=e1633]: 
+          - row "Madamin Скидка за сумму 750000.00 500000.00 250000.00 1.00 10.00 5.00 2024-09-18 11:35:00 2024-11-23 23:59:00 Неактивный " [ref=e1634]:
+            - cell "Madamin" [ref=e1635]:
+              - link "Madamin" [ref=e1636] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_50
+            - cell "Скидка за сумму" [ref=e1637]
+            - cell "750000.00 500000.00 250000.00" [ref=e1638]:
+              - text: "750000.00"
+              - text: "500000.00"
+              - text: "250000.00"
+            - cell "1.00 10.00 5.00" [ref=e1639]:
+              - text: "1.00"
+              - text: "10.00"
+              - text: "5.00"
+            - cell "2024-09-18 11:35:00" [ref=e1640]
+            - cell "2024-11-23 23:59:00" [ref=e1641]
+            - rowheader "Неактивный" [ref=e1642]:
+              - button "Неактивный" [ref=e1644] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1646]:
+              - link "" [ref=e1647] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_50
+                - generic [ref=e1648]: 
+          - row "удалить Скидка за количество 1221212.00 1.00 2024-08-08 10:32:00 2024-08-10 10:32:00 Активный " [ref=e1649]:
+            - cell "удалить" [ref=e1650]:
+              - link "удалить" [ref=e1651] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_49
+            - cell "Скидка за количество" [ref=e1652]
+            - cell "1221212.00" [ref=e1653]: "1221212.00"
+            - cell "1.00" [ref=e1654]: "1.00"
+            - cell "2024-08-08 10:32:00" [ref=e1655]
+            - cell "2024-08-10 10:32:00" [ref=e1656]
+            - rowheader "Активный" [ref=e1657]:
+              - button "Активный" [ref=e1659] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1661]:
+              - link "" [ref=e1662] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_49
+                - generic [ref=e1663]: 
+          - row "235 с Скидка за сумму 235000.00 23.50 2024-08-06 11:55:00 2024-08-08 11:55:00 Активный " [ref=e1664]:
+            - cell "235 с" [ref=e1665]:
+              - link "235 с" [ref=e1666] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_48
+            - cell "Скидка за сумму" [ref=e1667]
+            - cell "235000.00" [ref=e1668]: "235000.00"
+            - cell "23.50" [ref=e1669]: "23.50"
+            - cell "2024-08-06 11:55:00" [ref=e1670]
+            - cell "2024-08-08 11:55:00" [ref=e1671]
+            - rowheader "Активный" [ref=e1672]:
+              - button "Активный" [ref=e1674] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1676]:
+              - link "" [ref=e1677] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_48
+                - generic [ref=e1678]: 
+          - row "Тест delete Скидка за количество 1111.00 12.00 2024-07-26 17:02:00 2024-07-26 17:02:00 Активный " [ref=e1679]:
+            - cell "Тест delete" [ref=e1680]:
+              - link "Тест delete" [ref=e1681] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_47
+            - cell "Скидка за количество" [ref=e1682]
+            - cell "1111.00" [ref=e1683]: "1111.00"
+            - cell "12.00" [ref=e1684]: "12.00"
+            - cell "2024-07-26 17:02:00" [ref=e1685]
+            - cell "2024-07-26 17:02:00" [ref=e1686]
+            - rowheader "Активный" [ref=e1687]:
+              - button "Активный" [ref=e1689] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1691]:
+              - link "" [ref=e1692] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_47
+                - generic [ref=e1693]: 
+          - row "Сикдка Для изборанных1 Скидка за количество 2222222.00 21.00 2024-07-04 15:46:00 2024-07-23 15:46:00 Активный " [ref=e1694]:
+            - cell "Сикдка Для изборанных1" [ref=e1695]:
+              - link "Сикдка Для изборанных1" [ref=e1696] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_46
+            - cell "Скидка за количество" [ref=e1697]
+            - cell "2222222.00" [ref=e1698]: "2222222.00"
+            - cell "21.00" [ref=e1699]: "21.00"
+            - cell "2024-07-04 15:46:00" [ref=e1700]
+            - cell "2024-07-23 15:46:00" [ref=e1701]
+            - rowheader "Активный" [ref=e1702]:
+              - button "Активный" [ref=e1704] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1706]:
+              - link "" [ref=e1707] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_46
+                - generic [ref=e1708]: 
+          - row "Скидка для ибранных1 Скидка за количество 1111.00 11.00 2024-07-03 14:19:00 2024-07-12 14:19:00 Активный " [ref=e1709]:
+            - cell "Скидка для ибранных1" [ref=e1710]:
+              - link "Скидка для ибранных1" [ref=e1711] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_45
+            - cell "Скидка за количество" [ref=e1712]
+            - cell "1111.00" [ref=e1713]: "1111.00"
+            - cell "11.00" [ref=e1714]: "11.00"
+            - cell "2024-07-03 14:19:00" [ref=e1715]
+            - cell "2024-07-12 14:19:00" [ref=e1716]
+            - rowheader "Активный" [ref=e1717]:
+              - button "Активный" [ref=e1719] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1721]:
+              - link "" [ref=e1722] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_45
+                - generic [ref=e1723]: 
+          - row "auto skidka july Скидка за количество 30.00 20.00 10.00 10.00 7.00 5.00 2024-07-01 11:06:00 2024-07-31 11:06:00 Активный " [ref=e1724]:
+            - cell "auto skidka july" [ref=e1725]:
+              - link "auto skidka july" [ref=e1726] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_42
+            - cell "Скидка за количество" [ref=e1727]
+            - cell "30.00 20.00 10.00" [ref=e1728]:
+              - text: "30.00"
+              - text: "20.00"
+              - text: "10.00"
+            - cell "10.00 7.00 5.00" [ref=e1729]:
+              - text: "10.00"
+              - text: "7.00"
+              - text: "5.00"
+            - cell "2024-07-01 11:06:00" [ref=e1730]
+            - cell "2024-07-31 11:06:00" [ref=e1731]
+            - rowheader "Активный" [ref=e1732]:
+              - button "Активный" [ref=e1734] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1736]:
+              - link "" [ref=e1737] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_42
+                - generic [ref=e1738]: 
+          - row "СЗК томары черри 15 шт - 21% Скидка за количество 15.00 21.00 2024-07-01 12:47:00 2024-07-11 12:47:00 Активный " [ref=e1739]:
+            - cell "СЗК томары черри 15 шт - 21%" [ref=e1740]:
+              - link "СЗК томары черри 15 шт - 21%" [ref=e1741] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_41
+            - cell "Скидка за количество" [ref=e1742]
+            - cell "15.00" [ref=e1743]: "15.00"
+            - cell "21.00" [ref=e1744]: "21.00"
+            - cell "2024-07-01 12:47:00" [ref=e1745]
+            - cell "2024-07-11 12:47:00" [ref=e1746]
+            - rowheader "Активный" [ref=e1747]:
+              - button "Активный" [ref=e1749] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1751]:
+              - link "" [ref=e1752] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_41
+                - generic [ref=e1753]: 
+          - row "ММЛ 3 MML категория (По мин. кол-во) 11111.00 1.10 2024-06-24 12:45:00 2024-06-29 12:45:00 Активный " [ref=e1754]:
+            - cell "ММЛ 3" [ref=e1755]:
+              - link "ММЛ 3" [ref=e1756] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_40
+            - cell "MML категория (По мин. кол-во)" [ref=e1757]
+            - cell "11111.00" [ref=e1758]: "11111.00"
+            - cell "1.10" [ref=e1759]: "1.10"
+            - cell "2024-06-24 12:45:00" [ref=e1760]
+            - cell "2024-06-29 12:45:00" [ref=e1761]
+            - rowheader "Активный" [ref=e1762]:
+              - button "Активный" [ref=e1764] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1766]:
+              - link "" [ref=e1767] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_40
+                - generic [ref=e1768]: 
+          - row "ММЛ овощи и шоколад 2 MML товары (По мин. кол-во) 50.00 2.00 2024-06-24 12:40:00 2024-06-29 12:40:00 Активный " [ref=e1769]:
+            - cell "ММЛ овощи и шоколад 2" [ref=e1770]:
+              - link "ММЛ овощи и шоколад 2" [ref=e1771] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_39
+            - cell "MML товары (По мин. кол-во)" [ref=e1772]
+            - cell "50.00" [ref=e1773]: "50.00"
+            - cell "2.00" [ref=e1774]: "2.00"
+            - cell "2024-06-24 12:40:00" [ref=e1775]
+            - cell "2024-06-29 12:40:00" [ref=e1776]
+            - rowheader "Активный" [ref=e1777]:
+              - button "Активный" [ref=e1779] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1781]:
+              - link "" [ref=e1782] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_39
+                - generic [ref=e1783]: 
+          - row "ММЛ овощи и шоколад MML категория (По мин. кол-во) 50.00 2.00 2024-06-24 12:38:00 2024-06-29 12:38:00 Неактивный " [ref=e1784]:
+            - cell "ММЛ овощи и шоколад" [ref=e1785]:
+              - link "ММЛ овощи и шоколад" [ref=e1786] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_38
+            - cell "MML категория (По мин. кол-во)" [ref=e1787]
+            - cell "50.00" [ref=e1788]: "50.00"
+            - cell "2.00" [ref=e1789]: "2.00"
+            - cell "2024-06-24 12:38:00" [ref=e1790]
+            - cell "2024-06-29 12:38:00" [ref=e1791]
+            - rowheader "Неактивный" [ref=e1792]:
+              - button "Неактивный" [ref=e1794] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1796]:
+              - link "" [ref=e1797] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_38
+                - generic [ref=e1798]: 
+          - row "12123 Скидка за сумму 1123.00 100.00 2024-06-19 16:25:00 2024-09-20 23:59:00 Активный " [ref=e1799]:
+            - cell "12123" [ref=e1800]:
+              - link "12123" [ref=e1801] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_37
+            - cell "Скидка за сумму" [ref=e1802]
+            - cell "1123.00" [ref=e1803]: "1123.00"
+            - cell "100.00" [ref=e1804]: "100.00"
+            - cell "2024-06-19 16:25:00" [ref=e1805]
+            - cell "2024-09-20 23:59:00" [ref=e1806]
+            - rowheader "Активный" [ref=e1807]:
+              - button "Активный" [ref=e1809] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1811]:
+              - link "" [ref=e1812] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_37
+                - generic [ref=e1813]: 
+          - row "Удалить проветка типа клиента Скидка за количество 123322.00 100.00 2024-06-17 12:04:00 2024-06-24 12:04:00 Активный " [ref=e1814]:
+            - cell "Удалить проветка типа клиента" [ref=e1815]:
+              - link "Удалить проветка типа клиента" [ref=e1816] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_36
+            - cell "Скидка за количество" [ref=e1817]
+            - cell "123322.00" [ref=e1818]: "123322.00"
+            - cell "100.00" [ref=e1819]: "100.00"
+            - cell "2024-06-17 12:04:00" [ref=e1820]
+            - cell "2024-06-24 12:04:00" [ref=e1821]
+            - rowheader "Активный" [ref=e1822]:
+              - button "Активный" [ref=e1824] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1826]:
+              - link "" [ref=e1827] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_36
+                - generic [ref=e1828]: 
+          - row "Скидка 7,7 Морковь тип клиента, ковб Скидка за количество 10.00 7.70 2024-06-12 10:49:00 2024-06-19 10:49:00 Неактивный " [ref=e1829]:
+            - cell "Скидка 7,7 Морковь тип клиента, ковб" [ref=e1830]:
+              - link "Скидка 7,7 Морковь тип клиента, ковб" [ref=e1831] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_35
+            - cell "Скидка за количество" [ref=e1832]
+            - cell "10.00" [ref=e1833]: "10.00"
+            - cell "7.70" [ref=e1834]: "7.70"
+            - cell "2024-06-12 10:49:00" [ref=e1835]
+            - cell "2024-06-19 10:49:00" [ref=e1836]
+            - rowheader "Неактивный" [ref=e1837]:
+              - button "Неактивный" [ref=e1839] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1841]:
+              - link "" [ref=e1842] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_35
+                - generic [ref=e1843]: 
+          - row "Аваз объем скидка Скидка за объем 5.00 5.00 2024-06-10 11:43:00 2024-10-19 11:43:00 Активный " [ref=e1844]:
+            - cell "Аваз объем скидка" [ref=e1845]:
+              - link "Аваз объем скидка" [ref=e1846] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_34
+            - cell "Скидка за объем" [ref=e1847]
+            - cell "5.00" [ref=e1848]: "5.00"
+            - cell "5.00" [ref=e1849]: "5.00"
+            - cell "2024-06-10 11:43:00" [ref=e1850]
+            - cell "2024-10-19 11:43:00" [ref=e1851]
+            - rowheader "Активный" [ref=e1852]:
+              - button "Активный" [ref=e1854] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1856]:
+              - link "" [ref=e1857] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_34
+                - generic [ref=e1858]: 
+          - row "Чили дата 4% Скидка за количество 2.00 4.00 2024-05-09 15:49:00 2024-05-10 15:55:00 Активный " [ref=e1859]:
+            - cell "Чили дата 4%" [ref=e1860]:
+              - link "Чили дата 4%" [ref=e1861] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_33
+            - cell "Скидка за количество" [ref=e1862]
+            - cell "2.00" [ref=e1863]: "2.00"
+            - cell "4.00" [ref=e1864]: "4.00"
+            - cell "2024-05-09 15:49:00" [ref=e1865]
+            - cell "2024-05-10 15:55:00" [ref=e1866]
+            - rowheader "Активный" [ref=e1867]:
+              - button "Активный" [ref=e1869] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1871]:
+              - link "" [ref=e1872] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_33
+                - generic [ref=e1873]: 
+          - row "Кукуруза от 5шт Скидка за количество 5.00 7.00 2024-05-06 17:42:00 2024-07-10 17:42:00 Неактивный " [ref=e1874]:
+            - cell "Кукуруза от 5шт" [ref=e1875]:
+              - link "Кукуруза от 5шт" [ref=e1876] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_32
+            - cell "Скидка за количество" [ref=e1877]
+            - cell "5.00" [ref=e1878]: "5.00"
+            - cell "7.00" [ref=e1879]: "7.00"
+            - cell "2024-05-06 17:42:00" [ref=e1880]
+            - cell "2024-07-10 17:42:00" [ref=e1881]
+            - rowheader "Неактивный" [ref=e1882]:
+              - button "Неактивный" [ref=e1884] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1886]:
+              - link "" [ref=e1887] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_32
+                - generic [ref=e1888]: 
+          - row "Пустая Скидка за сумму 2.00 11.00 2024-04-24 09:29:00 2024-06-30 09:29:00 Неактивный " [ref=e1889]:
+            - cell "Пустая" [ref=e1890]:
+              - link "Пустая" [ref=e1891] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_31
+            - cell "Скидка за сумму" [ref=e1892]
+            - cell "2.00" [ref=e1893]: "2.00"
+            - cell "11.00" [ref=e1894]: "11.00"
+            - cell "2024-04-24 09:29:00" [ref=e1895]
+            - cell "2024-06-30 09:29:00" [ref=e1896]
+            - rowheader "Неактивный" [ref=e1897]:
+              - button "Неактивный" [ref=e1899] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1901]:
+              - link "" [ref=e1902] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_31
+                - generic [ref=e1903]: 
+          - row "Авт СЗК Coca-Cola стекло 0.33 Скидка за количество 2.00 20.00 2024-04-23 12:23:00 2024-04-27 12:23:00 Активный " [ref=e1904]:
+            - cell "Авт СЗК Coca-Cola стекло 0.33" [ref=e1905]:
+              - link "Авт СЗК Coca-Cola стекло 0.33" [ref=e1906] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_30
+            - cell "Скидка за количество" [ref=e1907]
+            - cell "2.00" [ref=e1908]: "2.00"
+            - cell "20.00" [ref=e1909]: "20.00"
+            - cell "2024-04-23 12:23:00" [ref=e1910]
+            - cell "2024-04-27 12:23:00" [ref=e1911]
+            - rowheader "Активный" [ref=e1912]:
+              - button "Активный" [ref=e1914] [cursor=pointer]: Активный
+            - columnheader "" [ref=e1916]:
+              - link "" [ref=e1917] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_30
+                - generic [ref=e1918]: 
+          - row "ММЛ категории по обще MML категория (По общ. кол-во) 50.00 7.00 2024-04-17 17:35:00 2024-09-12 17:35:00 Неактивный " [ref=e1919]:
+            - cell "ММЛ категории по обще" [ref=e1920]:
+              - link "ММЛ категории по обще" [ref=e1921] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_29
+            - cell "MML категория (По общ. кол-во)" [ref=e1922]
+            - cell "50.00" [ref=e1923]: "50.00"
+            - cell "7.00" [ref=e1924]: "7.00"
+            - cell "2024-04-17 17:35:00" [ref=e1925]
+            - cell "2024-09-12 17:35:00" [ref=e1926]
+            - rowheader "Неактивный" [ref=e1927]:
+              - button "Неактивный" [ref=e1929] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1931]:
+              - link "" [ref=e1932] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_29
+                - generic [ref=e1933]: 
+          - row "ММЛ категории по мин кол-во MML категория (По мин. кол-во) 50.00 7.00 2024-04-16 17:18:00 2024-08-15 17:18:00 Неактивный " [ref=e1934]:
+            - cell "ММЛ категории по мин кол-во" [ref=e1935]:
+              - link "ММЛ категории по мин кол-во" [ref=e1936] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_28
+            - cell "MML категория (По мин. кол-во)" [ref=e1937]
+            - cell "50.00" [ref=e1938]: "50.00"
+            - cell "7.00" [ref=e1939]: "7.00"
+            - cell "2024-04-16 17:18:00" [ref=e1940]
+            - cell "2024-08-15 17:18:00" [ref=e1941]
+            - rowheader "Неактивный" [ref=e1942]:
+              - button "Неактивный" [ref=e1944] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1946]:
+              - link "" [ref=e1947] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_28
+                - generic [ref=e1948]: 
+          - row "ММЛ товары по макс кол-во 24.00 5.00 2024-04-17 16:23:00 2024-09-12 16:23:00 Неактивный " [ref=e1949]:
+            - cell "ММЛ товары по макс кол-во" [ref=e1950]:
+              - link "ММЛ товары по макс кол-во" [ref=e1951] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_27
+            - cell [ref=e1952]
+            - cell "24.00" [ref=e1953]: "24.00"
+            - cell "5.00" [ref=e1954]: "5.00"
+            - cell "2024-04-17 16:23:00" [ref=e1955]
+            - cell "2024-09-12 16:23:00" [ref=e1956]
+            - rowheader "Неактивный" [ref=e1957]:
+              - button "Неактивный" [ref=e1959] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1961]:
+              - link "" [ref=e1962] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_27
+                - generic [ref=e1963]: 
+          - row "ММЛ кат по общ кол-во MML категория (По общ. кол-во) 50.00 7.00 2024-04-17 16:10:00 2024-08-22 16:10:00 Неактивный " [ref=e1964]:
+            - cell "ММЛ кат по общ кол-во" [ref=e1965]:
+              - link "ММЛ кат по общ кол-во" [ref=e1966] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_26
+            - cell "MML категория (По общ. кол-во)" [ref=e1967]
+            - cell "50.00" [ref=e1968]: "50.00"
+            - cell "7.00" [ref=e1969]: "7.00"
+            - cell "2024-04-17 16:10:00" [ref=e1970]
+            - cell "2024-08-22 16:10:00" [ref=e1971]
+            - rowheader "Неактивный" [ref=e1972]:
+              - button "Неактивный" [ref=e1974] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1976]:
+              - link "" [ref=e1977] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_26
+                - generic [ref=e1978]: 
+          - row "ММЛ товары по мак кол-во 50.00 7.00 2024-04-17 16:08:00 2024-09-12 16:08:00 Неактивный " [ref=e1979]:
+            - cell "ММЛ товары по мак кол-во" [ref=e1980]:
+              - link "ММЛ товары по мак кол-во" [ref=e1981] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_25
+            - cell [ref=e1982]
+            - cell "50.00" [ref=e1983]: "50.00"
+            - cell "7.00" [ref=e1984]: "7.00"
+            - cell "2024-04-17 16:08:00" [ref=e1985]
+            - cell "2024-09-12 16:08:00" [ref=e1986]
+            - rowheader "Неактивный" [ref=e1987]:
+              - button "Неактивный" [ref=e1989] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e1991]:
+              - link "" [ref=e1992] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_25
+                - generic [ref=e1993]: 
+          - row "ММЛ категории по мин кол-во MML категория (По мин. кол-во) 50.00 7.00 2024-04-17 16:05:00 2024-08-01 16:05:00 Неактивный " [ref=e1994]:
+            - cell "ММЛ категории по мин кол-во" [ref=e1995]:
+              - link "ММЛ категории по мин кол-во" [ref=e1996] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_24
+            - cell "MML категория (По мин. кол-во)" [ref=e1997]
+            - cell "50.00" [ref=e1998]: "50.00"
+            - cell "7.00" [ref=e1999]: "7.00"
+            - cell "2024-04-17 16:05:00" [ref=e2000]
+            - cell "2024-08-01 16:05:00" [ref=e2001]
+            - rowheader "Неактивный" [ref=e2002]:
+              - button "Неактивный" [ref=e2004] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2006]:
+              - link "" [ref=e2007] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_24
+                - generic [ref=e2008]: 
+          - row "ММЛ товары по обш кол-во MML товары (По общ. кол-во) 24.00 5.00 2024-04-17 15:54:00 2024-10-17 15:54:00 Неактивный " [ref=e2009]:
+            - cell "ММЛ товары по обш кол-во" [ref=e2010]:
+              - link "ММЛ товары по обш кол-во" [ref=e2011] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_23
+            - cell "MML товары (По общ. кол-во)" [ref=e2012]
+            - cell "24.00" [ref=e2013]: "24.00"
+            - cell "5.00" [ref=e2014]: "5.00"
+            - cell "2024-04-17 15:54:00" [ref=e2015]
+            - cell "2024-10-17 15:54:00" [ref=e2016]
+            - rowheader "Неактивный" [ref=e2017]:
+              - button "Неактивный" [ref=e2019] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2021]:
+              - link "" [ref=e2022] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_23
+                - generic [ref=e2023]: 
+          - row "ММЛ товары по макс кол-во 24.00 5.00 2024-04-17 15:51:00 2024-09-13 15:51:00 Неактивный " [ref=e2024]:
+            - cell "ММЛ товары по макс кол-во" [ref=e2025]:
+              - link "ММЛ товары по макс кол-во" [ref=e2026] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_22
+            - cell [ref=e2027]
+            - cell "24.00" [ref=e2028]: "24.00"
+            - cell "5.00" [ref=e2029]: "5.00"
+            - cell "2024-04-17 15:51:00" [ref=e2030]
+            - cell "2024-09-13 15:51:00" [ref=e2031]
+            - rowheader "Неактивный" [ref=e2032]:
+              - button "Неактивный" [ref=e2034] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2036]:
+              - link "" [ref=e2037] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_22
+                - generic [ref=e2038]: 
+          - row "ММЛ товары по мин кол-во MML товары (По мин. кол-во) 24.00 5.00 2024-04-17 15:51:00 2024-08-16 15:51:00 Неактивный " [ref=e2039]:
+            - cell "ММЛ товары по мин кол-во" [ref=e2040]:
+              - link "ММЛ товары по мин кол-во" [ref=e2041] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_21
+            - cell "MML товары (По мин. кол-во)" [ref=e2042]
+            - cell "24.00" [ref=e2043]: "24.00"
+            - cell "5.00" [ref=e2044]: "5.00"
+            - cell "2024-04-17 15:51:00" [ref=e2045]
+            - cell "2024-08-16 15:51:00" [ref=e2046]
+            - rowheader "Неактивный" [ref=e2047]:
+              - button "Неактивный" [ref=e2049] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2051]:
+              - link "" [ref=e2052] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_21
+                - generic [ref=e2053]: 
+          - row "ММЛ товары по общ кол-во MML товары (По общ. кол-во) 24.00 5.00 2024-04-17 15:23:00 2024-09-19 15:23:00 Неактивный " [ref=e2054]:
+            - cell "ММЛ товары по общ кол-во" [ref=e2055]:
+              - link "ММЛ товары по общ кол-во" [ref=e2056] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_20
+            - cell "MML товары (По общ. кол-во)" [ref=e2057]
+            - cell "24.00" [ref=e2058]: "24.00"
+            - cell "5.00" [ref=e2059]: "5.00"
+            - cell "2024-04-17 15:23:00" [ref=e2060]
+            - cell "2024-09-19 15:23:00" [ref=e2061]
+            - rowheader "Неактивный" [ref=e2062]:
+              - button "Неактивный" [ref=e2064] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2066]:
+              - link "" [ref=e2067] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_20
+                - generic [ref=e2068]: 
+          - row "ММЛ товары по макс кол-во 24.00 1.00 2024-04-17 15:19:00 2024-10-17 15:19:00 Неактивный " [ref=e2069]:
+            - cell "ММЛ товары по макс кол-во" [ref=e2070]:
+              - link "ММЛ товары по макс кол-во" [ref=e2071] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_19
+            - cell [ref=e2072]
+            - cell "24.00" [ref=e2073]: "24.00"
+            - cell "1.00" [ref=e2074]: "1.00"
+            - cell "2024-04-17 15:19:00" [ref=e2075]
+            - cell "2024-10-17 15:19:00" [ref=e2076]
+            - rowheader "Неактивный" [ref=e2077]:
+              - button "Неактивный" [ref=e2079] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2081]:
+              - link "" [ref=e2082] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_19
+                - generic [ref=e2083]: 
+          - row "ММЛ товары по мин кол-во MML товары (По мин. кол-во) 24.00 5.00 2024-04-17 15:12:00 2024-07-11 15:12:00 Неактивный " [ref=e2084]:
+            - cell "ММЛ товары по мин кол-во" [ref=e2085]:
+              - link "ММЛ товары по мин кол-во" [ref=e2086] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_18
+            - cell "MML товары (По мин. кол-во)" [ref=e2087]
+            - cell "24.00" [ref=e2088]: "24.00"
+            - cell "5.00" [ref=e2089]: "5.00"
+            - cell "2024-04-17 15:12:00" [ref=e2090]
+            - cell "2024-07-11 15:12:00" [ref=e2091]
+            - rowheader "Неактивный" [ref=e2092]:
+              - button "Неактивный" [ref=e2094] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2096]:
+              - link "" [ref=e2097] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_18
+                - generic [ref=e2098]: 
+          - row "СЗС редис от 20000 - 10% Скидка за сумму 20000.00 10.00 2024-02-05 11:34:00 2024-05-24 11:34:00 Активный " [ref=e2099]:
+            - cell "СЗС редис от 20000 - 10%" [ref=e2100]:
+              - link "СЗС редис от 20000 - 10%" [ref=e2101] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_17
+            - cell "Скидка за сумму" [ref=e2102]
+            - cell "20000.00" [ref=e2103]: "20000.00"
+            - cell "10.00" [ref=e2104]: "10.00"
+            - cell "2024-02-05 11:34:00" [ref=e2105]
+            - cell "2024-05-24 11:34:00" [ref=e2106]
+            - rowheader "Активный" [ref=e2107]:
+              - button "Активный" [ref=e2109] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2111]:
+              - link "" [ref=e2112] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_17
+                - generic [ref=e2113]: 
+          - row "СЗС кукуруза от 20000 Скидка за сумму 20000.00 7.00 2024-01-29 16:48:00 2024-04-05 16:48:00 Активный " [ref=e2114]:
+            - cell "СЗС кукуруза от 20000" [ref=e2115]:
+              - link "СЗС кукуруза от 20000" [ref=e2116] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_16
+            - cell "Скидка за сумму" [ref=e2117]
+            - cell "20000.00" [ref=e2118]: "20000.00"
+            - cell "7.00" [ref=e2119]: "7.00"
+            - cell "2024-01-29 16:48:00" [ref=e2120]
+            - cell "2024-04-05 16:48:00" [ref=e2121]
+            - rowheader "Активный" [ref=e2122]:
+              - button "Активный" [ref=e2124] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2126]:
+              - link "" [ref=e2127] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_16
+                - generic [ref=e2128]: 
+          - row "СЗС кукуруза от 20000 Скидка за сумму 20000.00 7.00 2024-01-29 16:42:00 2024-06-08 16:42:00 Активный " [ref=e2129]:
+            - cell "СЗС кукуруза от 20000" [ref=e2130]:
+              - link "СЗС кукуруза от 20000" [ref=e2131] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_15
+            - cell "Скидка за сумму" [ref=e2132]
+            - cell "20000.00" [ref=e2133]: "20000.00"
+            - cell "7.00" [ref=e2134]: "7.00"
+            - cell "2024-01-29 16:42:00" [ref=e2135]
+            - cell "2024-06-08 16:42:00" [ref=e2136]
+            - rowheader "Активный" [ref=e2137]:
+              - button "Активный" [ref=e2139] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2141]:
+              - link "" [ref=e2142] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_15
+                - generic [ref=e2143]: 
+          - row "Arnold,Inom,Gleb 5% Скидка за сумму 1000.00 5.00 2023-11-22 00:00:00 2024-03-08 23:59:00 Активный " [ref=e2144]:
+            - cell "Arnold,Inom,Gleb 5%" [ref=e2145]:
+              - link "Arnold,Inom,Gleb 5%" [ref=e2146] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_14
+            - cell "Скидка за сумму" [ref=e2147]
+            - cell "1000.00" [ref=e2148]: "1000.00"
+            - cell "5.00" [ref=e2149]: "5.00"
+            - cell "2023-11-22 00:00:00" [ref=e2150]
+            - cell "2024-03-08 23:59:00" [ref=e2151]
+            - rowheader "Активный" [ref=e2152]:
+              - button "Активный" [ref=e2154] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2156]:
+              - link "" [ref=e2157] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_14
+                - generic [ref=e2158]: 
+          - row "Test results Скидка за количество 1.00 1.00 2023-12-08 06:08:00 2023-12-30 08:08:00 Активный " [ref=e2159]:
+            - cell "Test results" [ref=e2160]:
+              - link "Test results" [ref=e2161] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_13
+            - cell "Скидка за количество" [ref=e2162]
+            - cell "1.00" [ref=e2163]: "1.00"
+            - cell "1.00" [ref=e2164]: "1.00"
+            - cell "2023-12-08 06:08:00" [ref=e2165]
+            - cell "2023-12-30 08:08:00" [ref=e2166]
+            - rowheader "Активный" [ref=e2167]:
+              - button "Активный" [ref=e2169] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2171]:
+              - link "" [ref=e2172] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_13
+                - generic [ref=e2173]: 
+          - row "АСЗС 40% Напиток кофейный Nescafe 3в1 Мягкий 14.5г Скидка за сумму 11.00 39.00 2023-11-06 12:33:00 2026-01-01 11:26:00 Неактивный " [ref=e2174]:
+            - cell "АСЗС 40% Напиток кофейный Nescafe 3в1 Мягкий 14.5г" [ref=e2175]:
+              - link "АСЗС 40% Напиток кофейный Nescafe 3в1 Мягкий 14.5г" [ref=e2176] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_11
+            - cell "Скидка за сумму" [ref=e2177]
+            - cell "11.00" [ref=e2178]: "11.00"
+            - cell "39.00" [ref=e2179]: "39.00"
+            - cell "2023-11-06 12:33:00" [ref=e2180]
+            - cell "2026-01-01 11:26:00" [ref=e2181]
+            - rowheader "Неактивный" [ref=e2182]:
+              - button "Неактивный" [ref=e2184] [cursor=pointer]: Неактивный
+            - columnheader "" [ref=e2186]:
+              - link "" [ref=e2187] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_11
+                - generic [ref=e2188]: 
+          - row "Автоскидка на 2 товара Скидка за количество 3.00 5.00 2023-11-15 15:00:00 2024-02-03 15:00:00 Активный " [ref=e2189]:
+            - cell "Автоскидка на 2 товара" [ref=e2190]:
+              - link "Автоскидка на 2 товара" [ref=e2191] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_8
+            - cell "Скидка за количество" [ref=e2192]
+            - cell "3.00" [ref=e2193]: "3.00"
+            - cell "5.00" [ref=e2194]: "5.00"
+            - cell "2023-11-15 15:00:00" [ref=e2195]
+            - cell "2024-02-03 15:00:00" [ref=e2196]
+            - rowheader "Активный" [ref=e2197]:
+              - button "Активный" [ref=e2199] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2201]:
+              - link "" [ref=e2202] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_8
+                - generic [ref=e2203]: 
+          - row "вольво полторашка Скидка за количество 1.00 1.50 2023-10-16 13:57:00 2023-11-22 13:57:00 Активный " [ref=e2204]:
+            - cell "вольво полторашка" [ref=e2205]:
+              - link "вольво полторашка" [ref=e2206] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_5
+            - cell "Скидка за количество" [ref=e2207]
+            - cell "1.00" [ref=e2208]: "1.00"
+            - cell "1.50" [ref=e2209]: "1.50"
+            - cell "2023-10-16 13:57:00" [ref=e2210]
+            - cell "2023-11-22 13:57:00" [ref=e2211]
+            - rowheader "Активный" [ref=e2212]:
+              - button "Активный" [ref=e2214] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2216]:
+              - link "" [ref=e2217] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_5
+                - generic [ref=e2218]: 
+          - row "200 = 10% Скидка за количество 200.00 10.00 2023-08-25 12:23:00 2023-09-22 12:23:00 Активный " [ref=e2219]:
+            - cell "200 = 10%" [ref=e2220]:
+              - link "200 = 10%" [ref=e2221] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_4
+            - cell "Скидка за количество" [ref=e2222]
+            - cell "200.00" [ref=e2223]: "200.00"
+            - cell "10.00" [ref=e2224]: "10.00"
+            - cell "2023-08-25 12:23:00" [ref=e2225]
+            - cell "2023-09-22 12:23:00" [ref=e2226]
+            - rowheader "Активный" [ref=e2227]:
+              - button "Активный" [ref=e2229] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2231]:
+              - link "" [ref=e2232] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_4
+                - generic [ref=e2233]: 
+          - row "20% Скидка за сумму 100000.00 20.00 2023-08-25 12:15:00 2023-09-29 12:15:00 Активный " [ref=e2234]:
+            - cell "20%" [ref=e2235]:
+              - link "20%" [ref=e2236] [cursor=pointer]:
+                - /url: /settings/skidka/view?skidkaId=d0_3
+            - cell "Скидка за сумму" [ref=e2237]
+            - cell "100000.00" [ref=e2238]: "100000.00"
+            - cell "20.00" [ref=e2239]: "20.00"
+            - cell "2023-08-25 12:15:00" [ref=e2240]
+            - cell "2023-09-29 12:15:00" [ref=e2241]
+            - rowheader "Активный" [ref=e2242]:
+              - button "Активный" [ref=e2244] [cursor=pointer]: Активный
+            - columnheader "" [ref=e2246]:
+              - link "" [ref=e2247] [cursor=pointer]:
+                - /url: /settings/skidka/update?skidkaId=d0_3
+                - generic [ref=e2248]: 

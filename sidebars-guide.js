@@ -38,7 +38,9 @@ const sidebars = {
       items: [
         'getting-started/add-clients',
         'getting-started/set-up-warehouses',
+        'getting-started/configure-discounts-bonuses',
         'getting-started/stock-and-purchases',
+        'getting-started/stock-write-off',
       ],
     },
     {
@@ -49,6 +51,7 @@ const sidebars = {
         'daily-use/first-order',
         'daily-use/plan-visits',
         'daily-use/track-orders',
+        'daily-use/approve-clients',
       ],
     },
     {

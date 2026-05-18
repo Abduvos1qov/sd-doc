@@ -1,0 +1,4 @@
+[      93ms] [LOG] loading translations for module: audit lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     125ms] [LOG] loading translations for module: audit lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     142ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/audit.json:0
+[     171ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/audit.json:0

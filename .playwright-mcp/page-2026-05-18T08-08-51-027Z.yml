@@ -1,0 +1,217 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - complementary [ref=e103]:
+        - heading "⚙️ Настройки" [level=5] [ref=e104]
+        - navigation [ref=e105]:
+          - link "1. Профиль компании" [ref=e106] [cursor=pointer]:
+            - /url: /settings/diler
+          - link "2. Способ оплаты" [ref=e107] [cursor=pointer]:
+            - /url: /settings/currency
+          - link "3. Единицы измерения" [ref=e108] [cursor=pointer]:
+            - /url: /settings/unit
+          - link "4. Территория" [ref=e109] [cursor=pointer]:
+            - /url: /settings/city
+          - link "5. Категория клиента" [ref=e110] [cursor=pointer]:
+            - /url: /settings/clientCategory
+          - link "6. Тип клиента" [ref=e111] [cursor=pointer]:
+            - /url: /settings/clientType
+          - link "7. Категория / Группировка" [ref=e112] [cursor=pointer]:
+            - /url: /settings/view/productCategory
+          - link "8. Товар" [ref=e113] [cursor=pointer]:
+            - /url: /settings/view/product
+          - link "9. Тип цены" [ref=e114] [cursor=pointer]:
+            - /url: /settings/priceType
+          - link "10. Цена" [ref=e115] [cursor=pointer]:
+            - /url: /settings/prices
+          - link "11. Причины отказа" [ref=e116] [cursor=pointer]:
+            - /url: /settings/reject
+          - link "12. Причины возврата/обмена" [ref=e117] [cursor=pointer]:
+            - /url: /settings/rejectDefect
+          - link "13. Категория фотоотчета" [ref=e118] [cursor=pointer]:
+            - /url: /settings/photoReportCategory
+          - link "14. Тип инвентаря" [ref=e119] [cursor=pointer]:
+            - /url: /settings/inventoryType
+          - link "15. Бонусы и скидки" [ref=e120] [cursor=pointer]:
+            - /url: /settings/bonus
+          - link "16. RLP Бонусы" [ref=e121] [cursor=pointer]:
+            - /url: /settings/rlpBonus
+          - link "17. Пользователи" [ref=e122] [cursor=pointer]:
+            - /url: /settings/user
+          - link "18. Партнеры" [ref=e123] [cursor=pointer]:
+            - /url: /partners/list
+          - link "19. Примечание к заказу" [ref=e124] [cursor=pointer]:
+            - /url: /settings/orderComment
+          - link "20. Закрытия" [ref=e125] [cursor=pointer]:
+            - /url: /settings/closed
+          - link "21. Типы задач" [ref=e126] [cursor=pointer]:
+            - /url: /settings/taskType
+          - link "22. Направление торговли" [ref=e127] [cursor=pointer]:
+            - /url: /settings/tradeDirection
+          - link "23. Канал сбыта" [ref=e128] [cursor=pointer]:
+            - /url: /settings/channel
+          - link "24. Тип коробки" [ref=e129] [cursor=pointer]:
+            - /url: /settings/productCaseType
+          - link "25. Тип базы знаний" [ref=e130] [cursor=pointer]:
+            - /url: /settings/knowledgeCategory
+          - link "26. База знаний" [ref=e131] [cursor=pointer]:
+            - /url: /settings/knowledgePost
+          - link "27. Интеграция" [ref=e132] [cursor=pointer]:
+            - /url: /settings/integration
+          - link "28. Принтеры" [ref=e133] [cursor=pointer]:
+            - /url: /settings/printer
+          - link "29. Тара" [ref=e134] [cursor=pointer]:
+            - /url: /settings/tara
+          - link "30. Группа инвентаря" [ref=e135] [cursor=pointer]:
+            - /url: /settings/inventoryGroup
+          - link "31. Теги" [ref=e136] [cursor=pointer]:
+            - /url: /settings/tag
+          - separator [ref=e137]
+          - link "32. Приложения" [ref=e138] [cursor=pointer]:
+            - /url: /settings/applications
+          - link "33. Резервное копирование" [ref=e139] [cursor=pointer]:
+            - /url: /settings/backup
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - heading [level=4]
+        - generic [ref=e143]:
+          - generic [ref=e145]:
+            - link "Видео-инструкция ↗" [ref=e146] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=Ec1WPsZ_jSs
+              - img [ref=e147]
+              - text: Видео-инструкция ↗
+            - generic [ref=e151]:
+              - generic [ref=e152]:
+                - generic [ref=e153] [cursor=pointer]:
+                  - generic [ref=e154]: 
+                  - text: Добавить новый товар
+                - link " Добавить новый(е) товар(ы)" [ref=e155] [cursor=pointer]:
+                  - /url: /settings/product/addproducts
+                  - generic [ref=e156]: 
+                  - text: Добавить новый(е) товар(ы)
+                - link "Импортировать/Обновить товары с Excel" [ref=e157] [cursor=pointer]:
+                  - /url: /settings/product/importUpdate2
+                - link "Группа продуктов" [ref=e159] [cursor=pointer]:
+                  - /url: /settings/productGroup
+                - link "Бренд" [ref=e160] [cursor=pointer]:
+                  - /url: /settings/brand
+                - link "'Производитель':" [ref=e161] [cursor=pointer]:
+                  - /url: /settings/producer
+                - link "'Сегмент':" [ref=e162] [cursor=pointer]:
+                  - /url: /settings/segment
+              - separator [ref=e163]
+              - generic:
+                - generic [ref=e165]:
+                  - button "Направление торговли" [ref=e166] [cursor=pointer]:
+                    - generic [ref=e167]: Направление торговли
+                  - text:       
+                - generic [ref=e170]:
+                  - button "Группы" [ref=e171] [cursor=pointer]:
+                    - generic [ref=e172]: Группы
+                  - text:    
+                - generic [ref=e175]:
+                  - button "Категория" [ref=e176] [cursor=pointer]:
+                    - generic [ref=e177]: Категория
+                  - text:               
+                - button "Фильтр" [ref=e180] [cursor=pointer]
+          - generic [ref=e182]:
+            - list [ref=e183]:
+              - listitem [ref=e184]:
+                - link "Активные" [ref=e185]:
+                  - /url: "#active"
+              - listitem [ref=e186]:
+                - link "Неактивные" [ref=e187] [cursor=pointer]:
+                  - /url: "#not-active"
+            - generic [ref=e189]:
+              - table
+          - button "Сортировка товаров" [ref=e190] [cursor=pointer]
+          - button "Активировать/деактивировать товары" [ref=e191] [cursor=pointer]
+          - generic [ref=e192]:
+            - generic [ref=e193] [cursor=pointer]: Обновление товаров
+            - button "Toggle Dropdown" [ref=e194] [cursor=pointer]:
+              - generic [ref=e196]: Toggle Dropdown

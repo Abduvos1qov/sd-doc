@@ -278,6 +278,14 @@ What's on it:
 - Who / when / what changed
 - Useful for disputes ("the agent says they visited but the system says no")
 
+### 3.6 Unconfirmed clients (approval queue)
+
+URL: `/clients/approval`
+
+![Unconfirmed clients](/screens/guide/62-clients-approval.png)
+
+Newly-added clients from the field await your review here before going active.
+
 ---
 
 ## 4. Team (Команда)
@@ -399,6 +407,14 @@ What's on it:
 - Columns: serial №, type, model, current client, install date, last audit
 - Useful for trade-marketing teams
 
+### 5.5 Stock write-offs
+
+URL: `/stock/excretion`
+
+![Stock write-off list](/screens/guide/63-stock-write-off.png)
+
+Removing damaged, expired or miscounted stock from inventory.
+
 ---
 
 ## 6. Planning
@@ -418,6 +434,14 @@ What's on it:
 Where you go next:
 - **Save** → mobile app picks up the new plan on next sync
 - **Print** → printable PDF for the agent
+
+### 6.2 Per-outlet planning
+
+URL: `/planning/outlet`
+
+![Per-outlet planning](/screens/guide/65-planning-outlet.png)
+
+Pick visit days per client (vs the agent-centric monthly view).
 
 ---
 
@@ -459,6 +483,22 @@ What's on it:
 - Columns: planned visits, completed visits, % coverage, with-order %, photo %
 - Drill down by clicking the agent's count
 
+### 7.4 Sale-detail report
+
+URL: `/report/saleDetail`
+
+![Sale detail report](/screens/guide/60-report-saledetail.png)
+
+Per-line drill-down of every sale — agent, client, product, quantity, price, discount, total.
+
+### 7.5 Expeditor performance report
+
+URL: `/report/expeditor`
+
+![Expeditor performance](/screens/guide/61-report-expeditor.png)
+
+Stops completed per day, money collected, returns handled, route deviation.
+
 ---
 
 ## 8. Audit (merchandising)
@@ -474,6 +514,22 @@ What's on it:
 - Each tile: photo thumb, client name, agent, date/time, GPS pin icon
 - Filter by agent, client, date range, category (shelf / facade / fridge)
 - Click photo → full-size view with metadata sidebar
+
+### 8.2 Audit (ADT)
+
+URL: `/adt/audit`
+
+![ADT audit](/screens/guide/59-adt-audit.png)
+
+The v2 audit surface — broader than the photo-only report, includes shelf measurements and competitor checks.
+
+### 8.3 Poll questions
+
+URL: `/audit/poll`
+
+![Audit poll](/screens/guide/64-audit-poll.png)
+
+Question bank for agent polls during visits.
 
 ---
 
@@ -582,6 +638,48 @@ What's on it:
 - Accepted payment methods (cash, bank transfer, card, Click, Payme, Apelsin)
 - Per-method: name, default cashbox, active toggle
 - Currency list with the base currency starred
+
+### 12.4 Discount rules
+
+URL: `/settings/skidka`
+
+![Discount rules list](/screens/guide/54-settings-discounts.png)
+
+What's on it:
+- One row per active discount rule
+- Filters: client category, channel, agent, product / category
+- Columns: rule name, applies to, amount (% or fixed), valid period
+
+Where you go next:
+- **Click "+ Добавить"** → new discount rule form
+
+### 12.5 Bonus rules
+
+URL: `/settings/bonus`
+
+![Bonus rules list](/screens/guide/55-settings-bonus.png)
+
+What's on it:
+- "Buy N of X, get M of Y" rules
+- Filters by product, brand, category
+
+### 12.6 Sales channels
+
+URL: `/settings/channel`
+
+![Sales channels](/screens/guide/56-settings-channel.png)
+
+### 12.7 Brands
+
+URL: `/settings/brand`
+
+![Brands](/screens/guide/58-settings-brand.png)
+
+### 12.8 Products catalog
+
+URL: `/settings/product`
+
+![Products catalog](/screens/guide/57-settings-products.png)
 
 ---
 

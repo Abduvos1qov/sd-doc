@@ -278,6 +278,14 @@ Sahifada nima bor:
 - Kim / qachon / nima o'zgardi
 - Nizolar uchun foydali ("agent tashrif buyurdi deydi, lekin tizim yo'q deydi")
 
+### 3.6 Tasdiqlanmagan mijozlar (tasdiqlash navbati)
+
+Manzil: `/clients/approval`
+
+![Unconfirmed clients](/screens/guide/62-clients-approval.png)
+
+Dalada qo'shilgan yangi mijozlar faollashishidan oldin shu yerda sizning ko'rib chiqishingizni kutadi.
+
 ---
 
 ## 4. Jamoa (Команда)
@@ -399,6 +407,14 @@ Sahifada nima bor:
 - Ustunlar: seriya №, tur, model, joriy mijoz, o'rnatish sanasi, oxirgi audit
 - Savdo-marketing jamoalari uchun foydali
 
+### 5.5 Ombordan hisobdan chiqarish
+
+Manzil: `/stock/excretion`
+
+![Stock write-off list](/screens/guide/63-stock-write-off.png)
+
+Shikastlangan, muddati o'tgan yoki noto'g'ri hisoblangan tovarni inventardan olib tashlash.
+
 ---
 
 ## 6. Rejalashtirish
@@ -418,6 +434,14 @@ Sahifada nima bor:
 Keyin qayerga borasiz:
 - **Saqlash** → mobil ilova keyingi sinxronizatsiyada yangi rejani oladi
 - **Chop etish** → agent uchun chop etiladigan PDF
+
+### 6.2 Savdo nuqtasi bo'yicha rejalashtirish
+
+Manzil: `/planning/outlet`
+
+![Per-outlet planning](/screens/guide/65-planning-outlet.png)
+
+Har bir mijoz uchun tashrif kunlarini tanlash (agentga yo'naltirilgan oylik ko'rinishdan farqli o'laroq).
 
 ---
 
@@ -459,6 +483,22 @@ Sahifada nima bor:
 - Ustunlar: rejalashtirilgan tashriflar, bajarilgan tashriflar, % qamrov, buyurtma bilan %, surat %
 - Agent sonini bosish orqali kirib boring
 
+### 7.4 Sotuv tafsiloti hisoboti
+
+Manzil: `/report/saleDetail`
+
+![Sale detail report](/screens/guide/60-report-saledetail.png)
+
+Har bir sotuvning qator-qator tafsiloti — agent, mijoz, mahsulot, miqdor, narx, chegirma, jami.
+
+### 7.5 Ekspeditor samaradorligi hisoboti
+
+Manzil: `/report/expeditor`
+
+![Expeditor performance](/screens/guide/61-report-expeditor.png)
+
+Kuniga bajarilgan to'xtashlar, yig'ilgan pul, qaytarilgan tovarlar, marshrutdan og'ishlar.
+
 ---
 
 ## 8. Audit (merchandayzing)
@@ -474,6 +514,22 @@ Sahifada nima bor:
 - Har bir plitka: surat eskizi, mijoz nomi, agent, sana/vaqt, GPS belgisi
 - Agent, mijoz, sana oralig'i, kategoriya (javon / fasad / muzlatkich) bo'yicha filtrlash
 - Suratni bosing → metama'lumotlar yon panellari bilan to'liq o'lchamli ko'rinish
+
+### 8.2 Audit (ADT)
+
+Manzil: `/adt/audit`
+
+![ADT audit](/screens/guide/59-adt-audit.png)
+
+Audit v2 ko'rinishi — faqat surat hisobotidan kengroq: javon o'lchovlari va raqobatchi tekshiruvlarini ham o'z ichiga oladi.
+
+### 8.3 So'rovnoma savollari
+
+Manzil: `/audit/poll`
+
+![Audit poll](/screens/guide/64-audit-poll.png)
+
+Tashriflar paytida agentlar so'rovnomalari uchun savollar banki.
 
 ---
 
@@ -582,6 +638,48 @@ Sahifada nima bor:
 - Qabul qilinadigan to'lov usullari (naqd, bank o'tkazmasi, karta, Click, Payme, Apelsin)
 - Har bir usul uchun: nom, standart kassa, faol o'tkazgich
 - Asosiy valyuta yulduzcha bilan belgilangan valyutalar ro'yxati
+
+### 12.4 Chegirma qoidalari
+
+Manzil: `/settings/skidka`
+
+![Discount rules list](/screens/guide/54-settings-discounts.png)
+
+Sahifada nima bor:
+- Har bir faol chegirma qoidasi uchun bitta qator
+- Filtrlar: mijoz kategoriyasi, kanal, agent, mahsulot / kategoriya
+- Ustunlar: qoida nomi, qo'llaniladigan ob'ekt, miqdor (% yoki belgilangan), amal qilish muddati
+
+Keyin qayerga borasiz:
+- **"+ Добавить" tugmasini bosing** → yangi chegirma qoidasi formasi
+
+### 12.5 Bonus qoidalari
+
+Manzil: `/settings/bonus`
+
+![Bonus rules list](/screens/guide/55-settings-bonus.png)
+
+Sahifada nima bor:
+- "X dan N ta sotib oling, Y dan M ta oling" qoidalari
+- Mahsulot, brend, kategoriya bo'yicha filtrlar
+
+### 12.6 Sotuv kanallari
+
+Manzil: `/settings/channel`
+
+![Sales channels](/screens/guide/56-settings-channel.png)
+
+### 12.7 Brendlar
+
+Manzil: `/settings/brand`
+
+![Brands](/screens/guide/58-settings-brand.png)
+
+### 12.8 Mahsulotlar katalogi
+
+Manzil: `/settings/product`
+
+![Products catalog](/screens/guide/57-settings-products.png)
 
 ---
 

@@ -1,0 +1,280 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - link " Добавить" [ref=e103] [cursor=pointer]:
+        - /url: /adt/audit/create
+        - generic [ref=e104]:  Добавить
+      - generic [ref=e106]:
+        - generic [ref=e107]:
+          - link "По 20" [ref=e108] [cursor=pointer]:
+            - /url: "#"
+          - link "Показ./Скр. столбцы" [ref=e109] [cursor=pointer]:
+            - /url: "#"
+          - link "Excel" [ref=e110] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e112]:
+          - text: "Быстрый поиск:"
+          - searchbox "Быстрый поиск:" [ref=e113]
+        - grid [ref=e114]:
+          - rowgroup [ref=e115]:
+            - 'row "Название: активировать для сортировки столбцы по возрастанию Face Check: активировать для сортировки столбцы по возрастанию Price Check: активировать для сортировки столбцы по возрастанию Sold Check: активировать для сортировки столбцы по возрастанию Store Check: активировать для сортировки столбцы по возрастанию Активность: активировать для сортировки столбцы по возрастанию : активировать для сортировки столбцы по возрастанию" [ref=e116]':
+              - 'columnheader "Название: активировать для сортировки столбцы по возрастанию" [ref=e117] [cursor=pointer]': Название
+              - 'columnheader "Face Check: активировать для сортировки столбцы по возрастанию" [ref=e118] [cursor=pointer]': Face Check
+              - 'columnheader "Price Check: активировать для сортировки столбцы по возрастанию" [ref=e119] [cursor=pointer]': Price Check
+              - 'columnheader "Sold Check: активировать для сортировки столбцы по возрастанию" [ref=e120] [cursor=pointer]': Sold Check
+              - 'columnheader "Store Check: активировать для сортировки столбцы по возрастанию" [ref=e121] [cursor=pointer]': Store Check
+              - 'columnheader "Активность: активировать для сортировки столбцы по возрастанию" [ref=e122] [cursor=pointer]': Активность
+              - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e123] [cursor=pointer]'
+          - rowgroup [ref=e124]:
+            - row "hop Нет Да Нет Нет Активный  " [ref=e125]:
+              - gridcell "hop" [ref=e126]
+              - gridcell "Нет" [ref=e127]
+              - gridcell "Да" [ref=e128]
+              - gridcell "Нет" [ref=e129]
+              - gridcell "Нет" [ref=e130]
+              - gridcell "Активный" [ref=e131]:
+                - button "Активный" [ref=e133] [cursor=pointer]: Активный
+              - gridcell " " [ref=e135]:
+                - generic [ref=e137] [cursor=pointer]: 
+                - link "" [ref=e138] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=12
+                  - generic [ref=e139]: 
+            - row "Test Да Да Да Да Активный  " [ref=e140]:
+              - gridcell "Test" [ref=e141]
+              - gridcell "Да" [ref=e142]
+              - gridcell "Да" [ref=e143]
+              - gridcell "Да" [ref=e144]
+              - gridcell "Да" [ref=e145]
+              - gridcell "Активный" [ref=e146]:
+                - button "Активный" [ref=e148] [cursor=pointer]: Активный
+              - gridcell " " [ref=e150]:
+                - generic [ref=e152] [cursor=pointer]: 
+                - link "" [ref=e153] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=11
+                  - generic [ref=e154]: 
+            - row "adfvadfvadfv Да Да Да Да Активный  " [ref=e155]:
+              - gridcell "adfvadfvadfv" [ref=e156]
+              - gridcell "Да" [ref=e157]
+              - gridcell "Да" [ref=e158]
+              - gridcell "Да" [ref=e159]
+              - gridcell "Да" [ref=e160]
+              - gridcell "Активный" [ref=e161]:
+                - button "Активный" [ref=e163] [cursor=pointer]: Активный
+              - gridcell " " [ref=e165]:
+                - generic [ref=e167] [cursor=pointer]: 
+                - link "" [ref=e168] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=10
+                  - generic [ref=e169]: 
+            - row "Семь Да Да Да Да Активный  " [ref=e170]:
+              - gridcell "Семь" [ref=e171]
+              - gridcell "Да" [ref=e172]
+              - gridcell "Да" [ref=e173]
+              - gridcell "Да" [ref=e174]
+              - gridcell "Да" [ref=e175]
+              - gridcell "Активный" [ref=e176]:
+                - button "Активный" [ref=e178] [cursor=pointer]: Активный
+              - gridcell " " [ref=e180]:
+                - generic [ref=e182] [cursor=pointer]: 
+                - link "" [ref=e183] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=9
+                  - generic [ref=e184]: 
+            - row "Шесть Да Да Да Да Активный  " [ref=e185]:
+              - gridcell "Шесть" [ref=e186]
+              - gridcell "Да" [ref=e187]
+              - gridcell "Да" [ref=e188]
+              - gridcell "Да" [ref=e189]
+              - gridcell "Да" [ref=e190]
+              - gridcell "Активный" [ref=e191]:
+                - button "Активный" [ref=e193] [cursor=pointer]: Активный
+              - gridcell " " [ref=e195]:
+                - generic [ref=e197] [cursor=pointer]: 
+                - link "" [ref=e198] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=8
+                  - generic [ref=e199]: 
+            - row "Пять Нет Нет Нет Да Активный  " [ref=e200]:
+              - gridcell "Пять" [ref=e201]
+              - gridcell "Нет" [ref=e202]
+              - gridcell "Нет" [ref=e203]
+              - gridcell "Нет" [ref=e204]
+              - gridcell "Да" [ref=e205]
+              - gridcell "Активный" [ref=e206]:
+                - button "Активный" [ref=e208] [cursor=pointer]: Активный
+              - gridcell " " [ref=e210]:
+                - generic [ref=e212] [cursor=pointer]: 
+                - link "" [ref=e213] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=7
+                  - generic [ref=e214]: 
+            - row "Четыре Да Да Да Да Активный  " [ref=e215]:
+              - gridcell "Четыре" [ref=e216]
+              - gridcell "Да" [ref=e217]
+              - gridcell "Да" [ref=e218]
+              - gridcell "Да" [ref=e219]
+              - gridcell "Да" [ref=e220]
+              - gridcell "Активный" [ref=e221]:
+                - button "Активный" [ref=e223] [cursor=pointer]: Активный
+              - gridcell " " [ref=e225]:
+                - generic [ref=e227] [cursor=pointer]: 
+                - link "" [ref=e228] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=6
+                  - generic [ref=e229]: 
+            - row "Три Да Да Да Нет Активный  " [ref=e230]:
+              - gridcell "Три" [ref=e231]
+              - gridcell "Да" [ref=e232]
+              - gridcell "Да" [ref=e233]
+              - gridcell "Да" [ref=e234]
+              - gridcell "Нет" [ref=e235]
+              - gridcell "Активный" [ref=e236]:
+                - button "Активный" [ref=e238] [cursor=pointer]: Активный
+              - gridcell " " [ref=e240]:
+                - generic [ref=e242] [cursor=pointer]: 
+                - link "" [ref=e243] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=5
+                  - generic [ref=e244]: 
+            - row "Два Да Да Нет Нет Активный  " [ref=e245]:
+              - gridcell "Два" [ref=e246]
+              - gridcell "Да" [ref=e247]
+              - gridcell "Да" [ref=e248]
+              - gridcell "Нет" [ref=e249]
+              - gridcell "Нет" [ref=e250]
+              - gridcell "Активный" [ref=e251]:
+                - button "Активный" [ref=e253] [cursor=pointer]: Активный
+              - gridcell " " [ref=e255]:
+                - generic [ref=e257] [cursor=pointer]: 
+                - link "" [ref=e258] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=4
+                  - generic [ref=e259]: 
+            - row "Один Да Нет Нет Нет Активный  " [ref=e260]:
+              - gridcell "Один" [ref=e261]
+              - gridcell "Да" [ref=e262]
+              - gridcell "Нет" [ref=e263]
+              - gridcell "Нет" [ref=e264]
+              - gridcell "Нет" [ref=e265]
+              - gridcell "Активный" [ref=e266]:
+                - button "Активный" [ref=e268] [cursor=pointer]: Активный
+              - gridcell " " [ref=e270]:
+                - generic [ref=e272] [cursor=pointer]: 
+                - link "" [ref=e273] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=3
+                  - generic [ref=e274]: 
+            - row "Store Check Нет Да Нет Да Активный  " [ref=e275]:
+              - gridcell "Store Check" [ref=e276]
+              - gridcell "Нет" [ref=e277]
+              - gridcell "Да" [ref=e278]
+              - gridcell "Нет" [ref=e279]
+              - gridcell "Да" [ref=e280]
+              - gridcell "Активный" [ref=e281]:
+                - button "Активный" [ref=e283] [cursor=pointer]: Активный
+              - gridcell " " [ref=e285]:
+                - generic [ref=e287] [cursor=pointer]: 
+                - link "" [ref=e288] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=2
+                  - generic [ref=e289]: 
+            - row "Остаточный товар Нет Нет Нет Да Активный  " [ref=e290]:
+              - gridcell "Остаточный товар" [ref=e291]
+              - gridcell "Нет" [ref=e292]
+              - gridcell "Нет" [ref=e293]
+              - gridcell "Нет" [ref=e294]
+              - gridcell "Да" [ref=e295]
+              - gridcell "Активный" [ref=e296]:
+                - button "Активный" [ref=e298] [cursor=pointer]: Активный
+              - gridcell " " [ref=e300]:
+                - generic [ref=e302] [cursor=pointer]: 
+                - link "" [ref=e303] [cursor=pointer]:
+                  - /url: /adt/audit/update?id=1
+                  - generic [ref=e304]: 
+        - status [ref=e305]: 1 - 12 / 12
+        - list [ref=e307]:
+          - listitem [ref=e308]:
+            - link "Пред." [ref=e309]:
+              - /url: "#"
+          - listitem [ref=e310] [cursor=pointer]:
+            - link "1" [ref=e311]:
+              - /url: "#"
+          - listitem [ref=e312]:
+            - link "След." [ref=e313]:
+              - /url: "#"
