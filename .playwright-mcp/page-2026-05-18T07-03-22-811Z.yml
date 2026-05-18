@@ -1,0 +1,899 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e103]:
+      - navigation [ref=e108]:
+        - generic [ref=e110]:
+          - button "Супервайзер" [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: Супервайзер
+          - text:              
+        - generic [ref=e115]:
+          - button "Агент" [ref=e116] [cursor=pointer]:
+            - generic [ref=e117]: Агент
+          - text:                              
+        - generic [ref=e120]:
+          - button "Территория" [ref=e121] [cursor=pointer]:
+            - generic [ref=e122]: Территория
+          - text:                             
+        - generic [ref=e125]:
+          - button "Категория клиентов" [ref=e126] [cursor=pointer]:
+            - generic [ref=e127]: Категория клиентов
+          - text:                
+        - generic [ref=e130]:
+          - button "Категория товаров" [ref=e131] [cursor=pointer]:
+            - generic [ref=e132]: Категория товаров
+          - text:               
+        - generic [ref=e135]:
+          - button "Отгружен, Доставлен" [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]: Отгружен, Доставлен
+          - text:    
+        - generic [ref=e140]:
+          - button "Дата отгрузки" [ref=e141] [cursor=pointer]:
+            - generic [ref=e142]: Дата отгрузки
+          - text:  
+        - generic [ref=e144]:
+          - generic [ref=e145] [cursor=pointer]:
+            - generic [ref=e146]: 
+            - text: май 1 - май 31
+            - generic [ref=e147]: 
+          - button "Фильтр" [ref=e148] [cursor=pointer]
+      - generic [ref=e150]:
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - heading "Текущий месяц" [level=3] [ref=e156]
+              - generic [ref=e157]:
+                - heading "Общая сумма" [level=3] [ref=e159]
+                - generic [ref=e162]:
+                  - heading "0" [level=1] [ref=e163]: "0"
+                  - text: Продажа за месяц
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - heading "По категориям" [level=3] [ref=e166]
+                - img [ref=e169]
+              - generic [ref=e176]:
+                - heading "По долгу" [level=3] [ref=e177]
+                - img [ref=e180]
+          - generic [ref=e189]:
+            - generic [ref=e191]: По категориям
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - button "По 20" [ref=e195] [cursor=pointer]
+                - button " Показ./Скр. столбцы" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e198]:  Показ./Скр. столбцы
+                - button " Excel" [ref=e199] [cursor=pointer]:
+                  - generic [ref=e201]:  Excel
+              - generic [ref=e203]:
+                - text: "Поиск:"
+                - searchbox "Поиск:" [ref=e204]
+              - grid [ref=e205]:
+                - rowgroup [ref=e206]:
+                  - 'row "Название: активировать для сортировки столбцы по возрастанию Общая сумма: активировать для сортировки столбцы по возрастанию Доля: активировать для сортировки столбцы по возрастанию" [ref=e207]':
+                    - 'columnheader "Название: активировать для сортировки столбцы по возрастанию" [ref=e208] [cursor=pointer]': Название
+                    - 'columnheader "Общая сумма: активировать для сортировки столбцы по возрастанию" [ref=e209] [cursor=pointer]': Общая сумма
+                    - 'columnheader "Доля: активировать для сортировки столбцы по возрастанию" [ref=e210] [cursor=pointer]': Доля
+                - rowgroup [ref=e211]:
+                  - row "В таблице отсутствуют данные" [ref=e212]:
+                    - gridcell "В таблице отсутствуют данные" [ref=e213]
+                - rowgroup [ref=e214]:
+                  - row "Итог 0 100" [ref=e215]:
+                    - gridcell "Итог" [ref=e216]
+                    - gridcell "0" [ref=e217]
+                    - gridcell "100" [ref=e218]
+              - status [ref=e219]: 0 - 0 / 0
+              - list [ref=e221]:
+                - listitem [ref=e222]:
+                  - link "Пред." [ref=e223]:
+                    - /url: "#"
+                - listitem [ref=e224]:
+                  - link "След." [ref=e225]:
+                    - /url: "#"
+          - generic [ref=e227]:
+            - generic [ref=e229]: Долги по территориям
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - button "По 20" [ref=e233] [cursor=pointer]
+                - button " Показ./Скр. столбцы" [ref=e234] [cursor=pointer]:
+                  - generic [ref=e236]:  Показ./Скр. столбцы
+                - button " Excel" [ref=e237] [cursor=pointer]:
+                  - generic [ref=e239]:  Excel
+              - generic [ref=e241]:
+                - text: "Поиск:"
+                - searchbox "Поиск:" [ref=e242]
+              - grid [ref=e243]:
+                - rowgroup [ref=e244]:
+                  - row [ref=e245]:
+                    - 'columnheader "Название: активировать для сортировки столбцы по возрастанию" [ref=e246] [cursor=pointer]': Название
+                    - 'columnheader "Общая сумма: активировать для сортировки столбцы по возрастанию" [ref=e247] [cursor=pointer]': Общая сумма
+                    - 'columnheader "нал: активировать для сортировки столбцы по возрастанию" [ref=e248] [cursor=pointer]': нал
+                    - 'columnheader "сум2: активировать для сортировки столбцы по возрастанию" [ref=e249] [cursor=pointer]': сум2
+                    - 'columnheader "€: активировать для сортировки столбцы по возрастанию" [ref=e250] [cursor=pointer]': €
+                    - 'columnheader "$: активировать для сортировки столбцы по возрастанию" [ref=e251] [cursor=pointer]': $
+                    - 'columnheader "сум2: активировать для сортировки столбцы по возрастанию" [ref=e252] [cursor=pointer]': сум2
+                    - 'columnheader "S: активировать для сортировки столбцы по возрастанию" [ref=e253] [cursor=pointer]': S
+                    - 'columnheader "GBP : активировать для сортировки столбцы по возрастанию" [ref=e254] [cursor=pointer]': GBP
+                    - 'columnheader "dellll: активировать для сортировки столбцы по возрастанию" [ref=e255] [cursor=pointer]': dellll
+                    - 'columnheader "Удалить 27.01.25: активировать для сортировки столбцы по возрастанию" [ref=e256] [cursor=pointer]': Удалить 27.01.25
+                    - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e257] [cursor=pointer]'
+                    - 'columnheader "KGS: активировать для сортировки столбцы по возрастанию" [ref=e258] [cursor=pointer]': KGS
+                    - 'columnheader "¥: активировать для сортировки столбцы по возрастанию" [ref=e259] [cursor=pointer]': ¥
+                    - 'columnheader "KGS: активировать для сортировки столбцы по возрастанию" [ref=e260] [cursor=pointer]': KGS
+                    - 'columnheader "KGS: активировать для сортировки столбцы по возрастанию" [ref=e261] [cursor=pointer]': KGS
+                    - 'columnheader "₩ : активировать для сортировки столбцы по возрастанию" [ref=e262] [cursor=pointer]': ₩
+                    - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e263] [cursor=pointer]'
+                    - 'columnheader "USDT: активировать для сортировки столбцы по возрастанию" [ref=e264] [cursor=pointer]': USDT
+                    - 'columnheader "1111: активировать для сортировки столбцы по возрастанию" [ref=e265] [cursor=pointer]': "1111"
+                - rowgroup [ref=e266]:
+                  - row "Ташкент 3,100,606,716.9 9,989,886,833.76 -7,047,902,759.2 5,198,021.5 3,490,682.03 131,032,998.78 3,233,252.88 179,986.37 123 12,540,480 0 2 1,438,893 1,508,338 321 777.78 0 0 -1,234" [ref=e267]:
+                    - gridcell "Ташкент" [ref=e268]
+                    - gridcell "3,100,606,716.9" [ref=e269]
+                    - gridcell "9,989,886,833.76" [ref=e270]
+                    - gridcell "-7,047,902,759.2" [ref=e271]
+                    - gridcell "5,198,021.5" [ref=e272]
+                    - gridcell "3,490,682.03" [ref=e273]
+                    - gridcell "131,032,998.78" [ref=e274]
+                    - gridcell "3,233,252.88" [ref=e275]
+                    - gridcell "179,986.37" [ref=e276]
+                    - gridcell "123" [ref=e277]
+                    - gridcell "12,540,480" [ref=e278]
+                    - gridcell "0" [ref=e279]
+                    - gridcell "2" [ref=e280]
+                    - gridcell "1,438,893" [ref=e281]
+                    - gridcell "1,508,338" [ref=e282]
+                    - gridcell "321" [ref=e283]
+                    - gridcell "777.78" [ref=e284]
+                    - gridcell "0" [ref=e285]
+                    - gridcell "0" [ref=e286]
+                    - gridcell "-1,234" [ref=e287]
+                  - row "Зарафшан 20,501,286,243.71 205,679,733.5 10,286,326,881.86 0 -87,691.23 10,007,981,067.99 -33,312.14 168,715.65 21,378 121,035 0 105 1,007,814.97 444 -121,040 211,111.11 10,000 0 0" [ref=e288]:
+                    - gridcell "Зарафшан" [ref=e289]
+                    - gridcell "20,501,286,243.71" [ref=e290]
+                    - gridcell "205,679,733.5" [ref=e291]
+                    - gridcell "10,286,326,881.86" [ref=e292]
+                    - gridcell "0" [ref=e293]
+                    - gridcell "-87,691.23" [ref=e294]
+                    - gridcell "10,007,981,067.99" [ref=e295]
+                    - gridcell "-33,312.14" [ref=e296]
+                    - gridcell "168,715.65" [ref=e297]
+                    - gridcell "21,378" [ref=e298]
+                    - gridcell "121,035" [ref=e299]
+                    - gridcell "0" [ref=e300]
+                    - gridcell "105" [ref=e301]
+                    - gridcell "1,007,814.97" [ref=e302]
+                    - gridcell "444" [ref=e303]
+                    - gridcell "-121,040" [ref=e304]
+                    - gridcell "211,111.11" [ref=e305]
+                    - gridcell "10,000" [ref=e306]
+                    - gridcell "0" [ref=e307]
+                    - gridcell "0" [ref=e308]
+                  - row "Навои 21,238,413,496.65 -3,438,248.76 21,167,843,996.93 10,312 -31,931,781.72 101,567,133 4,166,815.41 -908,496.31 1,665 1,001,542 0 0 559.1 100,000 0 0 0 0 0" [ref=e309]:
+                    - gridcell "Навои" [ref=e310]
+                    - gridcell "21,238,413,496.65" [ref=e311]
+                    - gridcell "-3,438,248.76" [ref=e312]
+                    - gridcell "21,167,843,996.93" [ref=e313]
+                    - gridcell "10,312" [ref=e314]
+                    - gridcell "-31,931,781.72" [ref=e315]
+                    - gridcell "101,567,133" [ref=e316]
+                    - gridcell "4,166,815.41" [ref=e317]
+                    - gridcell "-908,496.31" [ref=e318]
+                    - gridcell "1,665" [ref=e319]
+                    - gridcell "1,001,542" [ref=e320]
+                    - gridcell "0" [ref=e321]
+                    - gridcell "0" [ref=e322]
+                    - gridcell "559.1" [ref=e323]
+                    - gridcell "100,000" [ref=e324]
+                    - gridcell "0" [ref=e325]
+                    - gridcell "0" [ref=e326]
+                    - gridcell "0" [ref=e327]
+                    - gridcell "0" [ref=e328]
+                    - gridcell "0" [ref=e329]
+                  - row "12,677,325,908.26 420,100.17 12,553,653,852.34 467,579.12 -40,120,708.97 435,553.69 13,798,391.59 15,345,499.21 0 0 0 1,200 133,323,111.11 0 0 1,330 0 0 0" [ref=e330]:
+                    - gridcell [ref=e331]
+                    - gridcell "12,677,325,908.26" [ref=e332]
+                    - gridcell "420,100.17" [ref=e333]
+                    - gridcell "12,553,653,852.34" [ref=e334]
+                    - gridcell "467,579.12" [ref=e335]
+                    - gridcell "-40,120,708.97" [ref=e336]
+                    - gridcell "435,553.69" [ref=e337]
+                    - gridcell "13,798,391.59" [ref=e338]
+                    - gridcell "15,345,499.21" [ref=e339]
+                    - gridcell "0" [ref=e340]
+                    - gridcell "0" [ref=e341]
+                    - gridcell "0" [ref=e342]
+                    - gridcell "1,200" [ref=e343]
+                    - gridcell "133,323,111.11" [ref=e344]
+                    - gridcell "0" [ref=e345]
+                    - gridcell "0" [ref=e346]
+                    - gridcell "1,330" [ref=e347]
+                    - gridcell "0" [ref=e348]
+                    - gridcell "0" [ref=e349]
+                    - gridcell "0" [ref=e350]
+                  - row "Учкудук -971,096.25 -155,000 -816,096.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e351]:
+                    - gridcell "Учкудук" [ref=e352]
+                    - gridcell "-971,096.25" [ref=e353]
+                    - gridcell "-155,000" [ref=e354]
+                    - gridcell "-816,096.25" [ref=e355]
+                    - gridcell "0" [ref=e356]
+                    - gridcell "0" [ref=e357]
+                    - gridcell "0" [ref=e358]
+                    - gridcell "0" [ref=e359]
+                    - gridcell "0" [ref=e360]
+                    - gridcell "0" [ref=e361]
+                    - gridcell "0" [ref=e362]
+                    - gridcell "0" [ref=e363]
+                    - gridcell "0" [ref=e364]
+                    - gridcell "0" [ref=e365]
+                    - gridcell "0" [ref=e366]
+                    - gridcell "0" [ref=e367]
+                    - gridcell "0" [ref=e368]
+                    - gridcell "0" [ref=e369]
+                    - gridcell "0" [ref=e370]
+                    - gridcell "0" [ref=e371]
+                  - row "Yakkasaroy 249,744,213,809.86993 10,377,023,325.92 205,981,099,883.39993 325,651,707.64 205,674,901.22 1,367,608,619.12 3,037,919.96 20,000,332,932.02 395,604 10,000,096,211.6 200 110,510 185,191 55,901,448 1,427,089,455.99 5,900 0 0 0" [ref=e372]:
+                    - gridcell "Yakkasaroy" [ref=e373]
+                    - gridcell "249,744,213,809.86993" [ref=e374]
+                    - gridcell "10,377,023,325.92" [ref=e375]
+                    - gridcell "205,981,099,883.39993" [ref=e376]
+                    - gridcell "325,651,707.64" [ref=e377]
+                    - gridcell "205,674,901.22" [ref=e378]
+                    - gridcell "1,367,608,619.12" [ref=e379]
+                    - gridcell "3,037,919.96" [ref=e380]
+                    - gridcell "20,000,332,932.02" [ref=e381]
+                    - gridcell "395,604" [ref=e382]
+                    - gridcell "10,000,096,211.6" [ref=e383]
+                    - gridcell "200" [ref=e384]
+                    - gridcell "110,510" [ref=e385]
+                    - gridcell "185,191" [ref=e386]
+                    - gridcell "55,901,448" [ref=e387]
+                    - gridcell "1,427,089,455.99" [ref=e388]
+                    - gridcell "5,900" [ref=e389]
+                    - gridcell "0" [ref=e390]
+                    - gridcell "0" [ref=e391]
+                    - gridcell "0" [ref=e392]
+                  - row "67 -1,209,630.12 46 -1,225,170 0 -4,651.08 20,000 144.96 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e393]:
+                    - gridcell "67" [ref=e394]
+                    - gridcell "-1,209,630.12" [ref=e395]
+                    - gridcell "46" [ref=e396]
+                    - gridcell "-1,225,170" [ref=e397]
+                    - gridcell "0" [ref=e398]
+                    - gridcell "-4,651.08" [ref=e399]
+                    - gridcell "20,000" [ref=e400]
+                    - gridcell "144.96" [ref=e401]
+                    - gridcell "0" [ref=e402]
+                    - gridcell "0" [ref=e403]
+                    - gridcell "0" [ref=e404]
+                    - gridcell "0" [ref=e405]
+                    - gridcell "0" [ref=e406]
+                    - gridcell "0" [ref=e407]
+                    - gridcell "0" [ref=e408]
+                    - gridcell "0" [ref=e409]
+                    - gridcell "0" [ref=e410]
+                    - gridcell "0" [ref=e411]
+                    - gridcell "0" [ref=e412]
+                    - gridcell "0" [ref=e413]
+                  - row "Самарканд -8,872,444 140,000 -10,615,069 560 1,553,280.62 26,634.42 17,029.96 0 120 0 0 -5,000 0 10,000 0 0 0 0 0" [ref=e414]:
+                    - gridcell "Самарканд" [ref=e415]
+                    - gridcell "-8,872,444" [ref=e416]
+                    - gridcell "140,000" [ref=e417]
+                    - gridcell "-10,615,069" [ref=e418]
+                    - gridcell "560" [ref=e419]
+                    - gridcell "1,553,280.62" [ref=e420]
+                    - gridcell "26,634.42" [ref=e421]
+                    - gridcell "17,029.96" [ref=e422]
+                    - gridcell "0" [ref=e423]
+                    - gridcell "120" [ref=e424]
+                    - gridcell "0" [ref=e425]
+                    - gridcell "0" [ref=e426]
+                    - gridcell "-5,000" [ref=e427]
+                    - gridcell "0" [ref=e428]
+                    - gridcell "10,000" [ref=e429]
+                    - gridcell "0" [ref=e430]
+                    - gridcell "0" [ref=e431]
+                    - gridcell "0" [ref=e432]
+                    - gridcell "0" [ref=e433]
+                    - gridcell "0" [ref=e434]
+                  - row "Саратов 75,685,161.13 16,085,000 33,991,781.63 0 10,000,000 5,411,363 0 10,001,000 185,016.5 0 0 0 0 1,000 10,000 0 0 0 0" [ref=e435]:
+                    - gridcell "Саратов" [ref=e436]
+                    - gridcell "75,685,161.13" [ref=e437]
+                    - gridcell "16,085,000" [ref=e438]
+                    - gridcell "33,991,781.63" [ref=e439]
+                    - gridcell "0" [ref=e440]
+                    - gridcell "10,000,000" [ref=e441]
+                    - gridcell "5,411,363" [ref=e442]
+                    - gridcell "0" [ref=e443]
+                    - gridcell "10,001,000" [ref=e444]
+                    - gridcell "185,016.5" [ref=e445]
+                    - gridcell "0" [ref=e446]
+                    - gridcell "0" [ref=e447]
+                    - gridcell "0" [ref=e448]
+                    - gridcell "0" [ref=e449]
+                    - gridcell "1,000" [ref=e450]
+                    - gridcell "10,000" [ref=e451]
+                    - gridcell "0" [ref=e452]
+                    - gridcell "0" [ref=e453]
+                    - gridcell "0" [ref=e454]
+                    - gridcell "0" [ref=e455]
+                  - row "Hasanboy 185,658,610.26 89,000 -15,485,916.71 0 -2,509.03 100,715,005 0 301,025 10,000 20,002 0 0 1,000 100,000,004 10,000 0 0 1,000 0" [ref=e456]:
+                    - gridcell "Hasanboy" [ref=e457]
+                    - gridcell "185,658,610.26" [ref=e458]
+                    - gridcell "89,000" [ref=e459]
+                    - gridcell "-15,485,916.71" [ref=e460]
+                    - gridcell "0" [ref=e461]
+                    - gridcell "-2,509.03" [ref=e462]
+                    - gridcell "100,715,005" [ref=e463]
+                    - gridcell "0" [ref=e464]
+                    - gridcell "301,025" [ref=e465]
+                    - gridcell "10,000" [ref=e466]
+                    - gridcell "20,002" [ref=e467]
+                    - gridcell "0" [ref=e468]
+                    - gridcell "0" [ref=e469]
+                    - gridcell "1,000" [ref=e470]
+                    - gridcell "100,000,004" [ref=e471]
+                    - gridcell "10,000" [ref=e472]
+                    - gridcell "0" [ref=e473]
+                    - gridcell "0" [ref=e474]
+                    - gridcell "1,000" [ref=e475]
+                    - gridcell "0" [ref=e476]
+                  - row "CAPITAN AMERICA -113,947,589.03 142,793.56 -214,734,947.84 11,111 120,356.65 100,510,532 1,639.6 121 555 250 0 0 0 0 0 0 0 0 0" [ref=e477]:
+                    - gridcell "CAPITAN AMERICA" [ref=e478]
+                    - gridcell "-113,947,589.03" [ref=e479]
+                    - gridcell "142,793.56" [ref=e480]
+                    - gridcell "-214,734,947.84" [ref=e481]
+                    - gridcell "11,111" [ref=e482]
+                    - gridcell "120,356.65" [ref=e483]
+                    - gridcell "100,510,532" [ref=e484]
+                    - gridcell "1,639.6" [ref=e485]
+                    - gridcell "121" [ref=e486]
+                    - gridcell "555" [ref=e487]
+                    - gridcell "250" [ref=e488]
+                    - gridcell "0" [ref=e489]
+                    - gridcell "0" [ref=e490]
+                    - gridcell "0" [ref=e491]
+                    - gridcell "0" [ref=e492]
+                    - gridcell "0" [ref=e493]
+                    - gridcell "0" [ref=e494]
+                    - gridcell "0" [ref=e495]
+                    - gridcell "0" [ref=e496]
+                    - gridcell "0" [ref=e497]
+                  - row "GPS тест у работы 48,494,132.69 0 47,863,422.69 0 530,710 100,000 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e498]:
+                    - gridcell "GPS тест у работы" [ref=e499]
+                    - gridcell "48,494,132.69" [ref=e500]
+                    - gridcell "0" [ref=e501]
+                    - gridcell "47,863,422.69" [ref=e502]
+                    - gridcell "0" [ref=e503]
+                    - gridcell "530,710" [ref=e504]
+                    - gridcell "100,000" [ref=e505]
+                    - gridcell "0" [ref=e506]
+                    - gridcell "0" [ref=e507]
+                    - gridcell "0" [ref=e508]
+                    - gridcell "0" [ref=e509]
+                    - gridcell "0" [ref=e510]
+                    - gridcell "0" [ref=e511]
+                    - gridcell "0" [ref=e512]
+                    - gridcell "0" [ref=e513]
+                    - gridcell "0" [ref=e514]
+                    - gridcell "0" [ref=e515]
+                    - gridcell "0" [ref=e516]
+                    - gridcell "0" [ref=e517]
+                    - gridcell "0" [ref=e518]
+                  - row "Yunusobod -1,565,200 0 -1,565,200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e519]:
+                    - gridcell "Yunusobod" [ref=e520]
+                    - gridcell "-1,565,200" [ref=e521]
+                    - gridcell "0" [ref=e522]
+                    - gridcell "-1,565,200" [ref=e523]
+                    - gridcell "0" [ref=e524]
+                    - gridcell "0" [ref=e525]
+                    - gridcell "0" [ref=e526]
+                    - gridcell "0" [ref=e527]
+                    - gridcell "0" [ref=e528]
+                    - gridcell "0" [ref=e529]
+                    - gridcell "0" [ref=e530]
+                    - gridcell "0" [ref=e531]
+                    - gridcell "0" [ref=e532]
+                    - gridcell "0" [ref=e533]
+                    - gridcell "0" [ref=e534]
+                    - gridcell "0" [ref=e535]
+                    - gridcell "0" [ref=e536]
+                    - gridcell "0" [ref=e537]
+                    - gridcell "0" [ref=e538]
+                    - gridcell "0" [ref=e539]
+                  - row "Texas 10,000 0 0 0 10,000 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e540]:
+                    - gridcell "Texas" [ref=e541]
+                    - gridcell "10,000" [ref=e542]
+                    - gridcell "0" [ref=e543]
+                    - gridcell "0" [ref=e544]
+                    - gridcell "0" [ref=e545]
+                    - gridcell "10,000" [ref=e546]
+                    - gridcell "0" [ref=e547]
+                    - gridcell "0" [ref=e548]
+                    - gridcell "0" [ref=e549]
+                    - gridcell "0" [ref=e550]
+                    - gridcell "0" [ref=e551]
+                    - gridcell "0" [ref=e552]
+                    - gridcell "0" [ref=e553]
+                    - gridcell "0" [ref=e554]
+                    - gridcell "0" [ref=e555]
+                    - gridcell "0" [ref=e556]
+                    - gridcell "0" [ref=e557]
+                    - gridcell "0" [ref=e558]
+                    - gridcell "0" [ref=e559]
+                    - gridcell "0" [ref=e560]
+                - rowgroup [ref=e561]:
+                  - row "Итог 307,445,128,120.06976 20,585,873,584.15 242,778,434,659.84985 331,339,291.26 149,232,588.49 11,815,408,907 24,221,882.22 20,025,420,782.93999 614,461.5 10,013,779,520.6 200 106,817 135,956,569.18 157,521,234 1,426,988,736.99 219,118.89 10,000 1,000 -1,234" [ref=e562]:
+                    - gridcell "Итог" [ref=e563]
+                    - gridcell "307,445,128,120.06976" [ref=e564]
+                    - gridcell "20,585,873,584.15" [ref=e565]
+                    - gridcell "242,778,434,659.84985" [ref=e566]
+                    - gridcell "331,339,291.26" [ref=e567]
+                    - gridcell "149,232,588.49" [ref=e568]
+                    - gridcell "11,815,408,907" [ref=e569]
+                    - gridcell "24,221,882.22" [ref=e570]
+                    - gridcell "20,025,420,782.93999" [ref=e571]
+                    - gridcell "614,461.5" [ref=e572]
+                    - gridcell "10,013,779,520.6" [ref=e573]
+                    - gridcell "200" [ref=e574]
+                    - gridcell "106,817" [ref=e575]
+                    - gridcell "135,956,569.18" [ref=e576]
+                    - gridcell "157,521,234" [ref=e577]
+                    - gridcell "1,426,988,736.99" [ref=e578]
+                    - gridcell "219,118.89" [ref=e579]
+                    - gridcell "10,000" [ref=e580]
+                    - gridcell "1,000" [ref=e581]
+                    - gridcell "-1,234" [ref=e582]
+              - status [ref=e583]: 1 - 14 / 14
+              - list [ref=e585]:
+                - listitem [ref=e586]:
+                  - link "Пред." [ref=e587]:
+                    - /url: "#"
+                - listitem [ref=e588] [cursor=pointer]:
+                  - link "1" [ref=e589]:
+                    - /url: "#"
+                - listitem [ref=e590]:
+                  - link "След." [ref=e591]:
+                    - /url: "#"
+        - generic [ref=e593]:
+          - heading "Баланс i" [level=3] [ref=e594]:
+            - text: Баланс
+            - generic [ref=e595] [cursor=pointer]: i
+          - generic [ref=e596]:
+            - heading "Общий баланс (с учётом предоплаты)" [level=3] [ref=e598]
+            - generic [ref=e600]:
+              - generic [ref=e601]:
+                - heading "307,445,128,120.06976" [level=1] [ref=e602]: 307,445,128,120.06976
+                - text: Общая сумма
+              - generic [ref=e603]:
+                - heading "20,585,873,584.15 нал" [level=1] [ref=e604]
+                - text: Общая сумма
+              - generic [ref=e605]:
+                - heading "242,778,434,659.84985 сум2" [level=1] [ref=e606]
+                - text: Общая сумма
+              - generic [ref=e607]:
+                - heading "331,339,291.26 €" [level=1] [ref=e608]
+                - text: Общая сумма
+              - generic [ref=e609]:
+                - heading "149,232,588.49 $" [level=1] [ref=e610]
+                - text: Общая сумма
+              - generic [ref=e611]:
+                - heading "11,815,408,907 сум2" [level=1] [ref=e612]
+                - text: Общая сумма
+              - generic [ref=e613]:
+                - heading "24,221,882.22 S" [level=1] [ref=e614]
+                - text: Общая сумма
+              - generic [ref=e615]:
+                - heading "20,025,420,782.93999 GBP" [level=1] [ref=e616]
+                - text: Общая сумма
+              - generic [ref=e617]:
+                - heading "614,461.5 dellll" [level=1] [ref=e618]
+                - text: Общая сумма
+              - generic [ref=e619]:
+                - heading "10,013,779,520.6 Удалить 27.01.25" [level=1] [ref=e620]
+                - text: Общая сумма
+              - generic [ref=e621]:
+                - heading "200" [level=1] [ref=e622]: "200"
+                - text: Общая сумма
+              - generic [ref=e623]:
+                - heading "106,817 KGS" [level=1] [ref=e624]
+                - text: Общая сумма
+              - generic [ref=e625]:
+                - heading "135,956,569.18 ¥" [level=1] [ref=e626]
+                - text: Общая сумма
+              - generic [ref=e627]:
+                - heading "157,521,234 KGS" [level=1] [ref=e628]
+                - text: Общая сумма
+              - generic [ref=e629]:
+                - heading "1,426,988,736.99 KGS" [level=1] [ref=e630]
+                - text: Общая сумма
+              - generic [ref=e631]:
+                - heading "219,118.89 ₩" [level=1] [ref=e632]
+                - text: Общая сумма
+              - generic [ref=e633]:
+                - heading "10,000" [level=1] [ref=e634]: 10,000
+                - text: Общая сумма
+              - generic [ref=e635]:
+                - heading "1,000 USDT" [level=1] [ref=e636]
+                - text: Общая сумма
+              - generic [ref=e637]:
+                - heading "-1,234 1111" [level=1] [ref=e638]
+                - text: Общая сумма
+          - generic [ref=e639]:
+            - heading "Долги и оплаты по периодам" [level=3] [ref=e641]
+            - generic [ref=e644]:
+              - heading "0" [level=1] [ref=e645]: "0"
+              - text: Общая сумма
+          - generic [ref=e647]:
+            - generic [ref=e649]: Список клиентов
+            - generic [ref=e651]:
+              - generic [ref=e652]:
+                - button "По 10" [ref=e653] [cursor=pointer]
+                - button "Excel" [ref=e654] [cursor=pointer]
+              - generic [ref=e656]:
+                - text: "Поиск:"
+                - searchbox "Поиск:" [ref=e657]
+              - grid [ref=e658]:
+                - rowgroup [ref=e659]:
+                  - row [ref=e660]:
+                    - 'columnheader "Клиент: активировать для сортировки столбцы по возрастанию" [ref=e661] [cursor=pointer]': Клиент
+                    - 'columnheader "Сумма: активировать для сортировки столбцы по убыванию" [ref=e662] [cursor=pointer]': Сумма
+                    - 'columnheader "нал: активировать для сортировки столбцы по возрастанию" [ref=e663] [cursor=pointer]': нал
+                    - 'columnheader "сум2: активировать для сортировки столбцы по возрастанию" [ref=e664] [cursor=pointer]': сум2
+                    - 'columnheader "€: активировать для сортировки столбцы по возрастанию" [ref=e665] [cursor=pointer]': €
+                    - 'columnheader "$: активировать для сортировки столбцы по возрастанию" [ref=e666] [cursor=pointer]': $
+                    - 'columnheader "сум2: активировать для сортировки столбцы по возрастанию" [ref=e667] [cursor=pointer]': сум2
+                    - 'columnheader "S: активировать для сортировки столбцы по возрастанию" [ref=e668] [cursor=pointer]': S
+                    - 'columnheader "GBP : активировать для сортировки столбцы по возрастанию" [ref=e669] [cursor=pointer]': GBP
+                    - 'columnheader "dellll: активировать для сортировки столбцы по возрастанию" [ref=e670] [cursor=pointer]': dellll
+                    - 'columnheader "Удалить 27.01.25: активировать для сортировки столбцы по возрастанию" [ref=e671] [cursor=pointer]': Удалить 27.01.25
+                    - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e672] [cursor=pointer]'
+                    - 'columnheader "KGS: активировать для сортировки столбцы по возрастанию" [ref=e673] [cursor=pointer]': KGS
+                    - 'columnheader "¥: активировать для сортировки столбцы по возрастанию" [ref=e674] [cursor=pointer]': ¥
+                    - 'columnheader "KGS: активировать для сортировки столбцы по возрастанию" [ref=e675] [cursor=pointer]': KGS
+                    - 'columnheader "KGS: активировать для сортировки столбцы по возрастанию" [ref=e676] [cursor=pointer]': KGS
+                    - 'columnheader "₩ : активировать для сортировки столбцы по возрастанию" [ref=e677] [cursor=pointer]': ₩
+                    - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e678] [cursor=pointer]'
+                    - 'columnheader "USDT: активировать для сортировки столбцы по возрастанию" [ref=e679] [cursor=pointer]': USDT
+                    - 'columnheader "1111: активировать для сортировки столбцы по возрастанию" [ref=e680] [cursor=pointer]': "1111"
+                - rowgroup [ref=e681]:
+                  - row "Acuna-Matata F1 -10,000,069,999.99 0 -10,000,069,999.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e682]:
+                    - gridcell "Acuna-Matata F1" [ref=e683]:
+                      - link "Acuna-Matata F1" [ref=e684] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/y6_18200
+                    - gridcell "-10,000,069,999.99" [ref=e685]
+                    - gridcell "0" [ref=e686]
+                    - gridcell "-10,000,069,999.99" [ref=e687]
+                    - gridcell "0" [ref=e688]
+                    - gridcell "0" [ref=e689]
+                    - gridcell "0" [ref=e690]
+                    - gridcell "0" [ref=e691]
+                    - gridcell "0" [ref=e692]
+                    - gridcell "0" [ref=e693]
+                    - gridcell "0" [ref=e694]
+                    - gridcell "0" [ref=e695]
+                    - gridcell "0" [ref=e696]
+                    - gridcell "0" [ref=e697]
+                    - gridcell "0" [ref=e698]
+                    - gridcell "0" [ref=e699]
+                    - gridcell "0" [ref=e700]
+                    - gridcell "0" [ref=e701]
+                    - gridcell "0" [ref=e702]
+                    - gridcell "0" [ref=e703]
+                  - row "Ikrom I Doska -396,454,730.4 0 -396,454,730.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e704]:
+                    - gridcell "Ikrom I Doska" [ref=e705]:
+                      - link "Ikrom I Doska" [ref=e706] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/s8_321
+                    - gridcell "-396,454,730.4" [ref=e707]
+                    - gridcell "0" [ref=e708]
+                    - gridcell "-396,454,730.4" [ref=e709]
+                    - gridcell "0" [ref=e710]
+                    - gridcell "0" [ref=e711]
+                    - gridcell "0" [ref=e712]
+                    - gridcell "0" [ref=e713]
+                    - gridcell "0" [ref=e714]
+                    - gridcell "0" [ref=e715]
+                    - gridcell "0" [ref=e716]
+                    - gridcell "0" [ref=e717]
+                    - gridcell "0" [ref=e718]
+                    - gridcell "0" [ref=e719]
+                    - gridcell "0" [ref=e720]
+                    - gridcell "0" [ref=e721]
+                    - gridcell "0" [ref=e722]
+                    - gridcell "0" [ref=e723]
+                    - gridcell "0" [ref=e724]
+                    - gridcell "0" [ref=e725]
+                  - row "Белиссимо пицца -224,902,659.66 0 -225,100,776.8 0 90,000 30,100 78,017.14 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e726]:
+                    - gridcell "Белиссимо пицца" [ref=e727]:
+                      - link "Белиссимо пицца" [ref=e728] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/f3_268
+                    - gridcell "-224,902,659.66" [ref=e729]
+                    - gridcell "0" [ref=e730]
+                    - gridcell "-225,100,776.8" [ref=e731]
+                    - gridcell "0" [ref=e732]
+                    - gridcell "90,000" [ref=e733]
+                    - gridcell "30,100" [ref=e734]
+                    - gridcell "78,017.14" [ref=e735]
+                    - gridcell "0" [ref=e736]
+                    - gridcell "0" [ref=e737]
+                    - gridcell "0" [ref=e738]
+                    - gridcell "0" [ref=e739]
+                    - gridcell "0" [ref=e740]
+                    - gridcell "0" [ref=e741]
+                    - gridcell "0" [ref=e742]
+                    - gridcell "0" [ref=e743]
+                    - gridcell "0" [ref=e744]
+                    - gridcell "0" [ref=e745]
+                    - gridcell "0" [ref=e746]
+                    - gridcell "0" [ref=e747]
+                  - row "Школа 259 -195,891,958.75 -6.44 -195,904,782.96 11,111 21.65 100 792 1 555 250 0 0 0 0 0 0 0 0 0" [ref=e748]:
+                    - gridcell "Школа 259" [ref=e749]:
+                      - link "Школа 259" [ref=e750] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/u1_264
+                    - gridcell "-195,891,958.75" [ref=e751]
+                    - gridcell "-6.44" [ref=e752]
+                    - gridcell "-195,904,782.96" [ref=e753]
+                    - gridcell "11,111" [ref=e754]
+                    - gridcell "21.65" [ref=e755]
+                    - gridcell "100" [ref=e756]
+                    - gridcell "792" [ref=e757]
+                    - gridcell "1" [ref=e758]
+                    - gridcell "555" [ref=e759]
+                    - gridcell "250" [ref=e760]
+                    - gridcell "0" [ref=e761]
+                    - gridcell "0" [ref=e762]
+                    - gridcell "0" [ref=e763]
+                    - gridcell "0" [ref=e764]
+                    - gridcell "0" [ref=e765]
+                    - gridcell "0" [ref=e766]
+                    - gridcell "0" [ref=e767]
+                    - gridcell "0" [ref=e768]
+                    - gridcell "0" [ref=e769]
+                  - row "Wildberries -101,735,237.36 55.74 -259,129,924.1 456,570 325,000 0 9,124,500 14,168,561 0 0 0 0 133,320,000 0 0 0 0 0 0" [ref=e770]:
+                    - gridcell "Wildberries" [ref=e771]:
+                      - link "Wildberries" [ref=e772] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/h8_293
+                    - gridcell "-101,735,237.36" [ref=e773]
+                    - gridcell "55.74" [ref=e774]
+                    - gridcell "-259,129,924.1" [ref=e775]
+                    - gridcell "456,570" [ref=e776]
+                    - gridcell "325,000" [ref=e777]
+                    - gridcell "0" [ref=e778]
+                    - gridcell "9,124,500" [ref=e779]
+                    - gridcell "14,168,561" [ref=e780]
+                    - gridcell "0" [ref=e781]
+                    - gridcell "0" [ref=e782]
+                    - gridcell "0" [ref=e783]
+                    - gridcell "0" [ref=e784]
+                    - gridcell "133,320,000" [ref=e785]
+                    - gridcell "0" [ref=e786]
+                    - gridcell "0" [ref=e787]
+                    - gridcell "0" [ref=e788]
+                    - gridcell "0" [ref=e789]
+                    - gridcell "0" [ref=e790]
+                    - gridcell "0" [ref=e791]
+                  - row "СТО \"Узавто\" -51,019,240.2 155,200 -51,175,245.2 0 605 0 0 200 0 0 0 0 0 0 0 0 0 0 0" [ref=e792]:
+                    - gridcell "СТО \"Узавто\"" [ref=e793]:
+                      - link "СТО \"Узавто\"" [ref=e794] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/d8_18
+                    - gridcell "-51,019,240.2" [ref=e795]
+                    - gridcell "155,200" [ref=e796]
+                    - gridcell "-51,175,245.2" [ref=e797]
+                    - gridcell "0" [ref=e798]
+                    - gridcell "605" [ref=e799]
+                    - gridcell "0" [ref=e800]
+                    - gridcell "0" [ref=e801]
+                    - gridcell "200" [ref=e802]
+                    - gridcell "0" [ref=e803]
+                    - gridcell "0" [ref=e804]
+                    - gridcell "0" [ref=e805]
+                    - gridcell "0" [ref=e806]
+                    - gridcell "0" [ref=e807]
+                    - gridcell "0" [ref=e808]
+                    - gridcell "0" [ref=e809]
+                    - gridcell "0" [ref=e810]
+                    - gridcell "0" [ref=e811]
+                    - gridcell "0" [ref=e812]
+                    - gridcell "0" [ref=e813]
+                  - row "Вторник 8 -49,760,000 0 -49,520,000 0 -340,000 100,000 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e814]:
+                    - gridcell "Вторник 8" [ref=e815]:
+                      - link "Вторник 8" [ref=e816] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/i9_38
+                    - gridcell "-49,760,000" [ref=e817]
+                    - gridcell "0" [ref=e818]
+                    - gridcell "-49,520,000" [ref=e819]
+                    - gridcell "0" [ref=e820]
+                    - gridcell "-340,000" [ref=e821]
+                    - gridcell "100,000" [ref=e822]
+                    - gridcell "0" [ref=e823]
+                    - gridcell "0" [ref=e824]
+                    - gridcell "0" [ref=e825]
+                    - gridcell "0" [ref=e826]
+                    - gridcell "0" [ref=e827]
+                    - gridcell "0" [ref=e828]
+                    - gridcell "0" [ref=e829]
+                    - gridcell "0" [ref=e830]
+                    - gridcell "0" [ref=e831]
+                    - gridcell "0" [ref=e832]
+                    - gridcell "0" [ref=e833]
+                    - gridcell "0" [ref=e834]
+                    - gridcell "0" [ref=e835]
+                  - row "Вторник 33 -49,616,640.02 1,100,226.98 -50,716,861 0 0 0 0 -6 0 0 0 0 0 0 0 0 0 0 0" [ref=e836]:
+                    - gridcell "Вторник 33" [ref=e837]:
+                      - link "Вторник 33" [ref=e838] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/l8_33
+                    - gridcell "-49,616,640.02" [ref=e839]
+                    - gridcell "1,100,226.98" [ref=e840]
+                    - gridcell "-50,716,861" [ref=e841]
+                    - gridcell "0" [ref=e842]
+                    - gridcell "0" [ref=e843]
+                    - gridcell "0" [ref=e844]
+                    - gridcell "0" [ref=e845]
+                    - gridcell "-6" [ref=e846]
+                    - gridcell "0" [ref=e847]
+                    - gridcell "0" [ref=e848]
+                    - gridcell "0" [ref=e849]
+                    - gridcell "0" [ref=e850]
+                    - gridcell "0" [ref=e851]
+                    - gridcell "0" [ref=e852]
+                    - gridcell "0" [ref=e853]
+                    - gridcell "0" [ref=e854]
+                    - gridcell "0" [ref=e855]
+                    - gridcell "0" [ref=e856]
+                    - gridcell "0" [ref=e857]
+                  - row "Уч Кахрамон 14 -41,246,137.09 -149,997 -41,096,052.9 0 0 0 0 -87.19 0 0 0 0 0 0 0 0 0 0 0" [ref=e858]:
+                    - gridcell "Уч Кахрамон 14" [ref=e859]:
+                      - link "Уч Кахрамон 14" [ref=e860] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/j7_56
+                    - gridcell "-41,246,137.09" [ref=e861]
+                    - gridcell "-149,997" [ref=e862]
+                    - gridcell "-41,096,052.9" [ref=e863]
+                    - gridcell "0" [ref=e864]
+                    - gridcell "0" [ref=e865]
+                    - gridcell "0" [ref=e866]
+                    - gridcell "0" [ref=e867]
+                    - gridcell "-87.19" [ref=e868]
+                    - gridcell "0" [ref=e869]
+                    - gridcell "0" [ref=e870]
+                    - gridcell "0" [ref=e871]
+                    - gridcell "0" [ref=e872]
+                    - gridcell "0" [ref=e873]
+                    - gridcell "0" [ref=e874]
+                    - gridcell "0" [ref=e875]
+                    - gridcell "0" [ref=e876]
+                    - gridcell "0" [ref=e877]
+                    - gridcell "0" [ref=e878]
+                    - gridcell "0" [ref=e879]
+                  - row "сентябрь -39,164,049 -3,050 -39,271,999 0 31,000 20,000 0 0 0 60,000 0 0 0 0 0 0 0 0 0" [ref=e880]:
+                    - gridcell "сентябрь" [ref=e881]:
+                      - link "сентябрь" [ref=e882] [cursor=pointer]:
+                        - /url: /clients/transactions/Detail/client/p6_14105
+                    - gridcell "-39,164,049" [ref=e883]
+                    - gridcell "-3,050" [ref=e884]
+                    - gridcell "-39,271,999" [ref=e885]
+                    - gridcell "0" [ref=e886]
+                    - gridcell "31,000" [ref=e887]
+                    - gridcell "20,000" [ref=e888]
+                    - gridcell "0" [ref=e889]
+                    - gridcell "0" [ref=e890]
+                    - gridcell "0" [ref=e891]
+                    - gridcell "60,000" [ref=e892]
+                    - gridcell "0" [ref=e893]
+                    - gridcell "0" [ref=e894]
+                    - gridcell "0" [ref=e895]
+                    - gridcell "0" [ref=e896]
+                    - gridcell "0" [ref=e897]
+                    - gridcell "0" [ref=e898]
+                    - gridcell "0" [ref=e899]
+                    - gridcell "0" [ref=e900]
+                    - gridcell "0" [ref=e901]
+              - status [ref=e902]: 1 - 10 / 392
+              - list [ref=e904]:
+                - listitem [ref=e905]:
+                  - link "Пред." [ref=e906]:
+                    - /url: "#"
+                - listitem [ref=e907] [cursor=pointer]:
+                  - link "1" [ref=e908]:
+                    - /url: "#"
+                - listitem [ref=e909] [cursor=pointer]:
+                  - link "2" [ref=e910]:
+                    - /url: "#"
+                - listitem [ref=e911] [cursor=pointer]:
+                  - link "3" [ref=e912]:
+                    - /url: "#"
+                - listitem [ref=e913] [cursor=pointer]:
+                  - link "4" [ref=e914]:
+                    - /url: "#"
+                - listitem [ref=e915] [cursor=pointer]:
+                  - link "5" [ref=e916]:
+                    - /url: "#"
+                - listitem [ref=e917]:
+                  - link "…" [ref=e918]:
+                    - /url: "#"
+                - listitem [ref=e919] [cursor=pointer]:
+                  - link "40" [ref=e920]:
+                    - /url: "#"
+                - listitem [ref=e921] [cursor=pointer]:
+                  - link "След." [ref=e922]:
+                    - /url: "#"
+  - text:    

@@ -1,0 +1,803 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - heading "Клиенты" [level=4] [ref=e104]
+        - generic [ref=e105]:
+          - link " Неподтвержденные клиенты" [ref=e106] [cursor=pointer]:
+            - /url: /clients/approval
+            - generic [ref=e107]: 
+            - text: Неподтвержденные клиенты
+          - link " История изменения визитов" [ref=e108] [cursor=pointer]:
+            - /url: /report/visitingHistory
+            - generic [ref=e109]: 
+            - text: История изменения визитов
+          - link " QR-kod" [ref=e110] [cursor=pointer]:
+            - /url: /clients/client/generateQR
+            - generic [ref=e111]: 
+            - text: QR-kod
+          - button " Общая конфигурация" [ref=e113] [cursor=pointer]:
+            - generic [ref=e114]: 
+            - text: Общая конфигурация
+          - link " Экспорт в файл Google Earth" [ref=e116] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e117]: 
+            - text: Экспорт в файл Google Earth
+          - button "Групповая обработка" [ref=e119] [cursor=pointer]: Групповая обработка
+          - generic [ref=e121]:
+            - button "Toggle Dropdown" [ref=e123] [cursor=pointer]:
+              - generic [ref=e125]: Toggle Dropdown
+            - generic [ref=e126] [cursor=pointer]:
+              - generic [ref=e127]: 
+              - text: Добавить клиента
+      - generic [ref=e139]:
+        - table [ref=e140]:
+          - rowgroup [ref=e141]:
+            - row "Мерчендайзер Агент Территория Категории клиентов Тип цены День Экспедитор Активный Локация" [ref=e142]:
+              - cell "Мерчендайзер" [ref=e143]:
+                - generic [ref=e144]:
+                  - button "Мерчендайзер" [ref=e145] [cursor=pointer]:
+                    - generic [ref=e146]: Мерчендайзер
+                  - text:        
+              - cell "Агент" [ref=e148]:
+                - generic [ref=e149]:
+                  - button "Агент" [ref=e150] [cursor=pointer]:
+                    - generic [ref=e151]: Агент
+                  - text:                              
+              - cell "Территория" [ref=e153]:
+                - generic [ref=e154]:
+                  - button "Территория" [ref=e155] [cursor=pointer]:
+                    - generic [ref=e156]: Территория
+                  - text:                             
+              - cell "Категории клиентов" [ref=e158]:
+                - generic [ref=e159]:
+                  - button "Категории клиентов" [ref=e160] [cursor=pointer]:
+                    - generic [ref=e161]: Категории клиентов
+                  - text:                
+              - cell "Тип цены" [ref=e163]:
+                - generic [ref=e164]:
+                  - button "Тип цены" [ref=e165] [cursor=pointer]:
+                    - generic [ref=e166]: Тип цены
+                  - text:                                      
+              - cell "День" [ref=e168]:
+                - generic [ref=e169]:
+                  - button "День" [ref=e170] [cursor=pointer]:
+                    - generic [ref=e171]: День
+                  - text:       
+              - cell "Экспедитор" [ref=e173]:
+                - generic [ref=e174]:
+                  - button "Экспедитор" [ref=e175] [cursor=pointer]:
+                    - generic [ref=e176]: Экспедитор
+                  - text:                       
+              - cell "Активный" [ref=e178]:
+                - generic [ref=e179]:
+                  - button "Активный" [ref=e180] [cursor=pointer]:
+                    - generic [ref=e181]: Активный
+                  - text:   
+              - cell "Локация" [ref=e183]:
+                - generic [ref=e184]:
+                  - button "Локация" [ref=e185] [cursor=pointer]:
+                    - generic [ref=e186]: Локация
+                  - text:   
+        - table [ref=e188]:
+          - rowgroup [ref=e189]:
+            - row " май 12 - май 18  Тип ТТ Канал сбыта Класс клиента Все недели ИНН Все (Телефон) Все (иден. код 2) Все клиенты Тип оборудования По местоположению  Фильтр" [ref=e190]:
+              - cell " май 12 - май 18 " [ref=e191]:
+                - generic [ref=e192] [cursor=pointer]:
+                  - generic [ref=e193]: 
+                  - text: май 12 - май 18
+                  - generic [ref=e194]: 
+              - cell "Тип ТТ" [ref=e195]:
+                - generic [ref=e196]:
+                  - button "Тип ТТ" [ref=e197] [cursor=pointer]:
+                    - generic [ref=e198]: Тип ТТ
+                  - text:        
+              - cell "Канал сбыта" [ref=e200]:
+                - generic [ref=e201]:
+                  - button "Канал сбыта" [ref=e202] [cursor=pointer]:
+                    - generic [ref=e203]: Канал сбыта
+                  - text:      
+              - cell "Класс клиента" [ref=e205]:
+                - generic [ref=e206]:
+                  - button "Класс клиента" [ref=e207] [cursor=pointer]:
+                    - generic [ref=e208]: Класс клиента
+                  - text:      
+              - cell "Все недели" [ref=e210]:
+                - generic [ref=e211]:
+                  - button "Все недели" [ref=e212] [cursor=pointer]:
+                    - generic [ref=e213]: Все недели
+                  - text:     
+              - cell "ИНН" [ref=e215]:
+                - generic [ref=e216]:
+                  - button "ИНН" [ref=e217] [cursor=pointer]:
+                    - generic [ref=e218]: ИНН
+                  - text:   
+              - cell "Все (Телефон)" [ref=e220]:
+                - generic [ref=e221]:
+                  - button "Все (Телефон)" [ref=e222] [cursor=pointer]:
+                    - generic [ref=e223]: Все (Телефон)
+                  - text:   
+              - cell "Все (иден. код 2)" [ref=e225]:
+                - generic [ref=e226]:
+                  - button "Все (иден. код 2)" [ref=e227] [cursor=pointer]:
+                    - generic [ref=e228]: Все (иден. код 2)
+                  - text:   
+              - cell "Все клиенты" [ref=e230]:
+                - generic [ref=e231]:
+                  - button "Все клиенты" [ref=e232] [cursor=pointer]:
+                    - generic [ref=e233]: Все клиенты
+                  - text:   
+              - cell "Тип оборудования" [ref=e235]:
+                - generic [ref=e236]:
+                  - button "Тип оборудования" [ref=e237] [cursor=pointer]:
+                    - generic [ref=e238]: Тип оборудования
+                  - text:     
+              - cell "По местоположению " [ref=e240]:
+                - button "По местоположению " [ref=e242] [cursor=pointer]:
+                  - text: По местоположению
+                  - generic [ref=e243]: 
+              - cell "Фильтр" [ref=e244]:
+                - button "Фильтр" [ref=e245] [cursor=pointer]
+      - generic [ref=e128]:
+        - generic [ref=e246]:
+          - generic [ref=e247]:
+            - link "По 10" [ref=e248] [cursor=pointer]:
+              - /url: "#"
+            - link "Excel" [ref=e249] [cursor=pointer]:
+              - /url: "#"
+            - link "Настройка таблицы" [ref=e250] [cursor=pointer]:
+              - /url: "#"
+            - link "Порядок колонок" [ref=e251] [cursor=pointer]:
+              - /url: "#"
+            - link " Фильтры" [ref=e252] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e253]:
+                - generic [ref=e254]: 
+                - text: Фильтры
+          - generic [ref=e256]:
+            - text: "Быстрый поиск:"
+            - searchbox "Быстрый поиск:" [ref=e257]
+          - grid [ref=e258]:
+            - rowgroup [ref=e259]:
+              - row [ref=e260]:
+                - columnheader [ref=e261]:
+                  - checkbox [ref=e262]
+                - 'columnheader "ИД клиента: активировать для сортировки столбцы по возрастанию" [ref=e263] [cursor=pointer]': ИД клиента
+                - 'columnheader "Название клиента: активировать для сортировки столбцы по возрастанию" [ref=e264] [cursor=pointer]': Название клиента
+                - 'columnheader "Название фирмы : активировать для сортировки столбцы по возрастанию" [ref=e265] [cursor=pointer]': Название фирмы
+                - 'columnheader "Баланс: активировать для сортировки столбцы по возрастанию" [ref=e266] [cursor=pointer]': Баланс
+                - 'columnheader "Тип оборудования: активировать для сортировки столбцы по возрастанию" [ref=e267] [cursor=pointer]': Тип оборудования
+                - 'columnheader "Оборудование: активировать для сортировки столбцы по возрастанию" [ref=e268] [cursor=pointer]': Оборудование
+                - 'columnheader "Телефон: активировать для сортировки столбцы по возрастанию" [ref=e269] [cursor=pointer]': Телефон
+                - 'columnheader "Агент: активировать для сортировки столбцы по возрастанию" [ref=e270] [cursor=pointer]': Агент
+                - 'columnheader "День: активировать для сортировки столбцы по возрастанию" [ref=e271] [cursor=pointer]': День
+                - 'columnheader "Территория: активировать для сортировки столбцы по возрастанию" [ref=e272] [cursor=pointer]': Территория
+                - 'columnheader "Адрес: активировать для сортировки столбцы по возрастанию" [ref=e273] [cursor=pointer]': Адрес
+                - 'columnheader "Ориентир: активировать для сортировки столбцы по возрастанию" [ref=e274] [cursor=pointer]': Ориентир
+                - 'columnheader "Категория: активировать для сортировки столбцы по возрастанию" [ref=e275] [cursor=pointer]': Категория
+                - 'columnheader "Активность: активировать для сортировки столбцы по возрастанию" [ref=e276] [cursor=pointer]': Активность
+                - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e277] [cursor=pointer]'
+                - 'columnheader "Локация: активировать для сортировки столбцы по возрастанию" [ref=e278] [cursor=pointer]': Локация
+                - 'columnheader "Тип ТТ: активировать для сортировки столбцы по возрастанию" [ref=e279] [cursor=pointer]': Тип ТТ
+                - 'columnheader "Канал сбыта: активировать для сортировки столбцы по возрастанию" [ref=e280] [cursor=pointer]': Канал сбыта
+                - 'columnheader "Бот акт-сверки: активировать для сортировки столбцы по возрастанию" [ref=e281] [cursor=pointer]': Бот акт-сверки
+                - 'columnheader "Код: активировать для сортировки столбцы по возрастанию" [ref=e282] [cursor=pointer]': Код
+                - 'columnheader "Бонус: активировать для сортировки столбцы по возрастанию" [ref=e283] [cursor=pointer]': Бонус
+                - 'columnheader "RLP Бонус: активировать для сортировки столбцы по возрастанию" [ref=e284] [cursor=pointer]': RLP Бонус
+                - 'columnheader "Штрих (Бар) код: активировать для сортировки столбцы по возрастанию" [ref=e285] [cursor=pointer]': Штрих (Бар) код
+            - rowgroup [ref=e286]:
+              - row "d8_1 Второй пустой ООО Второй пустой -589,302.74000 Холодильник Витрина переносная Световой меч Rasberry PI V2 йййй XOXO-XUXU-9999 Rasberry PI V2 Rasberry PI V2 Rasberry PI V2 Rasberry PI V2 Rasberry PI V2 qqwr +998900659739 Avazhon(Вс) Gleb agent(Пн,Вт,Ср,Чт,Пт) Пн,Вт,Ср,Чт,Пт Навои продублируется ли ТТ школаa Оптовая торговля Активный Действия  Standart Навоиазот Нет 333 10 RLP test" [ref=e287]:
+                - gridcell [ref=e288]:
+                  - checkbox [ref=e289]
+                - gridcell "d8_1" [ref=e290]:
+                  - link "d8_1" [ref=e291] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d8_1
+                - gridcell "Второй пустой" [ref=e292]:
+                  - link "Второй пустой" [ref=e294] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d8_1
+                - gridcell "ООО Второй пустой" [ref=e295]:
+                  - link "ООО Второй пустой" [ref=e297] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d8_1
+                - gridcell "-589,302.74000" [ref=e298]
+                - gridcell "Холодильник Витрина переносная" [ref=e299]:
+                  - text: Холодильник
+                  - text: Витрина переносная
+                - gridcell "Световой меч Rasberry PI V2 йййй XOXO-XUXU-9999 Rasberry PI V2 Rasberry PI V2 Rasberry PI V2 Rasberry PI V2 Rasberry PI V2 qqwr" [ref=e300]:
+                  - text: Световой меч
+                  - text: Rasberry PI V2
+                  - text: йййй XOXO-XUXU-9999
+                  - text: Rasberry PI V2
+                  - text: Rasberry PI V2
+                  - text: Rasberry PI V2
+                  - text: Rasberry PI V2
+                  - text: Rasberry PI V2
+                  - text: qqwr
+                - gridcell "+998900659739" [ref=e301]:
+                  - textbox [disabled] [ref=e302]: "+998900659739"
+                - gridcell "Avazhon(Вс) Gleb agent(Пн,Вт,Ср,Чт,Пт)" [ref=e303]:
+                  - text: Avazhon(Вс)
+                  - text: Gleb agent(Пн,Вт,Ср,Чт,Пт)
+                - gridcell "Пн,Вт,Ср,Чт,Пт" [ref=e304]
+                - gridcell "Навои" [ref=e305]
+                - gridcell "продублируется ли ТТ" [ref=e306]
+                - gridcell "школаa" [ref=e307]
+                - gridcell "Оптовая торговля" [ref=e308]
+                - gridcell "Активный" [ref=e309]
+                - gridcell "Действия" [ref=e310]:
+                  - generic [ref=e311]:
+                    - button "Действия" [ref=e312] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e313]:
+                  - generic [ref=e315] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e316]
+                - gridcell "Навоиазот" [ref=e317]
+                - gridcell "Нет" [ref=e318]
+                - gridcell "333" [ref=e319]
+                - gridcell [ref=e320]
+                - gridcell "10 RLP test" [ref=e321]
+                - gridcell [ref=e322]
+              - row "k0_2 r Bilol123 Навоийский горно-металлургический комбинат Проверка 222 965,283,378.00000 Холодильник Программируемые контроллеры test123 qksadmkdfmdsfkdmsfk cc Atlant Atlant test +998944071739 Gleb agent(Пн,Вт,Ср) 11111(Вт,Ср) beck(Пн,Вт,Ср,Пт,Сб,Вс) Пн,Вт,Ср,Пт,Сб,Вс Ташкент Навои, Халклар Дус1тлиги ул, 96 д Дом советов Supermarket Активный Действия  Standart Нет a0_1148 rlp,Test2,rlprlp" [ref=e323]:
+                - gridcell [ref=e324]:
+                  - checkbox [ref=e325]
+                - gridcell "k0_2" [ref=e326]:
+                  - link "k0_2" [ref=e327] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=k0_2
+                - gridcell "r Bilol123" [ref=e328]:
+                  - link "r Bilol123" [ref=e330] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=k0_2
+                - gridcell "Навоийский горно-металлургический комбинат Проверка 222" [ref=e331]:
+                  - link "Навоийский горно-металлургический комбинат Проверка 222" [ref=e333] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=k0_2
+                - gridcell "965,283,378.00000" [ref=e334]
+                - gridcell "Холодильник Программируемые контроллеры" [ref=e335]:
+                  - text: Холодильник
+                  - text: Программируемые контроллеры
+                - gridcell "test123 qksadmkdfmdsfkdmsfk cc Atlant Atlant test" [ref=e336]:
+                  - text: test123 qksadmkdfmdsfkdmsfk
+                  - text: cc
+                  - text: Atlant
+                  - text: Atlant
+                  - text: test
+                - gridcell "+998944071739" [ref=e337]:
+                  - textbox [disabled] [ref=e338]: "+998944071739"
+                - gridcell "Gleb agent(Пн,Вт,Ср) 11111(Вт,Ср) beck(Пн,Вт,Ср,Пт,Сб,Вс)" [ref=e339]:
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: 11111(Вт,Ср)
+                  - text: beck(Пн,Вт,Ср,Пт,Сб,Вс)
+                - gridcell "Пн,Вт,Ср,Пт,Сб,Вс" [ref=e340]
+                - gridcell "Ташкент" [ref=e341]
+                - gridcell "Навои, Халклар Дус1тлиги ул, 96 д" [ref=e342]
+                - gridcell "Дом советов" [ref=e343]
+                - gridcell "Supermarket" [ref=e344]
+                - gridcell "Активный" [ref=e345]
+                - gridcell "Действия" [ref=e346]:
+                  - generic [ref=e347]:
+                    - button "Действия" [ref=e348] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e349]:
+                  - generic [ref=e351] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e352]
+                - gridcell [ref=e353]
+                - gridcell "Нет" [ref=e354]
+                - gridcell "a0_1148" [ref=e355]
+                - gridcell [ref=e356]
+                - gridcell "rlp,Test2,rlprlp" [ref=e357]
+                - gridcell [ref=e358]
+              - row "g5_3 Saidazim Saidazim 1,163,412,657.77000 Холодильник tyy Atlant test +998924809833 Gleb agent(Пн,Вт,Ср) Usmon(Вт) beck(Пн) Пн Ташкент Навои, Халклар Дустлиги ул, 7 ЦУМ Supermarket Активный Действия  Standart Нет 4124124 rlp,Test2,rlprlp" [ref=e359]:
+                - gridcell [ref=e360]:
+                  - checkbox [ref=e361]
+                - gridcell "g5_3" [ref=e362]:
+                  - link "g5_3" [ref=e363] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=g5_3
+                - gridcell "Saidazim" [ref=e364]:
+                  - link "Saidazim" [ref=e366] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=g5_3
+                - gridcell "Saidazim" [ref=e367]:
+                  - link "Saidazim" [ref=e369] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=g5_3
+                - gridcell "1,163,412,657.77000" [ref=e370]
+                - gridcell "Холодильник" [ref=e371]: Холодильник
+                - gridcell "tyy Atlant test" [ref=e372]:
+                  - text: tyy
+                  - text: Atlant
+                  - text: test
+                - gridcell "+998924809833" [ref=e373]:
+                  - textbox [disabled] [ref=e374]: "+998924809833"
+                - gridcell "Gleb agent(Пн,Вт,Ср) Usmon(Вт) beck(Пн)" [ref=e375]:
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: Usmon(Вт)
+                  - text: beck(Пн)
+                - gridcell "Пн" [ref=e376]
+                - gridcell "Ташкент" [ref=e377]
+                - gridcell "Навои, Халклар Дустлиги ул, 7" [ref=e378]
+                - gridcell "ЦУМ" [ref=e379]
+                - gridcell "Supermarket" [ref=e380]
+                - gridcell "Активный" [ref=e381]
+                - gridcell "Действия" [ref=e382]:
+                  - generic [ref=e383]:
+                    - button "Действия" [ref=e384] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e385]:
+                  - generic [ref=e387] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e388]
+                - gridcell [ref=e389]
+                - gridcell "Нет" [ref=e390]
+                - gridcell "4124124" [ref=e391]
+                - gridcell [ref=e392]
+                - gridcell "rlp,Test2,rlprlp" [ref=e393]
+                - gridcell [ref=e394]
+              - row "d7_4 1Sardor 1Sardor 113,849,902.20000 Без инвентаря Без инвентаря +998924071739 Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс) Agent007(Пн) Пн Ташкент Навои, проспект Ислама Каримова, 52А Восход Supermarket Активный Действия  Standart Навоиазот Нет" [ref=e395]:
+                - gridcell [ref=e396]:
+                  - checkbox [ref=e397]
+                - gridcell "d7_4" [ref=e398]:
+                  - link "d7_4" [ref=e399] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d7_4
+                - gridcell "1Sardor" [ref=e400]:
+                  - link "1Sardor" [ref=e402] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d7_4
+                - gridcell "1Sardor" [ref=e403]:
+                  - link "1Sardor" [ref=e405] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d7_4
+                - gridcell "113,849,902.20000" [ref=e406]
+                - gridcell "Без инвентаря" [ref=e407]
+                - gridcell "Без инвентаря" [ref=e408]
+                - gridcell "+998924071739" [ref=e409]:
+                  - textbox [disabled] [ref=e410]: "+998924071739"
+                - gridcell "Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс) Agent007(Пн)" [ref=e411]:
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)
+                  - text: Agent007(Пн)
+                - gridcell "Пн" [ref=e412]
+                - gridcell "Ташкент" [ref=e413]
+                - gridcell "Навои, проспект Ислама Каримова, 52А" [ref=e414]
+                - gridcell "Восход" [ref=e415]
+                - gridcell "Supermarket" [ref=e416]
+                - gridcell "Активный" [ref=e417]
+                - gridcell "Действия" [ref=e418]:
+                  - generic [ref=e419]:
+                    - button "Действия" [ref=e420] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e421]:
+                  - generic [ref=e423] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e424]
+                - gridcell "Навоиазот" [ref=e425]
+                - gridcell "Нет" [ref=e426]
+                - gridcell [ref=e427]
+                - gridcell [ref=e428]
+                - gridcell [ref=e429]
+                - gridcell [ref=e430]
+              - row "p3_6 JHKJK Шамс Маркет Shams -2,965,853.47000 Программируемые контроллеры Холодильник inventory 3 inventory 2 inventory inventory 1 Atlant Atlant test +79781247262 Avazhon(Вс) Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс) Пн,Вт,Ср,Чт,Пт,Сб,Вс Ташкент Навои, Спутник Спутник Supermarket Активный Действия  Standart Test kanal Нет" [ref=e431]:
+                - gridcell [ref=e432]:
+                  - checkbox [ref=e433]
+                - gridcell "p3_6" [ref=e434]:
+                  - link "p3_6" [ref=e435] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=p3_6
+                - gridcell "JHKJK Шамс Маркет" [ref=e436]:
+                  - link "JHKJK Шамс Маркет" [ref=e438] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=p3_6
+                - gridcell "Shams" [ref=e439]:
+                  - link "Shams" [ref=e441] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=p3_6
+                - gridcell "-2,965,853.47000" [ref=e442]
+                - gridcell "Программируемые контроллеры Холодильник" [ref=e443]:
+                  - text: Программируемые контроллеры
+                  - text: Холодильник
+                - gridcell "inventory 3 inventory 2 inventory inventory 1 Atlant Atlant test" [ref=e444]:
+                  - text: inventory 3
+                  - text: inventory 2
+                  - text: inventory
+                  - text: inventory 1
+                  - text: Atlant
+                  - text: Atlant
+                  - text: test
+                - gridcell "+79781247262" [ref=e445]:
+                  - textbox [disabled] [ref=e446]: "+79781247262"
+                - gridcell "Avazhon(Вс) Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)" [ref=e447]:
+                  - text: Avazhon(Вс)
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)
+                - gridcell "Пн,Вт,Ср,Чт,Пт,Сб,Вс" [ref=e448]
+                - gridcell "Ташкент" [ref=e449]
+                - gridcell "Навои, Спутник" [ref=e450]
+                - gridcell "Спутник" [ref=e451]
+                - gridcell "Supermarket" [ref=e452]
+                - gridcell "Активный" [ref=e453]
+                - gridcell "Действия" [ref=e454]:
+                  - generic [ref=e455]:
+                    - button "Действия" [ref=e456] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e457]:
+                  - generic [ref=e459] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e460]
+                - gridcell "Test kanal" [ref=e461]
+                - gridcell "Нет" [ref=e462]
+                - gridcell [ref=e463]
+                - gridcell [ref=e464]
+                - gridcell [ref=e465]
+                - gridcell [ref=e466]
+              - row "l7_7 Юлдуз маркетaaaa HumoUZ -7,024,056.93000 Программируемые контроллеры Холодильник qwer rewq Atlant Atlant test +998940109209 Gleb agent(Пн,Вт,Ср) beck(Пн) Agent007(Пн) Пн Ташкент Зарафшан, ул. Ёшлик. Пересечение ул. Бахор и ул. Ёшлик Supermarket Активный Действия  Standart Навоиазот Нет 555 rlprlp,10 RLP test,test23,rlp,Test2" [ref=e467]:
+                - gridcell [ref=e468]:
+                  - checkbox [ref=e469]
+                - gridcell "l7_7" [ref=e470]:
+                  - link "l7_7" [ref=e471] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=l7_7
+                - gridcell "Юлдуз маркетaaaa" [ref=e472]:
+                  - link "Юлдуз маркетaaaa" [ref=e474] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=l7_7
+                - gridcell "HumoUZ" [ref=e475]:
+                  - link "HumoUZ" [ref=e477] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=l7_7
+                - gridcell "-7,024,056.93000" [ref=e478]
+                - gridcell "Программируемые контроллеры Холодильник" [ref=e479]:
+                  - text: Программируемые контроллеры
+                  - text: Холодильник
+                - gridcell "qwer rewq Atlant Atlant test" [ref=e480]:
+                  - text: qwer
+                  - text: rewq
+                  - text: Atlant
+                  - text: Atlant
+                  - text: test
+                - gridcell "+998940109209" [ref=e481]:
+                  - textbox [disabled] [ref=e482]: "+998940109209"
+                - gridcell "Gleb agent(Пн,Вт,Ср) beck(Пн) Agent007(Пн)" [ref=e483]:
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: beck(Пн)
+                  - text: Agent007(Пн)
+                - gridcell "Пн" [ref=e484]
+                - gridcell "Ташкент" [ref=e485]
+                - gridcell "Зарафшан, ул. Ёшлик." [ref=e486]
+                - gridcell "Пересечение ул. Бахор и ул. Ёшлик" [ref=e487]
+                - gridcell "Supermarket" [ref=e488]
+                - gridcell "Активный" [ref=e489]
+                - gridcell "Действия" [ref=e490]:
+                  - generic [ref=e491]:
+                    - button "Действия" [ref=e492] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e493]:
+                  - generic [ref=e495] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e496]
+                - gridcell "Навоиазот" [ref=e497]
+                - gridcell "Нет" [ref=e498]
+                - gridcell "555" [ref=e499]
+                - gridcell [ref=e500]
+                - gridcell "rlprlp,10 RLP test,test23,rlp,Test2" [ref=e501]
+                - gridcell [ref=e502]
+              - row "b0_10 AAA111 Тандыр Урумчи HumoUZ -25,425,140.00000 Без инвентаря Без инвентаря Gleb agent(Пн,Вт,Ср) Usmon(Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс) Пн,Вт,Ср,Чт,Пт,Сб,Вс Ташкент Учкудук, Халклар Дустлиги ул, 59 Школа №7 Supermarket Активный Действия  Standart Нет" [ref=e503]:
+                - gridcell [ref=e504]:
+                  - checkbox [ref=e505]
+                - gridcell "b0_10" [ref=e506]:
+                  - link "b0_10" [ref=e507] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=b0_10
+                - gridcell "AAA111 Тандыр Урумчи" [ref=e508]:
+                  - link "AAA111 Тандыр Урумчи" [ref=e510] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=b0_10
+                - gridcell "HumoUZ" [ref=e511]:
+                  - link "HumoUZ" [ref=e513] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=b0_10
+                - gridcell "-25,425,140.00000" [ref=e514]
+                - gridcell "Без инвентаря" [ref=e515]
+                - gridcell "Без инвентаря" [ref=e516]
+                - gridcell [ref=e517]
+                - gridcell "Gleb agent(Пн,Вт,Ср) Usmon(Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)" [ref=e518]:
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: Usmon(Ср)
+                  - text: beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)
+                - gridcell "Пн,Вт,Ср,Чт,Пт,Сб,Вс" [ref=e519]
+                - gridcell "Ташкент" [ref=e520]
+                - gridcell "Учкудук, Халклар Дустлиги ул, 59" [ref=e521]
+                - gridcell "Школа №7" [ref=e522]
+                - gridcell "Supermarket" [ref=e523]
+                - gridcell "Активный" [ref=e524]
+                - gridcell "Действия" [ref=e525]:
+                  - generic [ref=e526]:
+                    - button "Действия" [ref=e527] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e528]:
+                  - generic [ref=e530] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e531]
+                - gridcell [ref=e532]
+                - gridcell "Нет" [ref=e533]
+                - gridcell [ref=e534]
+                - gridcell [ref=e535]
+                - gridcell [ref=e536]
+                - gridcell [ref=e537]
+              - row "d3_11 Золотой Петушок НГМК 1,421,212,829.60000 Витрина переносная Программируемые контроллеры Стелаж Холодильник not last not last new qwe test_jamshid hshs tttt tttt tttt tttt tttt tttt tttt hleb sputnik shams shams2 mishka mishka2 avto mishka3 mishka4 mishka5 mishka6 mishka6 mishka5 mishka8 mishka89 mishka9 mishka9 auto1 Sony Холодильник edt gggggg new newyear Atlant Atlant Atlant Atlant Atlant Atlant Atlant Atlant test test test test test +998331234567 Avazhon(Сб,Вс) Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс) Пн,Вт,Ср,Чт,Пт,Сб,Вс Ташкент Навои, Галаба 79А Школа №18 Supermarket Активный Действия  Standart Нет rlprlp,Test2,10 RLP test" [ref=e538]:
+                - gridcell [ref=e539]:
+                  - checkbox [ref=e540]
+                - gridcell "d3_11" [ref=e541]:
+                  - link "d3_11" [ref=e542] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d3_11
+                - gridcell "Золотой Петушок" [ref=e543]:
+                  - link "Золотой Петушок" [ref=e545] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d3_11
+                - gridcell "НГМК" [ref=e546]:
+                  - link "НГМК" [ref=e548] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d3_11
+                - gridcell "1,421,212,829.60000" [ref=e549]
+                - gridcell "Витрина переносная Программируемые контроллеры Стелаж Холодильник" [ref=e550]:
+                  - text: Витрина переносная
+                  - text: Программируемые контроллеры
+                  - text: Стелаж
+                  - text: Холодильник
+                - gridcell "not last not last new qwe test_jamshid hshs tttt tttt tttt tttt tttt tttt tttt hleb sputnik shams shams2 mishka mishka2 avto mishka3 mishka4 mishka5 mishka6 mishka6 mishka5 mishka8 mishka89 mishka9 mishka9 auto1 Sony Холодильник edt gggggg new newyear Atlant Atlant Atlant Atlant Atlant Atlant Atlant Atlant test test test test test" [ref=e551]:
+                  - text: not last
+                  - text: not last
+                  - text: new
+                  - text: qwe
+                  - text: test_jamshid
+                  - text: hshs
+                  - text: tttt
+                  - text: tttt
+                  - text: tttt
+                  - text: tttt
+                  - text: tttt
+                  - text: tttt
+                  - text: tttt
+                  - text: hleb
+                  - text: sputnik
+                  - text: shams
+                  - text: shams2
+                  - text: mishka
+                  - text: mishka2
+                  - text: avto
+                  - text: mishka3
+                  - text: mishka4
+                  - text: mishka5
+                  - text: mishka6
+                  - text: mishka6
+                  - text: mishka5
+                  - text: mishka8
+                  - text: mishka89
+                  - text: mishka9
+                  - text: mishka9
+                  - text: auto1
+                  - text: Sony Холодильник
+                  - text: edt
+                  - text: gggggg
+                  - text: new
+                  - text: newyear
+                  - text: Atlant
+                  - text: Atlant
+                  - text: Atlant
+                  - text: Atlant
+                  - text: Atlant
+                  - text: Atlant
+                  - text: Atlant
+                  - text: Atlant
+                  - text: test
+                  - text: test
+                  - text: test
+                  - text: test
+                  - text: test
+                - gridcell "+998331234567" [ref=e552]:
+                  - textbox [disabled] [ref=e553]: "+998331234567"
+                - gridcell "Avazhon(Сб,Вс) Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)" [ref=e554]:
+                  - text: Avazhon(Сб,Вс)
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)
+                - gridcell "Пн,Вт,Ср,Чт,Пт,Сб,Вс" [ref=e555]
+                - gridcell "Ташкент" [ref=e556]
+                - gridcell "Навои, Галаба 79А" [ref=e557]
+                - gridcell "Школа №18" [ref=e558]
+                - gridcell "Supermarket" [ref=e559]
+                - gridcell "Активный" [ref=e560]
+                - gridcell "Действия" [ref=e561]:
+                  - generic [ref=e562]:
+                    - button "Действия" [ref=e563] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e564]:
+                  - generic [ref=e566] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e567]
+                - gridcell [ref=e568]
+                - gridcell "Нет" [ref=e569]
+                - gridcell [ref=e570]
+                - gridcell [ref=e571]
+                - gridcell "rlprlp,Test2,10 RLP test" [ref=e572]
+                - gridcell [ref=e573]
+              - row "d8_18 СТО \"Узавто\" Хокимиятhjk -51,019,240.20000 Холодильник Стелаж last last2 test_jamshid +998901234569 Avazhon(Вс) Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс) Пн,Вт,Ср,Чт,Пт,Сб,Вс Ташкент 6-й проезд Кулолкургон, 30, Ташкент Метро Туркистон Supermarket Активный Действия  Standart Нет Test2,rlprlp,10 RLP test https://distr.uz/t/UZB0101002" [ref=e574]:
+                - gridcell [ref=e575]:
+                  - checkbox [ref=e576]
+                - gridcell "d8_18" [ref=e577]:
+                  - link "d8_18" [ref=e578] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d8_18
+                - gridcell "СТО \"Узавто\"" [ref=e579]:
+                  - link "СТО \"Узавто\"" [ref=e581] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d8_18
+                - gridcell "Хокимиятhjk" [ref=e582]:
+                  - link "Хокимиятhjk" [ref=e584] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=d8_18
+                - gridcell "-51,019,240.20000" [ref=e585]
+                - gridcell "Холодильник Стелаж" [ref=e586]:
+                  - text: Холодильник
+                  - text: Стелаж
+                - gridcell "last last2 test_jamshid" [ref=e587]:
+                  - text: last
+                  - text: last2
+                  - text: test_jamshid
+                - gridcell "+998901234569" [ref=e588]:
+                  - textbox [disabled] [ref=e589]: "+998901234569"
+                - gridcell "Avazhon(Вс) Gleb agent(Пн,Вт,Ср) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)" [ref=e590]:
+                  - text: Avazhon(Вс)
+                  - text: Gleb agent(Пн,Вт,Ср)
+                  - text: beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)
+                - gridcell "Пн,Вт,Ср,Чт,Пт,Сб,Вс" [ref=e591]
+                - gridcell "Ташкент" [ref=e592]
+                - gridcell "6-й проезд Кулолкургон, 30, Ташкент" [ref=e593]
+                - gridcell "Метро Туркистон" [ref=e594]
+                - gridcell "Supermarket" [ref=e595]
+                - gridcell "Активный" [ref=e596]
+                - gridcell "Действия" [ref=e597]:
+                  - generic [ref=e598]:
+                    - button "Действия" [ref=e599] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e600]:
+                  - generic [ref=e602] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e603]
+                - gridcell [ref=e604]
+                - gridcell "Нет" [ref=e605]
+                - gridcell [ref=e606]
+                - gridcell [ref=e607]
+                - gridcell "Test2,rlprlp,10 RLP test" [ref=e608]
+                - gridcell "https://distr.uz/t/UZB0101002" [ref=e609]
+              - row "o5_20 Абдулбосит ООО \"Абдулбосит\" -3,817,705.40000 Без инвентаря Без инвентаря Gleb agent(Пн,Вт,Ср,Чт,Пт) Agent Javoxir(Пн,Вт,Ср,Чт,Пт,Сб) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс) Пн,Вт,Ср,Чт,Пт,Сб,Вс Ташкент улица Ахмада Дониша, 26А, Ташкент 41.381439, 69.296212 Supermarket Активный Действия  Standart Нет code_client_001 10 RLP test" [ref=e610]:
+                - gridcell [ref=e611]:
+                  - checkbox [ref=e612]
+                - gridcell "o5_20" [ref=e613]:
+                  - link "o5_20" [ref=e614] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=o5_20
+                - gridcell "Абдулбосит" [ref=e615]:
+                  - link "Абдулбосит" [ref=e617] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=o5_20
+                - gridcell "ООО \"Абдулбосит\"" [ref=e618]:
+                  - link "ООО \"Абдулбосит\"" [ref=e620] [cursor=pointer]:
+                    - /url: /clients/client/profile?id=o5_20
+                - gridcell "-3,817,705.40000" [ref=e621]
+                - gridcell "Без инвентаря" [ref=e622]
+                - gridcell "Без инвентаря" [ref=e623]
+                - gridcell [ref=e624]
+                - gridcell "Gleb agent(Пн,Вт,Ср,Чт,Пт) Agent Javoxir(Пн,Вт,Ср,Чт,Пт,Сб) beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)" [ref=e625]:
+                  - text: Gleb agent(Пн,Вт,Ср,Чт,Пт)
+                  - text: Agent Javoxir(Пн,Вт,Ср,Чт,Пт,Сб)
+                  - text: beck(Пн,Вт,Ср,Чт,Пт,Сб,Вс)
+                - gridcell "Пн,Вт,Ср,Чт,Пт,Сб,Вс" [ref=e626]
+                - gridcell "Ташкент" [ref=e627]
+                - gridcell "улица Ахмада Дониша, 26А, Ташкент" [ref=e628]
+                - gridcell "41.381439, 69.296212" [ref=e629]
+                - gridcell "Supermarket" [ref=e630]
+                - gridcell "Активный" [ref=e631]
+                - gridcell "Действия" [ref=e632]:
+                  - generic [ref=e633]:
+                    - button "Действия" [ref=e634] [cursor=pointer]
+                    - text:     
+                - gridcell "" [ref=e635]:
+                  - generic [ref=e637] [cursor=pointer]: 
+                - gridcell "Standart" [ref=e638]
+                - gridcell [ref=e639]
+                - gridcell "Нет" [ref=e640]
+                - gridcell "code_client_001" [ref=e641]
+                - gridcell [ref=e642]
+                - gridcell "10 RLP test" [ref=e643]
+                - gridcell [ref=e644]
+          - status [ref=e645]: 1 - 10 / 4.424
+          - list [ref=e647]:
+            - listitem [ref=e648]:
+              - link "Пред." [ref=e649]:
+                - /url: "#"
+            - listitem [ref=e650] [cursor=pointer]:
+              - link "1" [ref=e651]:
+                - /url: "#"
+            - listitem [ref=e652] [cursor=pointer]:
+              - link "2" [ref=e653]:
+                - /url: "#"
+            - listitem [ref=e654] [cursor=pointer]:
+              - link "3" [ref=e655]:
+                - /url: "#"
+            - listitem [ref=e656] [cursor=pointer]:
+              - link "4" [ref=e657]:
+                - /url: "#"
+            - listitem [ref=e658] [cursor=pointer]:
+              - link "5" [ref=e659]:
+                - /url: "#"
+            - listitem [ref=e660]:
+              - link "…" [ref=e661]:
+                - /url: "#"
+            - listitem [ref=e662] [cursor=pointer]:
+              - link "443" [ref=e663]:
+                - /url: "#"
+            - listitem [ref=e664] [cursor=pointer]:
+              - link "След." [ref=e665]:
+                - /url: "#"
+        - button "Экспорт" [ref=e131] [cursor=pointer]: Экспорт
+        - link "Импорт" [ref=e133] [cursor=pointer]:
+          - /url: /clients/client/importxls
+        - link "Заполнить пустые адреса" [ref=e134] [cursor=pointer]:
+          - /url: /api/operator/ClientAdressFromLocation?idf=177908904934c016d28726fbc87556f2e3e15b3bb2&skip=Y&177908904934c016d28726fbc87556f2e3e15b3bb2
+        - link "Импорт / Обновление клиентов с Excel" [ref=e135] [cursor=pointer]:
+          - /url: /clients/client/import
+    - text:                                                  
+  - text:    

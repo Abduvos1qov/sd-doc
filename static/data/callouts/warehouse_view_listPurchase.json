@@ -1,0 +1,31 @@
+{
+  "slug": "warehouse_view_listPurchase",
+  "url": "/warehouse/view/listPurchase",
+  "title": "Purchases",
+  "callouts": [
+    {
+      "x": 344,
+      "y": 86,
+      "w": 260,
+      "h": 24,
+      "label": "Склад",
+      "kind": "field"
+    },
+    {
+      "x": 652,
+      "y": 86,
+      "w": 260,
+      "h": 24,
+      "label": "Отправитель",
+      "kind": "field"
+    },
+    {
+      "x": 111,
+      "y": 229,
+      "w": 1415,
+      "h": 60,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

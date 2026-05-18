@@ -1,0 +1,189 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e105]:
+      - heading "Склад" [level=3] [ref=e106]
+      - generic [ref=e110]:
+        - combobox [ref=e113]:
+          - generic [ref=e114]:
+            - generic: Тип
+            - textbox "Тип Тип" [ref=e116]
+          - text: 󰅙
+          - button "Открыть" [ref=e118] [cursor=pointer]: 󰍝
+        - combobox [ref=e121]:
+          - generic [ref=e122]:
+            - generic: Агенты
+            - textbox "Агенты Агенты" [ref=e124]
+          - text: 󰅙
+          - button "Открыть" [ref=e126] [cursor=pointer]: 󰍝
+        - combobox [ref=e129]:
+          - generic [ref=e130]:
+            - generic: Способ оплаты
+            - textbox "Способ оплаты Способ оплаты" [ref=e132]
+          - text: 󰅙
+          - button "Открыть" [ref=e134] [cursor=pointer]: 󰍝
+        - combobox [ref=e137] [cursor=pointer]:
+          - generic [ref=e138]:
+            - generic: Активность
+            - generic [ref=e139]:
+              - generic [ref=e141]: Активный
+              - textbox "Открыть": "true"
+          - generic [ref=e143]: 󰍝
+      - generic [ref=e146]:
+        - generic [ref=e148]:
+          - button "Добавить" [ref=e149] [cursor=pointer]:
+            - generic [ref=e151]: 󰐖
+            - generic [ref=e152]: Добавить
+          - button "Групповая обработка" [disabled]:
+            - generic:
+              - generic: 󰄹
+            - generic: Групповая обработка
+            - generic:
+              - generic: 󰍝
+          - generic [ref=e155]:
+            - generic [ref=e157]: 󰍉
+            - textbox [ref=e159]:
+              - /placeholder: Поиск
+            - text: 󰅙
+          - generic [ref=e160]:
+            - button "Показать по" [ref=e161] [cursor=pointer]:
+              - generic [ref=e162]: Показать по
+              - generic [ref=e164]: 󰍝
+            - button [ref=e165] [cursor=pointer]:
+              - generic [ref=e167]: 󰕭
+            - button "Excel" [ref=e168] [cursor=pointer]:
+              - generic [ref=e169]:
+                - generic [ref=e170]: Excel
+                - img [ref=e171]
+        - generic [ref=e174]:
+          - table [ref=e175]:
+            - rowgroup [ref=e176]:
+              - row "Название склада 󰒽 Тип склада 󰒺 Кладовщик 󰒺 Агенты 󰒺 Экспедиторы 󰒺 Способ оплаты 󰒺" [ref=e177]:
+                - columnheader [ref=e178]:
+                  - generic [ref=e181]:
+                    - generic [ref=e182]: 󰄱
+                    - checkbox [ref=e183] [cursor=pointer]
+                - columnheader "Название склада 󰒽" [ref=e184] [cursor=pointer]:
+                  - generic [ref=e185]:
+                    - text: Название склада
+                    - generic [ref=e186]: 󰒽
+                - columnheader "Тип склада 󰒺" [ref=e187] [cursor=pointer]:
+                  - generic [ref=e188]:
+                    - text: Тип склада
+                    - generic [ref=e189]: 󰒺
+                - columnheader "Кладовщик 󰒺" [ref=e190] [cursor=pointer]:
+                  - generic [ref=e191]:
+                    - text: Кладовщик
+                    - generic [ref=e192]: 󰒺
+                - columnheader "Агенты 󰒺" [ref=e193] [cursor=pointer]:
+                  - generic [ref=e194]:
+                    - text: Агенты
+                    - generic [ref=e195]: 󰒺
+                - columnheader "Экспедиторы 󰒺" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197]:
+                    - text: Экспедиторы
+                    - generic [ref=e198]: 󰒺
+                - columnheader "Способ оплаты 󰒺" [ref=e199] [cursor=pointer]:
+                  - generic [ref=e200]:
+                    - text: Способ оплаты
+                    - generic [ref=e201]: 󰒺
+                - columnheader [ref=e202]
+          - generic [ref=e204]: Нет данных
+        - generic [ref=e206]:
+          - generic [ref=e207]: Показаны записи 0 - 0 из 0
+          - navigation "Страница" [ref=e209]:
+            - list [ref=e210]:
+              - listitem [ref=e211]:
+                - button "Предыдущая" [disabled]:
+                  - generic:
+                    - generic: 󰅁
+              - listitem [ref=e212]:
+                - button "Следующая" [disabled]:
+                  - generic:
+                    - generic: 󰅂
+  - progressbar [ref=e215]:
+    - img [ref=e216]

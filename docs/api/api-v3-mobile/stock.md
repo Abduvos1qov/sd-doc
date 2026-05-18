@@ -5,55 +5,68 @@ sidebar_position: 1
 
 # api-v3-mobile · `StockController`
 
-Endpoints for `StockController` (`protected/modules/api3/controllers/StockController.php`). 4 action(s).
+Per-action reference for `protected/modules/api3/controllers/StockController.php` (4 actions). Used by **agents** (ROLE=4) for client-shelf stock surveys and by **expeditors** (ROLE=10) for "what's left on the truck" lookups.
 
-### `GET /api3/stock/forecast`
+## Common contract
 
-- **Controller**: `StockController::forecast` (`protected/modules/api3/controllers/StockController.php:290`)
+- **Base URL pattern**: `POST /api3/stock/<actionName>`.
+- **Auth**: `deviceToken` from `HTTP_DEVICETOKEN` header. `User::userByDeviceToken($token)` (no role gate at lookup; role-specific behaviour inside).
+- **Response envelope**: raw JSON (array or object).
 
-**Request**
+---
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/StockController.php:290](#) directly._
+## actionPost
 
-**Response**
+`POST /api3/stock/post?apiVersion=…` — submit a stock-check (shelf inventory) for one client.
 
-_Response shape not auto-detected — TBD._
+**Request** (JSON array): `[{ id, clientId, createdAt (ms), longitude, latitude, products:[{productId, totalItems}] }]`.
 
-### `GET /api3/stock/get`
+**Response** (array): `[{ id, status:1 }, …]` or `[{ id, status:0, errors:[…] }]`.
 
-- **Controller**: `StockController::get` (`protected/modules/api3/controllers/StockController.php:104`)
+**Side effects**:
+- Inserts one `ClientStock` row per product (`COUNT = totalItems`, hard-coded `DILER_ID='d0_1'`).
+- When `Agent.config.visiting.stock` is enabled, upserts `Visit` for `(agent, client, date)`: `VISITED=1`, `STORE_CHECK=1`, fills `LAT`/`LON` from request when missing, widens `CHECK_IN_TIME`/`CHECK_OUT_TIME`.
+- When `Agent.config.visiting.radius_visit` is set, validates `Visit` via `GpsService::isRequiredRadiusVisit` — if outside radius, `VISITED` is forced back to 0.
 
-**Request**
+**Gotchas**: also dumps the response to `responce.txt` in document root. Date is derived from `createdAt/1000` (server local).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/StockController.php:104](#) directly._
+## actionGet
 
-**Response**
+`POST /api3/stock/get` — last 10 historical stock-checks for one client (excluding today's by same user).
 
-_Response shape not auto-detected — TBD._
+**Request** (JSON): `{ clientId }`.
 
-### `GET /api3/stock/left`
+**Response** (array): `[{ time (ms), date, total, details:[{productId, productName, categoryId, totalItems}] }]`.
 
-- **Controller**: `StockController::left` (`protected/modules/api3/controllers/StockController.php:176`)
+**Gotchas**: hard-capped at 10 distinct time-points. Today's submission by the same user is filtered out (so the UI doesn't show what they just typed). Products missing from the `Product` directory get `productName="None"`.
 
-**Request**
+## actionLeft
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/StockController.php:176](#) directly._
+`POST /api3/stock/left` — "what's left" lookup.
 
-**Response**
+**Request** (JSON): `{ storeId, products:[{productId}], isOnly?:bool }`.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ storeId, products:[{ productId, count }] }`.
 
-### `GET /api3/stock/post`
+**Behaviour**:
+- **Expeditor (ROLE=10)** with `Expeditor.DEFECT_STORE` set: computes today's net by joining `Exchange` (TYPE in (3,4)) and `Excretion` for the defect store; `count = SUM(Exchange.COUNT * OPERATION * -1) - SUM(ABS(Excretion.COUNT))`. `isOnly=true` further filters to the products listed in the body.
+- **Other roles / no defect store**: reads `StoreDetail` directly for `(storeId, productId)` pairs.
 
-- **Controller**: `StockController::post` (`protected/modules/api3/controllers/StockController.php:13`)
+**Gotchas**: when ROLE=10 and `DEFECT_STORE` is empty, falls through to the generic `StoreDetail` path. `storeId` in the response is `Expeditor.DEFECT_STORE` for expeditors, else the request's `storeId`.
 
-**Request**
+## actionForecast
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/StockController.php:13](#) directly._
+`POST /api3/stock/forecast` — naive sell-out forecast per client+trade for the agent.
 
-**Response**
+**Request** (JSON array): `[{ clientId, tradeId }]`.
 
-_Response shape not auto-detected — TBD._
+**Response** (array): `[{ tradeId, tradeName, clientId, agentId, today, date (last stock-check date), days (since last check), detail:[{ productId, count }] }]`.
+
+**Gotchas**:
+- Only runs for `User.ROLE == 4`. Other roles get `[]`.
+- Formula per product: `count = floor(coefficient * SALE - leftover)` from `ClientStock` joined to `Product`/`TradeDirection`. Negative or zero forecasts are dropped.
+- `coefficient` defaults to `1.5`; overridden by `Distr::getFile('leftover_coefficient')` (JSON file with `{coefficient: n}`).
+- Window is the last 7 days of `ClientStock` ordered ascending (so the first row sets `lastDate`).
 
 ## See also
 

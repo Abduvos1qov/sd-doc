@@ -1,0 +1,228 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - list [ref=e103]:
+        - listitem [ref=e104]:
+          - link "Пользователи" [ref=e105]:
+            - /url: /team/auditor/
+      - application [ref=e108]:
+        - tablist [ref=e110]:
+          - tab "Панель настроек" [selected] [ref=e111]:
+            - generic [ref=e112]: Панель настроек
+          - tab "1. Мерчендайзеры" [selected] [ref=e113]:
+            - link "1. Мерчендайзеры" [ref=e114]:
+              - /url: /team/auditor
+          - tab "2. Супервайзеры" [selected] [ref=e115]:
+            - link "2. Супервайзеры" [ref=e116] [cursor=pointer]:
+              - /url: /team/supervisor
+          - tab "3. Агенты" [selected] [ref=e117]:
+            - link "3. Агенты" [ref=e118] [cursor=pointer]:
+              - /url: /team/agent
+        - tabpanel [ref=e120]:
+          - group "Мерчендайзеры" [ref=e121]:
+            - generic [ref=e122]: Мерчендайзеры
+            - generic [ref=e123]:
+              - link " Добавить" [ref=e124] [cursor=pointer]:
+                - /url: /team/auditor/create
+                - generic [ref=e125]:  Добавить
+              - button "Конфигурация для компании" [ref=e126] [cursor=pointer]
+              - generic [ref=e127]:
+                - list [ref=e128]:
+                  - listitem [ref=e129]:
+                    - link "Активные" [ref=e130]:
+                      - /url: "#active"
+                  - listitem [ref=e131]:
+                    - link "Неактивные" [ref=e132] [cursor=pointer]:
+                      - /url: "#not-active"
+                - generic [ref=e133]:
+                  - generic [ref=e135]:
+                    - generic [ref=e136]:
+                      - link "По 20" [ref=e137] [cursor=pointer]:
+                        - /url: "#"
+                      - link "Показ./Скр. столбцы" [ref=e138] [cursor=pointer]:
+                        - /url: "#"
+                      - link "Excel" [ref=e139] [cursor=pointer]:
+                        - /url: "#"
+                    - generic [ref=e141]:
+                      - text: "Быстрый поиск:"
+                      - searchbox "Быстрый поиск:" [ref=e142]
+                    - grid [ref=e143]:
+                      - rowgroup [ref=e144]:
+                        - 'row "Пользователь: активировать для сортировки столбцы по возрастанию Логин: активировать для сортировки столбцы по возрастанию Версия apk: активировать для сортировки столбцы по возрастанию Последняя синхронизация: активировать для сортировки столбцы по возрастанию : активировать для сортировки столбцы по возрастанию" [ref=e145]':
+                          - 'columnheader "Пользователь: активировать для сортировки столбцы по возрастанию" [ref=e146] [cursor=pointer]': Пользователь
+                          - 'columnheader "Логин: активировать для сортировки столбцы по возрастанию" [ref=e147] [cursor=pointer]': Логин
+                          - 'columnheader "Версия apk: активировать для сортировки столбцы по возрастанию" [ref=e148] [cursor=pointer]': Версия apk
+                          - 'columnheader "Последняя синхронизация: активировать для сортировки столбцы по возрастанию" [ref=e149] [cursor=pointer]': Последняя синхронизация
+                          - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e150] [cursor=pointer]'
+                      - rowgroup [ref=e151]:
+                        - row "Azilm Polatov azim 3.0.18 2026-01-08 16:01:06 220333QAG  " [ref=e152]:
+                          - gridcell "Azilm Polatov" [ref=e153]
+                          - gridcell "azim" [ref=e154]
+                          - gridcell "3.0.18" [ref=e155]
+                          - gridcell "2026-01-08 16:01:06 220333QAG" [ref=e156]:
+                            - text: 2026-01-08 16:01:06
+                            - text: 220333QAG
+                          - gridcell " " [ref=e157]:
+                            - generic [ref=e159] [cursor=pointer]: 
+                            - link "" [ref=e160] [cursor=pointer]:
+                              - /url: /team/auditor/update?id=70
+                              - generic [ref=e161]: 
+                        - row "Шестой не полный Шестой не полный  " [ref=e162]:
+                          - gridcell "Шестой не полный" [ref=e163]
+                          - gridcell "Шестой не полный" [ref=e164]
+                          - gridcell [ref=e165]
+                          - gridcell [ref=e166]
+                          - gridcell " " [ref=e167]:
+                            - generic [ref=e169] [cursor=pointer]: 
+                            - link "" [ref=e170] [cursor=pointer]:
+                              - /url: /team/auditor/update?id=69
+                              - generic [ref=e171]: 
+                        - row "Мадаминбек MagaM 3.0.4 2025-06-26 12:37:44 iPhone14,5  " [ref=e172]:
+                          - gridcell "Мадаминбек" [ref=e173]
+                          - gridcell "MagaM" [ref=e174]
+                          - gridcell "3.0.4" [ref=e175]
+                          - gridcell "2025-06-26 12:37:44 iPhone14,5" [ref=e176]:
+                            - text: 2025-06-26 12:37:44
+                            - text: iPhone14,5
+                          - gridcell " " [ref=e177]:
+                            - generic [ref=e179] [cursor=pointer]: 
+                            - link "" [ref=e180] [cursor=pointer]:
+                              - /url: /team/auditor/update?id=34
+                              - generic [ref=e181]: 
+                        - row "sdfasdf aud 3.0.12 2025-05-28 12:32:56 23021RAAEG  " [ref=e182]:
+                          - gridcell "sdfasdf" [ref=e183]
+                          - gridcell "aud" [ref=e184]
+                          - gridcell "3.0.12" [ref=e185]
+                          - gridcell "2025-05-28 12:32:56 23021RAAEG" [ref=e186]:
+                            - text: 2025-05-28 12:32:56
+                            - text: 23021RAAEG
+                          - gridcell " " [ref=e187]:
+                            - generic [ref=e189] [cursor=pointer]: 
+                            - link "" [ref=e190] [cursor=pointer]:
+                              - /url: /team/auditor/update?id=20
+                              - generic [ref=e191]: 
+                        - row "angela angel 3.0.18 2026-02-02 14:24:51 iPhone13,3  " [ref=e192]:
+                          - gridcell "angela" [ref=e193]
+                          - gridcell "angel" [ref=e194]
+                          - gridcell "3.0.18" [ref=e195]
+                          - gridcell "2026-02-02 14:24:51 iPhone13,3" [ref=e196]:
+                            - text: 2026-02-02 14:24:51
+                            - text: iPhone13,3
+                          - gridcell " " [ref=e197]:
+                            - generic [ref=e199] [cursor=pointer]: 
+                            - link "" [ref=e200] [cursor=pointer]:
+                              - /url: /team/auditor/update?id=8
+                              - generic [ref=e201]: 
+                        - row "Выборнов Николай Юрьевич kolyan 2.0.52 2024-12-24 11:35:54  " [ref=e202]:
+                          - gridcell "Выборнов Николай Юрьевич" [ref=e203]
+                          - gridcell "kolyan" [ref=e204]
+                          - gridcell "2.0.52" [ref=e205]
+                          - gridcell "2024-12-24 11:35:54" [ref=e206]: 2024-12-24 11:35:54
+                          - gridcell " " [ref=e207]:
+                            - generic [ref=e209] [cursor=pointer]: 
+                            - link "" [ref=e210] [cursor=pointer]:
+                              - /url: /team/auditor/update?id=6
+                              - generic [ref=e211]: 
+                    - status [ref=e212]: 1 - 6 / 6
+                    - list [ref=e214]:
+                      - listitem [ref=e215]:
+                        - link "Пред." [ref=e216]:
+                          - /url: "#"
+                      - listitem [ref=e217] [cursor=pointer]:
+                        - link "1" [ref=e218]:
+                          - /url: "#"
+                      - listitem [ref=e219]:
+                        - link "След." [ref=e220]:
+                          - /url: "#"
+                  - text:  
+        - menu "Pagination" [ref=e222]:
+          - listitem [ref=e223]:
+            - menuitem "Предыдущий" [disabled] [ref=e224] [cursor=pointer]
+          - listitem [ref=e225]:
+            - menuitem "Следующий" [ref=e226] [cursor=pointer]
+  - status [ref=e227]

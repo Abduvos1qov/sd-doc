@@ -1,0 +1,73 @@
+[      98ms] [LOG] loading translations for module: markirovka lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     147ms] [WARNING] [i18n-missing] Missing key "ID записи" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Номер счёт фактуры" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Дата счёт фактуры" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Роуминг ID документа" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Роуминг ID исправленного документа" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Статус документа" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Состояние кодов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Состояние приёмки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "ИНН отправителя" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "ПИНФЛ отправителя" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Время синхронизации" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Ожидает вашей подписи" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Отменён отправителем" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Отказан вами" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Неизвестный статус" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Ожидает проверки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Проверен" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Ожидает завершения" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Имеются расхождения в сверке" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Всё отлично" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     159ms] [WARNING] [i18n-missing] Missing key "Обновить API-ключ для маркировки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     162ms] [WARNING] [Vue warn]: Vuetify: Translation key "$vuetify.input.clear" not found in "ru", trying fallback locale 
+    at <InputIcon name="clear" onKeydown=fn<A> onFocus=fn<focus>  ... > 
+    at <VDefaultsProvider defaults= {VIcon: Object} > 
+    at <BaseTransition onBeforeEnter=fn<onBeforeEnter> onEnter=fn onAfterEnter=fn<n>  ... > 
+    at <Transition name="expand-x-transition" css=true onBeforeEnter=fn<onBeforeEnter>  ... > 
+    at <ExpandXTransition key="clear" > 
+    at <VField ref=Ref< undefined > onMousedown=fn<b> onClick=fn<V>  ... > 
+    at <VInput ref=Ref< undefined > modelValue="" onUpdate:modelValue=fn<onUpdate:modelValue>  ... > 
+    at <VTextField key=0 loading=false modelValue=""  ... > 
+    at <VCol cols="12" class="d-flex align-center flex-wrap mb-4" style= {row-gap: 8px, column-gap: 8px} > 
+    at <VRow key=0 > 
+    at <DataTable key-field="id" data= [] columns-def= {id: Object, operator: Object, document_id: Object, invoice_number: Object, invoice_date: Object}  ... > 
+    at <Anonymous> 
+    at <VCol> 
+    at <VRow> 
+    at <VSheet> 
+    at <App> @ http://localhost:8080/js/vue/vue@3.5.1/vue.global.js:2278
+[     165ms] [WARNING] [Vue warn]: Vuetify: Translation key "$vuetify.pagination.ariaLabel.root" not found in "ru", trying fallback locale 
+    at <VPagination modelValue=1 onUpdate:modelValue=fn<onUpdate:modelValue> length=0  ... > 
+    at <VCol cols="12" md="6" class="d-flex justify-center justify-md-end" > 
+    at <VRow key=1 no-gutters="" class="mt-2" > 
+    at <DataTable key-field="id" data= [] columns-def= {id: Object, operator: Object, document_id: Object, invoice_number: Object, invoice_date: Object}  ... > 
+    at <Anonymous> 
+    at <VCol> 
+    at <VRow> 
+    at <VSheet> 
+    at <App> @ http://localhost:8080/js/vue/vue@3.5.1/vue.global.js:2278
+[     166ms] [WARNING] [Vue warn]: Vuetify: Translation key "$vuetify.pagination.ariaLabel.previous" not found in "ru", trying fallback locale 
+    at <VPagination modelValue=1 onUpdate:modelValue=fn<onUpdate:modelValue> length=0  ... > 
+    at <VCol cols="12" md="6" class="d-flex justify-center justify-md-end" > 
+    at <VRow key=1 no-gutters="" class="mt-2" > 
+    at <DataTable key-field="id" data= [] columns-def= {id: Object, operator: Object, document_id: Object, invoice_number: Object, invoice_date: Object}  ... > 
+    at <Anonymous> 
+    at <VCol> 
+    at <VRow> 
+    at <VSheet> 
+    at <App> @ http://localhost:8080/js/vue/vue@3.5.1/vue.global.js:2278
+[     166ms] [WARNING] [Vue warn]: Vuetify: Translation key "$vuetify.pagination.ariaLabel.next" not found in "ru", trying fallback locale 
+    at <VPagination modelValue=1 onUpdate:modelValue=fn<onUpdate:modelValue> length=0  ... > 
+    at <VCol cols="12" md="6" class="d-flex justify-center justify-md-end" > 
+    at <VRow key=1 no-gutters="" class="mt-2" > 
+    at <DataTable key-field="id" data= [] columns-def= {id: Object, operator: Object, document_id: Object, invoice_number: Object, invoice_date: Object}  ... > 
+    at <Anonymous> 
+    at <VCol> 
+    at <VRow> 
+    at <VSheet> 
+    at <App> @ http://localhost:8080/js/vue/vue@3.5.1/vue.global.js:2278
+[     176ms] [LOG] rendering datatable... @ http://localhost:8080/markirovka/view/incomingInvoices:7494
+[     177ms] [WARNING] [i18n-missing] Missing key "Обновить API-ключ для маркировки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41
+[     187ms] [LOG] loading translations for module: markirovka lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     229ms] [WARNING] [i18n-missing] Missing key "Синхронизация с Faktura.UZ" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1:41

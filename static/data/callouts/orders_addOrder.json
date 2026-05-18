@@ -1,0 +1,31 @@
+{
+  "slug": "orders_addOrder",
+  "url": "/orders/addOrder",
+  "title": "Add order",
+  "callouts": [
+    {
+      "x": 552,
+      "y": 100,
+      "w": 370,
+      "h": 32,
+      "label": "Агент",
+      "kind": "field"
+    },
+    {
+      "x": 1002,
+      "y": 100,
+      "w": 414,
+      "h": 32,
+      "label": "Поиск",
+      "kind": "field"
+    },
+    {
+      "x": 118,
+      "y": 182,
+      "w": 1294,
+      "h": 48,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

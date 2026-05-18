@@ -1,0 +1,23 @@
+{
+  "slug": "planning_monthly2",
+  "url": "/planning/monthly2",
+  "title": "Monthly plan",
+  "callouts": [
+    {
+      "x": 1166,
+      "y": 259,
+      "w": 59,
+      "h": 34,
+      "label": "Факт",
+      "kind": "action"
+    },
+    {
+      "x": 111,
+      "y": 613,
+      "w": 128,
+      "h": 30,
+      "label": "Развернуть все",
+      "kind": "action"
+    }
+  ]
+}

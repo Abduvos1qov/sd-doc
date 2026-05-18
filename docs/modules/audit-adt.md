@@ -247,3 +247,73 @@ flowchart TD
 - `AuditStorchekCat.MML_PRODUCT` is stored as a JSON array of product IDs (varchar/text column). It is decoded inline in `StorecheckController::actionIndex` via `json_decode` — not through a typed accessor. Schema changes here will break the compliance report silently.
 - `Auditor` rows pair 1:1 with a `User` row of role 11 (created in `AuditorController::actionCreateAjax`). Deactivating only the `Auditor` record without deactivating the paired `User` leaves a stale login.
 - No background jobs touch this module — all data is request-driven.
+
+## `adt` module — dedicated controllers
+
+The `adt` namespace at `protected/modules/adt/` is a **separate
+sd-main module** alongside `audit`. It hosts the advanced
+audit-doctor-team flows (configurable audits, monthly poll, retail
+storecheck, dashboards, visit reports). It currently has **~19
+controllers and ~145 actions** under `/adt/*`:
+
+| Controller | Approx. actions | Purpose |
+|---|---|---|
+| `AdtAuditController` | 8 | Configurable audit definition + result browse |
+| `AdtPollController` | 6 | Configurable poll definition + result browse |
+| `AuditController` | 6 | Auditor-side audit listing |
+| `AvailableController` | 3 | Resource-availability checks for the auditor app |
+| `BaseController` | 1 | Shared base — auth + filial scoping for the rest of the module |
+| `ClientController` | 40 | Client browse + drill-down from the auditor side (the largest controller in the module) |
+| `DashboardController` | 5 | Per-tenant auditor dashboard |
+| `MixReportController` | 3 | Mix / volume cross-cut reports |
+| `MonthlyController` | 8 | Monthly poll / scorecard flows |
+| `PollController` | 10 | Poll-result browse and per-question detail |
+| `PriceController` | 5 | Price-collection + reporting flow |
+| `ReportsController` | 2 | Top-level adt report index |
+| `RetailController` | 4 | Retail-channel specific report set |
+| `SettingsController` | 24 | `Adt*` master-data CRUD: brands, segments, properties, products, placetypes, scorecards |
+| `StoreCheckController` | 2 | Storecheck compliance report (newer variant than the `audit` module's) |
+| `TableConfigController` | 2 | Per-user table column/filter prefs for adt grids |
+| `VisitController` | 7 | Adt-side visit browse |
+| `VisitReportController` | 3 | Adt-side visit-level report |
+| `AdtPollReportController` *(obsolete file present)* | – | Replaced by `MonthlyController` / `PollController` |
+
+> The `audit` module documented above and the `adt` module
+> described here are **distinct codebases sharing the same
+> conceptual surface** (auditor flows, polls, storecheck, photo).
+> Many `Adt*` models (`AdtBrands`, `AdtCategory`, `AdtPlaceType`,
+> `AdtScorecard`, `AdtAuditResult`, `AdtPollResult`) are the
+> **current** source of truth for the modern auditor mobile app
+> (`api3.AuditorController` and `api4` variants); the `Aud*`
+> models in the `audit` module are the **older read surface** used
+> by the back-office grids.
+
+A dedicated module-reference page for `adt`'s 19 controllers is
+deferred — when written, it will live at `modules/adt.md` and this
+section will collapse to a single-line link. For now,
+the controller list above plus the [audit module section](#audit-data-model)
+should be enough to navigate the codebase.
+
+### `adt` module folder
+
+```
+protected/modules/adt/
+├── AdtModule.php
+├── controllers/    # 19 active controllers (see table above)
+├── excels/         # report export templates
+└── views/          # one folder per controller
+```
+
+### Cross-references between `audit` and `adt`
+
+- **Configuration (`AdtConfig`)** — written by `team` module's
+  `AuditorController` (see [`team.md`](./team.md)); read by
+  `adt.AdtAuditController` and `adt.AdtPollController` to drive
+  the mobile auditor flow.
+- **Photo reports** — written by `api3/AuditorController::actionSetphoto`;
+  read by both `audit.PhotoReportController` (legacy)
+  and `adt.ClientController` / `adt.VisitController` (modern drill-down).
+- **MML / storecheck** — `audit.StorecheckController::actionIndex`
+  and `adt.StoreCheckController::actionIndex` are **parallel
+  implementations** of the same compliance matrix; new tenants use
+  the `adt` variant.

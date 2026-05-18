@@ -1,0 +1,33 @@
+[      99ms] [LOG] loading translations for module: payment lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     136ms] [WARNING] [i18n-missing] Missing key "Не подтверждена" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     136ms] [WARNING] [i18n-missing] Missing key "Подтверждена" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     136ms] [WARNING] [i18n-missing] Missing key "Удалена" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     142ms] [WARNING] [i18n-missing] Missing key "Дата оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     142ms] [WARNING] [i18n-missing] Missing key "Плательщик" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     142ms] [WARNING] [i18n-missing] Missing key "Статус оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     142ms] [WARNING] [i18n-missing] Missing key "Комм." in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     142ms] [WARNING] [i18n-missing] Missing key "Подтверждено клиентом" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     147ms] [WARNING] [i18n-missing] Missing key "Баланс скрыт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     148ms] [WARNING] [i18n-missing] Missing key "Удалить оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     149ms] [WARNING] [i18n-missing] Missing key "Импорт оплат" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     160ms] [LOG] rendering datatable... @ http://localhost:8080/payment/approval:5553
+[     162ms] [WARNING] [i18n-missing] Missing key "Баланс скрыт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     162ms] [WARNING] [i18n-missing] Missing key "Удалить оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     163ms] [WARNING] [i18n-missing] Missing key "Импорт оплат" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     197ms] [LOG] loading translations for module: payment lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     204ms] [WARNING] [i18n-missing] Missing key "Баланс скрыт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     205ms] [WARNING] [i18n-missing] Missing key "Удалить оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     205ms] [WARNING] [i18n-missing] Missing key "Импорт оплат" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "Баланс скрыт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "Удалить оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "Импорт оплат" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     288ms] [TIMEEND] get_catalog: 42.6728515625 ms @ http://localhost:8080/payment/approval:6513
+[     288ms] [WARNING] [i18n-missing] Missing key "Плательщик" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     288ms] [WARNING] [i18n-missing] Missing key "Неактивные направления" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     288ms] [WARNING] [i18n-missing] Missing key "Неактивные способ оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     288ms] [WARNING] [i18n-missing] Missing key "Неактивные территория" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     752ms] [TIMEEND] transformed_payments: 0.0068359375 ms @ http://localhost:8080/payment/approval:5906
+[     752ms] [TIMEEND] get_payments: 40.794921875 ms @ http://localhost:8080/payment/approval:5922
+[     759ms] [WARNING] [i18n-missing] Missing key "Баланс скрыт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     759ms] [WARNING] [i18n-missing] Missing key "Удалить оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     760ms] [WARNING] [i18n-missing] Missing key "Импорт оплат" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41

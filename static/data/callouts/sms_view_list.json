@@ -1,0 +1,15 @@
+{
+  "slug": "sms_view_list",
+  "url": "/sms/view/list",
+  "title": "SMS messages",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 249,
+      "w": 1309,
+      "h": 60,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

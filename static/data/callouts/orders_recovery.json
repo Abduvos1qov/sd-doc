@@ -1,0 +1,23 @@
+{
+  "slug": "orders_recovery",
+  "url": "/orders/recovery",
+  "title": "Order recovery",
+  "callouts": [
+    {
+      "x": 782,
+      "y": 104,
+      "w": 630,
+      "h": 32,
+      "label": "Поиск",
+      "kind": "field"
+    },
+    {
+      "x": 118,
+      "y": 174,
+      "w": 1294,
+      "h": 48,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

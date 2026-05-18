@@ -1,0 +1,15 @@
+{
+  "slug": "stock_report",
+  "url": "/stock/report",
+  "title": "Stock report",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 288,
+      "w": 1335,
+      "h": 106,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

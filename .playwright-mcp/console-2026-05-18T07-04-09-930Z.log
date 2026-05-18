@@ -1,0 +1,7 @@
+[     111ms] [LOG] loading translations for module: dashboard lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     135ms] TypeError: Cannot read properties of undefined (reading 'hasOwnProperty')
+    at extend (http://localhost:8080/js/vue/vue-i18n@8/index.js:250:28)
+    at install (http://localhost:8080/js/vue/vue-i18n@8/index.js:777:9)
+    at new VueI18n (http://localhost:8080/js/vue/vue-i18n@8/index.js:1220:13)
+    at http://localhost:8080/js/plugins/vue2-i18n-plugin.js?v=2.2:4:18
+[     165ms] [LOG] loading translations for module: dashboard lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34

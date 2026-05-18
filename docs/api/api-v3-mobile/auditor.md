@@ -5,499 +5,375 @@ sidebar_position: 1
 
 # api-v3-mobile · `AuditorController`
 
-Endpoints for `AuditorController` (`protected/modules/api3/controllers/AuditorController.php`). 41 action(s).
+Per-action reference for `protected/modules/api3/controllers/AuditorController.php` (41 actions). Used by the **field auditor / merchandiser / supervisor / sales-manager** mobile app.
 
-### `GET /api3/auditor/agent`
+## Common contract
 
-- **Controller**: `AuditorController::agent` (`protected/modules/api3/controllers/AuditorController.php:1060`)
+- **Base URL pattern**: `POST /api3/auditor/<actionName>` (Yii camel-case mapping — `actionClientsV2` → `/api3/auditor/clientsV2`). All endpoints accept a JSON body (`Content-Type: application/json`); when missing, the controller falls back to `$_POST`.
+- **Auth envelope** — every non-login endpoint reads three fields from the request body via `auth()` + `checkToken()`:
+  - `userId` → `User.USER_ID` (must exist, `ACTIVE != 'N'`)
+  - `positionId` → `StructureFilial.ID` (must exist, `ACTIVE != 'N'`, must belong to `userId`)
+  - `deviceToken` → must already be present in `User.DEVICE_TOKEN` JSON array (issued by `actionLogin`).
+- **Role gate**: only `User.ROLE` in `[8 Супервайзер, 9 Менеджер, 11 Мерчандайзер/Auditor]` can log in. Many endpoints further branch by role (see notes).
+- **Response envelope**: every reply is wrapped in `{ ..., success: bool, httpStatus: int }`. String payloads become `{ message, success, httpStatus }`. Errors use status 400/401/402/403/405 with `success=false`.
 
-**Request**
+---
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1060](#) directly._
+## actionLogin
 
-**Response**
+`POST /api3/auditor/login` — only public endpoint (no `auth()`).
 
-_Response shape not auto-detected — TBD._
+**Request** (JSON body): `login`, `password` (plaintext, server md5s), `deviceToken`.
 
-### `GET /api3/auditor/agentsV2`
+**Response**: `{ name, userId, role, support, tg_support }`.
 
-- **Controller**: `AuditorController::agentsV2` (`protected/modules/api3/controllers/AuditorController.php:1105`)
+**Side effects**: appends `deviceToken` to `User.DEVICE_TOKEN` JSON array (keeps last 4 tokens). Logs the user into the Yii session.
 
-**Request**
+**Gotchas**: returns 401 for wrong creds, expired license (`hasSystemActive(4)` false), role ∉ {8,9,11}, supervisor with `PAY=0`. `deviceToken` is mandatory — empty token = 401.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1105](#) directly._
+## actionProfile
 
-**Response**
+`POST /api3/auditor/profile` — returns positions (StructureFilial) the user can act as.
 
-_Response shape not auto-detected — TBD._
+**Request**: `userId`, `deviceToken`.
 
-### `GET /api3/auditor/audit`
+**Response**: `{ profiles: [{ positionId, name, role, roleName, support, tg_support }] }`.
 
-- **Controller**: `AuditorController::audit` (`protected/modules/api3/controllers/AuditorController.php:1196`)
+## actionConfig
 
-**Request**
+`POST /api3/auditor/config` — server-side feature flags + photo/map config for the app.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1196](#) directly._
+**Request**: standard auth + optional `deviceModel`, `appVersion` (recorded back to `User`).
 
-**Response**
+**Response**: `{ config: { <group>: {<key>: value}, server: { time, date, time_zone, time_zone_offset }, clientRequiredFields, photo: { maxWidth, maxHeight, compress }, yandexMapKey } }`.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: updates `User.DEVICE_MODEL`, `APP_VERSION`, `LAST_SYNC_TIME`. Caps photo size to 1000px/80% compression when `params.photoHighQuality` is off, else 1800/90.
 
-### `GET /api3/auditor/auditResult`
+**Gotchas**: Yandex map key is randomly picked from a 13-key pool.
 
-- **Controller**: `AuditorController::auditResult` (`protected/modules/api3/controllers/AuditorController.php:1614`)
+## actionClients
 
-**Request**
+`POST /api3/auditor/clients` — full client master, route plan and inventory for the position.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1614](#) directly._
+**Request**: standard auth only.
 
-**Response**
+**Response**: `{ clients: [{ id, name, firm_name, tel, category, address, orient, region, channel, city, contact_person, form_sob, comment, lon, lat, bar_code, balance, typeId, needToAudit, agents:[{agentId,agentName}], inventory:[…], photos, photoAvatar, photoList, visitDays }] }`.
 
-_Response shape not auto-detected — TBD._
+**Gotchas**: branches by `position.ROLE` — auditor (`11`) sees only clients in `VisitingAud` they own; supervisor (`8`) sees their position's agents' clients; manager (`9`) sees all active clients. Balance is read from `Contragent.BALANS` when `ServerSettings::isContragent()` else `Client.BALANS`.
 
-### `GET /api3/auditor/avatar`
+## actionClientsV2
 
-- **Controller**: `AuditorController::avatar` (`protected/modules/api3/controllers/AuditorController.php:1445`)
+`POST /api3/auditor/clientsV2` — column-oriented variant of `clients` (smaller wire size).
 
-**Request**
+**Request**: standard auth.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1445](#) directly._
+**Response**: `{ data: { avatars:{columns,data}, inventories:{columns,data}, clients:{columns,data} } }` where each `columns` is the ordered key list and `data` is array-of-arrays.
 
-**Response**
+**Gotchas**: same role branching as `clients`. The avatar list is filtered to clients this auditor actually has in their route.
 
-_Response shape not auto-detected — TBD._
+## actionClientsV3
 
-### `GET /api3/auditor/channel`
+`POST /api3/auditor/clientsV3` — same shape as `clientsV2` plus per-agent `visitDays` (column 23 becomes `[{agentId, days:"1/3/5"}]`).
 
-- **Controller**: `AuditorController::channel` (`protected/modules/api3/controllers/AuditorController.php:1026`)
+**Request**: standard auth.
 
-**Request**
+**Response**: `{ data: { avatars, inventories, clients } }` (`clients.columns[23]` is `agentVisitDays[]`).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1026](#) directly._
+## actionClientCategory
 
-**Response**
+`POST /api3/auditor/clientCategory` — directory.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ categories: [{ id, name }] }` from `ClientCategory` (ACTIVE='Y').
 
-### `GET /api3/auditor/checkIn`
+## actionTerritory
 
-- **Controller**: `AuditorController::checkIn` (`protected/modules/api3/controllers/AuditorController.php:2103`)
+`POST /api3/auditor/territory` — directory.
 
-**Request**
+**Response**: `{ territories: [{ id, name }] }` from `City` (ACTIVE='Y').
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2103](#) directly._
+## actionChannel
 
-**Response**
+`POST /api3/auditor/channel` — directory.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ channels: [{ id, name }] }` from `ClientChannel`.
 
-### `POST /api3/auditor/clientBalance`
+## actionClientType
 
-- **Controller**: `AuditorController::clientBalance` (`protected/modules/api3/controllers/AuditorController.php:3093`)
+`POST /api3/auditor/clientType` — directory.
 
-**Request**
+**Response**: `{ types: [{ id, name }] }` from `ClientType` (ACTIVE='Y').
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:3093](#) directly._
+## actionComment
 
-**Response**
+`POST /api3/auditor/comment` — preset reject/visit comment list.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ comments: [{ id, name }] }` from `AdtComment` ordered by `SORT`.
 
-### `GET /api3/auditor/clientCategory`
+## actionAgent
 
-- **Controller**: `AuditorController::clientCategory` (`protected/modules/api3/controllers/AuditorController.php:1002`)
+`POST /api3/auditor/agent` — agents this position can supervise / report on.
 
-**Request**
+**Response**: `{ agents: [{ id, name }] }` where `id` is `USER_ID` and `name` is `Agent.FIO`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1002](#) directly._
+**Gotchas**: ROLE=9 manager and ROLE=11 auditor see **all** ROLE=4 users; ROLE=8 supervisor sees only agents joined through `Supervayzer.USER_ID = currentUser`.
 
-**Response**
+## actionAgentsV2
 
-_Response shape not auto-detected — TBD._
+`POST /api3/auditor/agentsV2` — column-oriented agents (id = `AGENT_ID` not `USER_ID`).
 
-### `GET /api3/auditor/clientType`
+**Response**: `{ agents: { columns:['id','name','userId'], data:[[id,name,userId], …] } }`.
 
-- **Controller**: `AuditorController::clientType` (`protected/modules/api3/controllers/AuditorController.php:1038`)
+**Gotchas**: ROLE=11 auditor's agent list is further filtered to agents who visit clients in this auditor's `VisitingAud` plan.
 
-**Request**
+## actionPosition
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1038](#) directly._
+`POST /api3/auditor/position` — list of other positions the user could switch to. **Only filled for supervisors (ROLE=8)** — others get empty.
 
-**Response**
+**Response**: `{ positions: [{ id, name }] }`.
 
-_Response shape not auto-detected — TBD._
+## actionAudit
 
-### `GET /api3/auditor/clients`
+`POST /api3/auditor/audit` — audit (SKU check) templates assigned to this auditor.
 
-- **Controller**: `AuditorController::clients` (`protected/modules/api3/controllers/AuditorController.php:195`)
+**Response**: `{ audits: [{ id, name, required, face_check, price_check, sold_check, store_check, face_required, price_required, sold_required, store_required, is_public, products:[{ id, name, brand, category, pack, producer, is_our, is_local, weight, volume, order, photo }] }] }`.
 
-**Request**
+**Gotchas**: UNION across `Product` (is_our=Y) and `ProductCompetitor` (is_our=N). Filtered by `AdtAuditUsers.AUDITOR_ID = position.ID`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:195](#) directly._
+## actionPoll
 
-**Response**
+`POST /api3/auditor/poll` — polls assigned to this auditor.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ polls: [{ id, name, required, description, questions: [{ id, name, type, sort, description, is_required, systemName, variants:[{id,name,is_our}] }] }] }`.
 
-### `GET /api3/auditor/clientsV2`
+## actionPhoto
 
-- **Controller**: `AuditorController::clientsV2` (`protected/modules/api3/controllers/AuditorController.php:440`)
+`POST /api3/auditor/photo` — photo-report category tree.
 
-**Request**
+**Response**: `{ photos: [{ pr_cat_id, name, parent }] }` from `ParentPhotoReport` (ACTIVE=1, SORT).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:440](#) directly._
+## actionSetphoto
 
-**Response**
+`POST /api3/auditor/setphoto` — upload one photo-report image (binary body).
 
-_Response shape not auto-detected — TBD._
+**Request**: `clientId`, `categoryId`, `date` (ms), `checkInTime` (ms), `lat`, `lon`, raw `photo` bytes.
 
-### `GET /api3/auditor/clientsV3`
+**Response**: `'Success'` or `{ message:'Photo is failed', messages:{uz,ru,en} }` (405).
 
-- **Controller**: `AuditorController::clientsV3` (`protected/modules/api3/controllers/AuditorController.php:701`)
+**Side effects**: writes `DOCUMENT_ROOT/upload/photo/<YYYYMM>/<DD>/img-<clientId>-<date>.jpg`; compresses if >1.5MB; creates `PhotoReport`, sets `Visit.PHOTO=1`; on `.salesdoc.io` also creates `/bk/<host>/upload/photo` backup folder; fires `TelegramReport::merchandiserPhotoReport` and `firstVisitSvr` (if first visit of the day).
 
-**Request**
+**Gotchas**: dedupes by URL — re-upload of an existing path is a no-op DB-wise.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:701](#) directly._
+## actionAvatar
 
-**Response**
+`POST /api3/auditor/avatar` — upload a client storefront photo (avatar).
 
-_Response shape not auto-detected — TBD._
+**Request**: `clientId`, `photo` (raw or base64 when `Content-Type: application/json`).
 
-### `GET /api3/auditor/comment`
+**Response**: `{ data: { id, clientId, main, url } }` on first upload, else `'Success'`.
 
-- **Controller**: `AuditorController::comment` (`protected/modules/api3/controllers/AuditorController.php:1050`)
+**Side effects**: writes to `/upload/profilPhoto/<clientId>-<ts>.jpg`, inserts `ClientPhoto` (MAIN=1 if first, else MAIN=0).
 
-**Request**
+## actionDeleteAvatar
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1050](#) directly._
+`POST /api3/auditor/deleteAvatar` — delete a `ClientPhoto`.
 
-**Response**
+**Request**: `photoId`.
 
-_Response shape not auto-detected — TBD._
+**Response**: `'Success'` or 405.
 
-### `GET /api3/auditor/commentResult`
+**Gotchas**: only ROLE in `[8, 11]` (supervisor, auditor) may delete.
 
-- **Controller**: `AuditorController::commentResult` (`protected/modules/api3/controllers/AuditorController.php:1781`)
+## actionSetMainAvatar
 
-**Request**
+`POST /api3/auditor/setMainAvatar` — promote a photo to MAIN=1 (clears others on same client).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1781](#) directly._
+**Request**: `photoId`.
 
-**Response**
+**Gotchas**: same ROLE gate as `deleteAvatar`.
 
-_Response shape not auto-detected — TBD._
+## actionSetphoto2
 
-### `GET /api3/auditor/config`
+Commented out in source. Treat as deprecated / removed.
 
-- **Controller**: `AuditorController::config` (`protected/modules/api3/controllers/AuditorController.php:111`)
+## actionAuditResult
 
-**Request**
+`POST /api3/auditor/auditResult` — batch submit audit answers.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:111](#) directly._
+**Request**: `data: [{ auditId, clientId, checkInTime, checkOutTime, lat, lon, products:[{ id, price, face, sold, store|remaining, available, firmBug }] }]`, plus auth fields.
 
-**Response**
+**Response**: `'Success'` or 400 with exception text.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: opens a DB transaction; for each entry creates `Visit` (AUDIT=1, STORE_CHECK=1), `AdtAuditResult`, and `AdtAuditResultData` per product (including products NOT submitted — saved with AVAILABLE=0, OUT_OF_STOCK=0); sends `firstVisitSvr` telegram on first visit.
 
-### `GET /api3/auditor/deleteAvatar`
+**Gotchas**: dedupes by `TOKEN = deviceToken + '_' + date` + `AUDIT_ID` + `CLIENT_ID` + DATE — second sync is silently skipped per audit row.
 
-- **Controller**: `AuditorController::deleteAvatar` (`protected/modules/api3/controllers/AuditorController.php:1493`)
+## actionPollResult
 
-**Request**
+`POST /api3/auditor/pollResult` — batch submit poll answers.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1493](#) directly._
+**Request**: `data:[{ pollId, clientId, checkInTime, checkOutTime, lat, lon, answers:[{ questionId, variantId, value }] }]`.
 
-**Response**
+**Response**: `'Success'` or 400.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: transactional; creates `Visit` (POLL=1), `AdtPollResult`, `AdtPollResultData`; sends `firstVisitSvr` on first visit.
 
-### `GET /api3/auditor/detailSummary`
+**Gotchas**: 400 if `questionId` doesn't belong to `pollId`. Booleans coerced to int.
 
-- **Controller**: `AuditorController::detailSummary` (`protected/modules/api3/controllers/AuditorController.php:3006`)
+## actionCommentResult
 
-**Request**
+`POST /api3/auditor/commentResult` — submit visit-reject comments.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:3006](#) directly._
+**Request**: `data:[{ commentId, clientId, checkInTime, ... }]`.
 
-**Response**
+**Response**: `'Success'` or 400.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: creates `AdtCommentResult` + `Visit` (REJECT=1 when no AUDIT/POLL). Dedupe by client+date+visit.
 
-### `GET /api3/auditor/getDaily`
+## actionNoteResult
 
-- **Controller**: `AuditorController::getDaily` (`protected/modules/api3/controllers/AuditorController.php:2398`)
+`POST /api3/auditor/noteResult` — free-text note per visit.
 
-**Request**
+**Request**: `data:[{ clientId, note, checkInTime, ... }]`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2398](#) directly._
+**Side effects**: creates `AdtNoteResult` + `Visit` (REJECT=1 when no AUDIT/POLL).
 
-**Response**
+## actionSetClient
 
-_Response shape not auto-detected — TBD._
+`POST /api3/auditor/setClient` — create or update client(s) from the field.
 
-### `GET /api3/auditor/getSell`
+**Request**: `data:[{ id (local UUID for new), name, firm_name, category, city, channel, typeId, contact_person, orient, address, form_sob, tel, lat, lon, bar_code, comment, needToAudit, visitDays:"1/3/5", agentId, agentData:[{agentId,days}], detachAgents:[], imageListToUpload:[base64] }]`.
 
-- **Controller**: `AuditorController::getSell` (`protected/modules/api3/controllers/AuditorController.php:2831`)
+**Response**: `{ item: { <localId>: <serverClientId> } }` — map of input ids to server PKs.
 
-**Request**
+**Side effects**: writes `Client`, `ClientPhoto`, replaces `Visiting` / `VisitingAud` rows for the new day plan, writes a `SyncLog` row for offline dedupe (keyed by `DEVICE_TOKEN + DAY + MOBILE_ORDER_ID`). Hard-codes `DILER_ID = 'd0_1'` for new records.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2831](#) directly._
+**Gotchas**: client `id` is the **mobile-side** id; the response maps it to the server PK. Agent `agentData` is capped at 3 entries (`count($visitsToCreate) <= 3`). Resync of the same `id` returns the already-mapped server id from `SyncLog`.
 
-**Response**
+## actionCheckIn
 
-_Response shape not auto-detected — TBD._
+`POST /api3/auditor/checkIn` — record GPS-tracked client visit(s).
 
-### `GET /api3/auditor/getSummary`
+**Request**: `data:[{ clientId, checkInTime, checkOutTime, date, lat, lon, battery, provider, signal, mode, internetStatus, gpsStatus, device }]`.
 
-- **Controller**: `AuditorController::getSummary` (`protected/modules/api3/controllers/AuditorController.php:2891`)
+**Side effects**: upserts `Visit` (VISITED=1, computes `DISTANCE` to client + `GPS_STATUS` 1/2/4/5/10), upserts one `GpsAdt` (TYPE='visit') per visit. Sends `firstVisitSvr` telegram on first visit of the day.
 
-**Request**
+**Gotchas**: `GPS_STATUS` semantics — `1`=no client coords, `2`=no visit coords, `4`=client moved today, `5`=too far (>MIN_GPS_DISTANCE), `10`=success.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2891](#) directly._
+## actionGpsTrack
 
-**Response**
+`POST /api3/auditor/gpsTrack` — bulk-push background GPS pings.
 
-_Response shape not auto-detected — TBD._
+**Request**: `data:[{ timestamp, latitude, longitude, batteryLevel, carrierName, cellularLevel, networkType, networkStatus, gpsStatus, deviceName }]`.
 
-### `GET /api3/auditor/gpsTrack`
+**Side effects**: inserts `GpsAdt` rows (TYPE='track') only for pings between 08:00 and 20:00 server-local time. Outside hours = silently dropped.
 
-- **Controller**: `AuditorController::gpsTrack` (`protected/modules/api3/controllers/AuditorController.php:2149`)
+## actionTaskType
 
-**Request**
+`POST /api3/auditor/taskType` — directory.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2149](#) directly._
+**Response**: `{ taskType: [{ id, name }] }`.
 
-**Response**
+## actionTask
 
-_Response shape not auto-detected — TBD._
+`POST /api3/auditor/task` — list tasks where user is from or to.
 
-### `GET /api3/auditor/gpsVisit`
+**Response**: `{ task: [{ id, name, agentId, deadline (ms), clientId, photo, imageResult, status, typeId, comment }] }`.
 
-- **Controller**: `AuditorController::gpsVisit` (`protected/modules/api3/controllers/AuditorController.php:2551`)
+## actionTask2
 
-**Request**
+`POST /api3/auditor/task2` — same as `task` but joins user→agent and adds `taskTo`, `taskFrom`, `commentResult`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2551](#) directly._
+**Response**: `{ task: [{ id, name, agentId, taskTo, taskFrom, deadline, clientId, photo, imageResult, status, typeId, comment, commentResult }] }`.
 
-**Response**
+## actionSettask
 
-_Response shape not auto-detected — TBD._
+`POST /api3/auditor/settask` — batch create/update tasks.
 
-### `GET /api3/auditor/gpsVisitBy`
+**Request**: `data:[{ id?, name, agentId, typeId, clientId, comment, commentResult?, photo (base64), imageResult (base64), date (ms), deadline (ms), status }]`.
 
-- **Controller**: `AuditorController::gpsVisitBy` (`protected/modules/api3/controllers/AuditorController.php:2628`)
+**Response**: `'Success'` or 400.
 
-**Request**
+**Side effects**: writes `Tasks`, persists images to `/upload/photoTask/<YYYYMM>/`. Tracks edits via `TaskLog` (sets `TaskLog::$user`). Dedupes new tasks by (TASK_FROM, TASK_TO, NAME, TYPE_ID, CLIENT_ID, DATE_DO, DATE_CREATE).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2628](#) directly._
+**Gotchas**: `agentId` is mapped to `User.USER_ID` via `Agent.AGENT_ID` lookup; unknown agents skip the row.
 
-**Response**
+## actionGetDaily
 
-_Response shape not auto-detected — TBD._
+`POST /api3/auditor/getDaily` — supervisor/manager daily KPI dashboard.
 
-### `GET /api3/auditor/login`
+**Request**: `data: { date (ms) }` (defaults to today).
 
-- **Controller**: `AuditorController::login` (`protected/modules/api3/controllers/AuditorController.php:16`)
+**Response**: `{ sale:[{category_id,name,agentId,agentName,sum,volume,count}], visit:[{agentId,agentName,planned,fact,not_planned,akb,reject,not_visited,photo}], visits:{ visit:{percent,plan_visit,plan_visited,no_plan_visit,style}, order:{…}, photo:{…}, gps:{…} } }`.
 
-**Request**
+**Gotchas**: 403 if `position.ROLE ∉ [8,9]`. Each `visits.*.style` is a presentation hint `{background,color}` driven by the percent (red→green ladder).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:16](#) directly._
+## actionGpsVisit
 
-**Response**
+`POST /api3/auditor/gpsVisit` — GPS-validated visit totals per agent.
 
-_Response shape not auto-detected — TBD._
+**Request**: optional `date` (ms).
 
-### `GET /api3/auditor/noteResult`
+**Response**: `{ plan:[{agentId,name,plan,plan_visited,plan_gps_visited,plan_gps_no_visited,plan_gps_unknown}], no_plan:[{agentId,name,no_plan_visited,no_plan_gps_visited,no_plan_gps_unknown,no_plan_gps_no_visited}], total:{…aggregated…} }`.
 
-- **Controller**: `AuditorController::noteResult` (`protected/modules/api3/controllers/AuditorController.php:1832`)
+**Gotchas**: 403 if role ∉ [8,9]. Empty arrays when the supervisor has no agents attached.
 
-**Request**
+## actionGpsVisitBy
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1832](#) directly._
+`POST /api3/auditor/gpsVisitBy` — drill-down for a single agent (or `agentId="all"`).
 
-**Response**
+**Request**: `agentId` (string or `"all"`), `planed` (0/1), optional `date`.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ column:["agent_name","date","client_name","status","note"], data:[[…]] }`.
 
-### `GET /api3/auditor/photo`
+**Gotchas**: 403 if role ∉ [8,9] or if `agentId`/`planed` missing.
 
-- **Controller**: `AuditorController::photo` (`protected/modules/api3/controllers/AuditorController.php:1341`)
+## actionTotal
 
-**Request**
+`POST /api3/auditor/total` — visit roll-up for THIS auditor's day.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1341](#) directly._
+**Request**: `date` (YYYY-MM-DD string — validated by `Distr::validateDateFormat`).
 
-**Response**
+**Response**: `{ total:{plan,visited,noplan,left}, detail:[{id,name,audit,photo,poll}] }`.
 
-_Response shape not auto-detected — TBD._
+**Gotchas**: filters `Visit.ROLE=11` AND `POSITION_ID=current`. Returns 403 for missing/invalid date.
 
-### `GET /api3/auditor/poll`
+## actionGetSell
 
-- **Controller**: `AuditorController::poll` (`protected/modules/api3/controllers/AuditorController.php:1293`)
+`POST /api3/auditor/getSell` — agent sales by category over a date range.
 
-**Request**
+**Request**: `from`, `to` (both ms epoch).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1293](#) directly._
+**Response**: `{ sell:[{category_id,name,agentId,agentName,sum,volume,count}] }`.
 
-**Response**
+**Gotchas**: only orders with STATUS in `[2,3]` (loaded/delivered) and `DATE_LOAD` inside range. 403 if role ∉ [8,9].
 
-_Response shape not auto-detected — TBD._
+## actionGetSummary
 
-### `GET /api3/auditor/pollResult`
+`POST /api3/auditor/getSummary` — order summary by agent over a date range.
 
-- **Controller**: `AuditorController::pollResult` (`protected/modules/api3/controllers/AuditorController.php:1715`)
+**Request**: `from`, `to` (ms), optional `lang` (`ru`|`uz`), `status` (int[], default `[2,3]`), `bydate` (`"date"` or `"load"`, default load).
 
-**Request**
+**Response**: `{ summary:{summa,volume,count,akb}, status:[{id,name}], agents:{ columns:['agentId','name','summa','volume','count','akb'], data:[[…]] } }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1715](#) directly._
+**Gotchas**: 403 if role ∉ [8,9]. Hard-codes `DILER_ID='d0_1'`. Numeric fields are stringified (rounded to 3dp).
 
-**Response**
+## actionDetailSummary
 
-_Response shape not auto-detected — TBD._
+`POST /api3/auditor/detailSummary` — per-order list for one agent.
 
-### `GET /api3/auditor/position`
+**Request**: `agentId` (required, else 403), `from`, `to` (ms), optional `lang`, `status`, `bydate`.
 
-- **Controller**: `AuditorController::position` (`protected/modules/api3/controllers/AuditorController.php:1181`)
+**Response**: `{ columns:['date','dateload','client_name','count','summa','price_type','status'], status:[{id,name}], data:[[…]] }`.
 
-**Request**
+**Gotchas**: 403 if role ∉ [8,9] or `agentId` empty.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1181](#) directly._
+## actionClientBalance
 
-**Response**
+`POST /api3/auditor/clientBalance` — client balances across currencies for this supervisor's agents.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ client:['clientId','name','address','avatar','territory_id','category_id','currencies'], currency:['curId','name','title','balance'], data:[[clientId,name,[ [curId,name,title,balance], … ] (json-stringified), avatar, address, territoryId, categoryId], …] }`.
 
-### `GET /api3/auditor/profile`
-
-- **Controller**: `AuditorController::profile` (`protected/modules/api3/controllers/AuditorController.php:88`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:88](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/setClient`
-
-- **Controller**: `AuditorController::setClient` (`protected/modules/api3/controllers/AuditorController.php:1881`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1881](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/setMainAvatar`
-
-- **Controller**: `AuditorController::setMainAvatar` (`protected/modules/api3/controllers/AuditorController.php:1511`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1511](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/setphoto`
-
-- **Controller**: `AuditorController::setphoto` (`protected/modules/api3/controllers/AuditorController.php:1358`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1358](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/setphoto2`
-
-- **Controller**: `AuditorController::setphoto2` (`protected/modules/api3/controllers/AuditorController.php:1539`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1539](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/settask`
-
-- **Controller**: `AuditorController::settask` (`protected/modules/api3/controllers/AuditorController.php:2271`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2271](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/task`
-
-- **Controller**: `AuditorController::task` (`protected/modules/api3/controllers/AuditorController.php:2198`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2198](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/task2`
-
-- **Controller**: `AuditorController::task2` (`protected/modules/api3/controllers/AuditorController.php:2232`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2232](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/taskType`
-
-- **Controller**: `AuditorController::taskType` (`protected/modules/api3/controllers/AuditorController.php:2182`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2182](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/territory`
-
-- **Controller**: `AuditorController::territory` (`protected/modules/api3/controllers/AuditorController.php:1014`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:1014](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/auditor/total`
-
-- **Controller**: `AuditorController::total` (`protected/modules/api3/controllers/AuditorController.php:2683`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/AuditorController.php:2683](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
+**Gotchas**: 403 if role ∉ [8,9]. When `ServerSettings::isContragent()` true, reads from `Contragent` table instead of `Client`. `currencies` cell is **a JSON-encoded string**, not a nested array — clients must `JSON.parse` it.
 
 ## See also
 

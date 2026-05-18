@@ -1,0 +1,15 @@
+{
+  "slug": "planning_outlet",
+  "url": "/planning/outlet",
+  "title": "Outlet plan",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 208,
+      "w": 70,
+      "h": 34,
+      "label": "Сумма",
+      "kind": "action"
+    }
+  ]
+}

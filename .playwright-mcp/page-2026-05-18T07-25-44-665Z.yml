@@ -1,0 +1,200 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - heading "История изменения визитов" [level=3] [ref=e105]
+        - generic [ref=e106]:
+          - generic [ref=e109]:
+            - textbox "Datepicker input" [ref=e110] [cursor=pointer]:
+              - /placeholder: Выберите дату
+              - text: май 18 - май 18
+            - img [ref=e111] [cursor=pointer]
+          - button "Загрузить" [ref=e116] [cursor=pointer]:
+            - generic [ref=e117]: Загрузить
+      - separator [ref=e118]
+      - generic [ref=e120]:
+        - combobox [ref=e123]:
+          - generic [ref=e124]:
+            - generic: Аудитор
+            - textbox "Аудитор Аудитор" [ref=e126]
+          - text: 󰅙
+          - button "Открыть" [ref=e128] [cursor=pointer]: 󰍝
+        - combobox [ref=e131]:
+          - generic [ref=e132]:
+            - generic: Агенты
+            - textbox "Агенты Агенты" [ref=e134]
+          - text: 󰅙
+          - button "Открыть" [ref=e136] [cursor=pointer]: 󰍝
+        - combobox [ref=e139]:
+          - generic [ref=e140]:
+            - generic: Экспедиторы
+            - textbox "Экспедиторы Экспедиторы" [ref=e142]
+          - text: 󰅙
+          - button "Открыть" [ref=e144] [cursor=pointer]: 󰍝
+        - combobox [ref=e147]:
+          - generic [ref=e148]:
+            - generic: Клиенты
+            - textbox "Клиенты Клиенты" [ref=e150]
+          - text: 󰅙
+          - button "Открыть" [ref=e152] [cursor=pointer]: 󰍝
+        - combobox [ref=e155]:
+          - generic [ref=e156]:
+            - generic: Тип визитора
+            - textbox "Тип визитора Тип визитора" [ref=e158]
+          - text: 󰅙
+          - button "Открыть" [ref=e160] [cursor=pointer]: 󰍝
+        - combobox [ref=e163]:
+          - generic [ref=e164]:
+            - generic: День
+            - textbox "День День" [ref=e166]
+          - text: 󰅙
+          - button "Открыть" [ref=e168] [cursor=pointer]: 󰍝
+      - generic [ref=e169]:
+        - generic [ref=e171]:
+          - generic [ref=e174]:
+            - generic [ref=e176]: 󰍉
+            - textbox [ref=e178]:
+              - /placeholder: Поиск
+            - text: 󰅙
+          - generic [ref=e179]:
+            - button "Показать по" [ref=e180] [cursor=pointer]:
+              - generic [ref=e181]: Показать по
+              - generic [ref=e183]: 󰍝
+            - button [ref=e184] [cursor=pointer]:
+              - generic [ref=e186]: 󰕭
+            - button "Excel" [ref=e187] [cursor=pointer]:
+              - generic [ref=e188]:
+                - generic [ref=e189]: Excel
+                - img [ref=e190]
+        - generic [ref=e193]:
+          - table [ref=e194]:
+            - rowgroup [ref=e195]:
+              - row "Визитор 󰒺 Тип визитора 󰒺 Клиент 󰒺 Дни 󰒺 Источник 󰒺 IP-адрес 󰒺 Тип Браузера 󰒺" [ref=e196]:
+                - columnheader "Визитор 󰒺" [ref=e197] [cursor=pointer]:
+                  - generic [ref=e198]:
+                    - text: Визитор
+                    - generic [ref=e199]: 󰒺
+                - columnheader "Тип визитора 󰒺" [ref=e200] [cursor=pointer]:
+                  - generic [ref=e201]:
+                    - text: Тип визитора
+                    - generic [ref=e202]: 󰒺
+                - columnheader "Клиент 󰒺" [ref=e203] [cursor=pointer]:
+                  - generic [ref=e204]:
+                    - text: Клиент
+                    - generic [ref=e205]: 󰒺
+                - columnheader "Дни 󰒺" [ref=e206] [cursor=pointer]:
+                  - generic [ref=e207]:
+                    - text: Дни
+                    - generic [ref=e208]: 󰒺
+                - columnheader "Источник 󰒺" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e210]:
+                    - text: Источник
+                    - generic [ref=e211]: 󰒺
+                - columnheader "IP-адрес 󰒺" [ref=e212] [cursor=pointer]:
+                  - generic [ref=e213]:
+                    - text: IP-адрес
+                    - generic [ref=e214]: 󰒺
+                - columnheader "Тип Браузера 󰒺" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e216]:
+                    - text: Тип Браузера
+                    - generic [ref=e217]: 󰒺
+          - generic [ref=e218]: Нет данных
+        - generic [ref=e220]:
+          - generic [ref=e221]: Показаны записи 0 - 0 из 0
+          - navigation "Страница" [ref=e223]:
+            - list [ref=e224]:
+              - listitem [ref=e225]:
+                - button "Предыдущая" [disabled]:
+                  - generic:
+                    - generic: 󰅁
+              - listitem [ref=e226]:
+                - button "Следующая" [disabled]:
+                  - generic:
+                    - generic: 󰅂
+  - progressbar [ref=e229]:
+    - img [ref=e230]

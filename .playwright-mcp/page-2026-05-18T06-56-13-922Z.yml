@@ -1,0 +1,941 @@
+- generic [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e103]:
+      - generic [ref=e104]:
+        - heading "Агенты" [level=3] [ref=e105]
+        - generic [ref=e106]:
+          - button "Конфигурация" [ref=e108] [cursor=pointer]:
+            - generic [ref=e110]: 󰥑
+            - generic [ref=e111]: Конфигурация
+          - button "Добавить агента" [ref=e113] [cursor=pointer]:
+            - generic [ref=e115]: 󰐕
+            - generic [ref=e116]: Добавить агента
+      - separator [ref=e117]
+      - generic [ref=e118]:
+        - generic [ref=e119] [cursor=pointer]: Активные агенты
+        - generic [ref=e120] [cursor=pointer]: Неактивные агенты
+      - generic [ref=e121]:
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - button "Групповая обработка" [disabled]:
+              - generic:
+                - generic: 󰗇
+              - generic: Групповая обработка
+              - generic:
+                - generic: 󰍝
+          - combobox [ref=e127] [cursor=pointer]:
+            - generic [ref=e128]:
+              - generic: Тип
+              - generic [ref=e129]:
+                - textbox "Открыть"
+            - text: 󰅙
+            - generic [ref=e131]: 󰍝
+          - generic [ref=e134]:
+            - generic [ref=e136]: 󰍉
+            - textbox [ref=e138]:
+              - /placeholder: Поиск
+            - text: 󰅙
+          - generic [ref=e139]:
+            - button "Показать по" [ref=e140] [cursor=pointer]:
+              - generic [ref=e141]: Показать по
+              - generic [ref=e143]: 󰍝
+            - button [ref=e144] [cursor=pointer]:
+              - generic [ref=e146]: 󰕭
+            - button "Excel" [ref=e147] [cursor=pointer]:
+              - generic [ref=e148]:
+                - generic [ref=e149]: Excel
+                - img [ref=e150]
+        - table [ref=e154]:
+          - rowgroup [ref=e155]:
+            - row "ИД 󰒺 Ф.И.О. 󰒽 Логин 󰒺 Телефон 󰒺 Последняя синхронизация 󰒺 Тип 󰒺 Код агента 󰒺 Доступные товары 󰒺 Доступные типы цен 󰒺" [ref=e156]:
+              - columnheader [ref=e157]:
+                - generic [ref=e160]:
+                  - generic [ref=e161]: 󰄱
+                  - checkbox [ref=e162] [cursor=pointer]
+              - columnheader "ИД 󰒺" [ref=e163] [cursor=pointer]:
+                - generic [ref=e164]:
+                  - text: ИД
+                  - generic [ref=e165]: 󰒺
+              - columnheader "Ф.И.О. 󰒽" [ref=e166] [cursor=pointer]:
+                - generic [ref=e167]:
+                  - text: Ф.И.О.
+                  - generic [ref=e168]: 󰒽
+              - columnheader "Логин 󰒺" [ref=e169] [cursor=pointer]:
+                - generic [ref=e170]:
+                  - text: Логин
+                  - generic [ref=e171]: 󰒺
+              - columnheader "Телефон 󰒺" [ref=e172] [cursor=pointer]:
+                - generic [ref=e173]:
+                  - text: Телефон
+                  - generic [ref=e174]: 󰒺
+              - columnheader "Последняя синхронизация 󰒺" [ref=e175] [cursor=pointer]:
+                - generic [ref=e176]:
+                  - text: Последняя синхронизация
+                  - generic [ref=e177]: 󰒺
+              - columnheader "Тип 󰒺" [ref=e178] [cursor=pointer]:
+                - generic [ref=e179]:
+                  - text: Тип
+                  - generic [ref=e180]: 󰒺
+              - columnheader "Код агента 󰒺" [ref=e181] [cursor=pointer]:
+                - generic [ref=e182]:
+                  - text: Код агента
+                  - generic [ref=e183]: 󰒺
+              - columnheader "Доступные товары 󰒺" [ref=e184] [cursor=pointer]:
+                - generic [ref=e185]:
+                  - text: Доступные товары
+                  - generic [ref=e186]: 󰒺
+              - columnheader "Доступные типы цен 󰒺" [ref=e187] [cursor=pointer]:
+                - generic [ref=e188]:
+                  - text: Доступные типы цен
+                  - generic [ref=e189]: 󰒺
+              - columnheader [ref=e190]
+          - rowgroup [ref=e207]:
+            - row "d0_56 11111 asdbilol123 +998789898999 Торговый представитель tp1 Без ограничений Без ограничений" [ref=e208]:
+              - cell [ref=e209]:
+                - generic [ref=e212]:
+                  - generic [ref=e213]: 󰄱
+                  - checkbox [ref=e214] [cursor=pointer]
+              - cell "d0_56" [ref=e215]
+              - cell "11111" [ref=e216]:
+                - generic [ref=e217]:
+                  - img [ref=e218]
+                  - text: "11111"
+              - cell "asdbilol123" [ref=e222]
+              - cell "+998789898999" [ref=e223]
+              - cell [ref=e224]
+              - cell "Торговый представитель" [ref=e226]
+              - cell "tp1" [ref=e227]
+              - cell "Без ограничений" [ref=e228]:
+                - paragraph [ref=e229]: Без ограничений
+              - cell "Без ограничений" [ref=e230]:
+                - generic [ref=e231]: Без ограничений
+              - cell [ref=e232]:
+                - generic [ref=e235]:
+                  - button [ref=e237] [cursor=pointer]:
+                    - generic [ref=e239]: 󰥑
+                  - button [ref=e240] [cursor=pointer]:
+                    - generic [ref=e242]: 󰇘
+            - 'row "d0_63 Agent Javoxir 007 +998909999999 APK: 1.0.16+23, 2026-03-17 09:09:08, Google sdk_gphone64_arm64 (Модель устройства) Торговый представитель 007 Без ограничений Без ограничений" [ref=e243]':
+              - cell [ref=e244]:
+                - generic [ref=e247]:
+                  - generic [ref=e248]: 󰄱
+                  - checkbox [ref=e249] [cursor=pointer]
+              - cell "d0_63" [ref=e250]
+              - cell "Agent Javoxir" [ref=e251]:
+                - generic [ref=e252]:
+                  - img [ref=e253]
+                  - text: Agent Javoxir
+              - cell "007" [ref=e257]
+              - cell "+998909999999" [ref=e258]
+              - 'cell "APK: 1.0.16+23, 2026-03-17 09:09:08, Google sdk_gphone64_arm64 (Модель устройства)" [ref=e259]':
+                - generic [ref=e260]:
+                  - generic [ref=e261]:
+                    - generic [ref=e262]: "APK: 1.0.16+23,"
+                    - generic [ref=e263]: 2026-03-17 09:09:08,
+                  - generic [ref=e264]: Google sdk_gphone64_arm64 (Модель устройства)
+              - cell "Торговый представитель" [ref=e265]
+              - cell "007" [ref=e266]
+              - cell "Без ограничений" [ref=e267]:
+                - paragraph [ref=e268]: Без ограничений
+              - cell "Без ограничений" [ref=e269]:
+                - generic [ref=e270]: Без ограничений
+              - cell [ref=e271]:
+                - generic [ref=e274]:
+                  - button [ref=e276] [cursor=pointer]:
+                    - generic [ref=e278]: 󰥑
+                  - button [ref=e279] [cursor=pointer]:
+                    - generic [ref=e281]: 󰇘
+            - row "d0_95 Agent007 00790 +998990901230 Торговый представитель Без ограничений Без ограничений" [ref=e282]:
+              - cell [ref=e283]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]: 󰄱
+                  - checkbox [ref=e288] [cursor=pointer]
+              - cell "d0_95" [ref=e289]
+              - cell "Agent007" [ref=e290]:
+                - generic [ref=e291]:
+                  - img [ref=e292]
+                  - text: Agent007
+              - cell "00790" [ref=e296]
+              - cell "+998990901230" [ref=e297]
+              - cell [ref=e298]
+              - cell "Торговый представитель" [ref=e300]
+              - cell [ref=e301]
+              - cell "Без ограничений" [ref=e302]:
+                - paragraph [ref=e303]: Без ограничений
+              - cell "Без ограничений" [ref=e304]:
+                - generic [ref=e305]: Без ограничений
+              - cell [ref=e306]:
+                - generic [ref=e309]:
+                  - button [ref=e311] [cursor=pointer]:
+                    - generic [ref=e313]: 󰥑
+                  - button [ref=e314] [cursor=pointer]:
+                    - generic [ref=e316]: 󰇘
+            - row "d0_87 Anvar Rashidowv dev1 +998998737376 Торговый представитель 123 Без ограничений Без ограничений" [ref=e317]:
+              - cell [ref=e318]:
+                - generic [ref=e321]:
+                  - generic [ref=e322]: 󰄱
+                  - checkbox [ref=e323] [cursor=pointer]
+              - cell "d0_87" [ref=e324]
+              - cell "Anvar Rashidowv" [ref=e325]:
+                - generic [ref=e326]:
+                  - img [ref=e327]
+                  - text: Anvar Rashidowv
+              - cell "dev1" [ref=e331]
+              - cell "+998998737376" [ref=e332]
+              - cell [ref=e333]
+              - cell "Торговый представитель" [ref=e335]
+              - cell "123" [ref=e336]
+              - cell "Без ограничений" [ref=e337]:
+                - paragraph [ref=e338]: Без ограничений
+              - cell "Без ограничений" [ref=e339]:
+                - generic [ref=e340]: Без ограничений
+              - cell [ref=e341]:
+                - generic [ref=e344]:
+                  - button [ref=e346] [cursor=pointer]:
+                    - generic [ref=e348]: 󰥑
+                  - button [ref=e349] [cursor=pointer]:
+                    - generic [ref=e351]: 󰇘
+            - 'row "d0_11 Avazhon avaz +998991234567 APK: 1.0.15+15, 2026-02-25 11:18:35, SM-A536E (Модель устройства) Van-selling (торговля с колес) 1 Без ограничений Без ограничений" [ref=e352]':
+              - cell [ref=e353]:
+                - generic [ref=e356]:
+                  - generic [ref=e357]: 󰄱
+                  - checkbox [ref=e358] [cursor=pointer]
+              - cell "d0_11" [ref=e359]
+              - cell "Avazhon" [ref=e360]:
+                - generic [ref=e361]:
+                  - img [ref=e362]
+                  - text: Avazhon
+              - cell "avaz" [ref=e366]
+              - cell "+998991234567" [ref=e367]
+              - 'cell "APK: 1.0.15+15, 2026-02-25 11:18:35, SM-A536E (Модель устройства)" [ref=e368]':
+                - generic [ref=e369]:
+                  - generic [ref=e370]:
+                    - generic [ref=e371]: "APK: 1.0.15+15,"
+                    - generic [ref=e372]: 2026-02-25 11:18:35,
+                  - generic [ref=e373]: SM-A536E (Модель устройства)
+              - cell "Van-selling (торговля с колес)" [ref=e374]
+              - cell "1" [ref=e375]
+              - cell "Без ограничений" [ref=e376]:
+                - paragraph [ref=e377]: Без ограничений
+              - cell "Без ограничений" [ref=e378]:
+                - generic [ref=e379]: Без ограничений
+              - cell [ref=e380]:
+                - generic [ref=e383]:
+                  - button [ref=e385] [cursor=pointer]:
+                    - generic [ref=e387]: 󰥑
+                  - button [ref=e388] [cursor=pointer]:
+                    - generic [ref=e390]: 󰇘
+            - 'row "d0_94 beck beck +998909344657 APK: 1.0.14+14, 2026-02-27 10:52:38, iPhone 14 Pro Max (Модель устройства) Торговый представитель code_agent_001 Без ограничений Без ограничений" [ref=e391]':
+              - cell [ref=e392]:
+                - generic [ref=e395]:
+                  - generic [ref=e396]: 󰄱
+                  - checkbox [ref=e397] [cursor=pointer]
+              - cell "d0_94" [ref=e398]
+              - cell "beck" [ref=e399]:
+                - generic [ref=e400]:
+                  - img [ref=e401]
+                  - text: beck
+              - cell "beck" [ref=e405]
+              - cell "+998909344657" [ref=e406]
+              - 'cell "APK: 1.0.14+14, 2026-02-27 10:52:38, iPhone 14 Pro Max (Модель устройства)" [ref=e407]':
+                - generic [ref=e408]:
+                  - generic [ref=e409]:
+                    - generic [ref=e410]: "APK: 1.0.14+14,"
+                    - generic [ref=e411]: 2026-02-27 10:52:38,
+                  - generic [ref=e412]: iPhone 14 Pro Max (Модель устройства)
+              - cell "Торговый представитель" [ref=e413]
+              - cell "code_agent_001" [ref=e414]
+              - cell "Без ограничений" [ref=e415]:
+                - paragraph [ref=e416]: Без ограничений
+              - cell "Без ограничений" [ref=e417]:
+                - generic [ref=e418]: Без ограничений
+              - cell [ref=e419]:
+                - generic [ref=e422]:
+                  - button [ref=e424] [cursor=pointer]:
+                    - generic [ref=e426]: 󰥑
+                  - button [ref=e427] [cursor=pointer]:
+                    - generic [ref=e429]: 󰇘
+            - row "d0_96 Bobz demo8 +998883444325 Торговый представитель Товары (2 ✅ | 226 ❌ ) Без ограничений" [ref=e430]:
+              - cell [ref=e431]:
+                - generic [ref=e434]:
+                  - generic [ref=e435]: 󰄱
+                  - checkbox [ref=e436] [cursor=pointer]
+              - cell "d0_96" [ref=e437]
+              - cell "Bobz" [ref=e438]:
+                - generic [ref=e439]:
+                  - img [ref=e440]
+                  - text: Bobz
+              - cell "demo8" [ref=e444]
+              - cell "+998883444325" [ref=e445]
+              - cell [ref=e446]
+              - cell "Торговый представитель" [ref=e448]
+              - cell [ref=e449]
+              - cell "Товары (2 ✅ | 226 ❌ )" [ref=e450]:
+                - paragraph [ref=e451] [cursor=pointer]: Товары (2 ✅ | 226 ❌ )
+              - cell "Без ограничений" [ref=e452]:
+                - generic [ref=e453]: Без ограничений
+              - cell [ref=e454]:
+                - generic [ref=e457]:
+                  - button [ref=e459] [cursor=pointer]:
+                    - generic [ref=e461]: 󰥑
+                  - button [ref=e462] [cursor=pointer]:
+                    - generic [ref=e464]: 󰇘
+            - 'row "d0_75 dimaprod user1 +998000000000 APK: 2.8.210, 2025-09-18 19:33:48, samsung SM-A536E 14 UPSIDE_DOWN_CAKE (Модель устройства) Продавец (Точка продаж) Без ограничений Без ограничений" [ref=e465]':
+              - cell [ref=e466]:
+                - generic [ref=e469]:
+                  - generic [ref=e470]: 󰄱
+                  - checkbox [ref=e471] [cursor=pointer]
+              - cell "d0_75" [ref=e472]
+              - cell "dimaprod" [ref=e473]:
+                - generic [ref=e474]:
+                  - img [ref=e475]
+                  - text: dimaprod
+              - cell "user1" [ref=e479]
+              - cell "+998000000000" [ref=e480]
+              - 'cell "APK: 2.8.210, 2025-09-18 19:33:48, samsung SM-A536E 14 UPSIDE_DOWN_CAKE (Модель устройства)" [ref=e481]':
+                - generic [ref=e482]:
+                  - generic [ref=e483]:
+                    - generic [ref=e484]: "APK: 2.8.210,"
+                    - generic [ref=e485]: 2025-09-18 19:33:48,
+                  - generic [ref=e486]: samsung SM-A536E 14 UPSIDE_DOWN_CAKE (Модель устройства)
+              - cell "Продавец (Точка продаж)" [ref=e487]
+              - cell [ref=e488]
+              - cell "Без ограничений" [ref=e489]:
+                - paragraph [ref=e490]: Без ограничений
+              - cell "Без ограничений" [ref=e491]:
+                - generic [ref=e492]: Без ограничений
+              - cell [ref=e493]:
+                - generic [ref=e496]:
+                  - button [ref=e498] [cursor=pointer]:
+                    - generic [ref=e500]: 󰥑
+                  - button [ref=e501] [cursor=pointer]:
+                    - generic [ref=e503]: 󰇘
+            - 'row "d0_8 Dmitriy M VS dimavs +998900659739 APK: 2.8.207, 2025-08-21 13:13:34, Xiaomi M2003J15SC 12 S (Модель устройства) Van-selling (торговля с колес) 2 Без ограничений Без ограничений Тип цены вансел (18 ✅ | 4 ❌ )" [ref=e504]':
+              - cell [ref=e505]:
+                - generic [ref=e508]:
+                  - generic [ref=e509]: 󰄱
+                  - checkbox [ref=e510] [cursor=pointer]
+              - cell "d0_8" [ref=e511]
+              - cell "Dmitriy M VS" [ref=e512]:
+                - generic [ref=e513]:
+                  - img [ref=e514]
+                  - text: Dmitriy M VS
+              - cell "dimavs" [ref=e518]
+              - cell "+998900659739" [ref=e519]
+              - 'cell "APK: 2.8.207, 2025-08-21 13:13:34, Xiaomi M2003J15SC 12 S (Модель устройства)" [ref=e520]':
+                - generic [ref=e521]:
+                  - generic [ref=e522]:
+                    - generic [ref=e523]: "APK: 2.8.207,"
+                    - generic [ref=e524]: 2025-08-21 13:13:34,
+                  - generic [ref=e525]: Xiaomi M2003J15SC 12 S (Модель устройства)
+              - cell "Van-selling (торговля с колес)" [ref=e526]
+              - cell "2" [ref=e527]
+              - cell "Без ограничений" [ref=e528]:
+                - paragraph [ref=e529]: Без ограничений
+              - cell "Без ограничений Тип цены вансел (18 ✅ | 4 ❌ )" [ref=e530]:
+                - generic [ref=e531]:
+                  - generic [ref=e532]: Без ограничений
+                  - generic [ref=e533]: Тип цены вансел (18 ✅ | 4 ❌ )
+              - cell [ref=e534]:
+                - generic [ref=e537]:
+                  - button [ref=e539] [cursor=pointer]:
+                    - generic [ref=e541]: 󰥑
+                  - button [ref=e542] [cursor=pointer]:
+                    - generic [ref=e544]: 󰇘
+            - 'row "d0_6 Dmitry Agent dima +998000000001 APK: 2.8.219, 2026-03-16 15:32:24, samsung SM-A600FN 10 Q (Модель устройства) Торговый представитель 2 Без ограничений Без ограничений" [ref=e545]':
+              - cell [ref=e546]:
+                - generic [ref=e549]:
+                  - generic [ref=e550]: 󰄱
+                  - checkbox [ref=e551] [cursor=pointer]
+              - cell "d0_6" [ref=e552]
+              - cell "Dmitry Agent" [ref=e553]:
+                - generic [ref=e554]:
+                  - img [ref=e555]
+                  - text: Dmitry Agent
+              - cell "dima" [ref=e559]
+              - cell "+998000000001" [ref=e560]
+              - 'cell "APK: 2.8.219, 2026-03-16 15:32:24, samsung SM-A600FN 10 Q (Модель устройства)" [ref=e561]':
+                - generic [ref=e562]:
+                  - generic [ref=e563]:
+                    - generic [ref=e564]: "APK: 2.8.219,"
+                    - generic [ref=e565]: 2026-03-16 15:32:24,
+                  - generic [ref=e566]: samsung SM-A600FN 10 Q (Модель устройства)
+              - cell "Торговый представитель" [ref=e567]
+              - cell "2" [ref=e568]
+              - cell "Без ограничений" [ref=e569]:
+                - paragraph [ref=e570]: Без ограничений
+              - cell "Без ограничений" [ref=e571]:
+                - generic [ref=e572]: Без ограничений
+              - cell [ref=e573]:
+                - generic [ref=e576]:
+                  - button [ref=e578] [cursor=pointer]:
+                    - generic [ref=e580]: 󰥑
+                  - button [ref=e581] [cursor=pointer]:
+                    - generic [ref=e583]: 󰇘
+            - 'row "d0_77 Feruzov Anvar ag02 +998505502525 APK: 2.8.206, 2025-07-16 12:59:40, HONOR ELI-NX9 15 VANILLA_ICE_CREAM (Модель устройства) Торговый представитель 252525 Без ограничений Без ограничений" [ref=e584]':
+              - cell [ref=e585]:
+                - generic [ref=e588]:
+                  - generic [ref=e589]: 󰄱
+                  - checkbox [ref=e590] [cursor=pointer]
+              - cell "d0_77" [ref=e591]
+              - cell "Feruzov Anvar" [ref=e592]:
+                - generic [ref=e593]:
+                  - img [ref=e594]
+                  - text: Feruzov Anvar
+              - cell "ag02" [ref=e598]
+              - cell "+998505502525" [ref=e599]
+              - 'cell "APK: 2.8.206, 2025-07-16 12:59:40, HONOR ELI-NX9 15 VANILLA_ICE_CREAM (Модель устройства)" [ref=e600]':
+                - generic [ref=e601]:
+                  - generic [ref=e602]:
+                    - generic [ref=e603]: "APK: 2.8.206,"
+                    - generic [ref=e604]: 2025-07-16 12:59:40,
+                  - generic [ref=e605]: HONOR ELI-NX9 15 VANILLA_ICE_CREAM (Модель устройства)
+              - cell "Торговый представитель" [ref=e606]
+              - cell "252525" [ref=e607]
+              - cell "Без ограничений" [ref=e608]:
+                - paragraph [ref=e609]: Без ограничений
+              - cell "Без ограничений" [ref=e610]:
+                - generic [ref=e611]: Без ограничений
+              - cell [ref=e612]:
+                - generic [ref=e615]:
+                  - button [ref=e617] [cursor=pointer]:
+                    - generic [ref=e619]: 󰥑
+                  - button [ref=e620] [cursor=pointer]:
+                    - generic [ref=e622]: 󰇘
+            - 'row "d0_34 Gleb agent 7 +998900000089 APK: 2.8.219, 2026-03-10 13:25:08, Xiaomi 2409BRN2CA 16 VANILLA_ICE_CREAM (Модель устройства) Торговый представитель Без ограничений Тип цены (9 ✅ | 7 ❌ )" [ref=e623]':
+              - cell [ref=e624]:
+                - generic [ref=e627]:
+                  - generic [ref=e628]: 󰄱
+                  - checkbox [ref=e629] [cursor=pointer]
+              - cell "d0_34" [ref=e630]
+              - cell "Gleb agent" [ref=e631]:
+                - generic [ref=e632]:
+                  - img [ref=e633]
+                  - text: Gleb agent
+              - cell "7" [ref=e637]
+              - cell "+998900000089" [ref=e638]
+              - 'cell "APK: 2.8.219, 2026-03-10 13:25:08, Xiaomi 2409BRN2CA 16 VANILLA_ICE_CREAM (Модель устройства)" [ref=e639]':
+                - generic [ref=e640]:
+                  - generic [ref=e641]:
+                    - generic [ref=e642]: "APK: 2.8.219,"
+                    - generic [ref=e643]: 2026-03-10 13:25:08,
+                  - generic [ref=e644]: Xiaomi 2409BRN2CA 16 VANILLA_ICE_CREAM (Модель устройства)
+              - cell "Торговый представитель" [ref=e645]
+              - cell [ref=e646]
+              - cell "Без ограничений" [ref=e647]:
+                - paragraph [ref=e648]: Без ограничений
+              - cell "Тип цены (9 ✅ | 7 ❌ )" [ref=e649]:
+                - generic [ref=e651] [cursor=pointer]: Тип цены (9 ✅ | 7 ❌ )
+              - cell [ref=e652]:
+                - generic [ref=e655]:
+                  - button [ref=e657] [cursor=pointer]:
+                    - generic [ref=e659]: 󰥑
+                  - button [ref=e660] [cursor=pointer]:
+                    - generic [ref=e662]: 󰇘
+            - 'row "d0_88 Sotuvchi sotuv +998887771111 APK: 2.8.212, 2025-11-10 11:15:56, Xiaomi 220333QAG 13 TIRAMISU (Модель устройства) Торговый представитель 1 Без ограничений Без ограничений" [ref=e663]':
+              - cell [ref=e664]:
+                - generic [ref=e667]:
+                  - generic [ref=e668]: 󰄱
+                  - checkbox [ref=e669] [cursor=pointer]
+              - cell "d0_88" [ref=e670]
+              - cell "Sotuvchi" [ref=e671]:
+                - generic [ref=e672]:
+                  - img [ref=e673]
+                  - text: Sotuvchi
+              - cell "sotuv" [ref=e677]
+              - cell "+998887771111" [ref=e678]
+              - 'cell "APK: 2.8.212, 2025-11-10 11:15:56, Xiaomi 220333QAG 13 TIRAMISU (Модель устройства)" [ref=e679]':
+                - generic [ref=e680]:
+                  - generic [ref=e681]:
+                    - generic [ref=e682]: "APK: 2.8.212,"
+                    - generic [ref=e683]: 2025-11-10 11:15:56,
+                  - generic [ref=e684]: Xiaomi 220333QAG 13 TIRAMISU (Модель устройства)
+              - cell "Торговый представитель" [ref=e685]
+              - cell "1" [ref=e686]
+              - cell "Без ограничений" [ref=e687]:
+                - paragraph [ref=e688]: Без ограничений
+              - cell "Без ограничений" [ref=e689]:
+                - generic [ref=e690]: Без ограничений
+              - cell [ref=e691]:
+                - generic [ref=e694]:
+                  - button [ref=e696] [cursor=pointer]:
+                    - generic [ref=e698]: 󰥑
+                  - button [ref=e699] [cursor=pointer]:
+                    - generic [ref=e701]: 󰇘
+            - row "d0_92 TP-22 tp22 +998773219312 Торговый представитель Без ограничений Без ограничений" [ref=e702]:
+              - cell [ref=e703]:
+                - generic [ref=e706]:
+                  - generic [ref=e707]: 󰄱
+                  - checkbox [ref=e708] [cursor=pointer]
+              - cell "d0_92" [ref=e709]
+              - cell "TP-22" [ref=e710]:
+                - generic [ref=e711]:
+                  - img [ref=e712]
+                  - text: TP-22
+              - cell "tp22" [ref=e716]
+              - cell "+998773219312" [ref=e717]
+              - cell [ref=e718]
+              - cell "Торговый представитель" [ref=e720]
+              - cell [ref=e721]
+              - cell "Без ограничений" [ref=e722]:
+                - paragraph [ref=e723]: Без ограничений
+              - cell "Без ограничений" [ref=e724]:
+                - generic [ref=e725]: Без ограничений
+              - cell [ref=e726]:
+                - generic [ref=e729]:
+                  - button [ref=e731] [cursor=pointer]:
+                    - generic [ref=e733]: 󰥑
+                  - button [ref=e734] [cursor=pointer]:
+                    - generic [ref=e736]: 󰇘
+            - 'row "d0_58 Usmon usmon +998000000000 APK: 2.8.210, 2025-10-08 12:45:32, samsung SM-A217F 12 S (Модель устройства) Торговый представитель ваваа Без ограничений Без ограничений" [ref=e737]':
+              - cell [ref=e738]:
+                - generic [ref=e741]:
+                  - generic [ref=e742]: 󰄱
+                  - checkbox [ref=e743] [cursor=pointer]
+              - cell "d0_58" [ref=e744]
+              - cell "Usmon" [ref=e745]:
+                - generic [ref=e746]:
+                  - img [ref=e747]
+                  - text: Usmon
+              - cell "usmon" [ref=e751]
+              - cell "+998000000000" [ref=e752]
+              - 'cell "APK: 2.8.210, 2025-10-08 12:45:32, samsung SM-A217F 12 S (Модель устройства)" [ref=e753]':
+                - generic [ref=e754]:
+                  - generic [ref=e755]:
+                    - generic [ref=e756]: "APK: 2.8.210,"
+                    - generic [ref=e757]: 2025-10-08 12:45:32,
+                  - generic [ref=e758]: samsung SM-A217F 12 S (Модель устройства)
+              - cell "Торговый представитель" [ref=e759]
+              - cell "ваваа" [ref=e760]
+              - cell "Без ограничений" [ref=e761]:
+                - paragraph [ref=e762]: Без ограничений
+              - cell "Без ограничений" [ref=e763]:
+                - generic [ref=e764]: Без ограничений
+              - cell [ref=e765]:
+                - generic [ref=e768]:
+                  - button [ref=e770] [cursor=pointer]:
+                    - generic [ref=e772]: 󰥑
+                  - button [ref=e773] [cursor=pointer]:
+                    - generic [ref=e775]: 󰇘
+            - 'row "d0_89 Van selling van +998997765242 APK: 2.8.212, 2025-11-10 13:37:21, Xiaomi 220333QAG 13 TIRAMISU (Модель устройства) Van-selling (торговля с колес) 1 Без ограничений Без ограничений" [ref=e776]':
+              - cell [ref=e777]:
+                - generic [ref=e780]:
+                  - generic [ref=e781]: 󰄱
+                  - checkbox [ref=e782] [cursor=pointer]
+              - cell "d0_89" [ref=e783]
+              - cell "Van selling" [ref=e784]:
+                - generic [ref=e785]:
+                  - img [ref=e786]
+                  - text: Van selling
+              - cell "van" [ref=e790]
+              - cell "+998997765242" [ref=e791]
+              - 'cell "APK: 2.8.212, 2025-11-10 13:37:21, Xiaomi 220333QAG 13 TIRAMISU (Модель устройства)" [ref=e792]':
+                - generic [ref=e793]:
+                  - generic [ref=e794]:
+                    - generic [ref=e795]: "APK: 2.8.212,"
+                    - generic [ref=e796]: 2025-11-10 13:37:21,
+                  - generic [ref=e797]: Xiaomi 220333QAG 13 TIRAMISU (Модель устройства)
+              - cell "Van-selling (торговля с колес)" [ref=e798]
+              - cell "1" [ref=e799]
+              - cell "Без ограничений" [ref=e800]:
+                - paragraph [ref=e801]: Без ограничений
+              - cell "Без ограничений" [ref=e802]:
+                - generic [ref=e803]: Без ограничений
+              - cell [ref=e804]:
+                - generic [ref=e807]:
+                  - button [ref=e809] [cursor=pointer]:
+                    - generic [ref=e811]: 󰥑
+                  - button [ref=e812] [cursor=pointer]:
+                    - generic [ref=e814]: 󰇘
+            - 'row "d0_76 Vansell Max vansellm +998200002200 APK: 2.8.205, 2025-06-03 16:17:10, Xiaomi 23021RAAEG 15 VANILLA_ICE_CREAM (Модель устройства) Van-selling (торговля с колес) Без ограничений Без ограничений" [ref=e815]':
+              - cell [ref=e816]:
+                - generic [ref=e819]:
+                  - generic [ref=e820]: 󰄱
+                  - checkbox [ref=e821] [cursor=pointer]
+              - cell "d0_76" [ref=e822]
+              - cell "Vansell Max" [ref=e823]:
+                - generic [ref=e824]:
+                  - img [ref=e825]
+                  - text: Vansell Max
+              - cell "vansellm" [ref=e829]
+              - cell "+998200002200" [ref=e830]
+              - 'cell "APK: 2.8.205, 2025-06-03 16:17:10, Xiaomi 23021RAAEG 15 VANILLA_ICE_CREAM (Модель устройства)" [ref=e831]':
+                - generic [ref=e832]:
+                  - generic [ref=e833]:
+                    - generic [ref=e834]: "APK: 2.8.205,"
+                    - generic [ref=e835]: 2025-06-03 16:17:10,
+                  - generic [ref=e836]: Xiaomi 23021RAAEG 15 VANILLA_ICE_CREAM (Модель устройства)
+              - cell "Van-selling (торговля с колес)" [ref=e837]
+              - cell [ref=e838]
+              - cell "Без ограничений" [ref=e839]:
+                - paragraph [ref=e840]: Без ограничений
+              - cell "Без ограничений" [ref=e841]:
+                - generic [ref=e842]: Без ограничений
+              - cell [ref=e843]:
+                - generic [ref=e846]:
+                  - button [ref=e848] [cursor=pointer]:
+                    - generic [ref=e850]: 󰥑
+                  - button [ref=e851] [cursor=pointer]:
+                    - generic [ref=e853]: 󰇘
+            - 'row "d0_78 Авдеев Севдар 522 +998546565656 APK: 2.8.209, 2025-08-01 14:01:36, samsung SM-S918B 15 VANILLA_ICE_CREAM (Модель устройства) Торговый представитель 522 Без ограничений Без ограничений" [ref=e854]':
+              - cell [ref=e855]:
+                - generic [ref=e858]:
+                  - generic [ref=e859]: 󰄱
+                  - checkbox [ref=e860] [cursor=pointer]
+              - cell "d0_78" [ref=e861]
+              - cell "Авдеев Севдар" [ref=e862]:
+                - generic [ref=e863]:
+                  - img [ref=e864]
+                  - text: Авдеев Севдар
+              - cell "522" [ref=e868]
+              - cell "+998546565656" [ref=e869]
+              - 'cell "APK: 2.8.209, 2025-08-01 14:01:36, samsung SM-S918B 15 VANILLA_ICE_CREAM (Модель устройства)" [ref=e870]':
+                - generic [ref=e871]:
+                  - generic [ref=e872]:
+                    - generic [ref=e873]: "APK: 2.8.209,"
+                    - generic [ref=e874]: 2025-08-01 14:01:36,
+                  - generic [ref=e875]: samsung SM-S918B 15 VANILLA_ICE_CREAM (Модель устройства)
+              - cell "Торговый представитель" [ref=e876]
+              - cell "522" [ref=e877]
+              - cell "Без ограничений" [ref=e878]:
+                - paragraph [ref=e879]: Без ограничений
+              - cell "Без ограничений" [ref=e880]:
+                - generic [ref=e881]: Без ограничений
+              - cell [ref=e882]:
+                - generic [ref=e885]:
+                  - button [ref=e887] [cursor=pointer]:
+                    - generic [ref=e889]: 󰥑
+                  - button [ref=e890] [cursor=pointer]:
+                    - generic [ref=e892]: 󰇘
+            - row "d0_91 Азизбек Азизбеков 010101 +998888888888 Продавец (Точка продаж) 123 Без ограничений Без ограничений" [ref=e893]:
+              - cell [ref=e894]:
+                - generic [ref=e897]:
+                  - generic [ref=e898]: 󰄱
+                  - checkbox [ref=e899] [cursor=pointer]
+              - cell "d0_91" [ref=e900]
+              - cell "Азизбек Азизбеков" [ref=e901]:
+                - generic [ref=e902]:
+                  - img [ref=e903]
+                  - text: Азизбек Азизбеков
+              - cell "010101" [ref=e907]
+              - cell "+998888888888" [ref=e908]
+              - cell [ref=e909]
+              - cell "Продавец (Точка продаж)" [ref=e911]
+              - cell "123" [ref=e912]
+              - cell "Без ограничений" [ref=e913]:
+                - paragraph [ref=e914]: Без ограничений
+              - cell "Без ограничений" [ref=e915]:
+                - generic [ref=e916]: Без ограничений
+              - cell [ref=e917]:
+                - generic [ref=e920]:
+                  - button [ref=e922] [cursor=pointer]:
+                    - generic [ref=e924]: 󰥑
+                  - button [ref=e925] [cursor=pointer]:
+                    - generic [ref=e927]: 󰇘
+            - 'row "d0_84 Александр Кузнецcкий kuz +998778332288 APK: 2.8.213, 2025-10-06 15:38:06, Xiaomi 23021RAAEG 15 VANILLA_ICE_CREAM (Модель устройства) Торговый представитель Без ограничений Без ограничений" [ref=e928]':
+              - cell [ref=e929]:
+                - generic [ref=e932]:
+                  - generic [ref=e933]: 󰄱
+                  - checkbox [ref=e934] [cursor=pointer]
+              - cell "d0_84" [ref=e935]
+              - cell "Александр Кузнецcкий" [ref=e936]:
+                - generic [ref=e937]:
+                  - img [ref=e938]
+                  - text: Александр Кузнецcкий
+              - cell "kuz" [ref=e942]
+              - cell "+998778332288" [ref=e943]
+              - 'cell "APK: 2.8.213, 2025-10-06 15:38:06, Xiaomi 23021RAAEG 15 VANILLA_ICE_CREAM (Модель устройства)" [ref=e944]':
+                - generic [ref=e945]:
+                  - generic [ref=e946]:
+                    - generic [ref=e947]: "APK: 2.8.213,"
+                    - generic [ref=e948]: 2025-10-06 15:38:06,
+                  - generic [ref=e949]: Xiaomi 23021RAAEG 15 VANILLA_ICE_CREAM (Модель устройства)
+              - cell "Торговый представитель" [ref=e950]
+              - cell [ref=e951]
+              - cell "Без ограничений" [ref=e952]:
+                - paragraph [ref=e953]: Без ограничений
+              - cell "Без ограничений" [ref=e954]:
+                - generic [ref=e955]: Без ограничений
+              - cell [ref=e956]:
+                - generic [ref=e959]:
+                  - button [ref=e961] [cursor=pointer]:
+                    - generic [ref=e963]: 󰥑
+                  - button [ref=e964] [cursor=pointer]:
+                    - generic [ref=e966]: 󰇘
+            - 'row "d0_54 Мадаминбек maga +998912345678 APK: 2.8.219, 2026-03-16 15:33:34, samsung SM-A600FN 10 Q (Модель устройства) Торговый представитель 02-KGZ Без ограничений Без ограничений" [ref=e967]':
+              - cell [ref=e968]:
+                - generic [ref=e971]:
+                  - generic [ref=e972]: 󰄱
+                  - checkbox [ref=e973] [cursor=pointer]
+              - cell "d0_54" [ref=e974]
+              - cell "Мадаминбек" [ref=e975]:
+                - generic [ref=e976]:
+                  - img [ref=e977]
+                  - text: Мадаминбек
+              - cell "maga" [ref=e981]
+              - cell "+998912345678" [ref=e982]
+              - 'cell "APK: 2.8.219, 2026-03-16 15:33:34, samsung SM-A600FN 10 Q (Модель устройства)" [ref=e983]':
+                - generic [ref=e984]:
+                  - generic [ref=e985]:
+                    - generic [ref=e986]: "APK: 2.8.219,"
+                    - generic [ref=e987]: 2026-03-16 15:33:34,
+                  - generic [ref=e988]: samsung SM-A600FN 10 Q (Модель устройства)
+              - cell "Торговый представитель" [ref=e989]
+              - cell "02-KGZ" [ref=e990]
+              - cell "Без ограничений" [ref=e991]:
+                - paragraph [ref=e992]: Без ограничений
+              - cell "Без ограничений" [ref=e993]:
+                - generic [ref=e994]: Без ограничений
+              - cell [ref=e995]:
+                - generic [ref=e998]:
+                  - button [ref=e1000] [cursor=pointer]:
+                    - generic [ref=e1002]: 󰥑
+                  - button [ref=e1003] [cursor=pointer]:
+                    - generic [ref=e1005]: 󰇘
+            - row "d0_85 Михаил Леонтьев misha +998908322132 Торговый представитель Без ограничений Без ограничений" [ref=e1006]:
+              - cell [ref=e1007]:
+                - generic [ref=e1010]:
+                  - generic [ref=e1011]: 󰄱
+                  - checkbox [ref=e1012] [cursor=pointer]
+              - cell "d0_85" [ref=e1013]
+              - cell "Михаил Леонтьев" [ref=e1014]:
+                - generic [ref=e1015]:
+                  - img [ref=e1016]
+                  - text: Михаил Леонтьев
+              - cell "misha" [ref=e1020]
+              - cell "+998908322132" [ref=e1021]
+              - cell [ref=e1022]
+              - cell "Торговый представитель" [ref=e1024]
+              - cell [ref=e1025]
+              - cell "Без ограничений" [ref=e1026]:
+                - paragraph [ref=e1027]: Без ограничений
+              - cell "Без ограничений" [ref=e1028]:
+                - generic [ref=e1029]: Без ограничений
+              - cell [ref=e1030]:
+                - generic [ref=e1033]:
+                  - button [ref=e1035] [cursor=pointer]:
+                    - generic [ref=e1037]: 󰥑
+                  - button [ref=e1038] [cursor=pointer]:
+                    - generic [ref=e1040]: 󰇘
+            - 'row "d0_68 №3 Van-Sell Jack vansellj +998889991111 APK: 1.0.9+10, 2025-09-15 12:17:13, iPhone 12 Pro (Модель устройства) Van-selling (торговля с колес) 3 Без ограничений Без ограничений" [ref=e1041]':
+              - cell [ref=e1042]:
+                - generic [ref=e1045]:
+                  - generic [ref=e1046]: 󰄱
+                  - checkbox [ref=e1047] [cursor=pointer]
+              - cell "d0_68" [ref=e1048]
+              - cell "№3 Van-Sell Jack" [ref=e1049]:
+                - generic [ref=e1050]:
+                  - img [ref=e1051]
+                  - text: №3 Van-Sell Jack
+              - cell "vansellj" [ref=e1055]
+              - cell "+998889991111" [ref=e1056]
+              - 'cell "APK: 1.0.9+10, 2025-09-15 12:17:13, iPhone 12 Pro (Модель устройства)" [ref=e1057]':
+                - generic [ref=e1058]:
+                  - generic [ref=e1059]:
+                    - generic [ref=e1060]: "APK: 1.0.9+10,"
+                    - generic [ref=e1061]: 2025-09-15 12:17:13,
+                  - generic [ref=e1062]: iPhone 12 Pro (Модель устройства)
+              - cell "Van-selling (торговля с колес)" [ref=e1063]
+              - cell "3" [ref=e1064]
+              - cell "Без ограничений" [ref=e1065]:
+                - paragraph [ref=e1066]: Без ограничений
+              - cell "Без ограничений" [ref=e1067]:
+                - generic [ref=e1068]: Без ограничений
+              - cell [ref=e1069]:
+                - generic [ref=e1072]:
+                  - button [ref=e1074] [cursor=pointer]:
+                    - generic [ref=e1076]: 󰥑
+                  - button [ref=e1077] [cursor=pointer]:
+                    - generic [ref=e1079]: 󰇘
+            - 'row "d0_57 №5 Мадаминбек VS t3000 +998123456789 APK: 1.0.11+11, 2026-01-07 16:35:36, 23021RAAEG (Модель устройства) Van-selling (торговля с колес) 5 Без ограничений Без ограничений" [ref=e1080]':
+              - cell [ref=e1081]:
+                - generic [ref=e1084]:
+                  - generic [ref=e1085]: 󰄱
+                  - checkbox [ref=e1086] [cursor=pointer]
+              - cell "d0_57" [ref=e1087]
+              - cell "№5 Мадаминбек VS" [ref=e1088]:
+                - generic [ref=e1089]:
+                  - img [ref=e1090]
+                  - text: №5 Мадаминбек VS
+              - cell "t3000" [ref=e1094]
+              - cell "+998123456789" [ref=e1095]
+              - 'cell "APK: 1.0.11+11, 2026-01-07 16:35:36, 23021RAAEG (Модель устройства)" [ref=e1096]':
+                - generic [ref=e1097]:
+                  - generic [ref=e1098]:
+                    - generic [ref=e1099]: "APK: 1.0.11+11,"
+                    - generic [ref=e1100]: 2026-01-07 16:35:36,
+                  - generic [ref=e1101]: 23021RAAEG (Модель устройства)
+              - cell "Van-selling (торговля с колес)" [ref=e1102]
+              - cell "5" [ref=e1103]
+              - cell "Без ограничений" [ref=e1104]:
+                - paragraph [ref=e1105]: Без ограничений
+              - cell "Без ограничений" [ref=e1106]:
+                - generic [ref=e1107]: Без ограничений
+              - cell [ref=e1108]:
+                - generic [ref=e1111]:
+                  - button [ref=e1113] [cursor=pointer]:
+                    - generic [ref=e1115]: 󰥑
+                  - button [ref=e1116] [cursor=pointer]:
+                    - generic [ref=e1118]: 󰇘
+        - generic [ref=e194]:
+          - generic [ref=e195]: Показаны записи 1 - 24 из 24
+          - navigation "Страница" [ref=e197]:
+            - list [ref=e198]:
+              - listitem [ref=e199]:
+                - button "Предыдущая" [disabled]:
+                  - generic:
+                    - generic: 󰅁
+              - listitem [ref=e1119]:
+                - button "Page 1, Current page" [disabled]:
+                  - generic: "1"
+              - listitem [ref=e200]:
+                - button "Следующая" [disabled]:
+                  - generic:
+                    - generic: 󰅂
+  - generic:
+    - dialog:
+      - generic [ref=e1122]:
+        - generic [ref=e1124]:
+          - generic [ref=e1125]: Создать агента
+          - button [ref=e1126] [cursor=pointer]:
+            - generic [ref=e1128]: 󰅖
+        - generic [ref=e1130]:
+          - generic [ref=e1131]:
+            - generic [ref=e1134]:
+              - generic: Ф.И.О.
+              - textbox "Ф.И.О. Ф.И.О." [ref=e1135]
+            - alert [ref=e1137]
+          - generic [ref=e1138]:
+            - generic [ref=e1139]:
+              - generic [ref=e1140]: 󰅀
+              - generic [ref=e1141]:
+                - combobox "Selected country" [ref=e1143] [cursor=pointer]:
+                  - generic [ref=e1144]: "+998"
+                - textbox "91 234 56 78" [ref=e1145]
+            - paragraph [ref=e1146]
+          - generic [ref=e1147]:
+            - combobox [ref=e1149] [cursor=pointer]:
+              - generic [ref=e1151]:
+                - textbox "Открыть"
+              - generic [ref=e1153]: 󰍝
+              - generic:
+                - generic:
+                  - generic: Типы
+            - alert [ref=e1155]
+          - generic [ref=e1156]:
+            - combobox [ref=e1158] [cursor=pointer]:
+              - generic [ref=e1160]:
+                - generic [ref=e1162]: Касса не закреплена
+                - textbox "Открыть": "0"
+              - generic [ref=e1164]: 󰍝
+              - generic:
+                - generic:
+                  - generic: Выберите кассу
+            - alert [ref=e1166]
+          - generic [ref=e1167]:
+            - generic [ref=e1170]:
+              - generic: Код
+              - textbox "Код Код" [ref=e1171]
+            - alert [ref=e1173]
+          - generic [ref=e1174]:
+            - generic [ref=e1177]:
+              - generic: Логин
+              - textbox "Логин Логин" [ref=e1178]
+            - alert [ref=e1180]
+          - generic [ref=e1181]:
+            - generic [ref=e1183]:
+              - generic [ref=e1184]:
+                - generic: Пароль
+                - textbox "Пароль Пароль" [ref=e1185]
+              - button "Суффикс" [ref=e1187] [cursor=pointer]: 󰈉
+            - alert [ref=e1189]
+          - generic [ref=e1190]:
+            - button "Отменить" [ref=e1191] [cursor=pointer]:
+              - generic [ref=e1192]: Отменить
+            - button "Добавить" [ref=e1193] [cursor=pointer]:
+              - generic [ref=e1194]: Добавить

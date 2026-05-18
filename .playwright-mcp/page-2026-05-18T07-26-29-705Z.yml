@@ -1,0 +1,223 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e103]:
+      - generic [ref=e105]:
+        - generic [ref=e106]:
+          - heading "Реализация" [level=2] [ref=e107]
+          - generic [ref=e108]:
+            - combobox [ref=e111] [cursor=pointer]:
+              - generic [ref=e113]:
+                - generic [ref=e115]: Дата отгрузки
+                - textbox "Open": date_load
+              - generic [ref=e117]: 󰍝
+            - generic [ref=e120]:
+              - textbox [ref=e121] [cursor=pointer]: май 18 - май 18
+              - img [ref=e122] [cursor=pointer]
+            - button "Загрузить" [ref=e127] [cursor=pointer]:
+              - generic [ref=e128]: Загрузить
+        - separator [ref=e129]
+      - generic [ref=e131]:
+        - combobox [ref=e134] [cursor=pointer]:
+          - generic [ref=e136]:
+            - generic [ref=e138]: Все заказы
+            - textbox "Open": "0"
+          - generic [ref=e140]: 󰍝
+        - combobox [ref=e143] [cursor=pointer]:
+          - generic [ref=e144]:
+            - generic: Статус
+            - generic [ref=e145]:
+              - textbox "Open"
+          - text: 󰅙
+          - generic [ref=e147]: 󰍝
+        - combobox [ref=e150] [cursor=pointer]:
+          - generic [ref=e151]:
+            - generic: Способ оплаты
+            - generic [ref=e152]:
+              - textbox "Open"
+          - text: 󰅙
+          - generic [ref=e154]: 󰍝
+      - generic [ref=e157]:
+        - generic [ref=e159]:
+          - button "Групповая обработка" [disabled]:
+            - generic:
+              - generic: 󰄹
+            - generic: Групповая обработка
+            - generic:
+              - generic: 󰍝
+          - generic [ref=e162]:
+            - generic [ref=e164]: 󰍉
+            - textbox [ref=e166]:
+              - /placeholder: Поиск
+            - text: 󰅙
+          - generic [ref=e167]:
+            - button "Показать по" [ref=e168] [cursor=pointer]:
+              - generic [ref=e169]: Показать по
+              - generic [ref=e171]: 󰍝
+            - button [ref=e172] [cursor=pointer]:
+              - generic [ref=e174]: 󰕭
+            - button "Excel" [ref=e175] [cursor=pointer]:
+              - generic [ref=e176]:
+                - generic [ref=e177]: Excel
+                - img [ref=e178]
+        - generic [ref=e181]:
+          - table [ref=e182]:
+            - rowgroup [ref=e183]:
+              - row "Заказ 󰒺 Дата заявки 󰒺 Дата отгрузки 󰒺 Статус заказа 󰒺 Статус ЭСФ 󰒺 Статус КИ 󰒺 Клиент 󰒺 ИНН клиента 󰒺 Тел. клиента 󰒺 Экспедитор 󰒺 Тел. экспедитора 󰒺 Документ ЭСФ 󰒺 Оператор ЭСФ 󰒺 Сумма 󰒺" [ref=e184]:
+                - columnheader [ref=e185]:
+                  - generic [ref=e188]:
+                    - generic [ref=e189]: 󰄱
+                    - checkbox [ref=e190] [cursor=pointer]
+                - columnheader "Заказ 󰒺" [ref=e191] [cursor=pointer]:
+                  - generic [ref=e192]:
+                    - text: Заказ
+                    - generic [ref=e193]: 󰒺
+                - columnheader "Дата заявки 󰒺" [ref=e194] [cursor=pointer]:
+                  - generic [ref=e195]:
+                    - text: Дата заявки
+                    - generic [ref=e196]: 󰒺
+                - columnheader "Дата отгрузки 󰒺" [ref=e197] [cursor=pointer]:
+                  - generic [ref=e198]:
+                    - text: Дата отгрузки
+                    - generic [ref=e199]: 󰒺
+                - columnheader "Статус заказа 󰒺" [ref=e200] [cursor=pointer]:
+                  - generic [ref=e201]:
+                    - text: Статус заказа
+                    - generic [ref=e202]: 󰒺
+                - columnheader "Статус ЭСФ 󰒺" [ref=e203] [cursor=pointer]:
+                  - generic [ref=e204]:
+                    - text: Статус ЭСФ
+                    - generic [ref=e205]: 󰒺
+                - columnheader "Статус КИ 󰒺" [ref=e206] [cursor=pointer]:
+                  - generic [ref=e207]:
+                    - text: Статус КИ
+                    - generic [ref=e208]: 󰒺
+                - columnheader "Клиент 󰒺" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e210]:
+                    - text: Клиент
+                    - generic [ref=e211]: 󰒺
+                - columnheader "ИНН клиента 󰒺" [ref=e212] [cursor=pointer]:
+                  - generic [ref=e213]:
+                    - text: ИНН клиента
+                    - generic [ref=e214]: 󰒺
+                - columnheader "Тел. клиента 󰒺" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e216]:
+                    - text: Тел. клиента
+                    - generic [ref=e217]: 󰒺
+                - columnheader "Экспедитор 󰒺" [ref=e218] [cursor=pointer]:
+                  - generic [ref=e219]:
+                    - text: Экспедитор
+                    - generic [ref=e220]: 󰒺
+                - columnheader "Тел. экспедитора 󰒺" [ref=e221] [cursor=pointer]:
+                  - generic [ref=e222]:
+                    - text: Тел. экспедитора
+                    - generic [ref=e223]: 󰒺
+                - columnheader "Документ ЭСФ 󰒺" [ref=e224] [cursor=pointer]:
+                  - generic [ref=e225]:
+                    - text: Документ ЭСФ
+                    - generic [ref=e226]: 󰒺
+                - columnheader "Оператор ЭСФ 󰒺" [ref=e227] [cursor=pointer]:
+                  - generic [ref=e228]:
+                    - text: Оператор ЭСФ
+                    - generic [ref=e229]: 󰒺
+                - columnheader "Сумма 󰒺" [ref=e230] [cursor=pointer]:
+                  - generic [ref=e231]:
+                    - text: Сумма
+                    - generic [ref=e232]: 󰒺
+          - generic [ref=e233]: Нет данных
+        - generic [ref=e235]:
+          - generic [ref=e236]: Показаны записи 0 - 0 из 0
+          - navigation "Pagination Navigation" [ref=e238]:
+            - list [ref=e239]:
+              - listitem [ref=e240]:
+                - button "Previous page" [disabled]:
+                  - generic:
+                    - generic: 󰅁
+              - listitem [ref=e241]:
+                - button "Next page" [disabled]:
+                  - generic:
+                    - generic: 󰅂

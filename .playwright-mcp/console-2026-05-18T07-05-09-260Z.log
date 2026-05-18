@@ -1,0 +1,3 @@
+[     181ms] [LOG] loading translations for module: dashboard lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     275ms] [WARNING] Highcharts warning: Consider including the "accessibility.js" module to make your chart more usable for people with disabilities. Set the "accessibility.enabled" option to false to remove this warning. See https://www.highcharts.com/docs/accessibility/accessibility-module. @ http://localhost:8080/js_plugins/jquery-highcharts-10.3.3/highstock.js:11
+[     301ms] [LOG] loading translations for module: dashboard lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34

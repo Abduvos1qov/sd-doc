@@ -1,0 +1,1187 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e105]:
+          - generic [ref=e107]:
+            - button "Новый, Отгружен, Доставлен" [ref=e108] [cursor=pointer]:
+              - generic [ref=e109]: Новый, Отгружен, Доставлен
+            - text:    
+          - generic [ref=e112]:
+            - button "Категории продуктов" [ref=e113] [cursor=pointer]:
+              - generic [ref=e114]: Категории продуктов
+            - text:               
+          - generic [ref=e117]:
+            - button "Территория" [ref=e118] [cursor=pointer]:
+              - generic [ref=e119]: Территория
+            - text:                        
+          - generic [ref=e122]:
+            - button "Категория клиентов" [ref=e123] [cursor=pointer]:
+              - generic [ref=e124]: Категория клиентов
+            - text:                
+          - generic [ref=e126] [cursor=pointer]:
+            - generic [ref=e127]: 
+            - text: 18 мая.
+            - textbox: 2026-05-18
+          - button "Фильтр" [ref=e128] [cursor=pointer]
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - heading "Общая сумма заявок на 18 мая." [level=3] [ref=e133]
+              - generic [ref=e136]:
+                - heading "0 сум" [level=1] [ref=e137]
+                - generic [ref=e138]: Продажа на 18 мая.
+            - img "Доля по категории продуктов" [ref=e141]:
+              - generic [ref=e148]: Доля по категории продуктов
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e153]:
+                - paragraph [ref=e154]: Посещения (по визитам)
+                - paragraph [ref=e155]: 0 %
+                - paragraph:
+                  - generic [ref=e156]: "План: 0"
+                  - generic [ref=e157]: "Факт: 0 + 0"
+              - generic [ref=e160]:
+                - paragraph [ref=e161]: Успешные визиты
+                - paragraph [ref=e162]: 0 %
+                - paragraph:
+                  - generic [ref=e163]: "Визиты: 0 + 0"
+                  - generic [ref=e164]: "Заказ: 0 + 0"
+            - generic [ref=e165]:
+              - generic [ref=e168] [cursor=pointer]:
+                - paragraph [ref=e169]: Посещения (по GPS)
+                - paragraph [ref=e170]: 0 %
+                - paragraph:
+                  - generic [ref=e171]: "Визиты: 0 + 0"
+                  - generic [ref=e172]: "Факт: +"
+              - generic [ref=e175]:
+                - paragraph [ref=e176]: Фото отчеты
+                - paragraph [ref=e177]: 0 %
+                - paragraph:
+                  - generic [ref=e178]: "Визиты: 0 + 0"
+                  - generic [ref=e179]: "Факт: 0 + 0"
+            - generic [ref=e180]:
+              - list [ref=e184]:
+                - listitem [ref=e185]:
+                  - link "По категории продуктов " [ref=e186] [cursor=pointer]:
+                    - /url: "#"
+                    - text: По категории продуктов
+                    - generic [ref=e187]: 
+              - generic [ref=e190]:
+                - generic [ref=e191]: Группировка кат2
+                - generic [ref=e193]:
+                  - generic [ref=e194]:
+                    - button "По 10" [ref=e195] [cursor=pointer]
+                    - button "Excel" [ref=e196] [cursor=pointer]
+                  - generic [ref=e198]:
+                    - text: "Поиск:"
+                    - searchbox "Поиск:" [ref=e199]
+                  - grid [ref=e200]:
+                    - rowgroup [ref=e201]:
+                      - 'row "Категория: активировать для сортировки столбцы по возрастанию Доля: активировать для сортировки столбцы по возрастанию Сумма: активировать для сортировки столбцы по возрастанию Объем: активировать для сортировки столбцы по возрастанию Блок: активировать для сортировки столбцы по возрастанию Количество : активировать для сортировки столбцы по возрастанию АКБ: активировать для сортировки столбцы по возрастанию" [ref=e202]':
+                        - 'columnheader "Категория: активировать для сортировки столбцы по возрастанию" [ref=e203] [cursor=pointer]': Категория
+                        - 'columnheader "Доля: активировать для сортировки столбцы по возрастанию" [ref=e204] [cursor=pointer]': Доля
+                        - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e205] [cursor=pointer]': Сумма
+                        - 'columnheader "Объем: активировать для сортировки столбцы по возрастанию" [ref=e206] [cursor=pointer]': Объем
+                        - 'columnheader "Блок: активировать для сортировки столбцы по возрастанию" [ref=e207] [cursor=pointer]': Блок
+                        - 'columnheader "Количество : активировать для сортировки столбцы по возрастанию" [ref=e208] [cursor=pointer]': Количество
+                        - 'columnheader "АКБ: активировать для сортировки столбцы по возрастанию" [ref=e209] [cursor=pointer]': АКБ
+                    - rowgroup [ref=e210]:
+                      - row "Places 0 0 0.00 0.00 0.00 0" [ref=e211]:
+                        - gridcell "Places" [ref=e212]:
+                          - link "Places" [ref=e213] [cursor=pointer]:
+                            - /url: "#d0_17"
+                        - gridcell "0" [ref=e214]
+                        - gridcell "0" [ref=e215]
+                        - gridcell "0.00" [ref=e216]
+                        - gridcell "0.00" [ref=e217]
+                        - gridcell "0.00" [ref=e218]
+                        - gridcell "0" [ref=e219]
+                      - row "Accessories 0 0 0.00 0.00 0.00 0" [ref=e220]:
+                        - gridcell "Accessories" [ref=e221]:
+                          - link "Accessories" [ref=e222] [cursor=pointer]:
+                            - /url: "#d0_16"
+                        - gridcell "0" [ref=e223]
+                        - gridcell "0" [ref=e224]
+                        - gridcell "0.00" [ref=e225]
+                        - gridcell "0.00" [ref=e226]
+                        - gridcell "0.00" [ref=e227]
+                        - gridcell "0" [ref=e228]
+                    - rowgroup [ref=e229]:
+                      - row "Total 100% 0.00000 0.00000 0.00000 0.00000 0.00000" [ref=e230]:
+                        - gridcell "Total" [ref=e231]
+                        - gridcell "100%" [ref=e232]
+                        - gridcell "0.00000" [ref=e233]
+                        - gridcell "0.00000" [ref=e234]
+                        - gridcell "0.00000" [ref=e235]
+                        - gridcell "0.00000" [ref=e236]
+                        - gridcell "0.00000" [ref=e237]
+                  - status [ref=e238]: 1 - 2 / 2
+                  - list [ref=e240]:
+                    - listitem [ref=e241]:
+                      - link "Пред." [ref=e242]:
+                        - /url: "#"
+                    - listitem [ref=e243] [cursor=pointer]:
+                      - link "1" [ref=e244]:
+                        - /url: "#"
+                    - listitem [ref=e245]:
+                      - link "След." [ref=e246]:
+                        - /url: "#"
+                - separator [ref=e247]
+                - generic [ref=e248]: Группировка кат 0
+                - generic [ref=e250]:
+                  - generic [ref=e251]:
+                    - button "По 10" [ref=e252] [cursor=pointer]
+                    - button "Excel" [ref=e253] [cursor=pointer]
+                  - generic [ref=e255]:
+                    - text: "Поиск:"
+                    - searchbox "Поиск:" [ref=e256]
+                  - grid [ref=e257]:
+                    - rowgroup [ref=e258]:
+                      - 'row "Категория: активировать для сортировки столбцы по возрастанию Доля: активировать для сортировки столбцы по возрастанию Сумма: активировать для сортировки столбцы по возрастанию Объем: активировать для сортировки столбцы по возрастанию Блок: активировать для сортировки столбцы по возрастанию Количество : активировать для сортировки столбцы по возрастанию АКБ: активировать для сортировки столбцы по возрастанию" [ref=e259]':
+                        - 'columnheader "Категория: активировать для сортировки столбцы по возрастанию" [ref=e260] [cursor=pointer]': Категория
+                        - 'columnheader "Доля: активировать для сортировки столбцы по возрастанию" [ref=e261] [cursor=pointer]': Доля
+                        - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e262] [cursor=pointer]': Сумма
+                        - 'columnheader "Объем: активировать для сортировки столбцы по возрастанию" [ref=e263] [cursor=pointer]': Объем
+                        - 'columnheader "Блок: активировать для сортировки столбцы по возрастанию" [ref=e264] [cursor=pointer]': Блок
+                        - 'columnheader "Количество : активировать для сортировки столбцы по возрастанию" [ref=e265] [cursor=pointer]': Количество
+                        - 'columnheader "АКБ: активировать для сортировки столбцы по возрастанию" [ref=e266] [cursor=pointer]': АКБ
+                    - rowgroup [ref=e267]:
+                      - row "Bonus 0 0 0.00 0.00 0.00 0" [ref=e268]:
+                        - gridcell "Bonus" [ref=e269]:
+                          - link "Bonus" [ref=e270] [cursor=pointer]:
+                            - /url: "#d0_13"
+                        - gridcell "0" [ref=e271]
+                        - gridcell "0" [ref=e272]
+                        - gridcell "0.00" [ref=e273]
+                        - gridcell "0.00" [ref=e274]
+                        - gridcell "0.00" [ref=e275]
+                        - gridcell "0" [ref=e276]
+                      - row "Drinks 0 0 0.00 0.00 0.00 0" [ref=e277]:
+                        - gridcell "Drinks" [ref=e278]:
+                          - link "Drinks" [ref=e279] [cursor=pointer]:
+                            - /url: "#d0_1"
+                        - gridcell "0" [ref=e280]
+                        - gridcell "0" [ref=e281]
+                        - gridcell "0.00" [ref=e282]
+                        - gridcell "0.00" [ref=e283]
+                        - gridcell "0.00" [ref=e284]
+                        - gridcell "0" [ref=e285]
+                      - row "Phones 0 0 0.00 0.00 0.00 0" [ref=e286]:
+                        - gridcell "Phones" [ref=e287]:
+                          - link "Phones" [ref=e288] [cursor=pointer]:
+                            - /url: "#d0_12"
+                        - gridcell "0" [ref=e289]
+                        - gridcell "0" [ref=e290]
+                        - gridcell "0.00" [ref=e291]
+                        - gridcell "0.00" [ref=e292]
+                        - gridcell "0.00" [ref=e293]
+                        - gridcell "0" [ref=e294]
+                    - rowgroup [ref=e295]:
+                      - row "Total 100% 0.00000 0.00000 0.00000 0.00000 0.00000" [ref=e296]:
+                        - gridcell "Total" [ref=e297]
+                        - gridcell "100%" [ref=e298]
+                        - gridcell "0.00000" [ref=e299]
+                        - gridcell "0.00000" [ref=e300]
+                        - gridcell "0.00000" [ref=e301]
+                        - gridcell "0.00000" [ref=e302]
+                        - gridcell "0.00000" [ref=e303]
+                  - status [ref=e304]: 1 - 3 / 3
+                  - list [ref=e306]:
+                    - listitem [ref=e307]:
+                      - link "Пред." [ref=e308]:
+                        - /url: "#"
+                    - listitem [ref=e309] [cursor=pointer]:
+                      - link "1" [ref=e310]:
+                        - /url: "#"
+                    - listitem [ref=e311]:
+                      - link "След." [ref=e312]:
+                        - /url: "#"
+                - separator [ref=e313]
+                - generic [ref=e314]: Новая группа
+                - generic [ref=e316]:
+                  - generic [ref=e317]:
+                    - button "По 10" [ref=e318] [cursor=pointer]
+                    - button "Excel" [ref=e319] [cursor=pointer]
+                  - generic [ref=e321]:
+                    - text: "Поиск:"
+                    - searchbox "Поиск:" [ref=e322]
+                  - grid [ref=e323]:
+                    - rowgroup [ref=e324]:
+                      - 'row "Категория: активировать для сортировки столбцы по возрастанию Доля: активировать для сортировки столбцы по возрастанию Сумма: активировать для сортировки столбцы по возрастанию Объем: активировать для сортировки столбцы по возрастанию Блок: активировать для сортировки столбцы по возрастанию Количество : активировать для сортировки столбцы по возрастанию АКБ: активировать для сортировки столбцы по возрастанию" [ref=e325]':
+                        - 'columnheader "Категория: активировать для сортировки столбцы по возрастанию" [ref=e326] [cursor=pointer]': Категория
+                        - 'columnheader "Доля: активировать для сортировки столбцы по возрастанию" [ref=e327] [cursor=pointer]': Доля
+                        - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e328] [cursor=pointer]': Сумма
+                        - 'columnheader "Объем: активировать для сортировки столбцы по возрастанию" [ref=e329] [cursor=pointer]': Объем
+                        - 'columnheader "Блок: активировать для сортировки столбцы по возрастанию" [ref=e330] [cursor=pointer]': Блок
+                        - 'columnheader "Количество : активировать для сортировки столбцы по возрастанию" [ref=e331] [cursor=pointer]': Количество
+                        - 'columnheader "АКБ: активировать для сортировки столбцы по возрастанию" [ref=e332] [cursor=pointer]': АКБ
+                    - rowgroup [ref=e333]:
+                      - row "В таблице отсутствуют данные" [ref=e334]:
+                        - gridcell "В таблице отсутствуют данные" [ref=e335]
+                    - rowgroup [ref=e336]:
+                      - row "Total 100% 0.00000 0.00000 0.00000 0.00000 0.00000" [ref=e337]:
+                        - gridcell "Total" [ref=e338]
+                        - gridcell "100%" [ref=e339]
+                        - gridcell "0.00000" [ref=e340]
+                        - gridcell "0.00000" [ref=e341]
+                        - gridcell "0.00000" [ref=e342]
+                        - gridcell "0.00000" [ref=e343]
+                        - gridcell "0.00000" [ref=e344]
+                  - status [ref=e345]: 0 - 0 / 0
+                  - list [ref=e347]:
+                    - listitem [ref=e348]:
+                      - link "Пред." [ref=e349]:
+                        - /url: "#"
+                    - listitem [ref=e350]:
+                      - link "След." [ref=e351]:
+                        - /url: "#"
+                - separator [ref=e352]
+                - generic [ref=e353]: Группа
+                - generic [ref=e355]:
+                  - generic [ref=e356]:
+                    - button "По 10" [ref=e357] [cursor=pointer]
+                    - button "Excel" [ref=e358] [cursor=pointer]
+                  - generic [ref=e360]:
+                    - text: "Поиск:"
+                    - searchbox "Поиск:" [ref=e361]
+                  - grid [ref=e362]:
+                    - rowgroup [ref=e363]:
+                      - 'row "Категория: активировать для сортировки столбцы по возрастанию Доля: активировать для сортировки столбцы по возрастанию Сумма: активировать для сортировки столбцы по возрастанию Объем: активировать для сортировки столбцы по возрастанию Блок: активировать для сортировки столбцы по возрастанию Количество : активировать для сортировки столбцы по возрастанию АКБ: активировать для сортировки столбцы по возрастанию" [ref=e364]':
+                        - 'columnheader "Категория: активировать для сортировки столбцы по возрастанию" [ref=e365] [cursor=pointer]': Категория
+                        - 'columnheader "Доля: активировать для сортировки столбцы по возрастанию" [ref=e366] [cursor=pointer]': Доля
+                        - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e367] [cursor=pointer]': Сумма
+                        - 'columnheader "Объем: активировать для сортировки столбцы по возрастанию" [ref=e368] [cursor=pointer]': Объем
+                        - 'columnheader "Блок: активировать для сортировки столбцы по возрастанию" [ref=e369] [cursor=pointer]': Блок
+                        - 'columnheader "Количество : активировать для сортировки столбцы по возрастанию" [ref=e370] [cursor=pointer]': Количество
+                        - 'columnheader "АКБ: активировать для сортировки столбцы по возрастанию" [ref=e371] [cursor=pointer]': АКБ
+                    - rowgroup [ref=e372]:
+                      - row "В таблице отсутствуют данные" [ref=e373]:
+                        - gridcell "В таблице отсутствуют данные" [ref=e374]
+                    - rowgroup [ref=e375]:
+                      - row "Total 100% 0.00000 0.00000 0.00000 0.00000 0.00000" [ref=e376]:
+                        - gridcell "Total" [ref=e377]
+                        - gridcell "100%" [ref=e378]
+                        - gridcell "0.00000" [ref=e379]
+                        - gridcell "0.00000" [ref=e380]
+                        - gridcell "0.00000" [ref=e381]
+                        - gridcell "0.00000" [ref=e382]
+                        - gridcell "0.00000" [ref=e383]
+                  - status [ref=e384]: 0 - 0 / 0
+                  - list [ref=e386]:
+                    - listitem [ref=e387]:
+                      - link "Пред." [ref=e388]:
+                        - /url: "#"
+                    - listitem [ref=e389]:
+                      - link "След." [ref=e390]:
+                        - /url: "#"
+                - separator [ref=e391]
+                - generic [ref=e392]: Остальные
+                - generic [ref=e394]:
+                  - generic [ref=e395]:
+                    - button "По 20" [ref=e396] [cursor=pointer]
+                    - button "Excel" [ref=e397] [cursor=pointer]
+                  - generic [ref=e399]:
+                    - text: "Поиск:"
+                    - searchbox "Поиск:" [ref=e400]
+                  - grid [ref=e401]:
+                    - rowgroup [ref=e402]:
+                      - 'row "Категории: активировать для сортировки столбцы по возрастанию Доля: активировать для сортировки столбцы по возрастанию Сумма: активировать для сортировки столбцы по возрастанию Объем: активировать для сортировки столбцы по возрастанию Блок: активировать для сортировки столбцы по возрастанию Количество : активировать для сортировки столбцы по возрастанию АКБ: активировать для сортировки столбцы по возрастанию" [ref=e403]':
+                        - 'columnheader "Категории: активировать для сортировки столбцы по возрастанию" [ref=e404] [cursor=pointer]': Категории
+                        - 'columnheader "Доля: активировать для сортировки столбцы по возрастанию" [ref=e405] [cursor=pointer]': Доля
+                        - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e406] [cursor=pointer]': Сумма
+                        - 'columnheader "Объем: активировать для сортировки столбцы по возрастанию" [ref=e407] [cursor=pointer]': Объем
+                        - 'columnheader "Блок: активировать для сортировки столбцы по возрастанию" [ref=e408] [cursor=pointer]': Блок
+                        - 'columnheader "Количество : активировать для сортировки столбцы по возрастанию" [ref=e409] [cursor=pointer]': Количество
+                        - 'columnheader "АКБ: активировать для сортировки столбцы по возрастанию" [ref=e410] [cursor=pointer]': АКБ
+                    - rowgroup [ref=e411]:
+                      - row "Универсальная категория 0 0 0 0 0 0" [ref=e412]:
+                        - gridcell "Универсальная категория" [ref=e413]:
+                          - link "Универсальная категория" [ref=e414] [cursor=pointer]:
+                            - /url: "#d0_7"
+                        - gridcell "0" [ref=e415]
+                        - gridcell "0" [ref=e416]
+                        - gridcell "0" [ref=e417]
+                        - gridcell "0" [ref=e418]
+                        - gridcell "0" [ref=e419]
+                        - gridcell "0" [ref=e420]
+                      - row "Napitki 0 0 0 0 0 0" [ref=e421]:
+                        - gridcell "Napitki" [ref=e422]:
+                          - link "Napitki" [ref=e423] [cursor=pointer]:
+                            - /url: "#d0_11"
+                        - gridcell "0" [ref=e424]
+                        - gridcell "0" [ref=e425]
+                        - gridcell "0" [ref=e426]
+                        - gridcell "0" [ref=e427]
+                        - gridcell "0" [ref=e428]
+                        - gridcell "0" [ref=e429]
+                      - row "Fruits asmdasdans Updated 0 0 0 0 0 0" [ref=e430]:
+                        - gridcell "Fruits asmdasdans Updated" [ref=e431]:
+                          - link "Fruits asmdasdans Updated" [ref=e432] [cursor=pointer]:
+                            - /url: "#d0_2"
+                        - gridcell "0" [ref=e433]
+                        - gridcell "0" [ref=e434]
+                        - gridcell "0" [ref=e435]
+                        - gridcell "0" [ref=e436]
+                        - gridcell "0" [ref=e437]
+                        - gridcell "0" [ref=e438]
+                      - row "Countries 0 0 0 0 0 0" [ref=e439]:
+                        - gridcell "Countries" [ref=e440]:
+                          - link "Countries" [ref=e441] [cursor=pointer]:
+                            - /url: "#d0_18"
+                        - gridcell "0" [ref=e442]
+                        - gridcell "0" [ref=e443]
+                        - gridcell "0" [ref=e444]
+                        - gridcell "0" [ref=e445]
+                        - gridcell "0" [ref=e446]
+                        - gridcell "0" [ref=e447]
+                      - row "Antiquarian 0 0 0 0 0 0" [ref=e448]:
+                        - gridcell "Antiquarian" [ref=e449]:
+                          - link "Antiquarian" [ref=e450] [cursor=pointer]:
+                            - /url: "#d0_27"
+                        - gridcell "0" [ref=e451]
+                        - gridcell "0" [ref=e452]
+                        - gridcell "0" [ref=e453]
+                        - gridcell "0" [ref=e454]
+                        - gridcell "0" [ref=e455]
+                        - gridcell "0" [ref=e456]
+                      - row "t2 0 0 0 0 0 0" [ref=e457]:
+                        - gridcell "t2" [ref=e458]:
+                          - link "t2" [ref=e459] [cursor=pointer]:
+                            - /url: "#d0_28"
+                        - gridcell "0" [ref=e460]
+                        - gridcell "0" [ref=e461]
+                        - gridcell "0" [ref=e462]
+                        - gridcell "0" [ref=e463]
+                        - gridcell "0" [ref=e464]
+                        - gridcell "0" [ref=e465]
+                      - row "asd 0 0 0 0 0 0" [ref=e466]:
+                        - gridcell "asd" [ref=e467]:
+                          - link "asd" [ref=e468] [cursor=pointer]:
+                            - /url: "#d0_26"
+                        - gridcell "0" [ref=e469]
+                        - gridcell "0" [ref=e470]
+                        - gridcell "0" [ref=e471]
+                        - gridcell "0" [ref=e472]
+                        - gridcell "0" [ref=e473]
+                        - gridcell "0" [ref=e474]
+                      - row "Конфеты 0 0 0 0 0 0" [ref=e475]:
+                        - gridcell "Конфеты" [ref=e476]:
+                          - link "Конфеты" [ref=e477] [cursor=pointer]:
+                            - /url: "#d0_24"
+                        - gridcell "0" [ref=e478]
+                        - gridcell "0" [ref=e479]
+                        - gridcell "0" [ref=e480]
+                        - gridcell "0" [ref=e481]
+                        - gridcell "0" [ref=e482]
+                        - gridcell "0" [ref=e483]
+                      - row "Маркированные товары 0 0 0 0 0 0" [ref=e484]:
+                        - gridcell "Маркированные товары" [ref=e485]:
+                          - link "Маркированные товары" [ref=e486] [cursor=pointer]:
+                            - /url: "#d0_23"
+                        - gridcell "0" [ref=e487]
+                        - gridcell "0" [ref=e488]
+                        - gridcell "0" [ref=e489]
+                        - gridcell "0" [ref=e490]
+                        - gridcell "0" [ref=e491]
+                        - gridcell "0" [ref=e492]
+                      - row "Новая категория 12 0 0 0 0 0 0" [ref=e493]:
+                        - gridcell "Новая категория 12" [ref=e494]:
+                          - link "Новая категория 12" [ref=e495] [cursor=pointer]:
+                            - /url: "#d0_21"
+                        - gridcell "0" [ref=e496]
+                        - gridcell "0" [ref=e497]
+                        - gridcell "0" [ref=e498]
+                        - gridcell "0" [ref=e499]
+                        - gridcell "0" [ref=e500]
+                        - gridcell "0" [ref=e501]
+                    - rowgroup [ref=e502]:
+                      - row "Итог 100% 0.00000 0.00000 0.00000 0.00 0.00000" [ref=e503]:
+                        - gridcell "Итог" [ref=e504]
+                        - gridcell "100%" [ref=e505]
+                        - gridcell "0.00000" [ref=e506]
+                        - gridcell "0.00000" [ref=e507]
+                        - gridcell "0.00000" [ref=e508]
+                        - gridcell "0.00" [ref=e509]
+                        - gridcell "0.00000" [ref=e510]
+                  - status [ref=e511]: 1 - 10 / 10
+                  - list [ref=e513]:
+                    - listitem [ref=e514]:
+                      - link "Пред." [ref=e515]:
+                        - /url: "#"
+                    - listitem [ref=e516] [cursor=pointer]:
+                      - link "1" [ref=e517]:
+                        - /url: "#"
+                    - listitem [ref=e518]:
+                      - link "След." [ref=e519]:
+                        - /url: "#"
+          - generic [ref=e521]:
+            - generic [ref=e522]:
+              - generic [ref=e523]: Дневной отчет по визитам
+              - combobox [ref=e525]:
+                - option "Все" [selected]
+                - option "super AAA"
+                - option "superDM1"
+                - option "New Supervisor 1"
+                - option "spp12"
+                - option "123123678"
+                - option "last active"
+                - option "Supervisor Mike"
+                - option "Javoxir"
+                - option "super super"
+                - option "Supervisor John Редактирую"
+                - option "vvvv"
+                - option "123456"
+                - option "12345678"
+                - option "Abdulbosit"
+                - option "Dilshod"
+                - option "Supermen"
+            - generic [ref=e528]:
+              - generic [ref=e529]:
+                - button "По 20" [ref=e530] [cursor=pointer]
+                - button "Показ./Скр. столбцы" [ref=e531] [cursor=pointer]
+                - button "Excel" [ref=e532] [cursor=pointer]
+              - generic [ref=e534]:
+                - text: "Поиск:"
+                - searchbox "Поиск:" [ref=e535]
+              - grid [ref=e536]:
+                - rowgroup [ref=e537]:
+                  - 'row "№: активировать для сортировки столбцы по убыванию Агент: активировать для сортировки столбцы по возрастанию Код агента: активировать для сортировки столбцы по возрастанию По плану Вне плана" [ref=e538]':
+                    - 'columnheader "№: активировать для сортировки столбцы по убыванию" [ref=e539] [cursor=pointer]': №
+                    - 'columnheader "Агент: активировать для сортировки столбцы по возрастанию" [ref=e540] [cursor=pointer]': Агент
+                    - 'columnheader "Код агента: активировать для сортировки столбцы по возрастанию" [ref=e541] [cursor=pointer]': Код агента
+                    - columnheader "По плану" [ref=e542]
+                    - columnheader "Вне плана" [ref=e543]
+                  - 'row "План: активировать для сортировки столбцы по возрастанию Посещено: активировать для сортировки столбцы по возрастанию Непосещено: активировать для сортировки столбцы по возрастанию Фото: активировать для сортировки столбцы по возрастанию Посещение Посещение: активировать для сортировки столбцы по возрастанию Посещение фото: активировать для сортировки столбцы по возрастанию" [ref=e544]':
+                    - 'columnheader "План: активировать для сортировки столбцы по возрастанию" [ref=e545] [cursor=pointer]': План
+                    - 'columnheader "Посещено: активировать для сортировки столбцы по возрастанию" [ref=e546] [cursor=pointer]': Посещено
+                    - 'columnheader "Непосещено: активировать для сортировки столбцы по возрастанию" [ref=e547] [cursor=pointer]': Непосещено
+                    - 'columnheader "Фото: активировать для сортировки столбцы по возрастанию" [ref=e548] [cursor=pointer]': Фото
+                    - columnheader "Посещение" [ref=e549]
+                    - 'columnheader "Посещение: активировать для сортировки столбцы по возрастанию" [ref=e550] [cursor=pointer]': Посещение
+                    - columnheader "Посещение" [ref=e551]
+                    - 'columnheader "фото: активировать для сортировки столбцы по возрастанию" [ref=e552] [cursor=pointer]': фото
+                  - 'row "Заказ Нет заказа(не результативно): активировать для сортировки столбцы по возрастанию Заказ Нет заказа(не результативо): активировать для сортировки столбцы по возрастанию" [ref=e553]':
+                    - columnheader "Заказ" [ref=e554]
+                    - 'columnheader "Нет заказа(не результативно): активировать для сортировки столбцы по возрастанию" [ref=e555] [cursor=pointer]': Нет заказа(не результативно)
+                    - columnheader "Заказ" [ref=e556]
+                    - 'columnheader "Нет заказа(не результативо): активировать для сортировки столбцы по возрастанию" [ref=e557] [cursor=pointer]': Нет заказа(не результативо)
+                  - 'row "Сумма: активировать для сортировки столбцы по возрастанию К-во: активировать для сортировки столбцы по возрастанию Сумма: активировать для сортировки столбцы по возрастанию К-во: активировать для сортировки столбцы по возрастанию" [ref=e558]':
+                    - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e559] [cursor=pointer]': Сумма
+                    - 'columnheader "К-во: активировать для сортировки столбцы по возрастанию" [ref=e560] [cursor=pointer]': К-во
+                    - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e561] [cursor=pointer]': Сумма
+                    - 'columnheader "К-во: активировать для сортировки столбцы по возрастанию" [ref=e562] [cursor=pointer]': К-во
+                - rowgroup [ref=e563]:
+                  - row "В таблице отсутствуют данные" [ref=e564]:
+                    - gridcell "В таблице отсутствуют данные" [ref=e565]
+                - rowgroup [ref=e566]:
+                  - row "Итоги 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e567]:
+                    - columnheader "Итоги" [ref=e568]
+                    - columnheader "0" [ref=e569]
+                    - columnheader "0" [ref=e570]
+                    - columnheader "0" [ref=e571]
+                    - columnheader "0" [ref=e572]
+                    - columnheader "0" [ref=e573]
+                    - columnheader "0" [ref=e574]
+                    - columnheader "0" [ref=e575]
+                    - columnheader "0" [ref=e576]
+                    - columnheader "0" [ref=e577]
+                    - columnheader "0" [ref=e578]
+                    - columnheader "0" [ref=e579]
+                    - columnheader "0" [ref=e580]
+              - status [ref=e581]: 0 - 0 / 0
+              - list [ref=e583]:
+                - listitem [ref=e584]:
+                  - link "Пред." [ref=e585]:
+                    - /url: "#"
+                - listitem [ref=e586]:
+                  - link "След." [ref=e587]:
+                    - /url: "#"
+            - generic [ref=e589]: Торговые агенты
+            - generic [ref=e592]:
+              - generic [ref=e593]:
+                - button "По 20" [ref=e594] [cursor=pointer]
+                - button "Показ./Скр. столбцы" [ref=e595] [cursor=pointer]
+                - button "Excel" [ref=e596] [cursor=pointer]
+              - generic [ref=e598]:
+                - text: "Поиск:"
+                - searchbox "Поиск:" [ref=e599]
+              - grid [ref=e600]:
+                - rowgroup [ref=e601]:
+                  - 'row "Агент: активировать для сортировки столбцы по убыванию Код агента: активировать для сортировки столбцы по возрастанию Сумма заявки: активировать для сортировки столбцы по возрастанию Заказы: активировать для сортировки столбцы по возрастанию Отмененные заказы: активировать для сортировки столбцы по возрастанию Все визиты: активировать для сортировки столбцы по возрастанию Отказы: активировать для сортировки столбцы по возрастанию Непосещенные тт: активировать для сортировки столбцы по возрастанию Фотоотчёты: активировать для сортировки столбцы по возрастанию" [ref=e602]':
+                    - 'columnheader "Агент: активировать для сортировки столбцы по убыванию" [ref=e603] [cursor=pointer]': Агент
+                    - 'columnheader "Код агента: активировать для сортировки столбцы по возрастанию" [ref=e604] [cursor=pointer]': Код агента
+                    - 'columnheader "Сумма заявки: активировать для сортировки столбцы по возрастанию" [ref=e605] [cursor=pointer]': Сумма заявки
+                    - 'columnheader "Заказы: активировать для сортировки столбцы по возрастанию" [ref=e606] [cursor=pointer]': Заказы
+                    - 'columnheader "Отмененные заказы: активировать для сортировки столбцы по возрастанию" [ref=e607] [cursor=pointer]': Отмененные заказы
+                    - 'columnheader "Все визиты: активировать для сортировки столбцы по возрастанию" [ref=e608] [cursor=pointer]': Все визиты
+                    - 'columnheader "Отказы: активировать для сортировки столбцы по возрастанию" [ref=e609] [cursor=pointer]': Отказы
+                    - 'columnheader "Непосещенные тт: активировать для сортировки столбцы по возрастанию" [ref=e610] [cursor=pointer]': Непосещенные тт
+                    - 'columnheader "Фотоотчёты: активировать для сортировки столбцы по возрастанию" [ref=e611] [cursor=pointer]': Фотоотчёты
+                - rowgroup [ref=e612]:
+                  - row "11111 tp1 0 0 0 0 0 0 -" [ref=e613]:
+                    - gridcell "11111" [ref=e614]:
+                      - link "11111" [ref=e615] [cursor=pointer]:
+                        - /url: "#d0_56"
+                    - gridcell "tp1" [ref=e616]
+                    - gridcell "0" [ref=e617]:
+                      - link "0" [ref=e618] [cursor=pointer]:
+                        - /url: "#d0_56"
+                    - gridcell "0" [ref=e619]:
+                      - link "0" [ref=e620] [cursor=pointer]:
+                        - /url: "#d0_56"
+                    - gridcell "0" [ref=e621]
+                    - gridcell "0" [ref=e622]
+                    - gridcell "0" [ref=e623]
+                    - gridcell "0" [ref=e624]
+                    - gridcell "-" [ref=e625]
+                  - row "Agent Javoxir 007 0 0 0 45 0 45 -" [ref=e626]:
+                    - gridcell "Agent Javoxir" [ref=e627]:
+                      - link "Agent Javoxir" [ref=e628] [cursor=pointer]:
+                        - /url: "#d0_63"
+                    - gridcell "007" [ref=e629]
+                    - gridcell "0" [ref=e630]:
+                      - link "0" [ref=e631] [cursor=pointer]:
+                        - /url: "#d0_63"
+                    - gridcell "0" [ref=e632]:
+                      - link "0" [ref=e633] [cursor=pointer]:
+                        - /url: "#d0_63"
+                    - gridcell "0" [ref=e634]
+                    - gridcell "45" [ref=e635]:
+                      - link "45" [ref=e636] [cursor=pointer]:
+                        - /url: "#d0_63"
+                    - gridcell "0" [ref=e637]
+                    - gridcell "45" [ref=e638]:
+                      - link "45" [ref=e639] [cursor=pointer]:
+                        - /url: "#d0_63"
+                    - gridcell "-" [ref=e640]
+                  - row "Agent007 0 0 0 3 0 3 -" [ref=e641]:
+                    - gridcell "Agent007" [ref=e642]:
+                      - link "Agent007" [ref=e643] [cursor=pointer]:
+                        - /url: "#d0_95"
+                    - gridcell [ref=e644]
+                    - gridcell "0" [ref=e645]:
+                      - link "0" [ref=e646] [cursor=pointer]:
+                        - /url: "#d0_95"
+                    - gridcell "0" [ref=e647]:
+                      - link "0" [ref=e648] [cursor=pointer]:
+                        - /url: "#d0_95"
+                    - gridcell "0" [ref=e649]
+                    - gridcell "3" [ref=e650]:
+                      - link "3" [ref=e651] [cursor=pointer]:
+                        - /url: "#d0_95"
+                    - gridcell "0" [ref=e652]
+                    - gridcell "3" [ref=e653]:
+                      - link "3" [ref=e654] [cursor=pointer]:
+                        - /url: "#d0_95"
+                    - gridcell "-" [ref=e655]
+                  - row "Anvar Rashidowv 123 0 0 0 0 0 0 -" [ref=e656]:
+                    - gridcell "Anvar Rashidowv" [ref=e657]:
+                      - link "Anvar Rashidowv" [ref=e658] [cursor=pointer]:
+                        - /url: "#d0_87"
+                    - gridcell "123" [ref=e659]
+                    - gridcell "0" [ref=e660]:
+                      - link "0" [ref=e661] [cursor=pointer]:
+                        - /url: "#d0_87"
+                    - gridcell "0" [ref=e662]:
+                      - link "0" [ref=e663] [cursor=pointer]:
+                        - /url: "#d0_87"
+                    - gridcell "0" [ref=e664]
+                    - gridcell "0" [ref=e665]
+                    - gridcell "0" [ref=e666]
+                    - gridcell "0" [ref=e667]
+                    - gridcell "-" [ref=e668]
+                  - row "Avazhon 1 0 0 0 1 0 1 -" [ref=e669]:
+                    - gridcell "Avazhon" [ref=e670]:
+                      - link "Avazhon" [ref=e671] [cursor=pointer]:
+                        - /url: "#d0_11"
+                    - gridcell "1" [ref=e672]
+                    - gridcell "0" [ref=e673]:
+                      - link "0" [ref=e674] [cursor=pointer]:
+                        - /url: "#d0_11"
+                    - gridcell "0" [ref=e675]:
+                      - link "0" [ref=e676] [cursor=pointer]:
+                        - /url: "#d0_11"
+                    - gridcell "0" [ref=e677]
+                    - gridcell "1" [ref=e678]:
+                      - link "1" [ref=e679] [cursor=pointer]:
+                        - /url: "#d0_11"
+                    - gridcell "0" [ref=e680]
+                    - gridcell "1" [ref=e681]:
+                      - link "1" [ref=e682] [cursor=pointer]:
+                        - /url: "#d0_11"
+                    - gridcell "-" [ref=e683]
+                  - row "beck code_agent_001 0 0 0 28 0 28 -" [ref=e684]:
+                    - gridcell "beck" [ref=e685]:
+                      - link "beck" [ref=e686] [cursor=pointer]:
+                        - /url: "#d0_94"
+                    - gridcell "code_agent_001" [ref=e687]
+                    - gridcell "0" [ref=e688]:
+                      - link "0" [ref=e689] [cursor=pointer]:
+                        - /url: "#d0_94"
+                    - gridcell "0" [ref=e690]:
+                      - link "0" [ref=e691] [cursor=pointer]:
+                        - /url: "#d0_94"
+                    - gridcell "0" [ref=e692]
+                    - gridcell "28" [ref=e693]:
+                      - link "28" [ref=e694] [cursor=pointer]:
+                        - /url: "#d0_94"
+                    - gridcell "0" [ref=e695]
+                    - gridcell "28" [ref=e696]:
+                      - link "28" [ref=e697] [cursor=pointer]:
+                        - /url: "#d0_94"
+                    - gridcell "-" [ref=e698]
+                  - row "Bobz 0 0 0 0 0 0 -" [ref=e699]:
+                    - gridcell "Bobz" [ref=e700]:
+                      - link "Bobz" [ref=e701] [cursor=pointer]:
+                        - /url: "#d0_96"
+                    - gridcell [ref=e702]
+                    - gridcell "0" [ref=e703]:
+                      - link "0" [ref=e704] [cursor=pointer]:
+                        - /url: "#d0_96"
+                    - gridcell "0" [ref=e705]:
+                      - link "0" [ref=e706] [cursor=pointer]:
+                        - /url: "#d0_96"
+                    - gridcell "0" [ref=e707]
+                    - gridcell "0" [ref=e708]
+                    - gridcell "0" [ref=e709]
+                    - gridcell "0" [ref=e710]
+                    - gridcell "-" [ref=e711]
+                  - row "dimaprod 0 0 0 1 0 1 -" [ref=e712]:
+                    - gridcell "dimaprod" [ref=e713]:
+                      - link "dimaprod" [ref=e714] [cursor=pointer]:
+                        - /url: "#d0_75"
+                    - gridcell [ref=e715]
+                    - gridcell "0" [ref=e716]:
+                      - link "0" [ref=e717] [cursor=pointer]:
+                        - /url: "#d0_75"
+                    - gridcell "0" [ref=e718]:
+                      - link "0" [ref=e719] [cursor=pointer]:
+                        - /url: "#d0_75"
+                    - gridcell "0" [ref=e720]
+                    - gridcell "1" [ref=e721]:
+                      - link "1" [ref=e722] [cursor=pointer]:
+                        - /url: "#d0_75"
+                    - gridcell "0" [ref=e723]
+                    - gridcell "1" [ref=e724]:
+                      - link "1" [ref=e725] [cursor=pointer]:
+                        - /url: "#d0_75"
+                    - gridcell "-" [ref=e726]
+                  - row "Dmitriy M VS 2 0 0 0 14 0 14 -" [ref=e727]:
+                    - gridcell "Dmitriy M VS" [ref=e728]:
+                      - link "Dmitriy M VS" [ref=e729] [cursor=pointer]:
+                        - /url: "#d0_8"
+                    - gridcell "2" [ref=e730]
+                    - gridcell "0" [ref=e731]:
+                      - link "0" [ref=e732] [cursor=pointer]:
+                        - /url: "#d0_8"
+                    - gridcell "0" [ref=e733]:
+                      - link "0" [ref=e734] [cursor=pointer]:
+                        - /url: "#d0_8"
+                    - gridcell "0" [ref=e735]
+                    - gridcell "14" [ref=e736]:
+                      - link "14" [ref=e737] [cursor=pointer]:
+                        - /url: "#d0_8"
+                    - gridcell "0" [ref=e738]
+                    - gridcell "14" [ref=e739]:
+                      - link "14" [ref=e740] [cursor=pointer]:
+                        - /url: "#d0_8"
+                    - gridcell "-" [ref=e741]
+                  - row "Dmitry Agent 2 0 0 0 65 0 65 -" [ref=e742]:
+                    - gridcell "Dmitry Agent" [ref=e743]:
+                      - link "Dmitry Agent" [ref=e744] [cursor=pointer]:
+                        - /url: "#d0_6"
+                    - gridcell "2" [ref=e745]
+                    - gridcell "0" [ref=e746]:
+                      - link "0" [ref=e747] [cursor=pointer]:
+                        - /url: "#d0_6"
+                    - gridcell "0" [ref=e748]:
+                      - link "0" [ref=e749] [cursor=pointer]:
+                        - /url: "#d0_6"
+                    - gridcell "0" [ref=e750]
+                    - gridcell "65" [ref=e751]:
+                      - link "65" [ref=e752] [cursor=pointer]:
+                        - /url: "#d0_6"
+                    - gridcell "0" [ref=e753]
+                    - gridcell "65" [ref=e754]:
+                      - link "65" [ref=e755] [cursor=pointer]:
+                        - /url: "#d0_6"
+                    - gridcell "-" [ref=e756]
+                  - row "Feruzov Anvar 252525 0 0 0 0 0 0 -" [ref=e757]:
+                    - gridcell "Feruzov Anvar" [ref=e758]:
+                      - link "Feruzov Anvar" [ref=e759] [cursor=pointer]:
+                        - /url: "#d0_77"
+                    - gridcell "252525" [ref=e760]
+                    - gridcell "0" [ref=e761]:
+                      - link "0" [ref=e762] [cursor=pointer]:
+                        - /url: "#d0_77"
+                    - gridcell "0" [ref=e763]:
+                      - link "0" [ref=e764] [cursor=pointer]:
+                        - /url: "#d0_77"
+                    - gridcell "0" [ref=e765]
+                    - gridcell "0" [ref=e766]
+                    - gridcell "0" [ref=e767]
+                    - gridcell "0" [ref=e768]
+                    - gridcell "-" [ref=e769]
+                  - row "Gleb agent 0 0 0 12 0 12 -" [ref=e770]:
+                    - gridcell "Gleb agent" [ref=e771]:
+                      - link "Gleb agent" [ref=e772] [cursor=pointer]:
+                        - /url: "#d0_34"
+                    - gridcell [ref=e773]
+                    - gridcell "0" [ref=e774]:
+                      - link "0" [ref=e775] [cursor=pointer]:
+                        - /url: "#d0_34"
+                    - gridcell "0" [ref=e776]:
+                      - link "0" [ref=e777] [cursor=pointer]:
+                        - /url: "#d0_34"
+                    - gridcell "0" [ref=e778]
+                    - gridcell "12" [ref=e779]:
+                      - link "12" [ref=e780] [cursor=pointer]:
+                        - /url: "#d0_34"
+                    - gridcell "0" [ref=e781]
+                    - gridcell "12" [ref=e782]:
+                      - link "12" [ref=e783] [cursor=pointer]:
+                        - /url: "#d0_34"
+                    - gridcell "-" [ref=e784]
+                  - row "Sotuvchi 1 0 0 0 3 0 3 -" [ref=e785]:
+                    - gridcell "Sotuvchi" [ref=e786]:
+                      - link "Sotuvchi" [ref=e787] [cursor=pointer]:
+                        - /url: "#d0_88"
+                    - gridcell "1" [ref=e788]
+                    - gridcell "0" [ref=e789]:
+                      - link "0" [ref=e790] [cursor=pointer]:
+                        - /url: "#d0_88"
+                    - gridcell "0" [ref=e791]:
+                      - link "0" [ref=e792] [cursor=pointer]:
+                        - /url: "#d0_88"
+                    - gridcell "0" [ref=e793]
+                    - gridcell "3" [ref=e794]:
+                      - link "3" [ref=e795] [cursor=pointer]:
+                        - /url: "#d0_88"
+                    - gridcell "0" [ref=e796]
+                    - gridcell "3" [ref=e797]:
+                      - link "3" [ref=e798] [cursor=pointer]:
+                        - /url: "#d0_88"
+                    - gridcell "-" [ref=e799]
+                  - row "TP-22 0 0 0 0 0 0 -" [ref=e800]:
+                    - gridcell "TP-22" [ref=e801]:
+                      - link "TP-22" [ref=e802] [cursor=pointer]:
+                        - /url: "#d0_92"
+                    - gridcell [ref=e803]
+                    - gridcell "0" [ref=e804]:
+                      - link "0" [ref=e805] [cursor=pointer]:
+                        - /url: "#d0_92"
+                    - gridcell "0" [ref=e806]:
+                      - link "0" [ref=e807] [cursor=pointer]:
+                        - /url: "#d0_92"
+                    - gridcell "0" [ref=e808]
+                    - gridcell "0" [ref=e809]
+                    - gridcell "0" [ref=e810]
+                    - gridcell "0" [ref=e811]
+                    - gridcell "-" [ref=e812]
+                  - row "Usmon ваваа 0 0 0 3 0 3 -" [ref=e813]:
+                    - gridcell "Usmon" [ref=e814]:
+                      - link "Usmon" [ref=e815] [cursor=pointer]:
+                        - /url: "#d0_58"
+                    - gridcell "ваваа" [ref=e816]
+                    - gridcell "0" [ref=e817]:
+                      - link "0" [ref=e818] [cursor=pointer]:
+                        - /url: "#d0_58"
+                    - gridcell "0" [ref=e819]:
+                      - link "0" [ref=e820] [cursor=pointer]:
+                        - /url: "#d0_58"
+                    - gridcell "0" [ref=e821]
+                    - gridcell "3" [ref=e822]:
+                      - link "3" [ref=e823] [cursor=pointer]:
+                        - /url: "#d0_58"
+                    - gridcell "0" [ref=e824]
+                    - gridcell "3" [ref=e825]:
+                      - link "3" [ref=e826] [cursor=pointer]:
+                        - /url: "#d0_58"
+                    - gridcell "-" [ref=e827]
+                  - row "Van selling 1 0 0 0 1 0 1 -" [ref=e828]:
+                    - gridcell "Van selling" [ref=e829]:
+                      - link "Van selling" [ref=e830] [cursor=pointer]:
+                        - /url: "#d0_89"
+                    - gridcell "1" [ref=e831]
+                    - gridcell "0" [ref=e832]:
+                      - link "0" [ref=e833] [cursor=pointer]:
+                        - /url: "#d0_89"
+                    - gridcell "0" [ref=e834]:
+                      - link "0" [ref=e835] [cursor=pointer]:
+                        - /url: "#d0_89"
+                    - gridcell "0" [ref=e836]
+                    - gridcell "1" [ref=e837]:
+                      - link "1" [ref=e838] [cursor=pointer]:
+                        - /url: "#d0_89"
+                    - gridcell "0" [ref=e839]
+                    - gridcell "1" [ref=e840]:
+                      - link "1" [ref=e841] [cursor=pointer]:
+                        - /url: "#d0_89"
+                    - gridcell "-" [ref=e842]
+                  - row "Vansell Max 0 0 0 4 0 4 -" [ref=e843]:
+                    - gridcell "Vansell Max" [ref=e844]:
+                      - link "Vansell Max" [ref=e845] [cursor=pointer]:
+                        - /url: "#d0_76"
+                    - gridcell [ref=e846]
+                    - gridcell "0" [ref=e847]:
+                      - link "0" [ref=e848] [cursor=pointer]:
+                        - /url: "#d0_76"
+                    - gridcell "0" [ref=e849]:
+                      - link "0" [ref=e850] [cursor=pointer]:
+                        - /url: "#d0_76"
+                    - gridcell "0" [ref=e851]
+                    - gridcell "4" [ref=e852]:
+                      - link "4" [ref=e853] [cursor=pointer]:
+                        - /url: "#d0_76"
+                    - gridcell "0" [ref=e854]
+                    - gridcell "4" [ref=e855]:
+                      - link "4" [ref=e856] [cursor=pointer]:
+                        - /url: "#d0_76"
+                    - gridcell "-" [ref=e857]
+                  - row "Авдеев Севдар 522 0 0 0 0 0 0 -" [ref=e858]:
+                    - gridcell "Авдеев Севдар" [ref=e859]:
+                      - link "Авдеев Севдар" [ref=e860] [cursor=pointer]:
+                        - /url: "#d0_78"
+                    - gridcell "522" [ref=e861]
+                    - gridcell "0" [ref=e862]:
+                      - link "0" [ref=e863] [cursor=pointer]:
+                        - /url: "#d0_78"
+                    - gridcell "0" [ref=e864]:
+                      - link "0" [ref=e865] [cursor=pointer]:
+                        - /url: "#d0_78"
+                    - gridcell "0" [ref=e866]
+                    - gridcell "0" [ref=e867]
+                    - gridcell "0" [ref=e868]
+                    - gridcell "0" [ref=e869]
+                    - gridcell "-" [ref=e870]
+                  - row "Азизбек Азизбеков 123 0 0 0 0 0 0 -" [ref=e871]:
+                    - gridcell "Азизбек Азизбеков" [ref=e872]:
+                      - link "Азизбек Азизбеков" [ref=e873] [cursor=pointer]:
+                        - /url: "#d0_91"
+                    - gridcell "123" [ref=e874]
+                    - gridcell "0" [ref=e875]:
+                      - link "0" [ref=e876] [cursor=pointer]:
+                        - /url: "#d0_91"
+                    - gridcell "0" [ref=e877]:
+                      - link "0" [ref=e878] [cursor=pointer]:
+                        - /url: "#d0_91"
+                    - gridcell "0" [ref=e879]
+                    - gridcell "0" [ref=e880]
+                    - gridcell "0" [ref=e881]
+                    - gridcell "0" [ref=e882]
+                    - gridcell "-" [ref=e883]
+                  - row "Александр Кузнецcкий 0 0 0 0 0 0 -" [ref=e884]:
+                    - gridcell "Александр Кузнецcкий" [ref=e885]:
+                      - link "Александр Кузнецcкий" [ref=e886] [cursor=pointer]:
+                        - /url: "#d0_84"
+                    - gridcell [ref=e887]
+                    - gridcell "0" [ref=e888]:
+                      - link "0" [ref=e889] [cursor=pointer]:
+                        - /url: "#d0_84"
+                    - gridcell "0" [ref=e890]:
+                      - link "0" [ref=e891] [cursor=pointer]:
+                        - /url: "#d0_84"
+                    - gridcell "0" [ref=e892]
+                    - gridcell "0" [ref=e893]
+                    - gridcell "0" [ref=e894]
+                    - gridcell "0" [ref=e895]
+                    - gridcell "-" [ref=e896]
+                - rowgroup [ref=e897]:
+                  - row "Total 0 0 0 182 0 206 0" [ref=e898]:
+                    - gridcell "Total" [ref=e899]
+                    - gridcell [ref=e900]
+                    - gridcell "0" [ref=e901]
+                    - gridcell "0" [ref=e902]
+                    - gridcell "0" [ref=e903]
+                    - gridcell "182" [ref=e904]
+                    - gridcell "0" [ref=e905]
+                    - gridcell "206" [ref=e906]
+                    - gridcell "0" [ref=e907]
+              - status [ref=e908]: 1 - 20 / 25
+              - list [ref=e910]:
+                - listitem [ref=e911]:
+                  - link "Пред." [ref=e912]:
+                    - /url: "#"
+                - listitem [ref=e913] [cursor=pointer]:
+                  - link "1" [ref=e914]:
+                    - /url: "#"
+                - listitem [ref=e915] [cursor=pointer]:
+                  - link "2" [ref=e916]:
+                    - /url: "#"
+                - listitem [ref=e917] [cursor=pointer]:
+                  - link "След." [ref=e918]:
+                    - /url: "#"
+            - generic [ref=e919]:
+              - generic [ref=e921]: Супервайзеры
+              - generic [ref=e924]:
+                - generic [ref=e925]:
+                  - button "По 20" [ref=e926] [cursor=pointer]
+                  - button "Показ./Скр. столбцы" [ref=e927] [cursor=pointer]
+                  - button "Excel" [ref=e928] [cursor=pointer]
+                - generic [ref=e930]:
+                  - text: "Поиск:"
+                  - searchbox "Поиск:" [ref=e931]
+                - grid [ref=e932]:
+                  - rowgroup [ref=e933]:
+                    - 'row "Супервайзер: активировать для сортировки столбцы по убыванию Сумма заявки: активировать для сортировки столбцы по возрастанию Заказы: активировать для сортировки столбцы по возрастанию Отмененные заказы: активировать для сортировки столбцы по возрастанию Все визиты: активировать для сортировки столбцы по возрастанию Отказы: активировать для сортировки столбцы по возрастанию Не посещённые: активировать для сортировки столбцы по возрастанию Фотоотчёты: активировать для сортировки столбцы по возрастанию" [ref=e934]':
+                      - 'columnheader "Супервайзер: активировать для сортировки столбцы по убыванию" [ref=e935] [cursor=pointer]': Супервайзер
+                      - 'columnheader "Сумма заявки: активировать для сортировки столбцы по возрастанию" [ref=e936] [cursor=pointer]': Сумма заявки
+                      - 'columnheader "Заказы: активировать для сортировки столбцы по возрастанию" [ref=e937] [cursor=pointer]': Заказы
+                      - 'columnheader "Отмененные заказы: активировать для сортировки столбцы по возрастанию" [ref=e938] [cursor=pointer]': Отмененные заказы
+                      - 'columnheader "Все визиты: активировать для сортировки столбцы по возрастанию" [ref=e939] [cursor=pointer]': Все визиты
+                      - 'columnheader "Отказы: активировать для сортировки столбцы по возрастанию" [ref=e940] [cursor=pointer]': Отказы
+                      - 'columnheader "Не посещённые: активировать для сортировки столбцы по возрастанию" [ref=e941] [cursor=pointer]': Не посещённые
+                      - 'columnheader "Фотоотчёты: активировать для сортировки столбцы по возрастанию" [ref=e942] [cursor=pointer]': Фотоотчёты
+                  - rowgroup [ref=e943]:
+                    - row "В таблице отсутствуют данные" [ref=e944]:
+                      - gridcell "В таблице отсутствуют данные" [ref=e945]
+                  - rowgroup [ref=e946]:
+                    - row "Total 0 0 0 0 0" [ref=e947]:
+                      - gridcell "Total" [ref=e948]
+                      - gridcell "0" [ref=e949]
+                      - gridcell "0" [ref=e950]
+                      - gridcell "0" [ref=e951]
+                      - gridcell [ref=e952]
+                      - gridcell "0" [ref=e953]
+                      - gridcell [ref=e954]
+                      - gridcell "0" [ref=e955]
+                - status [ref=e956]: 0 - 0 / 0
+                - list [ref=e958]:
+                  - listitem [ref=e959]:
+                    - link "Пред." [ref=e960]:
+                      - /url: "#"
+                  - listitem [ref=e961]:
+                    - link "След." [ref=e962]:
+                      - /url: "#"
+          - generic [ref=e964]:
+            - generic [ref=e965]:
+              - generic [ref=e967]: "По категории продуктов: По агентам"
+              - generic [ref=e969]:
+                - list [ref=e970]:
+                  - listitem [ref=e971]:
+                    - link "По сумме" [ref=e972] [cursor=pointer]:
+                      - /url: "#portlet-tab1"
+                  - listitem [ref=e973]:
+                    - link "По объему" [ref=e974] [cursor=pointer]:
+                      - /url: "#portlet-tab2"
+                  - listitem [ref=e975]:
+                    - link "По АКБ" [ref=e976] [cursor=pointer]:
+                      - /url: "#portlet-tab3"
+                - generic [ref=e980]:
+                  - generic [ref=e981]:
+                    - button "По 20" [ref=e982] [cursor=pointer]
+                    - button "Показ./Скр. столбцы" [ref=e983] [cursor=pointer]
+                    - button "Excel" [ref=e984] [cursor=pointer]
+                    - button "Скрыть категории без продаж" [ref=e985] [cursor=pointer]
+                  - generic [ref=e987]:
+                    - text: "Поиск:"
+                    - searchbox "Поиск:" [ref=e988]
+                  - grid [ref=e989]:
+                    - rowgroup [ref=e990]:
+                      - row [ref=e991]:
+                        - 'columnheader "Агент: активировать для сортировки столбцы по убыванию" [ref=e992] [cursor=pointer]': Агент
+                        - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e993] [cursor=pointer]': Сумма
+                        - 'columnheader "Bonus: активировать для сортировки столбцы по возрастанию" [ref=e994] [cursor=pointer]': Bonus
+                        - 'columnheader "Drinks: активировать для сортировки столбцы по возрастанию" [ref=e995] [cursor=pointer]': Drinks
+                        - 'columnheader "Phones: активировать для сортировки столбцы по возрастанию" [ref=e996] [cursor=pointer]': Phones
+                        - 'columnheader "Универсальная категория: активировать для сортировки столбцы по возрастанию" [ref=e997] [cursor=pointer]': Универсальная категория
+                        - 'columnheader "Napitki: активировать для сортировки столбцы по возрастанию" [ref=e998] [cursor=pointer]': Napitki
+                        - 'columnheader "Fruits asmdasdans Updated: активировать для сортировки столбцы по возрастанию" [ref=e999] [cursor=pointer]': Fruits asmdasdans Updated
+                        - 'columnheader "Countries: активировать для сортировки столбцы по возрастанию" [ref=e1000] [cursor=pointer]': Countries
+                        - 'columnheader "Places: активировать для сортировки столбцы по возрастанию" [ref=e1001] [cursor=pointer]': Places
+                        - 'columnheader "Accessories: активировать для сортировки столбцы по возрастанию" [ref=e1002] [cursor=pointer]': Accessories
+                        - 'columnheader "Antiquarian: активировать для сортировки столбцы по возрастанию" [ref=e1003] [cursor=pointer]': Antiquarian
+                        - 'columnheader "t2: активировать для сортировки столбцы по возрастанию" [ref=e1004] [cursor=pointer]': t2
+                        - 'columnheader "asd: активировать для сортировки столбцы по возрастанию" [ref=e1005] [cursor=pointer]': asd
+                        - 'columnheader "Конфеты: активировать для сортировки столбцы по возрастанию" [ref=e1006] [cursor=pointer]': Конфеты
+                        - 'columnheader "Маркированные товары: активировать для сортировки столбцы по возрастанию" [ref=e1007] [cursor=pointer]': Маркированные товары
+                        - 'columnheader "Новая категория 12: активировать для сортировки столбцы по возрастанию" [ref=e1008] [cursor=pointer]': Новая категория 12
+                    - rowgroup [ref=e1009]:
+                      - row "В таблице отсутствуют данные" [ref=e1010]:
+                        - gridcell "В таблице отсутствуют данные" [ref=e1011]
+                    - rowgroup [ref=e1012]:
+                      - row "Total 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e1013]:
+                        - gridcell "Total" [ref=e1014]
+                        - gridcell "0" [ref=e1015]
+                        - gridcell "0" [ref=e1016]
+                        - gridcell "0" [ref=e1017]
+                        - gridcell "0" [ref=e1018]
+                        - gridcell "0" [ref=e1019]
+                        - gridcell "0" [ref=e1020]
+                        - gridcell "0" [ref=e1021]
+                        - gridcell "0" [ref=e1022]
+                        - gridcell "0" [ref=e1023]
+                        - gridcell "0" [ref=e1024]
+                        - gridcell "0" [ref=e1025]
+                        - gridcell "0" [ref=e1026]
+                        - gridcell "0" [ref=e1027]
+                        - gridcell "0" [ref=e1028]
+                        - gridcell "0" [ref=e1029]
+                        - gridcell "0" [ref=e1030]
+                  - status [ref=e1031]: 0 - 0 / 0
+                  - list [ref=e1033]:
+                    - listitem [ref=e1034]:
+                      - link "Пред." [ref=e1035]:
+                        - /url: "#"
+                    - listitem [ref=e1036]:
+                      - link "След." [ref=e1037]:
+                        - /url: "#"
+            - generic [ref=e1038]:
+              - generic [ref=e1040]: "По категории продуктов: По супервайзерам"
+              - generic [ref=e1042]:
+                - list [ref=e1043]:
+                  - listitem [ref=e1044]:
+                    - link "По сумме" [ref=e1045] [cursor=pointer]:
+                      - /url: "#portlet-tab5"
+                  - listitem [ref=e1046]:
+                    - link "По объему" [ref=e1047] [cursor=pointer]:
+                      - /url: "#portlet-tab6"
+                  - listitem [ref=e1048]:
+                    - link "По АКБ" [ref=e1049] [cursor=pointer]:
+                      - /url: "#portlet-tab7"
+                - generic [ref=e1053]:
+                  - generic [ref=e1054]:
+                    - button "По 20" [ref=e1055] [cursor=pointer]
+                    - button "Показ./Скр. столбцы" [ref=e1056] [cursor=pointer]
+                    - button "Excel" [ref=e1057] [cursor=pointer]
+                    - button "Скрыть категории без продаж" [ref=e1058] [cursor=pointer]
+                  - generic [ref=e1060]:
+                    - text: "Поиск:"
+                    - searchbox "Поиск:" [ref=e1061]
+                  - grid [ref=e1062]:
+                    - rowgroup [ref=e1063]:
+                      - row [ref=e1064]:
+                        - 'columnheader "Супервайзер: активировать для сортировки столбцы по убыванию" [ref=e1065] [cursor=pointer]': Супервайзер
+                        - 'columnheader "Сумма: активировать для сортировки столбцы по возрастанию" [ref=e1066] [cursor=pointer]': Сумма
+                        - 'columnheader "Bonus: активировать для сортировки столбцы по возрастанию" [ref=e1067] [cursor=pointer]': Bonus
+                        - 'columnheader "Drinks: активировать для сортировки столбцы по возрастанию" [ref=e1068] [cursor=pointer]': Drinks
+                        - 'columnheader "Phones: активировать для сортировки столбцы по возрастанию" [ref=e1069] [cursor=pointer]': Phones
+                        - 'columnheader "Универсальная категория: активировать для сортировки столбцы по возрастанию" [ref=e1070] [cursor=pointer]': Универсальная категория
+                        - 'columnheader "Napitki: активировать для сортировки столбцы по возрастанию" [ref=e1071] [cursor=pointer]': Napitki
+                        - 'columnheader "Fruits asmdasdans Updated: активировать для сортировки столбцы по возрастанию" [ref=e1072] [cursor=pointer]': Fruits asmdasdans Updated
+                        - 'columnheader "Countries: активировать для сортировки столбцы по возрастанию" [ref=e1073] [cursor=pointer]': Countries
+                        - 'columnheader "Places: активировать для сортировки столбцы по возрастанию" [ref=e1074] [cursor=pointer]': Places
+                        - 'columnheader "Accessories: активировать для сортировки столбцы по возрастанию" [ref=e1075] [cursor=pointer]': Accessories
+                        - 'columnheader "Antiquarian: активировать для сортировки столбцы по возрастанию" [ref=e1076] [cursor=pointer]': Antiquarian
+                        - 'columnheader "t2: активировать для сортировки столбцы по возрастанию" [ref=e1077] [cursor=pointer]': t2
+                        - 'columnheader "asd: активировать для сортировки столбцы по возрастанию" [ref=e1078] [cursor=pointer]': asd
+                        - 'columnheader "Конфеты: активировать для сортировки столбцы по возрастанию" [ref=e1079] [cursor=pointer]': Конфеты
+                        - 'columnheader "Маркированные товары: активировать для сортировки столбцы по возрастанию" [ref=e1080] [cursor=pointer]': Маркированные товары
+                        - 'columnheader "Новая категория 12: активировать для сортировки столбцы по возрастанию" [ref=e1081] [cursor=pointer]': Новая категория 12
+                    - rowgroup [ref=e1082]:
+                      - row "В таблице отсутствуют данные" [ref=e1083]:
+                        - gridcell "В таблице отсутствуют данные" [ref=e1084]
+                    - rowgroup [ref=e1085]:
+                      - row "Total 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" [ref=e1086]:
+                        - gridcell "Total" [ref=e1087]
+                        - gridcell "0" [ref=e1088]
+                        - gridcell "0" [ref=e1089]
+                        - gridcell "0" [ref=e1090]
+                        - gridcell "0" [ref=e1091]
+                        - gridcell "0" [ref=e1092]
+                        - gridcell "0" [ref=e1093]
+                        - gridcell "0" [ref=e1094]
+                        - gridcell "0" [ref=e1095]
+                        - gridcell "0" [ref=e1096]
+                        - gridcell "0" [ref=e1097]
+                        - gridcell "0" [ref=e1098]
+                        - gridcell "0" [ref=e1099]
+                        - gridcell "0" [ref=e1100]
+                        - gridcell "0" [ref=e1101]
+                        - gridcell "0" [ref=e1102]
+                        - gridcell "0" [ref=e1103]
+                  - status [ref=e1104]: 0 - 0 / 0
+                  - list [ref=e1106]:
+                    - listitem [ref=e1107]:
+                      - link "Пред." [ref=e1108]:
+                        - /url: "#"
+                    - listitem [ref=e1109]:
+                      - link "След." [ref=e1110]:
+                        - /url: "#"
+      - text:                                                                                                                                                                             

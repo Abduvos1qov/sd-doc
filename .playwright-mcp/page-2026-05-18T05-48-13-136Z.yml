@@ -1,0 +1,174 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e103]:
+      - generic [ref=e106]:
+        - table [ref=e107]:
+          - rowgroup [ref=e108]:
+            - row "Категории продуктов Продукт Отгружен, Доставлен Тип цены Дата отгрузки  май 1 - май 31 " [ref=e109]:
+              - cell "Категории продуктов" [ref=e110]:
+                - generic [ref=e111]:
+                  - button "Категории продуктов" [ref=e112] [cursor=pointer]:
+                    - generic [ref=e113]: Категории продуктов
+                  - text:               
+              - cell "Продукт" [ref=e115]:
+                - generic [ref=e116]:
+                  - button "Продукт" [ref=e117] [cursor=pointer]:
+                    - generic [ref=e118]: Продукт
+                  - text:                                                                                                                                                       
+              - cell "Отгружен, Доставлен" [ref=e120]:
+                - generic [ref=e121]:
+                  - button "Отгружен, Доставлен" [ref=e122] [cursor=pointer]:
+                    - generic [ref=e123]: Отгружен, Доставлен
+                  - text:     
+              - cell "Тип цены" [ref=e125]:
+                - generic [ref=e126]:
+                  - button "Тип цены" [ref=e127] [cursor=pointer]:
+                    - generic [ref=e128]: Тип цены
+                  - text:                
+              - cell "Дата отгрузки" [ref=e130]:
+                - generic [ref=e131]:
+                  - button "Дата отгрузки" [ref=e132] [cursor=pointer]:
+                    - generic [ref=e133]: Дата отгрузки
+                  - text:   
+              - cell " май 1 - май 31 " [ref=e135]:
+                - generic [ref=e136] [cursor=pointer]:
+                  - generic [ref=e137]: 
+                  - text: май 1 - май 31
+                  - generic [ref=e138]: 
+        - table [ref=e139]:
+          - rowgroup [ref=e140]:
+            - row "Агент Территория Сегменты клиентов Тип оплаты Группа товаров Фильтр Сбросить" [ref=e141]:
+              - cell "Агент" [ref=e142]:
+                - generic [ref=e143]:
+                  - button "Агент" [ref=e144] [cursor=pointer]:
+                    - generic [ref=e145]: Агент
+                  - text:                         
+              - cell "Территория" [ref=e147]:
+                - generic [ref=e148]:
+                  - button "Территория" [ref=e149] [cursor=pointer]:
+                    - generic [ref=e150]: Территория
+                  - text:                        
+              - cell "Сегменты клиентов" [ref=e152]:
+                - generic [ref=e153]:
+                  - button "Сегменты клиентов" [ref=e154] [cursor=pointer]:
+                    - generic [ref=e155]: Сегменты клиентов
+                  - text:                
+              - cell "Тип оплаты" [ref=e157]:
+                - generic [ref=e158]:
+                  - button "Тип оплаты" [ref=e159] [cursor=pointer]:
+                    - generic [ref=e160]: Тип оплаты
+                  - text:            
+              - cell "Группа товаров" [ref=e162]:
+                - generic [ref=e163]:
+                  - button "Группа товаров" [ref=e164] [cursor=pointer]:
+                    - generic [ref=e165]: Группа товаров
+                  - text:    
+              - cell "Фильтр" [ref=e167]:
+                - button "Фильтр" [ref=e168] [cursor=pointer]
+              - cell "Сбросить" [ref=e169]:
+                - link "Сбросить" [ref=e170] [cursor=pointer]:
+                  - /url: /report/agent/
+      - generic [ref=e173]:
+        - generic [ref=e175]:
+          - heading "Общие заказы" [level=3] [ref=e177]
+          - generic [ref=e178]:
+            - heading "0" [level=4] [ref=e179]
+            - paragraph [ref=e180]: "Объем: 0"
+            - paragraph [ref=e181]: "АКБ: 0"
+        - generic [ref=e182]:
+          - generic [ref=e184]:
+            - heading "Оплаты агента(ов)" [level=3] [ref=e186]
+            - generic [ref=e187]:
+              - heading "0" [level=4] [ref=e188]
+              - paragraph [ref=e189]: "Неподтверждённые платежи: 0"
+          - generic [ref=e191]:
+            - heading "Задолженность агента(ов)" [level=3] [ref=e193]
+            - generic [ref=e194]:
+              - heading "0" [level=4] [ref=e195]
+              - paragraph [ref=e196]: "Количество заказов: 0"
+  - text:    

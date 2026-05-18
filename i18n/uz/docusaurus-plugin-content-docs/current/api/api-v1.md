@@ -49,7 +49,7 @@ JSON. Bir nechta endpoint XML qabul qiladi (`xml1c`, `pradata`).
 
 ## Tavsiya etilgan migratsiya
 
-Agar bugun integratsiya qilayotgan bo'lsangiz: [API v4](./api-v4-online.md)
+Agar bugun integratsiya qilayotgan bo'lsangiz: [API v4](./api-v4-online/)
 ni afzal ko'ring. Agar mavjud v1 iste'molchisi uchun funksiya
 qo'shayotgan bo'lsangiz, platforma jamoasiga murojaat qiling — ko'plab v1
 endpointlari ishdan chiqarish uchun rejalashtirilgan.

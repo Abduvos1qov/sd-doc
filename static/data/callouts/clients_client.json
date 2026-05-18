@@ -1,0 +1,39 @@
+{
+  "slug": "clients_client",
+  "url": "/clients/client",
+  "title": "Clients list",
+  "callouts": [
+    {
+      "x": 110,
+      "y": 101,
+      "w": 232,
+      "h": 34,
+      "label": "Неподтвержденные клиенты",
+      "kind": "action"
+    },
+    {
+      "x": 348,
+      "y": 101,
+      "w": 229,
+      "h": 34,
+      "label": "История изменения визитов",
+      "kind": "action"
+    },
+    {
+      "x": 583,
+      "y": 101,
+      "w": 90,
+      "h": 34,
+      "label": "QR-kod",
+      "kind": "action"
+    },
+    {
+      "x": 111,
+      "y": 238,
+      "w": 2910,
+      "h": 84,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

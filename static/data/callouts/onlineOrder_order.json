@@ -1,0 +1,39 @@
+{
+  "slug": "onlineOrder_order",
+  "url": "/onlineOrder/order",
+  "title": "Online orders",
+  "callouts": [
+    {
+      "x": 126,
+      "y": 184,
+      "w": 253,
+      "h": 32,
+      "label": "Статус",
+      "kind": "field"
+    },
+    {
+      "x": 447,
+      "y": 184,
+      "w": 253,
+      "h": 32,
+      "label": "Контакт",
+      "kind": "field"
+    },
+    {
+      "x": 1063,
+      "y": 184,
+      "w": 253,
+      "h": 32,
+      "label": "Поиск",
+      "kind": "field"
+    },
+    {
+      "x": 120,
+      "y": 255,
+      "w": 1292,
+      "h": 48,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

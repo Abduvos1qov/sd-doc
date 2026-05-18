@@ -1,0 +1,9 @@
+[     108ms] [LOG] loading translations for module: orders lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     156ms] [WARNING] [i18n-missing] Missing key "Тег" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     228ms] [LOG] rendering datatable... @ http://localhost:8080/orders/list:4907
+[     251ms] [LOG] loading translations for module: orders lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     356ms] [LOG] ----------loadOrders---------- @ http://localhost:8080/js/orders/worker.js?v=1.6:511
+[     389ms] [TIMEEND] fetchOrders: 33.08203125 ms @ http://localhost:8080/js/orders/worker.js?v=1.6:100
+[     390ms] [TIMEEND] buildOrders: 0.03515625 ms @ http://localhost:8080/js/orders/worker.js?v=1.6:399
+[     390ms] [TIMEEND] setClients: 0.0009765625 ms @ http://localhost:8080/js/orders/worker.js?v=1.6:505
+[     390ms] [LOG] ----------loadOrders: done---------- @ http://localhost:8080/js/orders/worker.js?v=1.6:527

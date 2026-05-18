@@ -5,59 +5,79 @@ sidebar_position: 1
 
 # api-v3-mobile · `OrderController`
 
-Endpoints for `OrderController` (`protected/modules/api3/controllers/OrderController.php`). 4 action(s).
+Per-action reference for `protected/modules/api3/controllers/OrderController.php` (4 actions). The **agent (ROLE=4) mobile app** uses this to draft, post and update orders.
 
-### `GET /api3/order/getDraft`
+## Common contract
 
-- **Controller**: `OrderController::getDraft` (`protected/modules/api3/controllers/OrderController.php:23`)
+- **Base URL pattern**: `POST /api3/order/<actionName>` (Yii camel-case).
+- **Auth**: `deviceToken` from `HTTP_DEVICETOKEN` header. `User::userByDeviceToken($token)` (any role with matching token). After lookup the controller calls `UserIdentity` to start a Yii session.
+- **Response envelope**: raw JSON, varies per action.
 
-**Request**
+---
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/OrderController.php:23](#) directly._
+## actionPostDraft
 
-**Response**
+`POST /api3/order/postDraft` — persist the user's order draft to the server (a backup of the basket).
 
-_Response shape not auto-detected — TBD._
+**Request**: arbitrary JSON body (the draft); also pulls `HTTP_DEVICETOKEN`.
 
-### `POST /api3/order/post`
+**Response**: `{ status:'ok' }`.
 
-- **Controller**: `OrderController::post` (`protected/modules/api3/controllers/OrderController.php:37`)
+**Side effects**: writes `DOCUMENT_ROOT/upload/draft/Agent-<AGENT_ID>-Draft.txt`. Overwrites any previous draft for the same agent.
 
-**Request**
+**Gotchas**: stored unencrypted; one draft per agent (latest wins).
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `longitude` | body | _string_ | TBD |
-| `latitude` | body | _string_ | TBD |
-| `forceDate` | query | _string_ | TBD |
+## actionGetDraft
 
-**Response**
+`GET /api3/order/getDraft` — read the saved draft.
 
-_Response shape not auto-detected — TBD._
+**Response**: the raw file contents (JSON) or `"[]"` when no draft exists.
 
-### `GET /api3/order/postDraft`
+## actionPost
 
-- **Controller**: `OrderController::postDraft` (`protected/modules/api3/controllers/OrderController.php:7`)
+`POST /api3/order/post?forceDate=true|false` — sync one or more orders created on mobile.
 
-**Request**
+**Request** (JSON array): `[{ id (mobile UUID), clientId, type:'order'|'refund'|'replace', createdAt (ms), shipmentDate (ms)?, storeId, tradeId, paymentTypeId, contractId?, orderNoteId?, draft, comment, products:[{productId,totalItems,price,discount,...}], bonusProductList?, ... }]`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/OrderController.php:7](#) directly._
+**Response** (array): per-order `{ id, status:int (0=error,1=success,2=warning,3=info), orderId?, message?, …full order DTO when synched (`fullResponse()`) }`.
 
-**Response**
+**Side effects** — extensive. Per order:
+- Dedupe via `SyncLog` keyed by `(DAY, DEVICE_TOKEN, MOBILE_ORDER_ID)` (TTL ~120s); re-entrant calls during processing return `sleep(1); die()`. Successful syncs are remembered so retries echo the existing `orderId`.
+- Creates `Order` (TYPE=1) / `OrderDefect` (TYPE=2) / `OrderReplace` (TYPE=3) + their `*Detail` rows + `BonusOrderDetail`.
+- Applies `Skidka` (discount engine) — manual or auto depending on `paymentTypeId`/contract.
+- Looks up `Price`/`OldPrice` per product+price-type for missing rows.
+- Computes `DATE_LOAD` from `shipmentDate` or `ServerSettings::setAutoDateLoad()` (today+N days at 09:00).
+- For paid-at-order flows: writes `ClientTransaction` (TRANS_TYPE=3), calls `TransactionClosed::setting_new`, `ClientFinans::correct` (or `ClientTransaction::correct` in contragent mode).
+- Reconstructs `Client` from `upload/dublicate/<id>-deleted` JSON when the client was soft-deleted client-side.
+- Fires `TelegramReport::notEnough` (deferred via `AfterResponse::run`) when stock is short.
+- Logs errors via `ErrorReporter::sendMessage` for `[api3/order/post]`.
 
-_Response shape not auto-detected — TBD._
+**Gotchas**:
+- `forceDate=true` honours `createdAt` even for cross-day orders; otherwise an out-of-day order date is bumped to today 01:00.
+- Empty input → `[{ status:0, message:'Empty Order' }]`.
+- Looks for soft-deleted clients in `upload/dublicate/`; if not found, the order is rejected.
+- Order types: 1=order, 2=return-from-shelf, 3=replace.
 
-### `GET /api3/order/update`
+## actionUpdate
 
-- **Controller**: `OrderController::update` (`protected/modules/api3/controllers/OrderController.php:1165`)
+`POST /api3/order/update?orderId=…` — limited edit of an order after it has been synched (comment, consignment flag, shipmentDate, orderNoteId, cancel).
 
-**Request**
+**Request** (JSON): `{ orderId, post:{ comment, consignation, consignationDate, shipmentDate, orderNoteId, orderStatus:'cancel' } }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/OrderController.php:1165](#) directly._
+**Response**: `{ orderId, status:int, message, info?, order:{ comment, consignation }, modelError? }`.
 
-**Response**
+**Status codes** (returned in body, not HTTP):
+- `0` Access denied
+- `1` Can edit (no changes applied)
+- `2` Saved
+- `3` Save error
+- `4` Order not found
 
-_Response shape not auto-detected — TBD._
+**Gotchas**:
+- Full edit only when `Order.STATUS=1 AND UPDATE_BY=currentUser`.
+- When `agent.config.order.editCommentAfterSync` is true, comment-only edits are allowed after sync — but rejected once `STATUS in (2,3)` (loaded/delivered).
+- `orderStatus='cancel'` sets `Order.STATUS=4`.
+- Logs the raw input to `Order_Update.txt` in document root.
 
 ## See also
 

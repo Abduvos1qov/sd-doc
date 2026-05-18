@@ -1,0 +1,39 @@
+{
+  "slug": "warehouse_list",
+  "url": "/warehouse/list",
+  "title": "Warehouse list",
+  "callouts": [
+    {
+      "x": 900,
+      "y": 107,
+      "w": 210,
+      "h": 41,
+      "label": "Активность",
+      "kind": "field"
+    },
+    {
+      "x": 384,
+      "y": 124,
+      "w": 188,
+      "h": 24,
+      "label": "Агенты",
+      "kind": "field"
+    },
+    {
+      "x": 642,
+      "y": 124,
+      "w": 188,
+      "h": 24,
+      "label": "Способ оплаты",
+      "kind": "field"
+    },
+    {
+      "x": 111,
+      "y": 240,
+      "w": 1309,
+      "h": 60,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

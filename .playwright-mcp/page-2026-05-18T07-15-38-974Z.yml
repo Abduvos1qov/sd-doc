@@ -1,0 +1,909 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - 'heading "Остатки товара на складе (рекомендованный запас) Всего Дней: 26 Пройдено Дней: 15 Осталось Дней: 11" [level=4] [ref=e103]':
+        - text: Остатки товара на складе (рекомендованный запас)
+        - generic [ref=e104]:
+          - generic [ref=e105]: "Всего Дней: 26"
+          - generic [ref=e106]: "Пройдено Дней: 15"
+          - generic [ref=e107]: "Осталось Дней: 11"
+      - table [ref=e110]:
+        - rowgroup [ref=e111]:
+          - row "Категория Группа товаров Бренд Склад Продукт" [ref=e112]:
+            - cell "Категория" [ref=e113]:
+              - generic [ref=e114]:
+                - button "Категория" [ref=e115] [cursor=pointer]:
+                  - generic [ref=e116]: Категория
+                - text:               
+            - cell "Группа товаров" [ref=e118]:
+              - generic [ref=e119]:
+                - button "Группа товаров" [ref=e120] [cursor=pointer]:
+                  - generic [ref=e121]: Группа товаров
+                - text:   
+            - cell "Бренд" [ref=e123]:
+              - generic [ref=e124]:
+                - button "Бренд" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e126]: Бренд
+                - text:            
+            - cell "Склад" [ref=e128]:
+              - generic [ref=e129]:
+                - button "Склад" [ref=e130] [cursor=pointer]:
+                  - generic [ref=e131]: Склад
+                - text:                                                                             
+            - cell "Продукт" [ref=e133]:
+              - generic [ref=e134]:
+                - button "Продукт" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136]: Продукт
+                - text:                                                                                                                                                                                                                                    
+          - row "Количество 6 дней, 10 дней, 30 дней Количество дней продаж Продажи + Бонус Все товары Все товары Фильтр" [ref=e138]:
+            - cell "Количество" [ref=e139]:
+              - generic [ref=e140]:
+                - button "Количество" [ref=e141] [cursor=pointer]:
+                  - generic [ref=e142]: Количество
+                - text:     
+            - cell "6 дней, 10 дней, 30 дней" [ref=e144]:
+              - generic [ref=e145]:
+                - button "6 дней, 10 дней, 30 дней" [ref=e146] [cursor=pointer]:
+                  - generic [ref=e147]: 6 дней, 10 дней, 30 дней
+                - text:      
+            - cell "Количество дней продаж" [ref=e149]:
+              - generic [ref=e150]:
+                - button "Количество дней продаж" [ref=e151] [cursor=pointer]:
+                  - generic [ref=e152]: Количество дней продаж
+                - text:  
+            - cell [ref=e154]:
+              - textbox "история продаж - 100 дн." [ref=e155]
+            - cell "Продажи + Бонус" [ref=e156]:
+              - generic [ref=e157]:
+                - button "Продажи + Бонус" [ref=e158] [cursor=pointer]:
+                  - generic [ref=e159]: Продажи + Бонус
+                - text:  
+            - cell "Все товары" [ref=e161]:
+              - generic [ref=e162]:
+                - button "Все товары" [ref=e163] [cursor=pointer]:
+                  - generic [ref=e164]: Все товары
+                - text:   
+            - cell "Все товары" [ref=e166]:
+              - generic [ref=e167]:
+                - button "Все товары" [ref=e168] [cursor=pointer]:
+                  - generic [ref=e169]: Все товары
+                - text:   
+            - cell "Фильтр" [ref=e171]:
+              - button "Фильтр" [ref=e172] [cursor=pointer]
+      - generic [ref=e173]:
+        - generic [ref=e174]:
+          - link "По 50" [ref=e175] [cursor=pointer]:
+            - /url: "#"
+          - link "Пок/скр. столбцы" [ref=e176] [cursor=pointer]:
+            - /url: "#"
+          - link "Excel" [ref=e177] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e179]:
+          - text: "Быстрый поиск:"
+          - searchbox "Быстрый поиск:" [ref=e180]
+        - grid [ref=e181]:
+          - rowgroup [ref=e182]:
+            - row [ref=e183]:
+              - 'columnheader "Код: активировать для сортировки столбцы по возрастанию" [ref=e184] [cursor=pointer]': Код
+              - 'columnheader "Категория: активировать для сортировки столбцы по возрастанию" [ref=e185] [cursor=pointer]': Категория
+              - 'columnheader "Продукт: активировать для сортировки столбцы по возрастанию" [ref=e186] [cursor=pointer]': Продукт
+              - 'columnheader "Сортировка товара: активировать для сортировки столбцы по убыванию" [ref=e187] [cursor=pointer]': Сортировка товара
+              - 'columnheader "Товар на складе шт : активировать для сортировки столбцы по возрастанию" [ref=e188] [cursor=pointer]':
+                - text: Товар на складе
+                - text: шт
+              - 'columnheader "Сред. Дневные Продажи: активировать для сортировки столбцы по возрастанию" [ref=e189] [cursor=pointer]': Сред. Дневные Продажи
+              - 'columnheader "Кол. продаж (дней): активировать для сортировки столбцы по возрастанию" [ref=e190] [cursor=pointer]': Кол. продаж (дней)
+              - 'columnheader "Текущ.Запас Хватит на… дней: активировать для сортировки столбцы по возрастанию" [ref=e191] [cursor=pointer]': Текущ.Запас Хватит на… дней
+              - 'columnheader "Рек. запас на 6 дней: активировать для сортировки столбцы по возрастанию" [ref=e192] [cursor=pointer]': Рек. запас на 6 дней
+              - 'columnheader "Рек. запас на 10 дней: активировать для сортировки столбцы по возрастанию" [ref=e193] [cursor=pointer]': Рек. запас на 10 дней
+              - 'columnheader "Рек. запас на 30 дней: активировать для сортировки столбцы по возрастанию" [ref=e194] [cursor=pointer]': Рек. запас на 30 дней
+              - 'columnheader "Рек.Запас До конца этого месяца: активировать для сортировки столбцы по возрастанию" [ref=e195] [cursor=pointer]': Рек.Запас До конца этого месяца
+              - 'columnheader "ля В КатегорииДо%: активировать для сортировки столбцы по возрастанию" [ref=e196] [cursor=pointer]':
+                - text: ля В КатегорииДо
+                - text: "%"
+          - rowgroup [ref=e197]:
+            - row "123123 Accessories 123 0 -24249 31062.75 4 0 186376.5 310627.5 931882.5 341690.25 100%" [ref=e198]:
+              - gridcell "123123" [ref=e199]
+              - gridcell "Accessories" [ref=e200]
+              - gridcell "123" [ref=e201]
+              - gridcell "0" [ref=e202]
+              - gridcell "-24249" [ref=e203]
+              - gridcell "31062.75" [ref=e204]
+              - gridcell "4" [ref=e205]
+              - gridcell "0" [ref=e206]
+              - gridcell "186376.5" [ref=e207]
+              - gridcell "310627.5" [ref=e208]
+              - gridcell "931882.5" [ref=e209]
+              - gridcell "341690.25" [ref=e210]
+              - gridcell "100%" [ref=e211]
+            - row "123 Bonus 123 0 103 0 0 - 0 0 0 0 0%" [ref=e212]:
+              - gridcell "123" [ref=e213]
+              - gridcell "Bonus" [ref=e214]
+              - gridcell "123" [ref=e215]
+              - gridcell "0" [ref=e216]
+              - gridcell "103" [ref=e217]
+              - gridcell "0" [ref=e218]
+              - gridcell "0" [ref=e219]
+              - gridcell "-" [ref=e220]
+              - gridcell "0" [ref=e221]
+              - gridcell "0" [ref=e222]
+              - gridcell "0" [ref=e223]
+              - gridcell "0" [ref=e224]
+              - gridcell "0%" [ref=e225]
+            - row "123 Bonus 123 0 13 0 0 - 0 0 0 0 0%" [ref=e226]:
+              - gridcell "123" [ref=e227]
+              - gridcell "Bonus" [ref=e228]
+              - gridcell "123" [ref=e229]
+              - gridcell "0" [ref=e230]
+              - gridcell "13" [ref=e231]
+              - gridcell "0" [ref=e232]
+              - gridcell "0" [ref=e233]
+              - gridcell "-" [ref=e234]
+              - gridcell "0" [ref=e235]
+              - gridcell "0" [ref=e236]
+              - gridcell "0" [ref=e237]
+              - gridcell "0" [ref=e238]
+              - gridcell "0%" [ref=e239]
+            - row "1169 Drinks Газ вода Дюшес 2 л 1 3028658696.23 33.63 4 90058242 201.78 336.3 1008.9 369.93 0%" [ref=e240]:
+              - gridcell "1169" [ref=e241]
+              - gridcell "Drinks" [ref=e242]
+              - gridcell "Газ вода Дюшес 2 л" [ref=e243]
+              - gridcell "1" [ref=e244]
+              - gridcell "3028658696.23" [ref=e245]
+              - gridcell "33.63" [ref=e246]
+              - gridcell "4" [ref=e247]
+              - gridcell "90058242" [ref=e248]
+              - gridcell "201.78" [ref=e249]
+              - gridcell "336.3" [ref=e250]
+              - gridcell "1008.9" [ref=e251]
+              - gridcell "369.93" [ref=e252]
+              - gridcell "0%" [ref=e253]
+            - row "Машины BMW M5 F90 Malika //**++-- 1 3951722.76 1 1 3951722 6 10 30 11 8%" [ref=e254]:
+              - gridcell [ref=e255]
+              - gridcell "Машины" [ref=e256]
+              - gridcell "BMW M5 F90 Malika //**++--" [ref=e257]
+              - gridcell "1" [ref=e258]
+              - gridcell "3951722.76" [ref=e259]
+              - gridcell "1" [ref=e260]
+              - gridcell "1" [ref=e261]
+              - gridcell "3951722" [ref=e262]
+              - gridcell "6" [ref=e263]
+              - gridcell "10" [ref=e264]
+              - gridcell "30" [ref=e265]
+              - gridcell "11" [ref=e266]
+              - gridcell "8%" [ref=e267]
+            - row "Машины Bugatti Chiron Pur Sport 1 3012031.95 4 1 753007 24 40 120 44 33%" [ref=e268]:
+              - gridcell [ref=e269]
+              - gridcell "Машины" [ref=e270]
+              - gridcell "Bugatti Chiron Pur Sport" [ref=e271]
+              - gridcell "1" [ref=e272]
+              - gridcell "3012031.95" [ref=e273]
+              - gridcell "4" [ref=e274]
+              - gridcell "1" [ref=e275]
+              - gridcell "753007" [ref=e276]
+              - gridcell "24" [ref=e277]
+              - gridcell "40" [ref=e278]
+              - gridcell "120" [ref=e279]
+              - gridcell "44" [ref=e280]
+              - gridcell "33%" [ref=e281]
+            - row "1183 Машины Porche 911 Turbo S 1 3015020.9 0 0 - 0 0 0 0 0%" [ref=e282]:
+              - gridcell "1183" [ref=e283]
+              - gridcell "Машины" [ref=e284]
+              - gridcell "Porche 911 Turbo S" [ref=e285]
+              - gridcell "1" [ref=e286]
+              - gridcell "3015020.9" [ref=e287]
+              - gridcell "0" [ref=e288]
+              - gridcell "0" [ref=e289]
+              - gridcell "-" [ref=e290]
+              - gridcell "0" [ref=e291]
+              - gridcell "0" [ref=e292]
+              - gridcell "0" [ref=e293]
+              - gridcell "0" [ref=e294]
+              - gridcell "0%" [ref=e295]
+            - row "1147 Mars Test 6 1 1002124800.5 0 0 - 0 0 0 0 0%" [ref=e296]:
+              - gridcell "1147" [ref=e297]
+              - gridcell "Mars" [ref=e298]
+              - gridcell "Test 6" [ref=e299]
+              - gridcell "1" [ref=e300]
+              - gridcell "1002124800.5" [ref=e301]
+              - gridcell "0" [ref=e302]
+              - gridcell "0" [ref=e303]
+              - gridcell "-" [ref=e304]
+              - gridcell "0" [ref=e305]
+              - gridcell "0" [ref=e306]
+              - gridcell "0" [ref=e307]
+              - gridcell "0" [ref=e308]
+              - gridcell "0%" [ref=e309]
+            - row "1186 Машины LAMBORGHINI HURACAN 1 3047269 0 0 - 0 0 0 0 0%" [ref=e310]:
+              - gridcell "1186" [ref=e311]
+              - gridcell "Машины" [ref=e312]
+              - gridcell "LAMBORGHINI HURACAN" [ref=e313]
+              - gridcell "1" [ref=e314]
+              - gridcell "3047269" [ref=e315]
+              - gridcell "0" [ref=e316]
+              - gridcell "0" [ref=e317]
+              - gridcell "-" [ref=e318]
+              - gridcell "0" [ref=e319]
+              - gridcell "0" [ref=e320]
+              - gridcell "0" [ref=e321]
+              - gridcell "0" [ref=e322]
+              - gridcell "0%" [ref=e323]
+            - row "Машины Mercedes-Benz G 63 AMG (Гелик) 1 3011404.25 0 0 - 0 0 0 0 0%" [ref=e324]:
+              - gridcell [ref=e325]
+              - gridcell "Машины" [ref=e326]
+              - gridcell "Mercedes-Benz G 63 AMG (Гелик)" [ref=e327]
+              - gridcell "1" [ref=e328]
+              - gridcell "3011404.25" [ref=e329]
+              - gridcell "0" [ref=e330]
+              - gridcell "0" [ref=e331]
+              - gridcell "-" [ref=e332]
+              - gridcell "0" [ref=e333]
+              - gridcell "0" [ref=e334]
+              - gridcell "0" [ref=e335]
+              - gridcell "0" [ref=e336]
+              - gridcell "0%" [ref=e337]
+            - row "Fruits asmdasdans Updated Товар сортировки 1 1 2101973 0 0 - 0 0 0 0 0%" [ref=e338]:
+              - gridcell [ref=e339]
+              - gridcell "Fruits asmdasdans Updated" [ref=e340]
+              - gridcell "Товар сортировки 1" [ref=e341]
+              - gridcell "1" [ref=e342]
+              - gridcell "2101973" [ref=e343]
+              - gridcell "0" [ref=e344]
+              - gridcell "0" [ref=e345]
+              - gridcell "-" [ref=e346]
+              - gridcell "0" [ref=e347]
+              - gridcell "0" [ref=e348]
+              - gridcell "0" [ref=e349]
+              - gridcell "0" [ref=e350]
+              - gridcell "0%" [ref=e351]
+            - row "1161 Drinks Товара по задаче WEB-876 2 2004070792.36 13.33 3 150342895 79.98 133.3 399.9 146.63 0%" [ref=e352]:
+              - gridcell "1161" [ref=e353]
+              - gridcell "Drinks" [ref=e354]
+              - gridcell "Товара по задаче WEB-876" [ref=e355]
+              - gridcell "2" [ref=e356]
+              - gridcell "2004070792.36" [ref=e357]
+              - gridcell "13.33" [ref=e358]
+              - gridcell "3" [ref=e359]
+              - gridcell "150342895" [ref=e360]
+              - gridcell "79.98" [ref=e361]
+              - gridcell "133.3" [ref=e362]
+              - gridcell "399.9" [ref=e363]
+              - gridcell "146.63" [ref=e364]
+              - gridcell "0%" [ref=e365]
+            - row "t2 Mars t2 2 99998 2 1 49999 12 20 60 22 2%" [ref=e366]:
+              - gridcell "t2" [ref=e367]
+              - gridcell "Mars" [ref=e368]
+              - gridcell "t2" [ref=e369]
+              - gridcell "2" [ref=e370]
+              - gridcell "99998" [ref=e371]
+              - gridcell "2" [ref=e372]
+              - gridcell "1" [ref=e373]
+              - gridcell "49999" [ref=e374]
+              - gridcell "12" [ref=e375]
+              - gridcell "20" [ref=e376]
+              - gridcell "60" [ref=e377]
+              - gridcell "22" [ref=e378]
+              - gridcell "2%" [ref=e379]
+            - row "1170 Конфеты Глинтвейн безалкогольный 2 1005704025.59 0 0 - 0 0 0 0 0%" [ref=e380]:
+              - gridcell "1170" [ref=e381]
+              - gridcell "Конфеты" [ref=e382]
+              - gridcell "Глинтвейн безалкогольный" [ref=e383]
+              - gridcell "2" [ref=e384]
+              - gridcell "1005704025.59" [ref=e385]
+              - gridcell "0" [ref=e386]
+              - gridcell "0" [ref=e387]
+              - gridcell "-" [ref=e388]
+              - gridcell "0" [ref=e389]
+              - gridcell "0" [ref=e390]
+              - gridcell "0" [ref=e391]
+              - gridcell "0" [ref=e392]
+              - gridcell "0%" [ref=e393]
+            - row "Fruits asmdasdans Updated Товар сортировки 2 2 2104053 0 0 - 0 0 0 0 0%" [ref=e394]:
+              - gridcell [ref=e395]
+              - gridcell "Fruits asmdasdans Updated" [ref=e396]
+              - gridcell "Товар сортировки 2" [ref=e397]
+              - gridcell "2" [ref=e398]
+              - gridcell "2104053" [ref=e399]
+              - gridcell "0" [ref=e400]
+              - gridcell "0" [ref=e401]
+              - gridcell "-" [ref=e402]
+              - gridcell "0" [ref=e403]
+              - gridcell "0" [ref=e404]
+              - gridcell "0" [ref=e405]
+              - gridcell "0" [ref=e406]
+              - gridcell "0%" [ref=e407]
+            - row "code_product_001 Drinks Напиток шт, объем, кол-во в упак 3 2002221936 45 3 44493820 270 450 1350 495 1%" [ref=e408]:
+              - gridcell "code_product_001" [ref=e409]
+              - gridcell "Drinks" [ref=e410]
+              - gridcell "Напиток шт, объем, кол-во в упак" [ref=e411]
+              - gridcell "3" [ref=e412]
+              - gridcell "2002221936" [ref=e413]
+              - gridcell "45" [ref=e414]
+              - gridcell "3" [ref=e415]
+              - gridcell "44493820" [ref=e416]
+              - gridcell "270" [ref=e417]
+              - gridcell "450" [ref=e418]
+              - gridcell "1350" [ref=e419]
+              - gridcell "495" [ref=e420]
+              - gridcell "1%" [ref=e421]
+            - row "1133 Mars Кофе растворимый Ambassador Platinum 95г неактивнаый товар 3 2005221453.2 8 7 250652681 48 80 240 88 6%" [ref=e422]:
+              - gridcell "1133" [ref=e423]
+              - gridcell "Mars" [ref=e424]
+              - gridcell "Кофе растворимый Ambassador Platinum 95г неактивнаый товар" [ref=e425]
+              - gridcell "3" [ref=e426]
+              - gridcell "2005221453.2" [ref=e427]
+              - gridcell "8" [ref=e428]
+              - gridcell "7" [ref=e429]
+              - gridcell "250652681" [ref=e430]
+              - gridcell "48" [ref=e431]
+              - gridcell "80" [ref=e432]
+              - gridcell "240" [ref=e433]
+              - gridcell "88" [ref=e434]
+              - gridcell "6%" [ref=e435]
+            - row "1189 Sweets Marsss 3 3010118.65 0 0 - 0 0 0 0 0%" [ref=e436]:
+              - gridcell "1189" [ref=e437]
+              - gridcell "Sweets" [ref=e438]
+              - gridcell "Marsss" [ref=e439]
+              - gridcell "3" [ref=e440]
+              - gridcell "3010118.65" [ref=e441]
+              - gridcell "0" [ref=e442]
+              - gridcell "0" [ref=e443]
+              - gridcell "-" [ref=e444]
+              - gridcell "0" [ref=e445]
+              - gridcell "0" [ref=e446]
+              - gridcell "0" [ref=e447]
+              - gridcell "0" [ref=e448]
+              - gridcell "0%" [ref=e449]
+            - row "Sweets Alpen Gold Миндаль и Кокос 3 3566249.55 0 0 - 0 0 0 0 0%" [ref=e450]:
+              - gridcell [ref=e451]
+              - gridcell "Sweets" [ref=e452]
+              - gridcell "Alpen Gold Миндаль и Кокос" [ref=e453]
+              - gridcell "3" [ref=e454]
+              - gridcell "3566249.55" [ref=e455]
+              - gridcell "0" [ref=e456]
+              - gridcell "0" [ref=e457]
+              - gridcell "-" [ref=e458]
+              - gridcell "0" [ref=e459]
+              - gridcell "0" [ref=e460]
+              - gridcell "0" [ref=e461]
+              - gridcell "0" [ref=e462]
+              - gridcell "0%" [ref=e463]
+            - row "Fruits asmdasdans Updated Товар сортировки 3 3 2108960 0 0 - 0 0 0 0 0%" [ref=e464]:
+              - gridcell [ref=e465]
+              - gridcell "Fruits asmdasdans Updated" [ref=e466]
+              - gridcell "Товар сортировки 3" [ref=e467]
+              - gridcell "3" [ref=e468]
+              - gridcell "2108960" [ref=e469]
+              - gridcell "0" [ref=e470]
+              - gridcell "0" [ref=e471]
+              - gridcell "-" [ref=e472]
+              - gridcell "0" [ref=e473]
+              - gridcell "0" [ref=e474]
+              - gridcell "0" [ref=e475]
+              - gridcell "0" [ref=e476]
+              - gridcell "0%" [ref=e477]
+            - row "1144 Mars Test 2 4 2002116405 8.11 9 246870086 48.66 81.1 243.3 89.21 7%" [ref=e478]:
+              - gridcell "1144" [ref=e479]
+              - gridcell "Mars" [ref=e480]
+              - gridcell "Test 2" [ref=e481]
+              - gridcell "4" [ref=e482]
+              - gridcell "2002116405" [ref=e483]
+              - gridcell "8.11" [ref=e484]
+              - gridcell "9" [ref=e485]
+              - gridcell "246870086" [ref=e486]
+              - gridcell "48.66" [ref=e487]
+              - gridcell "81.1" [ref=e488]
+              - gridcell "243.3" [ref=e489]
+              - gridcell "89.21" [ref=e490]
+              - gridcell "7%" [ref=e491]
+            - row "1155 Sweets Ferrero Rocher 4 3739374.29 0 0 - 0 0 0 0 0%" [ref=e492]:
+              - gridcell "1155" [ref=e493]
+              - gridcell "Sweets" [ref=e494]
+              - gridcell "Ferrero Rocher" [ref=e495]
+              - gridcell "4" [ref=e496]
+              - gridcell "3739374.29" [ref=e497]
+              - gridcell "0" [ref=e498]
+              - gridcell "0" [ref=e499]
+              - gridcell "-" [ref=e500]
+              - gridcell "0" [ref=e501]
+              - gridcell "0" [ref=e502]
+              - gridcell "0" [ref=e503]
+              - gridcell "0" [ref=e504]
+              - gridcell "0%" [ref=e505]
+            - row "Drinks Напиток шт, объем+вес 4 2003134057 0 0 - 0 0 0 0 0%" [ref=e506]:
+              - gridcell [ref=e507]
+              - gridcell "Drinks" [ref=e508]
+              - gridcell "Напиток шт, объем+вес" [ref=e509]
+              - gridcell "4" [ref=e510]
+              - gridcell "2003134057" [ref=e511]
+              - gridcell "0" [ref=e512]
+              - gridcell "0" [ref=e513]
+              - gridcell "-" [ref=e514]
+              - gridcell "0" [ref=e515]
+              - gridcell "0" [ref=e516]
+              - gridcell "0" [ref=e517]
+              - gridcell "0" [ref=e518]
+              - gridcell "0%" [ref=e519]
+            - row "Fruits asmdasdans Updated 111 4 2009973 0 0 - 0 0 0 0 0%" [ref=e520]:
+              - gridcell [ref=e521]
+              - gridcell "Fruits asmdasdans Updated" [ref=e522]
+              - gridcell "111" [ref=e523]
+              - gridcell "4" [ref=e524]
+              - gridcell "2009973" [ref=e525]
+              - gridcell "0" [ref=e526]
+              - gridcell "0" [ref=e527]
+              - gridcell "-" [ref=e528]
+              - gridcell "0" [ref=e529]
+              - gridcell "0" [ref=e530]
+              - gridcell "0" [ref=e531]
+              - gridcell "0" [ref=e532]
+              - gridcell "0%" [ref=e533]
+            - row "Drinks Lipton, 0.55 длинное название, потом удалить это длинное название 5 2003441639 3 1 667813879 18 30 90 33 0%" [ref=e534]:
+              - gridcell [ref=e535]
+              - gridcell "Drinks" [ref=e536]
+              - gridcell "Lipton, 0.55 длинное название, потом удалить это длинное название" [ref=e537]
+              - gridcell "5" [ref=e538]
+              - gridcell "2003441639" [ref=e539]
+              - gridcell "3" [ref=e540]
+              - gridcell "1" [ref=e541]
+              - gridcell "667813879" [ref=e542]
+              - gridcell "18" [ref=e543]
+              - gridcell "30" [ref=e544]
+              - gridcell "90" [ref=e545]
+              - gridcell "33" [ref=e546]
+              - gridcell "0%" [ref=e547]
+            - row "1128 Drinks Напиток кофейный Nescafe 3в1 Мягкий 14.5г '+/*\" 5 2004844063.25 4 1 501211015 24 40 120 44 0%" [ref=e548]:
+              - gridcell "1128" [ref=e549]
+              - gridcell "Drinks" [ref=e550]
+              - gridcell "Напиток кофейный Nescafe 3в1 Мягкий 14.5г '+/*\"" [ref=e551]
+              - gridcell "5" [ref=e552]
+              - gridcell "2004844063.25" [ref=e553]
+              - gridcell "4" [ref=e554]
+              - gridcell "1" [ref=e555]
+              - gridcell "501211015" [ref=e556]
+              - gridcell "24" [ref=e557]
+              - gridcell "40" [ref=e558]
+              - gridcell "120" [ref=e559]
+              - gridcell "44" [ref=e560]
+              - gridcell "0%" [ref=e561]
+            - row "1130 Конфеты Кофе растворимый Jacobs Monarch 75г 5 2112839202.67 2.5 2 845135681 15 25 75 27.5 2%" [ref=e562]:
+              - gridcell "1130" [ref=e563]
+              - gridcell "Конфеты" [ref=e564]
+              - gridcell "Кофе растворимый Jacobs Monarch 75г" [ref=e565]
+              - gridcell "5" [ref=e566]
+              - gridcell "2112839202.67" [ref=e567]
+              - gridcell "2.5" [ref=e568]
+              - gridcell "2" [ref=e569]
+              - gridcell "845135681" [ref=e570]
+              - gridcell "15" [ref=e571]
+              - gridcell "25" [ref=e572]
+              - gridcell "75" [ref=e573]
+              - gridcell "27.5" [ref=e574]
+              - gridcell "2%" [ref=e575]
+            - row "1143 Mars Test 1 5 2102123426 3.17 6 663130418 19.02 31.7 95.1 34.87 3%" [ref=e576]:
+              - gridcell "1143" [ref=e577]
+              - gridcell "Mars" [ref=e578]
+              - gridcell "Test 1" [ref=e579]
+              - gridcell "5" [ref=e580]
+              - gridcell "2102123426" [ref=e581]
+              - gridcell "3.17" [ref=e582]
+              - gridcell "6" [ref=e583]
+              - gridcell "663130418" [ref=e584]
+              - gridcell "19.02" [ref=e585]
+              - gridcell "31.7" [ref=e586]
+              - gridcell "95.1" [ref=e587]
+              - gridcell "34.87" [ref=e588]
+              - gridcell "3%" [ref=e589]
+            - row "Drinks Напиток шт, кол-во в упак, вес 5 2004096518 0 0 - 0 0 0 0 0%" [ref=e590]:
+              - gridcell [ref=e591]
+              - gridcell "Drinks" [ref=e592]
+              - gridcell "Напиток шт, кол-во в упак, вес" [ref=e593]
+              - gridcell "5" [ref=e594]
+              - gridcell "2004096518" [ref=e595]
+              - gridcell "0" [ref=e596]
+              - gridcell "0" [ref=e597]
+              - gridcell "-" [ref=e598]
+              - gridcell "0" [ref=e599]
+              - gridcell "0" [ref=e600]
+              - gridcell "0" [ref=e601]
+              - gridcell "0" [ref=e602]
+              - gridcell "0%" [ref=e603]
+            - row "Sweets Snickers 5 3647242.15 0 0 - 0 0 0 0 0%" [ref=e604]:
+              - gridcell [ref=e605]
+              - gridcell "Sweets" [ref=e606]
+              - gridcell "Snickers" [ref=e607]
+              - gridcell "5" [ref=e608]
+              - gridcell "3647242.15" [ref=e609]
+              - gridcell "0" [ref=e610]
+              - gridcell "0" [ref=e611]
+              - gridcell "-" [ref=e612]
+              - gridcell "0" [ref=e613]
+              - gridcell "0" [ref=e614]
+              - gridcell "0" [ref=e615]
+              - gridcell "0" [ref=e616]
+              - gridcell "0%" [ref=e617]
+            - row "Fruits asmdasdans Updated 01 5 6100008 0 0 - 0 0 0 0 0%" [ref=e618]:
+              - gridcell [ref=e619]
+              - gridcell "Fruits asmdasdans Updated" [ref=e620]
+              - gridcell "01" [ref=e621]
+              - gridcell "5" [ref=e622]
+              - gridcell "6100008" [ref=e623]
+              - gridcell "0" [ref=e624]
+              - gridcell "0" [ref=e625]
+              - gridcell "-" [ref=e626]
+              - gridcell "0" [ref=e627]
+              - gridcell "0" [ref=e628]
+              - gridcell "0" [ref=e629]
+              - gridcell "0" [ref=e630]
+              - gridcell "0%" [ref=e631]
+            - row "1129 Конфеты Напиток кофейный Nescafe 3в1 Крепкий 14.5г 6 2005599341.38 12.46 5 160963029 74.76 124.6 373.8 137.06 9%" [ref=e632]:
+              - gridcell "1129" [ref=e633]
+              - gridcell "Конфеты" [ref=e634]
+              - gridcell "Напиток кофейный Nescafe 3в1 Крепкий 14.5г" [ref=e635]
+              - gridcell "6" [ref=e636]
+              - gridcell "2005599341.38" [ref=e637]
+              - gridcell "12.46" [ref=e638]
+              - gridcell "5" [ref=e639]
+              - gridcell "160963029" [ref=e640]
+              - gridcell "74.76" [ref=e641]
+              - gridcell "124.6" [ref=e642]
+              - gridcell "373.8" [ref=e643]
+              - gridcell "137.06" [ref=e644]
+              - gridcell "9%" [ref=e645]
+            - row "1134 Mars Напиток кофейный Jacobs Классика 3в1 12г 6 2004984837.25 15 10 133665655 90 150 450 165 12%" [ref=e646]:
+              - gridcell "1134" [ref=e647]
+              - gridcell "Mars" [ref=e648]
+              - gridcell "Напиток кофейный Jacobs Классика 3в1 12г" [ref=e649]
+              - gridcell "6" [ref=e650]
+              - gridcell "2004984837.25" [ref=e651]
+              - gridcell "15" [ref=e652]
+              - gridcell "10" [ref=e653]
+              - gridcell "133665655" [ref=e654]
+              - gridcell "90" [ref=e655]
+              - gridcell "150" [ref=e656]
+              - gridcell "450" [ref=e657]
+              - gridcell "165" [ref=e658]
+              - gridcell "12%" [ref=e659]
+            - row "Drinks Напиток шт, кол-во в упак 6 2004674100.7 0 0 - 0 0 0 0 0%" [ref=e660]:
+              - gridcell [ref=e661]
+              - gridcell "Drinks" [ref=e662]
+              - gridcell "Напиток шт, кол-во в упак" [ref=e663]
+              - gridcell "6" [ref=e664]
+              - gridcell "2004674100.7" [ref=e665]
+              - gridcell "0" [ref=e666]
+              - gridcell "0" [ref=e667]
+              - gridcell "-" [ref=e668]
+              - gridcell "0" [ref=e669]
+              - gridcell "0" [ref=e670]
+              - gridcell "0" [ref=e671]
+              - gridcell "0" [ref=e672]
+              - gridcell "0%" [ref=e673]
+            - row "1132 Конфеты Кофе растворимый Jacobs Monarch 95г 7 2003312474.07 103 1 19449635 618 1030 3090 1133 71%" [ref=e674]:
+              - gridcell "1132" [ref=e675]
+              - gridcell "Конфеты" [ref=e676]
+              - gridcell "Кофе растворимый Jacobs Monarch 95г" [ref=e677]
+              - gridcell "7" [ref=e678]
+              - gridcell "2003312474.07" [ref=e679]
+              - gridcell "103" [ref=e680]
+              - gridcell "1" [ref=e681]
+              - gridcell "19449635" [ref=e682]
+              - gridcell "618" [ref=e683]
+              - gridcell "1030" [ref=e684]
+              - gridcell "3090" [ref=e685]
+              - gridcell "1133" [ref=e686]
+              - gridcell "71%" [ref=e687]
+            - row "1145 Mars Test 3 7 2002123313 7.7 10 260016014 46.2 77 231 84.7 6%" [ref=e688]:
+              - gridcell "1145" [ref=e689]
+              - gridcell "Mars" [ref=e690]
+              - gridcell "Test 3" [ref=e691]
+              - gridcell "7" [ref=e692]
+              - gridcell "2002123313" [ref=e693]
+              - gridcell "7.7" [ref=e694]
+              - gridcell "10" [ref=e695]
+              - gridcell "260016014" [ref=e696]
+              - gridcell "46.2" [ref=e697]
+              - gridcell "77" [ref=e698]
+              - gridcell "231" [ref=e699]
+              - gridcell "84.7" [ref=e700]
+              - gridcell "6%" [ref=e701]
+            - row "Drinks Напиток шт, кол-во в корбк, вес 7 2005328371 0 0 - 0 0 0 0 0%" [ref=e702]:
+              - gridcell [ref=e703]
+              - gridcell "Drinks" [ref=e704]
+              - gridcell "Напиток шт, кол-во в корбк, вес" [ref=e705]
+              - gridcell "7" [ref=e706]
+              - gridcell "2005328371" [ref=e707]
+              - gridcell "0" [ref=e708]
+              - gridcell "0" [ref=e709]
+              - gridcell "-" [ref=e710]
+              - gridcell "0" [ref=e711]
+              - gridcell "0" [ref=e712]
+              - gridcell "0" [ref=e713]
+              - gridcell "0" [ref=e714]
+              - gridcell "0%" [ref=e715]
+            - row "1131 Конфеты Напиток кофейный 3в1 Nescafe классический 14.5г 8 2004637311.74 22.05 2 90913256 132.3 220.5 661.5 242.55 15%" [ref=e716]:
+              - gridcell "1131" [ref=e717]
+              - gridcell "Конфеты" [ref=e718]
+              - gridcell "Напиток кофейный 3в1 Nescafe классический 14.5г" [ref=e719]
+              - gridcell "8" [ref=e720]
+              - gridcell "2004637311.74" [ref=e721]
+              - gridcell "22.05" [ref=e722]
+              - gridcell "2" [ref=e723]
+              - gridcell "90913256" [ref=e724]
+              - gridcell "132.3" [ref=e725]
+              - gridcell "220.5" [ref=e726]
+              - gridcell "661.5" [ref=e727]
+              - gridcell "242.55" [ref=e728]
+              - gridcell "15%" [ref=e729]
+            - row "1150 Mars Test 9 8 2002123126 4 2 500530781 24 40 120 44 3%" [ref=e730]:
+              - gridcell "1150" [ref=e731]
+              - gridcell "Mars" [ref=e732]
+              - gridcell "Test 9" [ref=e733]
+              - gridcell "8" [ref=e734]
+              - gridcell "2002123126" [ref=e735]
+              - gridcell "4" [ref=e736]
+              - gridcell "2" [ref=e737]
+              - gridcell "500530781" [ref=e738]
+              - gridcell "24" [ref=e739]
+              - gridcell "40" [ref=e740]
+              - gridcell "120" [ref=e741]
+              - gridcell "44" [ref=e742]
+              - gridcell "3%" [ref=e743]
+            - row "Drinks Напиток литр, кол-во в упак, вес 8 2005325935.6 0 0 - 0 0 0 0 0%" [ref=e744]:
+              - gridcell [ref=e745]
+              - gridcell "Drinks" [ref=e746]
+              - gridcell "Напиток литр, кол-во в упак, вес" [ref=e747]
+              - gridcell "8" [ref=e748]
+              - gridcell "2005325935.6" [ref=e749]
+              - gridcell "0" [ref=e750]
+              - gridcell "0" [ref=e751]
+              - gridcell "-" [ref=e752]
+              - gridcell "0" [ref=e753]
+              - gridcell "0" [ref=e754]
+              - gridcell "0" [ref=e755]
+              - gridcell "0" [ref=e756]
+              - gridcell "0%" [ref=e757]
+            - row "1139 Mars Кофе молотый Jacobs Monarch Классический 230г 9 2002777955 12 1 166898162 72 120 360 132 10%" [ref=e758]:
+              - gridcell "1139" [ref=e759]
+              - gridcell "Mars" [ref=e760]
+              - gridcell "Кофе молотый Jacobs Monarch Классический 230г" [ref=e761]
+              - gridcell "9" [ref=e762]
+              - gridcell "2002777955" [ref=e763]
+              - gridcell "12" [ref=e764]
+              - gridcell "1" [ref=e765]
+              - gridcell "166898162" [ref=e766]
+              - gridcell "72" [ref=e767]
+              - gridcell "120" [ref=e768]
+              - gridcell "360" [ref=e769]
+              - gridcell "132" [ref=e770]
+              - gridcell "10%" [ref=e771]
+            - row "Drinks Напиток литр и объем 9 2006594686 0 0 - 0 0 0 0 0%" [ref=e772]:
+              - gridcell [ref=e773]
+              - gridcell "Drinks" [ref=e774]
+              - gridcell "Напиток литр и объем" [ref=e775]
+              - gridcell "9" [ref=e776]
+              - gridcell "2006594686" [ref=e777]
+              - gridcell "0" [ref=e778]
+              - gridcell "0" [ref=e779]
+              - gridcell "-" [ref=e780]
+              - gridcell "0" [ref=e781]
+              - gridcell "0" [ref=e782]
+              - gridcell "0" [ref=e783]
+              - gridcell "0" [ref=e784]
+              - gridcell "0%" [ref=e785]
+            - row "1140 Mars Кофе молотый Jardin Colombia Supremo 250г 10 2002778046.75 13 8 154059849 78 130 390 143 10%" [ref=e786]:
+              - gridcell "1140" [ref=e787]
+              - gridcell "Mars" [ref=e788]
+              - gridcell "Кофе молотый Jardin Colombia Supremo 250г" [ref=e789]
+              - gridcell "10" [ref=e790]
+              - gridcell "2002778046.75" [ref=e791]
+              - gridcell "13" [ref=e792]
+              - gridcell "8" [ref=e793]
+              - gridcell "154059849" [ref=e794]
+              - gridcell "78" [ref=e795]
+              - gridcell "130" [ref=e796]
+              - gridcell "390" [ref=e797]
+              - gridcell "143" [ref=e798]
+              - gridcell "10%" [ref=e799]
+            - row "Drinks Напиток литр и кол-во в упак 10 2005236258.7 0 0 - 0 0 0 0 0%" [ref=e800]:
+              - gridcell [ref=e801]
+              - gridcell "Drinks" [ref=e802]
+              - gridcell "Напиток литр и кол-во в упак" [ref=e803]
+              - gridcell "10" [ref=e804]
+              - gridcell "2005236258.7" [ref=e805]
+              - gridcell "0" [ref=e806]
+              - gridcell "0" [ref=e807]
+              - gridcell "-" [ref=e808]
+              - gridcell "0" [ref=e809]
+              - gridcell "0" [ref=e810]
+              - gridcell "0" [ref=e811]
+              - gridcell "0" [ref=e812]
+              - gridcell "0%" [ref=e813]
+            - row "1179 Drinks Sprite pet 1 11 2005569463.89 18 1 111420525 108 180 540 198 0%" [ref=e814]:
+              - gridcell "1179" [ref=e815]
+              - gridcell "Drinks" [ref=e816]
+              - gridcell "Sprite pet 1" [ref=e817]
+              - gridcell "11" [ref=e818]
+              - gridcell "2005569463.89" [ref=e819]
+              - gridcell "18" [ref=e820]
+              - gridcell "1" [ref=e821]
+              - gridcell "111420525" [ref=e822]
+              - gridcell "108" [ref=e823]
+              - gridcell "180" [ref=e824]
+              - gridcell "540" [ref=e825]
+              - gridcell "198" [ref=e826]
+              - gridcell "0%" [ref=e827]
+            - row "1137 Mars Кофе растворимый Ambassador Platinum 190г 11 2002778496.1 6.33 3 316394707 37.98 63.3 189.9 69.63 5%" [ref=e828]:
+              - gridcell "1137" [ref=e829]
+              - gridcell "Mars" [ref=e830]
+              - gridcell "Кофе растворимый Ambassador Platinum 190г" [ref=e831]
+              - gridcell "11" [ref=e832]
+              - gridcell "2002778496.1" [ref=e833]
+              - gridcell "6.33" [ref=e834]
+              - gridcell "3" [ref=e835]
+              - gridcell "316394707" [ref=e836]
+              - gridcell "37.98" [ref=e837]
+              - gridcell "63.3" [ref=e838]
+              - gridcell "189.9" [ref=e839]
+              - gridcell "69.63" [ref=e840]
+              - gridcell "5%" [ref=e841]
+            - row "Drinks Coca-Cola пэт 1 12 4049873935.13 18 1 224992996 108 180 540 198 0%" [ref=e842]:
+              - gridcell [ref=e843]
+              - gridcell "Drinks" [ref=e844]
+              - gridcell "Coca-Cola пэт 1" [ref=e845]
+              - gridcell "12" [ref=e846]
+              - gridcell "4049873935.13" [ref=e847]
+              - gridcell "18" [ref=e848]
+              - gridcell "1" [ref=e849]
+              - gridcell "224992996" [ref=e850]
+              - gridcell "108" [ref=e851]
+              - gridcell "180" [ref=e852]
+              - gridcell "540" [ref=e853]
+              - gridcell "198" [ref=e854]
+              - gridcell "0%" [ref=e855]
+            - row "Drinks Pepsi 0.5 12 2008031915.54 8308.4 5 241686 49850.4 83084 249252 91392.4 97%" [ref=e856]:
+              - gridcell [ref=e857]
+              - gridcell "Drinks" [ref=e858]
+              - gridcell "Pepsi 0.5" [ref=e859]
+              - gridcell "12" [ref=e860]
+              - gridcell "2008031915.54" [ref=e861]
+              - gridcell "8308.4" [ref=e862]
+              - gridcell "5" [ref=e863]
+              - gridcell "241686" [ref=e864]
+              - gridcell "49850.4" [ref=e865]
+              - gridcell "83084" [ref=e866]
+              - gridcell "249252" [ref=e867]
+              - gridcell "91392.4" [ref=e868]
+              - gridcell "97%" [ref=e869]
+            - row "1138 Mars Кофе растворимый Fresco Arabica blend 100г 12 2004771131 8.25 4 243002561 49.5 82.5 247.5 90.75 7%" [ref=e870]:
+              - gridcell "1138" [ref=e871]
+              - gridcell "Mars" [ref=e872]
+              - gridcell "Кофе растворимый Fresco Arabica blend 100г" [ref=e873]
+              - gridcell "12" [ref=e874]
+              - gridcell "2004771131" [ref=e875]
+              - gridcell "8.25" [ref=e876]
+              - gridcell "4" [ref=e877]
+              - gridcell "243002561" [ref=e878]
+              - gridcell "49.5" [ref=e879]
+              - gridcell "82.5" [ref=e880]
+              - gridcell "247.5" [ref=e881]
+              - gridcell "90.75" [ref=e882]
+              - gridcell "7%" [ref=e883]
+            - row "1172 Drinks Fanta жб 0.33, длинное название проверить по задаче 594. Прям сейчас и не секундой позже 13 2004595431.39 30 1 66819847 180 300 900 330 0%" [ref=e884]:
+              - gridcell "1172" [ref=e885]
+              - gridcell "Drinks" [ref=e886]
+              - gridcell "Fanta жб 0.33, длинное название проверить по задаче 594. Прям сейчас и не секундой позже" [ref=e887]
+              - gridcell "13" [ref=e888]
+              - gridcell "2004595431.39" [ref=e889]
+              - gridcell "30" [ref=e890]
+              - gridcell "1" [ref=e891]
+              - gridcell "66819847" [ref=e892]
+              - gridcell "180" [ref=e893]
+              - gridcell "300" [ref=e894]
+              - gridcell "900" [ref=e895]
+              - gridcell "330" [ref=e896]
+              - gridcell "0%" [ref=e897]
+        - status [ref=e898]: 1 - 50 / 185
+        - list [ref=e900]:
+          - listitem [ref=e901]:
+            - link "Пред." [ref=e902]:
+              - /url: "#"
+          - listitem [ref=e903] [cursor=pointer]:
+            - link "1" [ref=e904]:
+              - /url: "#"
+          - listitem [ref=e905] [cursor=pointer]:
+            - link "2" [ref=e906]:
+              - /url: "#"
+          - listitem [ref=e907] [cursor=pointer]:
+            - link "3" [ref=e908]:
+              - /url: "#"
+          - listitem [ref=e909] [cursor=pointer]:
+            - link "4" [ref=e910]:
+              - /url: "#"
+          - listitem [ref=e911] [cursor=pointer]:
+            - link "След." [ref=e912]:
+              - /url: "#"

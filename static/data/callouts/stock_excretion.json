@@ -1,0 +1,15 @@
+{
+  "slug": "stock_excretion",
+  "url": "/stock/excretion",
+  "title": "Write-off / excretion",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 304,
+      "w": 1310,
+      "h": 41,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+[     100ms] [LOG] loading translations for module: orders lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     368ms] [WARNING] [i18n-missing] Missing key "Рейсы" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     368ms] [WARNING] [i18n-missing] Missing key "Фильтр по статусу" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     369ms] [WARNING] [i18n-missing] Missing key "Отмененные" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     369ms] [WARNING] [i18n-missing] Missing key "Выполненные" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     371ms] [WARNING] [i18n-missing] Missing key "Автомобиль" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     371ms] [WARNING] [i18n-missing] Missing key "Курьер" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     378ms] [WARNING] [i18n-missing] Missing key "Карта" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     380ms] [WARNING] [i18n-missing] Missing key "Автомобиль" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     380ms] [WARNING] [i18n-missing] Missing key "Загруженность" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     381ms] [WARNING] [i18n-missing] Missing key "Курьер" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     381ms] [WARNING] [i18n-missing] Missing key "Дата прикрепления" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     384ms] [WARNING] [i18n-missing] Missing key "Режим отображения" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [LOG] rendering datatable... @ http://localhost:8080/orders/view/trips:4818
+[     395ms] [WARNING] [i18n-missing] Missing key "Автомобиль" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     395ms] [WARNING] [i18n-missing] Missing key "Курьер" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     398ms] [WARNING] [i18n-missing] Missing key "Режим отображения" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     419ms] [LOG] loading translations for module: orders lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     449ms] [WARNING] [i18n-missing] Missing key "Отмененные" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     449ms] [WARNING] [i18n-missing] Missing key "Выполненные" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     450ms] [WARNING] [i18n-missing] Missing key "Фильтр по статусу" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     450ms] [WARNING] [i18n-missing] Missing key "Автомобиль" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     450ms] [WARNING] [i18n-missing] Missing key "Курьер" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     453ms] [WARNING] formatDate invalid date: 0000-00-00 @ http://localhost:8080/js/vue/stores/formatter.js?v=1.2:222
+[     453ms] [WARNING] [i18n-missing] Missing key "Готов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     453ms] [WARNING] formatDate invalid date: 0000-00-00 @ http://localhost:8080/js/vue/stores/formatter.js?v=1.2:222
+[     454ms] [WARNING] [i18n-missing] Missing key "Готов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     457ms] [WARNING] formatDate invalid date: 0000-00-00 @ http://localhost:8080/js/vue/stores/formatter.js?v=1.2:222
+[     457ms] [WARNING] [i18n-missing] Missing key "Готов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     457ms] [WARNING] formatDate invalid date: 0000-00-00 @ http://localhost:8080/js/vue/stores/formatter.js?v=1.2:222
+[     457ms] [WARNING] [i18n-missing] Missing key "Готов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41

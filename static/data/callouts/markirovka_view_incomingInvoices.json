@@ -1,0 +1,15 @@
+{
+  "slug": "markirovka_view_incomingInvoices",
+  "url": "/markirovka/view/incomingInvoices",
+  "title": "Markirovka — incoming",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 222,
+      "w": 1592,
+      "h": 80,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

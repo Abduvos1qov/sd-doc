@@ -1,0 +1,15 @@
+{
+  "slug": "dashboard_kpi",
+  "url": "/dashboard/kpi",
+  "title": "KPI dashboard",
+  "callouts": [
+    {
+      "x": 128,
+      "y": 237,
+      "w": 135,
+      "h": 34,
+      "label": "установите план",
+      "kind": "action"
+    }
+  ]
+}

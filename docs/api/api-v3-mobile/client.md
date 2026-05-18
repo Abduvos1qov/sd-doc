@@ -5,235 +5,163 @@ sidebar_position: 1
 
 # api-v3-mobile · `ClientController`
 
-Endpoints for `ClientController` (`protected/modules/api3/controllers/ClientController.php`). 17 action(s).
+Per-action reference for `protected/modules/api3/controllers/ClientController.php` (17 actions). Used primarily by the **agent (ROLE=4) mobile app** for client master, balances, debt and photo management.
 
-### `GET /api3/client/index`
+## Common contract
 
-- **Controller**: `ClientController::index` (`protected/modules/api3/controllers/ClientController.php:87`)
+- **Base URL pattern**: `POST /api3/client/<actionName>` (Yii camel-case mapping).
+- **Auth**: `deviceToken` either as `HTTP_DEVICETOKEN` header or `$_REQUEST['deviceToken']`. Validated via `User::userByDeviceToken($token)` (NO role filter — any role with a matching token authenticates). A few endpoints further check `User.ROLE == 4` (agent) for write paths.
+- **Response envelope**: raw JSON (object or array). Some endpoints return `{ status:'ok'|'error', message, ... }`; others return arrays directly. No global wrapper.
 
-**Request**
+---
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:87](#) directly._
+## actionPending
 
-**Response**
+`GET/POST /api3/client/pending?deviceToken=…&limit=20&offset=0` — paginated list of clients pending registration (created via mobile, awaiting back-office activation).
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ status:'ok'|'error', data:[{name,firm_name,days}], meta:{limit,offset,count}, message? }`.
 
-### `GET /api3/client/addClient`
+**Gotchas**: scope is `ClientPending.CREATE_BY = currentUser`. 401-equivalent `{ status:'error', message:'Invalid deviceToken' }` when token resolution fails.
 
-- **Controller**: `ClientController::addClient` (`protected/modules/api3/controllers/ClientController.php:388`)
+## actionSendNotification
 
-**Request**
+`POST /api3/client/sendNotification` — manual trigger for a Telegram notification.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:388](#) directly._
+**Request** (JSON): `{ data: { type:'pending_clients' } }`.
 
-**Response**
+**Response**: `{ status, message }`.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: when `type=pending_clients`, calls `TelegramReport::notifyPendingClients()`.
 
-### `POST /api3/client/avatar`
+## actionIndex
 
-- **Controller**: `ClientController::avatar` (`protected/modules/api3/controllers/ClientController.php:1933`)
+`GET/POST /api3/client/index?u=merch|...` — route entry for the client list.
 
-**Request**
+**Behaviour**: dispatches to `ClientVersion4()` when `u=merch` (auditor flow), else `ClientVersion5()` (agent flow).
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `base64` | body | _string_ | TBD |
-| `photo` | body | _string_ | TBD |
-| `client_id` | body | _string_ | TBD |
-| `is_main` | body | _string_ | TBD |
-| `id` | body | _string_ | TBD |
+**Response (v4 — merch)** (array): `[{ client_id, dayOfWeeks:[{day,type,position}], tel, firm_name, name, clientCategory, adress, orient, region, city, contact_person, xml_id, form_sob, comment, client_channel, price_type:[id,...], sort, lat, lon, allowConsig, allowKredit, balans:[{summa,symbol}] }]` joined to `VisitingAud` for the auditor's plan.
 
-**Response**
+**Response (v5 — agent)**: same general shape, joined to `Visiting` and `Agent` config. See source from line 2214 onward.
 
-_Response shape not auto-detected — TBD._
+## actionToptrending
 
-### `GET /api3/client/dayTransactions`
+`GET /api3/client/toptrending?clientId=…&from=…&to=…&apiVersion=…` — top + trending products for one client (last 90 days by default).
 
-- **Controller**: `ClientController::dayTransactions` (`protected/modules/api3/controllers/ClientController.php:2068`)
+**Response**: `{ status:'OK', top:[{quantity,name}], trending:[{quantity,name}] }`.
 
-**Request**
+**Gotchas**: `from`/`to` are ms epoch; only orders with `STATUS in (2,3)`; `trending` covers only the most recent ~4 orders.
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `weekTypes` | query | _string_ | TBD |
-| `v` | query | _string_ | TBD |
+## actionSpravochnik
 
-**Response**
+`GET /api3/client/spravochnik?deviceToken=…` — directory bundle for client-creation forms.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ city:[{name,id,regionId,active,order}], clientCategory:[{name,id,active,order}], client_channel:[{name,id}], clientTypes:[{id,name,active,color}], tags:[{id,name,active}] }`.
 
-### `GET /api3/client/debitor`
+## actionAddClient
 
-- **Controller**: `ClientController::debitor` (`protected/modules/api3/controllers/ClientController.php:945`)
+`POST /api3/client/addClient?u=merch|...` — create or update client(s) from the field.
 
-**Request**
+**Request**: large JSON array (`addClientVersion1` for non-merch, `addClientVersion2` for merch). Per client: `{ client_id (mobile UUID), name, firm_name, category, city, channel, typeId, contact_person, orient, address, form_sob, tel, lat, lon, bar_code, comment, visitDays, agentId, photo? (base64), … }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:945](#) directly._
+**Response** (array): `[{ id, customer_id, status, errors? }]` mapping mobile id → server client id.
 
-**Response**
+**Side effects**: writes `Client` (or revives soft-deleted), `Visiting`/`VisitingAud`, `ClientPhoto`. Writes `SyncLog` for deduplication across retries. Clears `Cache::clearCache(['Client','VisitingAud'])`.
 
-_Response shape not auto-detected — TBD._
+**Gotchas**: `u=merch` path also touches `Auditor` association via `VisitingAud`. Failed save → response has `status=0` and `errors=[…]`.
 
-### `POST /api3/client/delete`
+## actionInventory
 
-- **Controller**: `ClientController::delete` (`protected/modules/api3/controllers/ClientController.php:2009`)
+`POST /api3/client/inventory?deviceToken=…` — equipment/inventory items at this agent's clients.
 
-**Request**
+**Response** (array): `[{ id, name, model, serialNo, invNo, type:{id,name}, clientId, dateFrom, dateTo, active, comment, photo:[{id,url}] }]`.
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `photo_id` | body | _string_ | TBD |
+**Gotchas**: filters by `InventoryHistory.CLIENT_ID IN (visiting clients of user.AGENT_ID)` AND `DATE_TO IS NULL OR > NOW()`.
 
-**Response**
+## actionTransactions
 
-_Response shape not auto-detected — TBD._
+`GET /api3/client/transactions?clientId=…&deviceToken=…` — client transaction ledger (last per default order).
 
-### `GET /api3/client/inventory`
+**Response** (array): `[{ date (epoch), dateExpire?, type:int (TRANS_TYPE), typeText:'Заказ'|'Долг'|'Оплата'|'Возврат с полки'|'Обмен', summa, currency, comment, consignment, closed:bool, payed? }]`.
 
-- **Controller**: `ClientController::inventory` (`protected/modules/api3/controllers/ClientController.php:832`)
+**Gotchas**: `ServerSettings::isContragent()` true → `clientId` is mapped to `Client.CONTRAGENT`. Filter is `TRANS_TYPE in (1,2,3,8,9)` AND `TYPE=1`.
 
-**Request**
+## actionDebitor
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:832](#) directly._
+`GET /api3/client/debitor?deviceToken=…&city=…&days=…&trade=…&to=…` — debtor list with filters.
 
-**Response**
+**Response**: `{ result:[{clientId,name,firm_name,balans,dateExpire,detail?:[{payment,balans}]}], filter:{city:[{id,name}], days:[{key,name}]} }`.
 
-_Response shape not auto-detected — TBD._
+**Gotchas**: `days` filter is `Visiting.DAY IN (…)`. `to` is ms epoch (cutoff date). Contragent mode aggregates by `CURRENCY`.
 
-### `GET /api3/client/orderDebt`
+## actionRevise
 
-- **Controller**: `ClientController::orderDebt` (`protected/modules/api3/controllers/ClientController.php:1304`)
+`GET /api3/client/revise?client_id=…&from=…&to=…&trade_id=…&deviceToken=…` — reconciliation act for one client.
 
-**Request**
+**Response**: `{ oborot:{debt,credit}, total:{balans, detail:[{payment,balans}]}, …per-row breakdown… }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:1304](#) directly._
+**Gotchas**: when `params.customRevise` is set and `upload/Revises/<clientId>_revise.txt` exists, that pre-baked file is returned verbatim — bypasses the live computation. `from`/`to` are ms epoch. Contragent mode swaps `client_id` → `CONTRAGENT`.
 
-**Response**
+## actionOrderDebt
 
-_Response shape not auto-detected — TBD._
+`GET /api3/client/orderDebt?deviceToken=…&store=…&currency=…&city=…&to=…&trade=…` — per-client open order debt.
 
-### `GET /api3/client/orders`
+**Response**: `{ result:[{clientId,name,firm_name,order_balans,balans,undistrubuted}], filter:{city, currency, store} }`.
 
-- **Controller**: `ClientController::orders` (`protected/modules/api3/controllers/ClientController.php:1400`)
+**Gotchas**: open debt = `SUM(SUMMA+COMPUTATION) < 0` from `ClientTransaction` (TRANS_TYPE=1, `SUMMA<0`). Filtered to `t.AGENT_ID = user.AGENT_ID`.
 
-**Request**
+## actionOrders
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `client_id` | param | _string_ | TBD |
-| `clientId` | param | _string_ | TBD |
-| `from` | param | _string_ | TBD |
-| `to` | param | _string_ | TBD |
-| `limit` | param | _string_ | TBD |
-| `offset` | param | _string_ | TBD |
+`GET /api3/client/orders?client_id=…&from=…&to=…&limit=200&offset=0` — order list for one client.
 
-**Response**
+**Request**: `deviceToken` via header `HTTP_DEVICETOKEN`; `client_id` (or `clientId`) required; date range up to 62 days.
 
-_Response shape not auto-detected — TBD._
+**Response** (array): `[{ order_id, store_id, bonus, editable, client_id, client_name, date (ms), date_load (ms), manual_discount, payment_type_id, payment_title, price_type_id, type:'order'|'refund'|'replace', discount, summa, comment, agent, agent_name, trade_id, update_at, status, sale_products:[{ category_id, subcategory_id, volume, product_id, product_name, count, pack_quantity, price, discount, total_sum, type:'order'|'bonus'|'replace', bonus_condition? }], return_products:[{…,type:'defect'}], bonus_ids? }]`.
 
-### `GET /api3/client/pending`
+**Gotchas**: 401 if token invalid; 400 if `client_id` missing or range > 62 days. `limit` clamped to [1, 500].
 
-- **Controller**: `ClientController::pending` (`protected/modules/api3/controllers/ClientController.php:8`)
+## actionReviseDebt
 
-**Request**
+`GET /api3/client/reviseDebt?client_id=…&from=…&to=…&deviceToken=…` — debt-only reconciliation slice.
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `deviceToken` | param | _string_ | TBD |
-| `limit` | param | _string_ | TBD |
-| `offset` | param | _string_ | TBD |
+**Response**: similar to `actionRevise` but filtered to debt rows; structure includes per-store + per-currency aggregates. Refer to source line 1771 for exact keys.
 
-**Response**
+## actionAvatar
 
-_Response shape not auto-detected — TBD._
+`POST /api3/client/avatar` (multipart/form-encoded) — upload a client storefront photo.
 
-### `GET /api3/client/revise`
+**Request** (POST form): `client_id`, `photo` (base64 or raw), `base64` (flag), `is_main`, `id` (mobile id).
 
-- **Controller**: `ClientController::revise` (`protected/modules/api3/controllers/ClientController.php:1089`)
+**Response**: `{ id, url, client_id, mobile_id, status:'ok', file_size }` (empty `{}` on dedupe hit).
 
-**Request**
+**Side effects**: writes `/upload/profilPhoto/<clientId>-<microtime>.jpg`; inserts `ClientPhoto`; clears MAIN on siblings when `is_main` or this is the first photo. Works for both `Client` and `ClientPending` (pending clients use ID lookup).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:1089](#) directly._
+## actionDelete
 
-**Response**
+`POST /api3/client/delete?deviceToken=…` — delete a `ClientPhoto`.
 
-_Response shape not auto-detected — TBD._
+**Request**: `photo_id` (POST).
 
-### `GET /api3/client/reviseDebt`
+**Response**: `{ status:'ok' }`.
 
-- **Controller**: `ClientController::reviseDebt` (`protected/modules/api3/controllers/ClientController.php:1771`)
+**Gotchas**: gated to `User.ROLE == 4` (agent). If deleted photo was MAIN=1, the most recent remaining photo is promoted.
 
-**Request**
+## actionSetMain
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:1771](#) directly._
+`POST /api3/client/setMain?deviceToken=…` — promote a photo to MAIN.
 
-**Response**
+**Request**: `photo_id` (POST).
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ status:'ok' }`.
 
-### `GET /api3/client/sendNotification`
+**Gotchas**: gated to `User.ROLE == 4`. Sets `MAIN=0` on all sibling photos.
 
-- **Controller**: `ClientController::sendNotification` (`protected/modules/api3/controllers/ClientController.php:57`)
+## actionDayTransactions
 
-**Request**
+`GET /api3/client/dayTransactions?deviceToken=…` — today's transactions across the agent's clients.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:57](#) directly._
+**Response** (array): `[{ clientId, summa, tradeId, currency, type:int (1=order, 2=refund-ish, 3=uncomplete-payment, 4=replace), time, orderId, date, agentId }]`.
 
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `POST /api3/client/setMain`
-
-- **Controller**: `ClientController::setMain` (`protected/modules/api3/controllers/ClientController.php:2045`)
-
-**Request**
-
-| Name | In | Type | Required |
-|---|---|---|---|
-| `photo_id` | body | _string_ | TBD |
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/client/spravochnik`
-
-- **Controller**: `ClientController::spravochnik` (`protected/modules/api3/controllers/ClientController.php:320`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:320](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/client/toptrending`
-
-- **Controller**: `ClientController::toptrending` (`protected/modules/api3/controllers/ClientController.php:248`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:248](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/client/transactions`
-
-- **Controller**: `ClientController::transactions` (`protected/modules/api3/controllers/ClientController.php:888`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ClientController.php:888](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
+**Gotchas**: today is `date('Y-m-d 00:00:00')` — server timezone. Type mapping in source: TRANS_TYPE=3 → 2; TRANS_TYPE=2 → 4; positive SUMMA → 4. Also pulls uncomplete payments (`PaymentDeliver.TYPE=2 AND CONFIRM=0`) as type=3. Contragent-mode joins `Client.CONTRAGENT`.
 
 ## See also
 

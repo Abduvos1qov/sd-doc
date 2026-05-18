@@ -1,0 +1,4 @@
+[     170ms] [LOG] loading translations for module: team lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     213ms] [LOG] loading translations for module: team lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     216ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/team.json:0
+[     259ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/team.json:0

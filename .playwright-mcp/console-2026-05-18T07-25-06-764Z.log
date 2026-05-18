@@ -1,0 +1,5 @@
+[      95ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/clients/client/clientMap?id=d8_1:0
+[     105ms] [LOG] loading translations for module: main lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     138ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/main.json:0
+[     460ms] [LOG] loading translations for module: main lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     509ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8080/js/translations/ru/main.json:0

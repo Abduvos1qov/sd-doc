@@ -1,0 +1,183 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - text:                                                                                                                                                                             
+    - generic [ref=e102]:
+      - generic [ref=e103]: Rating
+      - generic [ref=e106]:
+        - generic [ref=e108]:
+          - button "Показать всех пользователей" [ref=e109] [cursor=pointer]:
+            - generic [ref=e110]: Показать всех пользователей
+          - text:     
+        - generic [ref=e113]:
+          - button "Пользователи" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115]: Пользователи
+          - text:                                                                                                                                                                                               
+        - generic [ref=e118]:
+          - button "Территория" [ref=e119] [cursor=pointer]:
+            - generic [ref=e120]: Территория
+          - text:                                         
+        - generic [ref=e123]:
+          - button "Категория" [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]: Категория
+          - text:            
+        - generic [ref=e127]:
+          - generic [ref=e128] [cursor=pointer]:
+            - generic [ref=e129]: 
+            - text: май 1 - май 18
+            - generic [ref=e130]: 
+          - button "Фильтр" [ref=e131] [cursor=pointer]
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - generic [ref=e135]: По клиентам
+          - generic [ref=e137]:
+            - generic [ref=e138]:
+              - button "По 20" [ref=e139] [cursor=pointer]
+              - button " Показ./Скр. столбцы" [ref=e140] [cursor=pointer]:
+                - generic [ref=e142]:  Показ./Скр. столбцы
+              - button " Excel" [ref=e143] [cursor=pointer]:
+                - generic [ref=e145]:  Excel
+            - generic [ref=e147]:
+              - text: "Поиск:"
+              - searchbox "Поиск:" [ref=e148]
+            - grid [ref=e149]:
+              - rowgroup [ref=e150]:
+                - 'row "Дата: активировать для сортировки столбцы по возрастанию ИД ТТ: активировать для сортировки столбцы по возрастанию ТТ: активировать для сортировки столбцы по возрастанию Тел: активировать для сортировки столбцы по возрастанию Пользователь: активировать для сортировки столбцы по возрастанию Территория: активировать для сортировки столбцы по возрастанию Количество фото: активировать для сортировки столбцы по возрастанию Рейтинг : активировать для сортировки столбцы по возрастанию Оценка: активировать для сортировки столбцы по возрастанию" [ref=e151]':
+                  - 'columnheader "Дата: активировать для сортировки столбцы по возрастанию" [ref=e152] [cursor=pointer]': Дата
+                  - 'columnheader "ИД ТТ: активировать для сортировки столбцы по возрастанию" [ref=e153] [cursor=pointer]': ИД ТТ
+                  - 'columnheader "ТТ: активировать для сортировки столбцы по возрастанию" [ref=e154] [cursor=pointer]': ТТ
+                  - 'columnheader "Тел: активировать для сортировки столбцы по возрастанию" [ref=e155] [cursor=pointer]': Тел
+                  - 'columnheader "Пользователь: активировать для сортировки столбцы по возрастанию" [ref=e156] [cursor=pointer]': Пользователь
+                  - 'columnheader "Территория: активировать для сортировки столбцы по возрастанию" [ref=e157] [cursor=pointer]': Территория
+                  - 'columnheader "Количество фото: активировать для сортировки столбцы по возрастанию" [ref=e158] [cursor=pointer]': Количество фото
+                  - 'columnheader "Рейтинг : активировать для сортировки столбцы по возрастанию" [ref=e159] [cursor=pointer]': Рейтинг
+                  - 'columnheader "Оценка: активировать для сортировки столбцы по возрастанию" [ref=e160] [cursor=pointer]': Оценка
+              - rowgroup [ref=e161]:
+                - row "В таблице отсутствуют данные" [ref=e162]:
+                  - gridcell "В таблице отсутствуют данные" [ref=e163]
+            - status [ref=e164]: 0 - 0 / 0
+            - list [ref=e166]:
+              - listitem [ref=e167]:
+                - link "Пред." [ref=e168]:
+                  - /url: "#"
+              - listitem [ref=e169]:
+                - link "След." [ref=e170]:
+                  - /url: "#"
+        - generic [ref=e171]:
+          - generic [ref=e173]: По пользователю
+          - generic [ref=e175]:
+            - generic [ref=e176]:
+              - button "По 20" [ref=e177] [cursor=pointer]
+              - button " Показ./Скр. столбцы" [ref=e178] [cursor=pointer]:
+                - generic [ref=e180]:  Показ./Скр. столбцы
+              - button " Excel" [ref=e181] [cursor=pointer]:
+                - generic [ref=e183]:  Excel
+            - generic [ref=e185]:
+              - text: "Поиск:"
+              - searchbox "Поиск:" [ref=e186]
+            - grid [ref=e187]:
+              - rowgroup [ref=e188]:
+                - 'row "Пользователь: активировать для сортировки столбцы по возрастанию Количество ТТ: активировать для сортировки столбцы по возрастанию Нет оценки: активировать для сортировки столбцы по возрастанию 1: активировать для сортировки столбцы по возрастанию 2: активировать для сортировки столбцы по возрастанию 3: активировать для сортировки столбцы по возрастанию 4: активировать для сортировки столбцы по возрастанию 5: активировать для сортировки столбцы по возрастанию" [ref=e189]':
+                  - 'columnheader "Пользователь: активировать для сортировки столбцы по возрастанию" [ref=e190] [cursor=pointer]': Пользователь
+                  - 'columnheader "Количество ТТ: активировать для сортировки столбцы по возрастанию" [ref=e191] [cursor=pointer]': Количество ТТ
+                  - 'columnheader "Нет оценки: активировать для сортировки столбцы по возрастанию" [ref=e192] [cursor=pointer]': Нет оценки
+                  - 'columnheader "1: активировать для сортировки столбцы по возрастанию" [ref=e193] [cursor=pointer]': "1"
+                  - 'columnheader "2: активировать для сортировки столбцы по возрастанию" [ref=e194] [cursor=pointer]': "2"
+                  - 'columnheader "3: активировать для сортировки столбцы по возрастанию" [ref=e195] [cursor=pointer]': "3"
+                  - 'columnheader "4: активировать для сортировки столбцы по возрастанию" [ref=e196] [cursor=pointer]': "4"
+                  - 'columnheader "5: активировать для сортировки столбцы по возрастанию" [ref=e197] [cursor=pointer]': "5"
+              - rowgroup:
+                - row
+            - status [ref=e198]: 0 - 0 / 0
+            - list [ref=e200]:
+              - listitem [ref=e201]:
+                - link "Пред." [ref=e202]:
+                  - /url: "#"
+              - listitem [ref=e203]:
+                - link "След." [ref=e204]:
+                  - /url: "#"
+  - text:    

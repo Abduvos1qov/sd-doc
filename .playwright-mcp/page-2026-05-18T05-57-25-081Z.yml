@@ -1,0 +1,152 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - table [ref=e106]:
+        - rowgroup [ref=e107]:
+          - row "Агент Причина отказа Категории клиентов Город  май 18 - май 18  Фильтр" [ref=e108]:
+            - cell "Агент" [ref=e109]:
+              - generic [ref=e110]:
+                - button "Агент" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e112]: Агент
+                - text:                             
+            - cell "Причина отказа" [ref=e114]:
+              - generic [ref=e115]:
+                - button "Причина отказа" [ref=e116] [cursor=pointer]:
+                  - generic [ref=e117]: Причина отказа
+                - text:                 
+            - cell "Категории клиентов" [ref=e119]:
+              - generic [ref=e120]:
+                - button "Категории клиентов" [ref=e121] [cursor=pointer]:
+                  - generic [ref=e122]: Категории клиентов
+                - text:                
+            - cell "Город" [ref=e124]:
+              - generic [ref=e125]:
+                - button "Город" [ref=e126] [cursor=pointer]:
+                  - generic [ref=e127]: Город
+                - text:                                         
+            - cell " май 18 - май 18 " [ref=e129]:
+              - generic [ref=e130] [cursor=pointer]:
+                - generic [ref=e131]: 
+                - text: май 18 - май 18
+                - generic [ref=e132]: 
+            - cell "Фильтр" [ref=e133]:
+              - button "Фильтр" [ref=e134] [cursor=pointer]
+      - generic [ref=e137]:
+        - generic [ref=e138]:
+          - link "По 50" [ref=e139] [cursor=pointer]:
+            - /url: "#"
+          - link "Показ./Скр. столбцы" [ref=e140] [cursor=pointer]:
+            - /url: "#"
+          - link "Excel" [ref=e141] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=e143]:
+          - text: "Быстрый поиск:"
+          - searchbox "Быстрый поиск:" [ref=e144]
+        - grid [ref=e145]:
+          - rowgroup [ref=e146]:
+            - 'row "№ Дата: активировать для сортировки столбцы по возрастанию Клиент: активировать для сортировки столбцы по возрастанию Причина отказа: активировать для сортировки столбцы по возрастанию Агент: активировать для сортировки столбцы по возрастанию Территория: активировать для сортировки столбцы по возрастанию Комментарий: активировать для сортировки столбцы по возрастанию Дата создания записи: активировать для сортировки столбцы по возрастанию" [ref=e147]':
+              - columnheader "№" [ref=e148]
+              - 'columnheader "Дата: активировать для сортировки столбцы по возрастанию" [ref=e149] [cursor=pointer]': Дата
+              - 'columnheader "Клиент: активировать для сортировки столбцы по возрастанию" [ref=e150] [cursor=pointer]': Клиент
+              - 'columnheader "Причина отказа: активировать для сортировки столбцы по возрастанию" [ref=e151] [cursor=pointer]': Причина отказа
+              - 'columnheader "Агент: активировать для сортировки столбцы по возрастанию" [ref=e152] [cursor=pointer]': Агент
+              - 'columnheader "Территория: активировать для сортировки столбцы по возрастанию" [ref=e153] [cursor=pointer]': Территория
+              - 'columnheader "Комментарий: активировать для сортировки столбцы по возрастанию" [ref=e154] [cursor=pointer]': Комментарий
+              - 'columnheader "Дата создания записи: активировать для сортировки столбцы по возрастанию" [ref=e155] [cursor=pointer]': Дата создания записи
+          - rowgroup [ref=e156]:
+            - row "В таблице отсутствуют данные" [ref=e157]:
+              - gridcell "В таблице отсутствуют данные" [ref=e158]
+        - status [ref=e159]: 0 - 0 / 0
+        - list [ref=e161]:
+          - listitem [ref=e162]:
+            - link "Пред." [ref=e163]:
+              - /url: "#"
+          - listitem [ref=e164]:
+            - link "След." [ref=e165]:
+              - /url: "#"
+  - text:   

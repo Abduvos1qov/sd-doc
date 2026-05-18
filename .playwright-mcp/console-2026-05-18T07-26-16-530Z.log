@@ -1,0 +1,3 @@
+[     108ms] [LOG] loading translations for module: inventory lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     257ms] [LOG] rendering datatable... @ http://localhost:8080/inventory/list:4970
+[     280ms] [LOG] loading translations for module: inventory lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34

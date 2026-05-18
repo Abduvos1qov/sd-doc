@@ -5,415 +5,316 @@ sidebar_position: 1
 
 # api-v3-mobile · `ExpeditorController`
 
-Endpoints for `ExpeditorController` (`protected/modules/api3/controllers/ExpeditorController.php`). 33 action(s).
+Per-action reference for `protected/modules/api3/controllers/ExpeditorController.php` (33 actions). Used by the **expeditor (driver/courier) mobile app** for load → deliver → return → payment flows.
 
-### `GET /api3/expeditor/akt`
+## Common contract
 
-- **Controller**: `ExpeditorController::akt` (`protected/modules/api3/controllers/ExpeditorController.php:92`)
+- **Base URL pattern**: `POST /api3/expeditor/<actionName>` (Yii camel-case mapping; `actionPostOrder` → `/api3/expeditor/postOrder`). Body is JSON via `php://input`; some legacy endpoints also read `$_REQUEST` / `$_POST`.
+- **Auth**: HTTP header `deviceToken: <token>` (read from `$_SERVER['HTTP_DEVICETOKEN']`; some endpoints fall back to `$_REQUEST['deviceToken']`). The controller calls `User::userByDeviceToken($token, 10)` — token must match a row where `ROLE=10` (Ekspeditor). After lookup the controller starts a Yii session via `UserIdentity`.
+- **No envelope** — responses are raw JSON (array or object), not wrapped with `success`/`httpStatus`. Errors are signalled by HTTP status (401/402/429) or by `status`/`ok` keys in the body.
+- **License gate**: many actions check `user->PAY != 1` or `hasSystemActive(4)` and 401/402 if expired.
 
-**Request**
+---
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:92](#) directly._
+## actionLogin
 
-**Response**
+`POST /api3/expeditor/login` — only public endpoint.
 
-_Response shape not auto-detected — TBD._
+**Request**: `login`, `password`, `deviceToken` (can also come from `HTTP_DEVICETOKEN` header or `$_REQUEST`).
 
-### `GET /api3/expeditor/bonusList`
+**Response**: `{ success, fio, user_id, role, support, tg_support }` or `{ success:false, error }`.
 
-- **Controller**: `ExpeditorController::bonusList` (`protected/modules/api3/controllers/ExpeditorController.php:2422`)
+**Side effects**: appends `deviceToken` to `User.DEVICE_TOKEN` (rolling 4-token window).
 
-**Request**
+**Gotchas**: only `ROLE=10`. Fails for `PAY=0`, expired license, bad credentials, or empty token.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:2422](#) directly._
+## actionAkt
 
-**Response**
+`POST /api3/expeditor/akt` — client reconciliation act (mutual settlement).
 
-_Response shape not auto-detected — TBD._
+**Request**: `clientId`, optional `dateFrom`, `dateTo`, `tradeId`.
 
-### `GET /api3/expeditor/calculateBonus`
+**Response**: `{ start:{debt,credit,dateFrom}, transactions:[{date,type,paymentId,tradeName,comment,debt|credit}], rev:{debt,credit}, total:{debt,credit} }`.
 
-- **Controller**: `ExpeditorController::calculateBonus` (`protected/modules/api3/controllers/ExpeditorController.php:1028`)
+**Gotchas**: when `ServerSettings::isContragent()` is true, `clientId` is mapped to `Client.CONTRAGENT` before the reconciliation call.
 
-**Request**
+## actionPostOrder
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:1028](#) directly._
+`POST /api3/expeditor/postOrder` — the central delivery sync. Posts the result of an expedited order (DONE / partial / REJECT).
 
-**Response**
+**Request** (JSON array): each item `{ id, orderId, clientId, status:"DONE"|"REJECT", dateDelivered (ms), consignation, consignationDate, discountType:"manual"|"auto", postProductList:[{productId,soldCount,price,orderType?}], bonusProductList, isBonusCalculated, payment:[{amount,...}], note_id, comment, deviceInfo:{latitude,longitude,batteryLevel,carrierName,cellularLevel,networkType,networkStatus,gpsStatus,device} }`.
 
-_Response shape not auto-detected — TBD._
+**Response** (array): per order `{ id, orderId, clientId, status, ok, message?, lastOperation? }`.
 
-### `GET /api3/expeditor/calculateDiscount`
+**Side effects** — heavy. Per order:
+- Validates `Order.STATUS=2` and `EXPEDITOR=user.AGENT_ID`.
+- Sets `Order.STATUS=3` (delivered) or `4` (rejected); updates `Order.SUMMA`, `DISCOUNT`, `COUNT`, `DEFECT`, `HAS_PAID`, `PAID_AMOUNT`, `CONSIGNMENT`, `CONSIG_DATE`, `DATE_DELIVERED`, `DATE_STATUS`.
+- For TYPE=1 (order): adjusts `OrderDetail` per product (creates new rows for items not in original); recalculates manual/auto discounts via `Skidka::findSkidka`/`findManualSkidka`; recreates `BonusOrderDetail` when `isBonusCalculated`.
+- For TYPE=2 (defect/return): adjusts `OrderDefectDetail`.
+- For TYPE=3 (replace): pulls both `OrderReplaceDetail` + `OrderDefectDetail`.
+- Calls `StoreDetail::exchange_expeditor` to move stock between order store and `Expeditor.DEFECT_STORE`.
+- Writes `SyncLog` with `STATUS='expOrderWait' / 'expOrderSuccess'` for offline retry-dedupe (TTL ~120s).
+- Sends Telegram order-change report.
+- Calls `expeditorLaodConfirm` REST when `Yii::app()->params['expeditorLoadNeo']['api']` set.
+- Records visit via private `setVisit()` (Visit + GpsAdt rows).
 
-- **Controller**: `ExpeditorController::calculateDiscount` (`protected/modules/api3/controllers/ExpeditorController.php:3784`)
+**Gotchas**: dedupe is **per-deviceToken + day + mobileOrderId** in `SyncLog`. Concurrent retries within 120s sleep+die. Status codes: `1`=ok, `0`=order not found, `2`=server-side modified, `3`=status changed. Client `d0_0` is the "on-board" pseudo-client (TYPE=4).
 
-**Request**
+## actionCalculateBonus
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3784](#) directly._
+`POST /api3/expeditor/calculateBonus` — recalculates which bonus rule + quantity to apply for a given delivered basket.
 
-**Response**
+**Request**: `{ order_products:[{product_id,delivered_count,price}], bonus_products:[{bonus_id,max_count}] }`.
 
-_Response shape not auto-detected — TBD._
+**Response** (array): `[{ bonusId, newBonusId, bonusQuantity, detail:[{bonus,productId}] }]`.
 
-### `GET /api3/expeditor/client`
+**Gotchas**: uses `BonusCalculator::getBonusExpeditor`. Handles BOGO (`bogo` flag) vs regular bonuses differently — BOGO returns per-product splits; regular splits the total quantity across `Bonus.PRODUCT` CSV (random distribution via `splitBonusByProducts`).
 
-- **Controller**: `ExpeditorController::client` (`protected/modules/api3/controllers/ExpeditorController.php:1401`)
+## actionPostPayment
 
-**Request**
+`POST /api3/expeditor/postPayment` — record cash/non-cash payments collected on delivery.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:1401](#) directly._
+**Request** (JSON array): `[{ id, uniqueId, clientId, summa, currency, tradeId, comment, orderId?, date (ms), ... }]`.
 
-**Response**
+**Response** (array): `[{ id, clientId, status, ok, message? }]`.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: writes `PaymentDeliver`, calls cashbox flow (`Cashbox` from expeditor config), updates client balance.
 
-### `GET /api3/expeditor/clientConfig`
+**Gotchas**: dedupes by `(USER_ID, uniqueId)` to prevent duplicates from offline retries.
 
-- **Controller**: `ExpeditorController::clientConfig` (`protected/modules/api3/controllers/ExpeditorController.php:2029`)
+## actionClient
 
-**Request**
+`POST /api3/expeditor/client` — clients with an order or visit today (legacy single-page).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:2029](#) directly._
+**Response** (array): `[{ client_id, dayOfWeeks, tel, firmName, name, clientCategory, adress, orient, city, contactPerson, formSob, comment, sort, lat, lon, qrCode, allowConsig, allowKredit, balansTotal, dateExp, hasOrder, photo, balans:[{summa,paymentType}], visits:[{agentId,day}], agents:[], images:[], photo_avatar }]`.
 
-**Response**
+## actionClientNew
 
-_Response shape not auto-detected — TBD._
+`POST /api3/expeditor/clientNew` — newer client list (extra fields).
 
-### `GET /api3/expeditor/clientIds`
+**Response**: same shape as `client` with extensions per source.
 
-- **Controller**: `ExpeditorController::clientIds` (`protected/modules/api3/controllers/ExpeditorController.php:2083`)
+## actionClientOne
 
-**Request**
+`POST /api3/expeditor/clientOne` — paginated client sync, supports incremental sync.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:2083](#) directly._
+**Request**: `{ lastSyncTime (ms), page, limit }` (defaults page=1, limit=50).
 
-**Response**
+**Response**: `{ page, limit, total, current, time, date, date2, items:[{ client_id, dayOfWeeks, tel, phones:[], firmName, name, clientCategory, adress, orient, city, class, contactPerson, formSob, comment, lat, lon, qrCode, allowConsig, allowKredit, balansTotal, dateExp, hasOrder, balans:[{summa,paymentType,tradeId}], initialBalance, visits, agents, images, photo_avatar }] }`.
 
-_Response shape not auto-detected — TBD._
+**Gotchas**: `lastSyncTime` is interpreted as `lastSyncTime/1000 - 3600` (1-hour overlap window). When `ServerSettings::isContragent()` true, balance is aggregated per contragent and propagated to all linked clients. `config.options.trade` filters which `STORE_ID` (trade direction) balances are returned.
 
-### `GET /api3/expeditor/clientNew`
+## actionClientConfig
 
-- **Controller**: `ExpeditorController::clientNew` (`protected/modules/api3/controllers/ExpeditorController.php:1564`)
+`POST /api3/expeditor/clientConfig` — per-client config (consignment period).
 
-**Request**
+**Response**: `{ columns:['client_id','consignment_period'], data:[[clientId,days],…] }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:1564](#) directly._
+## actionClientIds
 
-**Response**
+`POST /api3/expeditor/clientIds` — bare client ID list (used to detect deletions client-side).
 
-_Response shape not auto-detected — TBD._
+**Response** (array): `[{ clientId }]`.
 
-### `GET /api3/expeditor/clientOne`
+## actionSpravochnik
 
-- **Controller**: `ExpeditorController::clientOne` (`protected/modules/api3/controllers/ExpeditorController.php:1776`)
+`POST /api3/expeditor/spravochnik` — directory bundle (only entities referenced by today's orders).
 
-**Request**
+**Response**: `{ paymentType:[{id,name,title,active,getPayment}], priceType:[{id,paymentTypeId,name,active,products:[{productId,price}]}], clientCategory, city, class, product:[{id,name,categoryId,subCategoryId,volume,packQuantity,photo,active}], productCategory, agent:[{id,name,active,phone_number}], trade, productSubCategory }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:1776](#) directly._
+**Gotchas**: `product` list is filtered to PIDs referenced in today's `Order` + `BonusOrderDetail` + `OrderDefectDetail` + `OrderReplaceDetail`. `trade` is filtered by `Expeditor.config.options.trade`.
 
-**Response**
+## actionConfig
 
-_Response shape not auto-detected — TBD._
+`GET/POST /api3/expeditor/config` — expeditor feature flags + GPS config + server time.
 
-### `GET /api3/expeditor/clientTara`
+**Request**: optional `version=v2`, `deviceModel`, `appVersion` (last two recorded to `Expeditor` row).
 
-- **Controller**: `ExpeditorController::clientTara` (`protected/modules/api3/controllers/ExpeditorController.php:4850`)
+**Response** (v2): full `Expeditor::getConfigForApp()` output plus `server:{time,date}`, `phoneNumber`, `features:['labelcode',...]`, `options.currencies` (auto-filled from active `Currency` if empty).
 
-**Request**
+**Response** (legacy/v1): `{ paymentByOrder, payment, options, order, server, gps:{minBatteryLevel,alwaysOn,tracking,interval,minDistance,accuracy}, features }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:4850](#) directly._
+**Side effects**: updates `Expeditor.DEVICE_MODEL`, `APP_VERSION`, `LAST_SYNC_TIME`.
 
-**Response**
+**Gotchas**: 401/402 on license expiry depending on `version`. 401 if expeditor row missing.
 
-_Response shape not auto-detected — TBD._
+## actionBonusList
 
-### `GET /api3/expeditor/config`
+`POST /api3/expeditor/bonusList` — bonus rules referenced by today's orders.
 
-- **Controller**: `ExpeditorController::config` (`protected/modules/api3/controllers/ExpeditorController.php:2309`)
+**Request**: optional `day` (date string).
 
-**Request**
+**Response** (array): `[{ bonusId, name, products:string[]|null }]`.
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `version` | query | _string_ | TBD |
+## actionOrder
 
-**Response**
+`POST /api3/expeditor/order` — today's loaded orders for this expeditor (active trip).
 
-_Response shape not auto-detected — TBD._
+**Request**: optional `day`.
 
-### `GET /api3/expeditor/debtsOnClient`
+**Response** (array): each order `{ order_id, store_id, bonus, editable, clientId, date (ms), dateLoad (ms), manualDiscount, paymentTypeId, paymentTitle, priceTypeId, type:"order"|"refund"|"replace", discount, summa, consignment, consignmentDate, comment, note_id, agent, tradeId, updateAt, urgent, products:[…] (filled later) }`.
 
-- **Controller**: `ExpeditorController::debtsOnClient` (`protected/modules/api3/controllers/ExpeditorController.php:4348`)
+**Gotchas**: filtered to `Order.STATUS=2 AND EXPEDITOR=current` for the day; further restricted to the lowest `TRIP_NUMBER` via private `findActualTrip` so the app only loads one trip at a time. `editable=false` when `TYPE != 1`.
 
-**Request**
+## actionOrderList
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:4348](#) directly._
+`POST /api3/expeditor/orderList` — broader order list (history + status snake_case keys, used by newer UI).
 
-**Response**
+**Request**: `from`, `to` (date strings, default today).
 
-_Response shape not auto-detected — TBD._
+**Response** (array): `[{ order_id, store_id, bonus, client_id, client_name, date, date_load, manual_discount, payment_type_id, payment_title, price_type_id, type, discount, summa, comment, agent, agent_name, trade_id, update_at, status, sale_products:[{ category_id, subcategory_id, volume, product_id, product_name, count, pack_quantity, price, discount, total_sum, type:"order"|"bonus"|"replace", bonus_condition? }], return_products:[{…,type:"defect"}], bonus_ids? }]`.
 
-### `GET /api3/expeditor/debtsOnOrder`
+**Gotchas**: empty array when `user` not found by token (no error). No trip filter (unlike `actionOrder`).
 
-- **Controller**: `ExpeditorController::debtsOnOrder` (`protected/modules/api3/controllers/ExpeditorController.php:4429`)
+## actionGps
 
-**Request**
+`POST /api3/expeditor/gps` — batch background GPS pings.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:4429](#) directly._
+**Request** (JSON array): `[{ id, timestamp, latitude, longitude, batteryLevel, carrierName, cellularLevel, networkType, networkStatus, gpsStatus, deviceName, checkCurrentLocation? }]`.
 
-**Response**
+**Response** (array): `[{ id, status:bool }]`.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: writes `GpsAdt` (TYPE='track') per ping; persists `webroot/log/gpsExp/<USER_ID>.json` with the last ping.
 
-### `GET /api3/expeditor/getOrderNotes`
+**Gotchas**: rate-limited via `checkLatestQueryTime` — single-ping bodies sent within 10s of the previous one return `429`. Multi-ping bodies bypass throttle. `checkCurrentLocation=true` also bypasses.
 
-- **Controller**: `ExpeditorController::getOrderNotes` (`protected/modules/api3/controllers/ExpeditorController.php:5036`)
+## actionTransactions
 
-**Request**
+`GET /api3/expeditor/transactions?clientId=…` — last 20 client transactions.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:5036](#) directly._
+**Response**: array of transactions (see source — wrapper around `Report::getSpravochnikResult('ClientTransaction')` for `TYPE=1`, `TRANS_TYPE in (1,2,3)`).
 
-**Response**
+## actionReasons
 
-_Response shape not auto-detected — TBD._
+`POST /api3/expeditor/reasons` — RejectDefect reasons.
 
-### `GET /api3/expeditor/gps`
+**Response** (array): `[{ id, name, active }]`. If empty table, returns a single fallback `[{id:0, name:'Магазин закрыт', active:'Y'}]`.
 
-- **Controller**: `ExpeditorController::gps` (`protected/modules/api3/controllers/ExpeditorController.php:3127`)
+## actionPostClient
 
-**Request**
+`POST /api3/expeditor/postClient` — update a client's coordinates from the field.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3127](#) directly._
+**Request** (JSON): `{ ClientId, lat, lon }`.
 
-**Response**
+**Response**: `{ ClientId, status:true }`.
 
-_Response shape not auto-detected — TBD._
+## actionHistory
 
-### `GET /api3/expeditor/history`
+`GET /api3/expeditor/history?clientId=…&from=…&to=…` — client order history.
 
-- **Controller**: `ExpeditorController::history` (`protected/modules/api3/controllers/ExpeditorController.php:3334`)
+**Response** (array): `[{ client_id, message, created_at (ms), price_type_id, paymentType:{currency_title,price_type_id,name}, syncTimestamp, draft, isCustomerRejected, syncErrors, type:'order', consignment, status, totalPrice, totalItems, products:[{productId,productName,categoryId,categoryName,totalItems,totalPrice}] }]`.
 
-**Request**
+**Gotchas**: default range is the last 90 days. `from`/`to` are seconds-epoch when provided (note: in ms divided by 1000 inside).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3334](#) directly._
+## actionToptrending
 
-**Response**
+`GET /api3/expeditor/toptrending?clientId=…&from=…&to=…` — top + trending products for a client.
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ status, top:[{quantity,name}], trending:[{quantity,name}] }`.
 
-### `GET /api3/expeditor/inventory`
+**Gotchas**: only orders with `STATUS in (2,3)`. `trending` is the last ~4 orders only.
 
-- **Controller**: `ExpeditorController::inventory` (`protected/modules/api3/controllers/ExpeditorController.php:3575`)
+## actionSetPhoto
 
-**Request**
+`POST /api3/expeditor/setPhoto` — upload a client photo-report image.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3575](#) directly._
+**Request** (POST form): `customerId`, `categoryId`, `createdAt` (ms), `photo` (raw or base64), `base64` (flag).
 
-**Response**
+**Response** (array): `[{ createAt, status:'ok'|'fail', url, prId, messages?:{uz,ru,en} }]`.
 
-_Response shape not auto-detected — TBD._
+**Side effects**: writes `/upload/photo/<YYYYMM>/img-<customerId>-<createdAt>.jpg` (compresses >1.5MB); inserts `PhotoReport`; sends `TelegramReport::expeditorPhotoReport`.
 
-### `POST /api3/expeditor/login`
+## actionInventory
 
-- **Controller**: `ExpeditorController::login` (`protected/modules/api3/controllers/ExpeditorController.php:13`)
+`POST /api3/expeditor/inventory` — inventory items at this expeditor's clients.
 
-**Request**
+**Response** (array): `[{ id, name, model, serialNo, invNo, type:{id,name}, clientId, dateFrom, dateTo, active, comment, photo:[{id,url}] }]`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:13](#) directly._
+## actionPendingOrders
 
-**Response**
+`POST /api3/expeditor/pendingOrders` — orders loaded but not delivered within window.
 
-_Response shape not auto-detected — TBD._
+**Request**: `{ fromDate, toDate, territories:[CITY_ID] }` (default: last 4 days, configurable via `params.expeditorPendingOrderDays`).
 
-### `GET /api3/expeditor/onBoard`
+**Response**: `{ status:bool, orders:{ columns:['id','order_id','client','agent','summa','date','date_load','type','currency'], data:[[…]] } }`.
 
-- **Controller**: `ExpeditorController::onBoard` (`protected/modules/api3/controllers/ExpeditorController.php:3832`)
+## actionOrderUpdateDateLoad
 
-**Request**
+`POST /api3/expeditor/orderUpdateDateLoad` — bump `DATE_LOAD` to today 09:00 for given order ids.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3832](#) directly._
+**Request** (JSON array): `[orderId, orderId, …]`.
 
-**Response**
+**Response**: `{ status:bool, error?:[{key,text}] }` (localized error messages).
 
-_Response shape not auto-detected — TBD._
+## actionCalculateDiscount
 
-### `GET /api3/expeditor/order`
+`POST /api3/expeditor/calculateDiscount` — recalculate discount for a modified order on the fly.
 
-- **Controller**: `ExpeditorController::order` (`protected/modules/api3/controllers/ExpeditorController.php:2464`)
+**Request** (JSON): `{ orderId, date, priceTypeId, agent, clientId, postProductList:[{productId,soldCount,price}] }`.
 
-**Request**
+**Response**: `{ discount:[{productId,totalDiscount,detail:[…]}] }` (or `{status:false,error:[{key,text}]}`).
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:2464](#) directly._
+**Side effects**: pure compute via `Skidka::findSkidkaMobile`.
 
-**Response**
+## actionOnBoard
 
-_Response shape not auto-detected — TBD._
+`POST /api3/expeditor/onBoard` — products currently on the truck (left over after deliveries).
 
-### `GET /api3/expeditor/orderList`
+**Response** (array): `[{ productId, name, price, volume, tradeId, categoryId, packQuantity, subCategoryId, count }]`.
 
-- **Controller**: `ExpeditorController::orderList` (`protected/modules/api3/controllers/ExpeditorController.php:2713`)
+**Gotchas**: aggregates `Order.STATUS in (3,4)` for the day. `STATUS=3` (delivered) counts `OrderDetail.DEFECT`; `STATUS=4` (rejected) counts `DEFECT+COUNT`. Returns 0 entries when nothing remains.
 
-**Request**
+## actionReport
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:2713](#) directly._
+`POST /api3/expeditor/report` — end-of-day expedition report (deliveries, returns, defects, replaces, on-board, tare).
 
-**Response**
+**Response**: `{ column:[<keys>], data:[{ column:[…], data:[[…]] }, …] }` — column-oriented per category. Categories include `loadProducts`, `returnProducts`, `deliveredProducts`, `unsyncedProducts`, `onBoardProducts`, `defectProducts`, `replaceProducts`, `additionalLoadProducts`, `leftProducts`, `returnTares`.
 
-_Response shape not auto-detected — TBD._
+**Gotchas**: when `params.expeditorLoadNeo.api` is on, control is forwarded to private `expeditorLoad()` (different DTO). Aggregates current calendar day only.
 
-### `GET /api3/expeditor/orderUpdateDateLoad`
+## actionDebtsOnClient
 
-- **Controller**: `ExpeditorController::orderUpdateDateLoad` (`protected/modules/api3/controllers/ExpeditorController.php:3734`)
+`POST /api3/expeditor/debtsOnClient` — clients with overdue / open debt.
 
-**Request**
+**Request** (JSON): `{ currency:[…], type:'all'|'mine', deliveredDate (ms), consignDate (ms), territories:[CITY_ID], debt:minAmount }`.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3734](#) directly._
+**Response**: `{ column:['clientId','clientName','clientPhoto','debt','unDistrubuted','balance'], data:[[…]] }`.
 
-**Response**
+**Gotchas**: `type='all'` removes the expeditor filter; `type='mine'` restricts to current user.
 
-_Response shape not auto-detected — TBD._
+## actionDebtsOnOrder
 
-### `GET /api3/expeditor/payments`
+`POST /api3/expeditor/debtsOnOrder` — overdue orders for one client.
 
-- **Controller**: `ExpeditorController::payments` (`protected/modules/api3/controllers/ExpeditorController.php:4923`)
+**Request**: `{ clientId, currency, type, deliveredDate, consignDate, territories, debt }`.
 
-**Request**
+**Response**: `{ column:['orderId','summa','paid','debt','deleviredDate','consignDate','tradeId','unConfirmed'], data:[[…]] }`.
 
-| Name | In | Type | Required |
-|---|---|---|---|
-| `from` | query | _string_ | TBD |
-| `to` | query | _string_ | TBD |
-| `types` | query | _string_ | TBD |
+## actionClientTara
 
-**Response**
+`POST /api3/expeditor/clientTara` — outstanding tare (returnable packaging) per client.
 
-_Response shape not auto-detected — TBD._
+**Request** (JSON): optional `{ clientId }`.
 
-### `GET /api3/expeditor/pendingOrders`
+**Response**: `{ column:['count','clientId','taraId','name'], data:[[…]], status, error }`.
 
-- **Controller**: `ExpeditorController::pendingOrders` (`protected/modules/api3/controllers/ExpeditorController.php:3650`)
+**Gotchas**: filtered by `TaraDocumentDetail.OWNER_TYPE=2` (client owner).
 
-**Request**
+## actionPayments
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3650](#) directly._
+`GET /api3/expeditor/payments?from=…&to=…&types=0,1,2` — payment-deliver history.
 
-**Response**
+**Request**: `from`, `to` (ISO date), `types` (CSV of `PaymentDeliver.CONFIRM` values 0/1/2).
 
-_Response shape not auto-detected — TBD._
+**Response**: `{ status, result:[ [<header row>], [<value row>], … ] }` — first inner array is column names, rest are values. Columns: `client_id, client_name, territory_id, territory_name, address, currency_id, currency_name, trade_id, trade_name, summa, type, date, comment`.
 
-### `GET /api3/expeditor/postClient`
+**Gotchas**: filtered to `pd.USER_ID = current`. Empty array on errors / no token (status=false). Strips HTML from `comment`.
 
-- **Controller**: `ExpeditorController::postClient` (`protected/modules/api3/controllers/ExpeditorController.php:3304`)
+## actionGetOrderNotes
 
-**Request**
+`POST /api3/expeditor/getOrderNotes` — selectable order-note dictionary.
 
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3304](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/expeditor/postOrder`
-
-- **Controller**: `ExpeditorController::postOrder` (`protected/modules/api3/controllers/ExpeditorController.php:273`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:273](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/expeditor/postPayment`
-
-- **Controller**: `ExpeditorController::postPayment` (`protected/modules/api3/controllers/ExpeditorController.php:1161`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:1161](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/expeditor/reasons`
-
-- **Controller**: `ExpeditorController::reasons` (`protected/modules/api3/controllers/ExpeditorController.php:3274`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3274](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/expeditor/report`
-
-- **Controller**: `ExpeditorController::report` (`protected/modules/api3/controllers/ExpeditorController.php:3937`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3937](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `POST /api3/expeditor/setPhoto`
-
-- **Controller**: `ExpeditorController::setPhoto` (`protected/modules/api3/controllers/ExpeditorController.php:3484`)
-
-**Request**
-
-| Name | In | Type | Required |
-|---|---|---|---|
-| `base64` | body | _string_ | TBD |
-| `photo` | body | _string_ | TBD |
-| `customerId` | body | _string_ | TBD |
-| `createdAt` | body | _string_ | TBD |
-| `categoryId` | body | _string_ | TBD |
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/expeditor/spravochnik`
-
-- **Controller**: `ExpeditorController::spravochnik` (`protected/modules/api3/controllers/ExpeditorController.php:2130`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:2130](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/expeditor/toptrending`
-
-- **Controller**: `ExpeditorController::toptrending` (`protected/modules/api3/controllers/ExpeditorController.php:3417`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3417](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
-
-### `GET /api3/expeditor/transactions`
-
-- **Controller**: `ExpeditorController::transactions` (`protected/modules/api3/controllers/ExpeditorController.php:3225`)
-
-**Request**
-
-_No parameters detected from source. May be a no-arg endpoint, or params are derived via action-class properties. Inspect [protected/modules/api3/controllers/ExpeditorController.php:3225](#) directly._
-
-**Response**
-
-_Response shape not auto-detected — TBD._
+**Response**: `{ status, result:[{note_id, note_name}], error? }` from `OrderComment` (ACTIVE='Y', ordered by SORT).
 
 ## See also
 

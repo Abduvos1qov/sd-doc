@@ -1,0 +1,4 @@
+[      96ms] [LOG] loading translations for module: report lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     156ms] [LOG] rendering datatable... @ http://localhost:8080/report/visitingHistory:5015
+[     178ms] [LOG] loading translations for module: report lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     262ms] [LOG] {success: true} response @ http://localhost:8080/report/visitingHistory:6036

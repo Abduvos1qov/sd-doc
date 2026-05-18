@@ -1,0 +1,211 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - text: Оплаты клиентов
+        - link "Добавить оплату" [ref=e104] [cursor=pointer]:
+          - /url: /clients/finans/create
+        - button "Интеграция" [ref=e106] [cursor=pointer]: Интеграция
+        - button "Групповая обработка" [ref=e109] [cursor=pointer]: Групповая обработка
+      - text: 
+      - generic [ref=e112]:
+        - generic:
+          - generic [ref=e114]:
+            - button "Агент" [ref=e115] [cursor=pointer]:
+              - generic [ref=e116]: Агент
+            - text:                               
+          - generic [ref=e119]:
+            - button "Экспедитор" [ref=e120] [cursor=pointer]:
+              - generic [ref=e121]: Экспедитор
+            - text:                       
+          - generic [ref=e124]:
+            - button "Тип оплаты" [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: Тип оплаты
+            - text:            
+          - generic [ref=e128]:
+            - textbox "Сумма от" [ref=e130]
+            - textbox "Сумма до" [ref=e132]
+        - generic [ref=e133]:
+          - generic [ref=e135]:
+            - button "Касса" [ref=e136] [cursor=pointer]:
+              - generic [ref=e137]: Касса
+            - text:        
+          - generic [ref=e140]:
+            - button "Территория" [ref=e141] [cursor=pointer]:
+              - generic [ref=e142]: Территория
+            - text:                        
+          - generic [ref=e145]:
+            - button "Направление торговли" [ref=e146] [cursor=pointer]:
+              - generic [ref=e147]: Направление торговли
+            - text:       
+          - generic [ref=e150]:
+            - button "Все" [ref=e151] [cursor=pointer]:
+              - generic [ref=e152]: Все
+            - text:    
+          - generic [ref=e155]:
+            - button "Пользователи" [ref=e156] [cursor=pointer]:
+              - generic [ref=e157]: Пользователи
+            - text:                                                                                                  
+          - button "Фильтр" [ref=e159] [cursor=pointer]
+          - generic [ref=e160] [cursor=pointer]:
+            - generic [ref=e161]: 
+            - text: май 1 - май 18
+            - generic [ref=e162]: 
+          - generic [ref=e164]:
+            - button "Дата оплаты" [ref=e165] [cursor=pointer]:
+              - generic [ref=e166]: Дата оплаты
+            - text:   
+      - generic [ref=e169]:
+        - button "Групповая обработка" [ref=e170] [cursor=pointer]
+        - button "Удалить оплаты" [ref=e171] [cursor=pointer]
+        - generic [ref=e172]:
+          - button "SMS" [ref=e173] [cursor=pointer]
+          - text: 
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - link "По 20" [ref=e177] [cursor=pointer]:
+              - /url: "#"
+            - link "Показ./Скр. столбцы" [ref=e178] [cursor=pointer]:
+              - /url: "#"
+            - link "Excel" [ref=e179] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e181]:
+            - text: "Быстрый поиск:"
+            - searchbox "Быстрый поиск:" [ref=e182]
+          - generic [ref=e183]: Подождите...
+          - grid [ref=e184]:
+            - rowgroup [ref=e185]:
+              - row "ИД оплаты Дата оплаты Дата создания записи ИНН Клиент (название) Клиент (юр. название) ИД Клиента ИД Заказа Баланс Тип Способ оплаты Нап. торг. Сумма Агент Код агента Экспедитор Касса Комментарий Создано Дата изменения" [ref=e186]:
+                - columnheader [ref=e187]:
+                  - checkbox [ref=e188]
+                - columnheader "ИД оплаты" [ref=e189] [cursor=pointer]
+                - columnheader "Дата оплаты" [ref=e190] [cursor=pointer]
+                - columnheader "Дата создания записи" [ref=e191] [cursor=pointer]
+                - columnheader "ИНН" [ref=e192] [cursor=pointer]
+                - columnheader "Клиент (название)" [ref=e193] [cursor=pointer]
+                - columnheader "Клиент (юр. название)" [ref=e194] [cursor=pointer]
+                - columnheader "ИД Клиента" [ref=e195]
+                - columnheader "ИД Заказа" [ref=e196]
+                - columnheader "Баланс" [ref=e197]
+                - columnheader "Тип" [ref=e198]
+                - columnheader "Способ оплаты" [ref=e199]
+                - columnheader "Нап. торг." [ref=e200] [cursor=pointer]
+                - columnheader "Сумма" [ref=e201] [cursor=pointer]
+                - columnheader "Агент" [ref=e202] [cursor=pointer]
+                - columnheader "Код агента" [ref=e203]
+                - columnheader "Экспедитор" [ref=e204]
+                - columnheader "Касса" [ref=e205]
+                - columnheader "Комментарий" [ref=e206]
+                - columnheader "Создано" [ref=e207]
+                - columnheader "Дата изменения" [ref=e208] [cursor=pointer]
+            - rowgroup [ref=e209]:
+              - row "Итоги" [ref=e210]:
+                - columnheader [ref=e211]
+                - columnheader "Итоги" [ref=e212]
+                - columnheader [ref=e213]
+                - columnheader [ref=e214]
+                - columnheader [ref=e215]
+                - columnheader [ref=e216]
+                - columnheader [ref=e217]
+                - columnheader [ref=e218]
+                - columnheader [ref=e219]
+                - columnheader [ref=e220]
+                - columnheader [ref=e221]
+                - columnheader [ref=e222]
+                - columnheader [ref=e223]
+                - columnheader [ref=e224]
+                - columnheader [ref=e225]
+                - columnheader [ref=e226]
+                - columnheader [ref=e227]
+                - columnheader [ref=e228]
+                - columnheader [ref=e229]
+                - columnheader [ref=e230]
+                - columnheader [ref=e231]
+            - rowgroup
+          - status
+  - text:    

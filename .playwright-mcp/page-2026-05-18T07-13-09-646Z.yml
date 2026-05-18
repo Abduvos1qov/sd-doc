@@ -1,0 +1,264 @@
+- generic [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e105]:
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - generic [ref=e113]: Выберите клиента
+          - combobox [ref=e117]:
+            - generic [ref=e118]:
+              - generic: Агент
+              - textbox "Агент" [ref=e119]
+              - generic [ref=e121]:
+                - button
+              - generic [ref=e124]: 
+          - generic [ref=e131]:
+            - generic: Поиск
+            - textbox "Поиск" [active] [ref=e132]
+        - generic [ref=e137]:
+          - table [ref=e139]:
+            - rowgroup [ref=e151]:
+              - 'row "Id: Без сортировки Название: Без сортировки Название фирмы: Без сортировки Телефон: Без сортировки Категория: Без сортировки Территория: Без сортировки Адрес: Без сортировки Ориентир: Без сортировки Баланс клиента: Без сортировки Просрочки: Без сортировки" [ref=e152]':
+                - 'columnheader "Id: Без сортировки" [ref=e153] [cursor=pointer]':
+                  - text: Id
+                  - generic [ref=e154]: 
+                - 'columnheader "Название: Без сортировки" [ref=e155] [cursor=pointer]':
+                  - text: Название
+                  - generic [ref=e156]: 
+                - 'columnheader "Название фирмы: Без сортировки" [ref=e157] [cursor=pointer]':
+                  - text: Название фирмы
+                  - generic [ref=e158]: 
+                - 'columnheader "Телефон: Без сортировки" [ref=e159] [cursor=pointer]':
+                  - text: Телефон
+                  - generic [ref=e160]: 
+                - 'columnheader "Категория: Без сортировки" [ref=e161] [cursor=pointer]':
+                  - text: Категория
+                  - generic [ref=e162]: 
+                - 'columnheader "Территория: Без сортировки" [ref=e163] [cursor=pointer]':
+                  - text: Территория
+                  - generic [ref=e164]: 
+                - 'columnheader "Адрес: Без сортировки" [ref=e165] [cursor=pointer]':
+                  - text: Адрес
+                  - generic [ref=e166]: 
+                - 'columnheader "Ориентир: Без сортировки" [ref=e167] [cursor=pointer]':
+                  - text: Ориентир
+                  - generic [ref=e168]: 
+                - 'columnheader "Баланс клиента: Без сортировки" [ref=e169] [cursor=pointer]':
+                  - text: Баланс клиента
+                  - generic [ref=e170]: 
+                - 'columnheader "Просрочки: Без сортировки" [ref=e171] [cursor=pointer]':
+                  - text: Просрочки
+                  - generic [ref=e172]: 
+            - rowgroup [ref=e173]:
+              - row "a0_224 $Nevada/2+# Toni STARK Yakkasaroy Tashkent City xalqaro ishbilarmonlik markazi, Toshkent 202227111.83" [ref=e192]:
+                - cell "a0_224" [ref=e193]
+                - cell "$Nevada/2+#" [ref=e194]
+                - cell [ref=e195]
+                - cell [ref=e196]
+                - cell "Toni STARK" [ref=e197]
+                - cell "Yakkasaroy" [ref=e198]
+                - cell "Tashkent City xalqaro ishbilarmonlik markazi, Toshkent" [ref=e199]
+                - cell [ref=e200]
+                - cell "202227111.83" [ref=e201]
+                - cell [ref=e202]
+              - row "a2_14041 testClient testClient Capitan AMERICA Hasanboy testClient testClient 200000003.00" [ref=e203]:
+                - cell "a2_14041" [ref=e204]
+                - cell "testClient" [ref=e205]
+                - cell "testClient" [ref=e206]
+                - cell [ref=e207]
+                - cell "Capitan AMERICA" [ref=e208]
+                - cell "Hasanboy" [ref=e209]
+                - cell "testClient" [ref=e210]
+                - cell "testClient" [ref=e211]
+                - cell "200000003.00" [ref=e212]
+                - cell [ref=e213]
+              - row "a2_14164 123 123 Toni STARK Yakkasaroy Yunusobod Tumani 0.00" [ref=e214]:
+                - cell "a2_14164" [ref=e215]
+                - cell "123" [ref=e216]
+                - cell "123" [ref=e217]
+                - cell [ref=e218]
+                - cell "Toni STARK" [ref=e219]
+                - cell "Yakkasaroy" [ref=e220]
+                - cell "Yunusobod Tumani" [ref=e221]
+                - cell [ref=e222]
+                - cell "0.00" [ref=e223]
+                - cell [ref=e224]
+              - row "a3_14311 9 Capitan AMERICA CAPITAN AMERICA 0.00" [ref=e225]:
+                - cell "a3_14311" [ref=e226]
+                - cell "9" [ref=e227]
+                - cell [ref=e228]
+                - cell [ref=e229]
+                - cell "Capitan AMERICA" [ref=e230]
+                - cell "CAPITAN AMERICA" [ref=e231]
+                - cell [ref=e232]
+                - cell [ref=e233]
+                - cell "0.00" [ref=e234]
+                - cell [ref=e235]
+              - row "a4_136 Тестовый у офиса 3 Тестовый у офиса 3 +998901233211 Супермаркеты Yakkasaroy Yunusobod Tumani 6079985.00" [ref=e236]:
+                - cell "a4_136" [ref=e237]
+                - cell "Тестовый у офиса 3" [ref=e238]
+                - cell "Тестовый у офиса 3" [ref=e239]
+                - cell "+998901233211" [ref=e240]
+                - cell "Супермаркеты" [ref=e241]
+                - cell "Yakkasaroy" [ref=e242]
+                - cell "Yunusobod Tumani" [ref=e243]
+                - cell [ref=e244]
+                - cell "6079985.00" [ref=e245]
+                - cell [ref=e246]
+              - row "a4_14062 Qwer qwert +998499494949 javascript:alert(document.cookie) Навои jahahajan zjhzjs 50000.00" [ref=e247]:
+                - cell "a4_14062" [ref=e248]
+                - cell "Qwer" [ref=e249]
+                - cell "qwert" [ref=e250]
+                - cell "+998499494949" [ref=e251]
+                - cell "javascript:alert(document.cookie)" [ref=e252]
+                - cell "Навои" [ref=e253]
+                - cell "jahahajan" [ref=e254]
+                - cell "zjhzjs" [ref=e255]
+                - cell "50000.00" [ref=e256]
+                - cell [ref=e257]
+              - row "a4_14180 Стадион Yoshik OOO \"Yoshlik\" +998999999999 javascript:alert(document.cookie) Yakkasaroy Ташкент, Мирзо-Улугбекский район, махаллинский сход граждан Дархан Метро Пушкинское 0.00" [ref=e258]:
+                - cell "a4_14180" [ref=e259]
+                - cell "Стадион Yoshik" [ref=e260]
+                - cell "OOO \"Yoshlik\"" [ref=e261]
+                - cell "+998999999999" [ref=e262]
+                - cell "javascript:alert(document.cookie)" [ref=e263]
+                - cell "Yakkasaroy" [ref=e264]
+                - cell "Ташкент, Мирзо-Улугбекский район, махаллинский сход граждан Дархан" [ref=e265]
+                - cell "Метро Пушкинское" [ref=e266]
+                - cell "0.00" [ref=e267]
+                - cell [ref=e268]
+              - row "a5_288 Вход в метро Туркистон ооо Вход в метро Туркистон Оптовая торговля Зарафшан Yunusobod Tumani, Yunusobod 15 mavzesi, Ahmad Donish ko'chasi 582158415.38" [ref=e269]:
+                - cell "a5_288" [ref=e270]
+                - cell "Вход в метро Туркистон" [ref=e271]
+                - cell "ооо Вход в метро Туркистон" [ref=e272]
+                - cell [ref=e273]
+                - cell "Оптовая торговля" [ref=e274]
+                - cell "Зарафшан" [ref=e275]
+                - cell "Yunusobod Tumani, Yunusobod 15 mavzesi, Ahmad Donish ko'chasi" [ref=e276]
+                - cell [ref=e277]
+                - cell "582158415.38" [ref=e278]
+                - cell [ref=e279]
+              - row "a5_292 Raomi Центр йоги ооо Raomi Центр йоги Оптовая торговля Зарафшан Yunusobod Tumani, Yunusobod 13 mavzesi, Ahmad Donish ko'chasi 185094.98" [ref=e280]:
+                - cell "a5_292" [ref=e281]
+                - cell "Raomi Центр йоги" [ref=e282]
+                - cell "ооо Raomi Центр йоги" [ref=e283]
+                - cell [ref=e284]
+                - cell "Оптовая торговля" [ref=e285]
+                - cell "Зарафшан" [ref=e286]
+                - cell "Yunusobod Tumani, Yunusobod 13 mavzesi, Ahmad Donish ko'chasi" [ref=e287]
+                - cell [ref=e288]
+                - cell "185094.98" [ref=e289]
+                - cell [ref=e290]
+              - row "a6_320 Ikrom Lektor Ikrom Lektor Ikrom Lektor Mektor Pektor Sektor Vektor Rektor Korrektor +998331234567 Toni STARK GPS тест у работы 11 Southgate Blvd,D10 0.00" [ref=e291]:
+                - cell "a6_320" [ref=e292]
+                - cell "Ikrom Lektor Ikrom Lektor Ikrom Lektor" [ref=e293]
+                - cell "Mektor Pektor Sektor Vektor Rektor Korrektor" [ref=e294]
+                - cell "+998331234567" [ref=e295]
+                - cell "Toni STARK" [ref=e296]
+                - cell "GPS тест у работы" [ref=e297]
+                - cell "11 Southgate Blvd,D10" [ref=e298]
+                - cell [ref=e299]
+                - cell "0.00" [ref=e300]
+                - cell [ref=e301]
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - text: "Элементов на странице:"
+              - button "10" [ref=e180] [cursor=pointer]:
+                - generic [ref=e181]:
+                  - generic [ref=e182]:
+                    - generic [ref=e183]: "10"
+                    - textbox "$vuetify.dataTable.itemsPerPageText"
+                  - generic [ref=e186]: 
+            - generic [ref=e187]: 1-10 из 438
+            - generic [ref=e188]:
+              - button "Предыдущая страница" [disabled]:
+                - generic:
+                  - generic: 
+            - button "Следующая страница" [ref=e302] [cursor=pointer]:
+              - generic [ref=e304]: 
+      - button "Open Dialog" [ref=e190] [cursor=pointer]:
+        - generic [ref=e191]: Open Dialog

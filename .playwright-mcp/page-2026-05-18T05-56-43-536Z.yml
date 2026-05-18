@@ -1,0 +1,123 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e103]:
+      - table [ref=e106]:
+        - rowgroup [ref=e107]:
+          - row "Супервайзер Агент Май 2026 2026-05-01 2026-05-31 Фильтр" [ref=e108]:
+            - cell "Супервайзер" [ref=e109]:
+              - generic [ref=e110]:
+                - button "Супервайзер" [ref=e111] [cursor=pointer]:
+                  - generic [ref=e112]: Супервайзер
+                - text:                
+            - cell "Агент" [ref=e114]:
+              - generic [ref=e115]:
+                - button "Агент" [ref=e116] [cursor=pointer]:
+                  - generic [ref=e117]: Агент
+                - text:                        
+            - cell "Май" [ref=e119]:
+              - generic [ref=e120]:
+                - button "Май" [ref=e121] [cursor=pointer]:
+                  - generic [ref=e122]: Май
+                - text:            
+            - cell "2026" [ref=e124]:
+              - generic [ref=e125]:
+                - button "2026" [ref=e126] [cursor=pointer]:
+                  - generic [ref=e127]: "2026"
+                - text:    
+            - cell "2026-05-01" [ref=e129]:
+              - textbox [ref=e130] [cursor=pointer]: 2026-05-01
+            - cell "2026-05-31" [ref=e131]:
+              - textbox [ref=e132] [cursor=pointer]: 2026-05-31
+            - cell "Фильтр" [ref=e133]:
+              - button "Фильтр" [ref=e134] [cursor=pointer]
+      - generic [ref=e137]:
+        - heading "План не установлен." [level=3] [ref=e138]
+        - paragraph [ref=e139]:
+          - text: Пожалуйста
+          - link "установите план" [ref=e140] [cursor=pointer]:
+            - /url: /agents/kpi/

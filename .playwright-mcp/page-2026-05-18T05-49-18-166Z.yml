@@ -1,0 +1,178 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: Онлайн заказы
+        - button [ref=e108] [cursor=pointer]:
+          - generic [ref=e110]: 
+        - button [ref=e111] [cursor=pointer]:
+          - generic [ref=e113]: 
+        - button "Excel" [ref=e114] [cursor=pointer]:
+          - generic [ref=e115]: Excel
+      - generic [ref=e116]:
+        - button "Статус" [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]:
+            - generic: Статус
+            - generic [ref=e121]:
+              - textbox "Статус"
+            - generic [ref=e123]:
+              - button
+            - generic [ref=e126]: 
+        - combobox [ref=e131]:
+          - generic [ref=e132]:
+            - generic: Контакт
+            - textbox "Контакт" [ref=e133]
+            - generic [ref=e135]:
+              - button
+            - generic [ref=e138]: 
+        - generic [ref=e141]:
+          - generic [ref=e144]: event
+          - textbox [ref=e148]: 2026-05-18 ~ 2026-05-18
+        - generic [ref=e154]:
+          - generic: Поиск
+          - textbox "Поиск" [ref=e155]
+      - generic [ref=e160]:
+        - table [ref=e162]:
+          - rowgroup [ref=e176]:
+            - 'row "Id: Без сортировки Имя: Без сортировки Номер: Без сортировки Дата заказа: Без сортировки Клиент: Без сортировки Комм-ий: Без сортировки Способ оплаты: Без сортировки Адрес: Без сортировки Сумма: Без сортировки Бонус: Без сортировки Статус: Без сортировки : Без сортировки" [ref=e177]':
+              - 'columnheader "Id: Без сортировки" [ref=e178] [cursor=pointer]':
+                - text: Id
+                - generic [ref=e179]: 
+              - 'columnheader "Имя: Без сортировки" [ref=e180] [cursor=pointer]':
+                - text: Имя
+                - generic [ref=e181]: 
+              - 'columnheader "Номер: Без сортировки" [ref=e182] [cursor=pointer]':
+                - text: Номер
+                - generic [ref=e183]: 
+              - 'columnheader "Дата заказа: Без сортировки" [ref=e184] [cursor=pointer]':
+                - text: Дата заказа
+                - generic [ref=e185]: 
+              - 'columnheader "Клиент: Без сортировки" [ref=e186] [cursor=pointer]':
+                - text: Клиент
+                - generic [ref=e187]: 
+              - 'columnheader "Комм-ий: Без сортировки" [ref=e188] [cursor=pointer]':
+                - text: Комм-ий
+                - generic [ref=e189]: 
+              - 'columnheader "Способ оплаты: Без сортировки" [ref=e190] [cursor=pointer]':
+                - text: Способ оплаты
+                - generic [ref=e191]: 
+              - 'columnheader "Адрес: Без сортировки" [ref=e192] [cursor=pointer]':
+                - text: Адрес
+                - generic [ref=e193]: 
+              - 'columnheader "Сумма: Без сортировки" [ref=e194] [cursor=pointer]':
+                - text: Сумма
+                - generic [ref=e195]: 
+              - 'columnheader "Бонус: Без сортировки" [ref=e196] [cursor=pointer]':
+                - text: Бонус
+                - generic [ref=e197]: 
+              - 'columnheader "Статус: Без сортировки" [ref=e198] [cursor=pointer]':
+                - text: Статус
+                - generic [ref=e199]: 
+              - 'columnheader ": Без сортировки" [ref=e200] [cursor=pointer]':
+                - generic [ref=e201]: 
+          - rowgroup [ref=e202]:
+            - row "Нет данных" [ref=e203]:
+              - cell "Нет данных" [ref=e204]
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - text: "Элементов на странице:"
+            - button "10" [ref=e209] [cursor=pointer]:
+              - generic [ref=e210]:
+                - generic [ref=e211]:
+                  - generic [ref=e212]: "10"
+                  - textbox "$vuetify.dataTable.itemsPerPageText"
+                - generic [ref=e215]: 
+          - generic [ref=e216]: –
+          - generic [ref=e217]:
+            - button "Предыдущая страница" [disabled]:
+              - generic:
+                - generic: 
+          - generic [ref=e218]:
+            - button "Следующая страница" [disabled]:
+              - generic:
+                - generic: 

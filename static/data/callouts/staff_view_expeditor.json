@@ -1,0 +1,15 @@
+{
+  "slug": "staff_view_expeditor",
+  "url": "/staff/view/expeditor",
+  "title": "Expeditors list",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 254,
+      "w": 1515,
+      "h": 60,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

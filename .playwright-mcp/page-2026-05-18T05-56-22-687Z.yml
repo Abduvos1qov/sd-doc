@@ -1,0 +1,288 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - main [ref=e102]:
+      - generic [ref=e103]:
+        - heading "Рейсы" [level=1] [ref=e104]
+        - tablist "Фильтр по статусу" [ref=e105]:
+          - tab "Всего 2" [selected] [ref=e106] [cursor=pointer]:
+            - generic [ref=e107]:
+              - generic [ref=e109]: 󰛄
+              - generic [ref=e110]: Всего
+            - paragraph [ref=e111]: "2"
+          - tab "Активные 0" [ref=e112] [cursor=pointer]:
+            - generic [ref=e113]:
+              - generic [ref=e115]: 󰉁
+              - generic [ref=e116]: Активные
+            - paragraph [ref=e117]: "0"
+          - tab "В ожидании 0" [ref=e118] [cursor=pointer]:
+            - generic [ref=e119]:
+              - generic [ref=e121]: 󰅐
+              - generic [ref=e122]: В ожидании
+            - paragraph [ref=e123]: "0"
+          - tab "Отмененные 0" [ref=e124] [cursor=pointer]:
+            - generic [ref=e125]:
+              - generic [ref=e127]: 󰅖
+              - generic [ref=e128]: Отмененные
+            - paragraph [ref=e129]: "0"
+          - tab "Выполненные 2" [ref=e130] [cursor=pointer]:
+            - generic [ref=e131]:
+              - generic [ref=e133]: 󰄬
+              - generic [ref=e134]: Выполненные
+            - paragraph [ref=e135]: "2"
+        - generic [ref=e136]:
+          - combobox [ref=e139] [cursor=pointer]:
+            - generic [ref=e140]:
+              - generic: Автомобиль
+              - generic [ref=e141]:
+                - textbox "Открыть"
+            - text: 󰅙
+            - generic [ref=e143]: 󰍝
+          - combobox [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]:
+              - generic: Курьер
+              - generic [ref=e148]:
+                - textbox "Открыть"
+            - text: 󰅙
+            - generic [ref=e150]: 󰍝
+          - combobox [ref=e153] [cursor=pointer]:
+            - generic [ref=e154]:
+              - generic: Экспедитор
+              - generic [ref=e155]:
+                - textbox "Открыть"
+            - text: 󰅙
+            - generic [ref=e157]: 󰍝
+        - generic [ref=e159]:
+          - generic [ref=e161]:
+            - button "Добавить" [ref=e162] [cursor=pointer]:
+              - generic [ref=e164]: 󰐕
+              - generic [ref=e165]: Добавить
+              - generic [ref=e167]: 󰅀
+            - button "Групповая обработка" [disabled]:
+              - generic:
+                - generic: 󰢻
+              - generic: Групповая обработка
+              - generic:
+                - generic: 󰍝
+            - tablist "Режим отображения" [ref=e168]:
+              - tab "Таблица" [selected] [ref=e169] [cursor=pointer]:
+                - generic [ref=e170]: 󰉹
+              - tab "Карта" [ref=e171] [cursor=pointer]:
+                - generic [ref=e172]: 󰦂
+            - generic [ref=e175]:
+              - generic [ref=e177]: 󰍉
+              - textbox [ref=e179]:
+                - /placeholder: Поиск
+              - text: 󰅙
+            - generic [ref=e180]:
+              - button "Показать по" [ref=e181] [cursor=pointer]:
+                - generic [ref=e182]: Показать по
+                - generic [ref=e184]: 󰍝
+              - button [ref=e185] [cursor=pointer]:
+                - generic [ref=e187]: 󰕭
+              - button "Excel" [ref=e188] [cursor=pointer]:
+                - generic [ref=e189]:
+                  - generic [ref=e190]: Excel
+                  - img [ref=e191]
+          - table [ref=e195]:
+            - rowgroup [ref=e196]:
+              - row "ID 󰒺 Автомобиль 󰒺 Заказы 󰒺 Вес 󰒺 Объем 󰒺 Загруженность 󰒺 Курьер 󰒺 Экспедитор 󰒺 Дата прикрепления 󰒽 Статус 󰒺" [ref=e197]:
+                - columnheader [ref=e198]:
+                  - generic [ref=e201]:
+                    - generic [ref=e202]: 󰄱
+                    - checkbox [ref=e203] [cursor=pointer]
+                - columnheader "ID 󰒺" [ref=e204] [cursor=pointer]:
+                  - generic [ref=e205]:
+                    - text: ID
+                    - generic [ref=e206]: 󰒺
+                - columnheader "Автомобиль 󰒺" [ref=e207] [cursor=pointer]:
+                  - generic [ref=e208]:
+                    - text: Автомобиль
+                    - generic [ref=e209]: 󰒺
+                - columnheader "Заказы 󰒺" [ref=e210] [cursor=pointer]:
+                  - generic [ref=e211]:
+                    - text: Заказы
+                    - generic [ref=e212]: 󰒺
+                - columnheader "Вес 󰒺" [ref=e213] [cursor=pointer]:
+                  - generic [ref=e214]:
+                    - text: Вес
+                    - generic [ref=e215]: 󰒺
+                - columnheader "Объем 󰒺" [ref=e216] [cursor=pointer]:
+                  - generic [ref=e217]:
+                    - text: Объем
+                    - generic [ref=e218]: 󰒺
+                - columnheader "Загруженность 󰒺" [ref=e219] [cursor=pointer]:
+                  - generic [ref=e220]:
+                    - text: Загруженность
+                    - generic [ref=e221]: 󰒺
+                - columnheader "Курьер 󰒺" [ref=e222] [cursor=pointer]:
+                  - generic [ref=e223]:
+                    - text: Курьер
+                    - generic [ref=e224]: 󰒺
+                - columnheader "Экспедитор 󰒺" [ref=e225] [cursor=pointer]:
+                  - generic [ref=e226]:
+                    - text: Экспедитор
+                    - generic [ref=e227]: 󰒺
+                - columnheader "Дата прикрепления 󰒽" [ref=e228] [cursor=pointer]:
+                  - generic [ref=e229]:
+                    - text: Дата прикрепления
+                    - generic [ref=e230]: 󰒽
+                - columnheader "Статус 󰒺" [ref=e231] [cursor=pointer]:
+                  - generic [ref=e232]:
+                    - text: Статус
+                    - generic [ref=e233]: 󰒺
+                - columnheader [ref=e234]
+            - rowgroup [ref=e236]:
+              - row "RT-17 01 A 777 ZX 2 75.8 кг 15.4 м³ 3% — — Готов" [ref=e237]:
+                - cell [ref=e238]:
+                  - generic [ref=e241]:
+                    - generic [ref=e242]: 󰄱
+                    - checkbox [ref=e243] [cursor=pointer]
+                - cell "RT-17" [ref=e244]:
+                  - link "RT-17" [ref=e245] [cursor=pointer]:
+                    - /url: /orders/view/trip?id=17
+                - cell "01 A 777 ZX" [ref=e246]:
+                  - generic "01 | A 777 ZX" [ref=e247]:
+                    - generic [ref=e248]: "01"
+                    - generic [ref=e249]: A 777 ZX
+                - cell "2" [ref=e250]
+                - cell "75.8 кг" [ref=e251]
+                - cell "15.4 м³" [ref=e252]
+                - cell "3%" [ref=e253]
+                - cell "—" [ref=e254]
+                - cell "—" [ref=e255]
+                - cell [ref=e256]
+                - cell "Готов" [ref=e257]:
+                  - button "Готов" [ref=e258] [cursor=pointer]:
+                    - generic [ref=e259]: 󰄬
+                    - generic [ref=e260]: Готов
+                    - generic [ref=e261]: 󰅀
+                - cell [ref=e262]:
+                  - button [ref=e265] [cursor=pointer]:
+                    - generic [ref=e267]: 󰇙
+              - row "RT-16 01 A 777 ZX 3 383 001.9 кг 383 м³ 999% first — Готов" [ref=e268]:
+                - cell [ref=e269]:
+                  - generic [ref=e272]:
+                    - generic [ref=e273]: 󰄱
+                    - checkbox [ref=e274] [cursor=pointer]
+                - cell "RT-16" [ref=e275]:
+                  - link "RT-16" [ref=e276] [cursor=pointer]:
+                    - /url: /orders/view/trip?id=16
+                - cell "01 A 777 ZX" [ref=e277]:
+                  - generic "01 | A 777 ZX" [ref=e278]:
+                    - generic [ref=e279]: "01"
+                    - generic [ref=e280]: A 777 ZX
+                - cell "3" [ref=e281]
+                - cell "383 001.9 кг" [ref=e282]
+                - cell "383 м³" [ref=e283]
+                - cell "999%" [ref=e284]
+                - cell "first" [ref=e285]
+                - cell "—" [ref=e286]
+                - cell [ref=e287]
+                - cell "Готов" [ref=e288]:
+                  - button "Готов" [ref=e289] [cursor=pointer]:
+                    - generic [ref=e290]: 󰄬
+                    - generic [ref=e291]: Готов
+                    - generic [ref=e292]: 󰅀
+                - cell [ref=e293]:
+                  - button [ref=e296] [cursor=pointer]:
+                    - generic [ref=e298]: 󰇙
+          - generic [ref=e299]:
+            - generic [ref=e300]: Показаны записи 1 - 2 из 2
+            - navigation "Страница" [ref=e302]:
+              - list [ref=e303]:
+                - listitem [ref=e304]:
+                  - button "Предыдущая" [disabled]:
+                    - generic:
+                      - generic: 󰅁
+                - listitem [ref=e305]:
+                  - button "Page 1, Current page" [disabled]:
+                    - generic: "1"
+                - listitem [ref=e306]:
+                  - button "Следующая" [disabled]:
+                    - generic:
+                      - generic: 󰅂

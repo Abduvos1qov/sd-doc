@@ -1,0 +1,39 @@
+{
+  "slug": "dashboard_supervayzer",
+  "url": "/dashboard/supervayzer",
+  "title": "Supervisor dashboard",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 69,
+      "w": 325,
+      "h": 34,
+      "label": "Новый, Отгружен, Доставлен",
+      "kind": "action"
+    },
+    {
+      "x": 444,
+      "y": 69,
+      "w": 273,
+      "h": 34,
+      "label": "Категории продуктов",
+      "kind": "action"
+    },
+    {
+      "x": 725,
+      "y": 69,
+      "w": 209,
+      "h": 34,
+      "label": "Территория",
+      "kind": "action"
+    },
+    {
+      "x": 796,
+      "y": 657,
+      "w": 609,
+      "h": 41,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

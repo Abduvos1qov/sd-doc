@@ -1,0 +1,4 @@
+[     103ms] [LOG] loading translations for module: markirovka lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     157ms] [WARNING] [i18n-missing] Missing key "Проверка..." in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js?v=1.1:41
+[     170ms] [LOG] rendering datatable... @ http://localhost:8080/markirovka/view/outgoingInvoices:7152
+[     180ms] [LOG] loading translations for module: markirovka lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34

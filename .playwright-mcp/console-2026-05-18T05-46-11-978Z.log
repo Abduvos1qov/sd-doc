@@ -1,0 +1,234 @@
+[     100ms] [LOG] loading translations for module: orders lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     180ms] [WARNING] [i18n-missing] Missing key "Первичка" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     182ms] [WARNING] [i18n-missing] Missing key "Номер документа" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     182ms] [WARNING] [i18n-missing] Missing key "Код заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     182ms] [WARNING] [i18n-missing] Missing key "Код заявки SmartupX" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     182ms] [WARNING] [i18n-missing] Missing key "Тип заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     182ms] [WARNING] [i18n-missing] Missing key "Доп. статус" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     182ms] [WARNING] [i18n-missing] Missing key "ИД способа оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     182ms] [WARNING] [i18n-missing] Missing key "ИД кладовщика" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Сумма без НДС" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Сумма НДС" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Закрыто" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Срок оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Тип бонуса" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Вес бонуса (кг)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Кол-во част. возврата" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Тег" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Дни посещений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Дата отмены" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Дата создания документа" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Дата изменения документа" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Разница (количество)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     183ms] [WARNING] [i18n-missing] Missing key "Разница (сумма)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     184ms] [WARNING] [i18n-missing] Missing key "Разница (объём)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     184ms] [WARNING] [i18n-missing] Missing key "Разница (вес, кг)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     184ms] [WARNING] [i18n-missing] Missing key "Статус Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     184ms] [WARNING] [i18n-missing] Missing key "Комментарий Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     201ms] [WARNING] [i18n-missing] Missing key "Без доп. статуса" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     201ms] [WARNING] [i18n-missing] Missing key "Обычный заказ" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Заказ Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Статус заказа Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Одобрено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Отклонено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Локация есть" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Доп.статус заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Тип заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     202ms] [WARNING] [i18n-missing] Missing key "Дни посещений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     203ms] [WARNING] [i18n-missing] Missing key "Группа товара" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     203ms] [WARNING] [i18n-missing] Missing key "Без примечания" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     203ms] [WARNING] [i18n-missing] Missing key "Наличие комментария" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     203ms] [WARNING] [i18n-missing] Missing key "С комментарием" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     203ms] [WARNING] [i18n-missing] Missing key "Без комментариев" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     203ms] [WARNING] [i18n-missing] Missing key "С ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     203ms] [WARNING] [i18n-missing] Missing key "Без ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     204ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     204ms] [WARNING] [i18n-missing] Missing key "Настройка фильтров" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     204ms] [WARNING] [i18n-missing] Missing key "Вы можете показать/скрыть и сортировать фильтры" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     233ms] [WARNING] [i18n-missing] Missing key "Зав.склад" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     234ms] [WARNING] [i18n-missing] Missing key "Реестр" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     234ms] [WARNING] [i18n-missing] Missing key "Одним файлом" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     234ms] [WARNING] [i18n-missing] Missing key "Экспорт для 1С" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     237ms] [WARNING] [i18n-missing] Missing key "код вида операции" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     237ms] [WARNING] [i18n-missing] Missing key "код поставки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     237ms] [WARNING] [i18n-missing] Missing key "код вида поставки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     237ms] [WARNING] [i18n-missing] Missing key "Признак: Отраслевой" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     237ms] [WARNING] [i18n-missing] Missing key "Признак: Товар, подлежащий прослеживаемости" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     237ms] [WARNING] [i18n-missing] Missing key "Игнорировать бонусы" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     237ms] [WARNING] [i18n-missing] Missing key "код валюты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "код ставки НДС" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "код ставки НсП" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "20 - Акт об оказании услуг" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "10 - Поставка товаров" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "100 - Облагаемые по ставке 12 процентов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "101 - Облагаемые по ставке 20 процентов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "102 - Поставка субъекта, осуществляющего промпереработку сельхозпродукции отечественного производства (с уменьшением обязательства на 80%)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "110 - Корректировка осуществленных ранее облагаемых поставок" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "111 - Поступившая сумма предварительной оплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     238ms] [WARNING] [i18n-missing] Missing key "112 - Корректировка ранее поступившей суммы предоплаты" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "113 - Поступившая сумма возмещенного безнадежного долга" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "114 - Стоимость остатка материальных ресурсов при аннулировании регистрации по НДС" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "115 - Поставка по цене, ниже учетной стоимости, или бесплатная поставка товаров (работ, услуг)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "121 - Экспорт товаров в третьи страны (в страны, за исключением государств-членов Евразийского экономического союза) ('0' ставка)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "122 - Международная перевозка пассажиров, багажа и грузов, за исключением перевозок, осуществляемых железнодорожным транспортом ('0' ставка)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "123 - Услуги по обслуживанию транзитных рейсов воздушных судов и услуги, связанные с международной перевозкой ('0' ставка)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "124 - Услуги, связанные с электроснабжением насосных станций, занимающихся поливом сельскохозяйственных угодий, обеспечением населения питьевой водой ('0' ставка)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "125 - Поставка в 'магазин беспошлинной торговли' ('0' ставка)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     239ms] [WARNING] [i18n-missing] Missing key "126 - Поставка товаров, предназначенных для использования в производстве, с территории Кыргызской Республики субъектом, не являющимся субъектом СЭЗ, субъекту СЭЗ ('0' ставка)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "127 - Поставка работ и услуг, предназначенных для использования в производстве, с территории Кыргызской Республики субъектом, не являющимся субъектом СЭЗ, субъекту СЭЗ ('0' ставка)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "128 - Разница между стоимостью товаров, поставленных по цене ниже минимального уровня контрольных цен, и стоимостью по минимальному уровню контрольных цен" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "200 - Поставка земли, жилых сооружений и помещений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "201 - Поставка сельскохозяйственной продукции" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "202 - Поставка коммунальных услуг. Поставка исправительными учреждениями и предприятиями уголовно-исполнительной системы Министерства юстиции Кыргызской Республики" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "203 - Поставки товаров, услуг и лекарственных средств и изделий медицинского назначения в сфере медицинской и ветеринарной деятельности" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "204 - Финансовые услуги" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "205 - Услуги по страхованию" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "206 - Услуги по пенсионному обеспечению" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     240ms] [WARNING] [i18n-missing] Missing key "207 - Транспортные услуги" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "208 - Поставка учебных пособий и школьных принадлежностей, научных изданий на государственном языке" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "209 - Переработка товаров, помещенных под таможенные режимы 'Переработка товаров на таможенной территории' и 'Переработка товаров под таможенным контролем'" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "210 - Приватизация" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "211 - Поставки благотворительных организаций" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "212 - Поставки, осуществляемые некоммерческими организациями" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "213 - Поставка на безвозмездной основе" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "214 - Поставка государственными или муниципальными организациями ритуальных товаров и ритуальных услуг" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "215 - Поставки минеральных удобрений и средств химической защиты растений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     241ms] [WARNING] [i18n-missing] Missing key "216 - Поставка сельскохозяйственной техники, производимой на предприятиях Кыргызской Республики" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "217 - Поставка и экспорт металлосодержащих руд, концентратов, сплавов и аффинированных металлов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "218 - Поставки, осуществляемые частным партнером и (или) проектной компанией в соответствии с законодательством Кыргызской Республики о государственно-частном партнерстве" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "219 - Экспорт работ и услуг" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "220 - Поставка услуг дошкольными образовательными организациями (детскими садами, созданными на основе частной формы собственности)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "221 - Поставка услуг частными медицинскими учреждениями кардиохирургической направленности" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "222 - Поставка в адрес проектов международных организаций и на основании международных договоров" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "224 - Поставка реактивного топлива для заправки воздушных судов, осуществляющих международные воздушные перевозки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "225 - Корректировка освобожденной поставки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "226 - Поставка товаров или работ согласно договору о социально значимом объекте" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     242ms] [WARNING] [i18n-missing] Missing key "227 - Поставка услуг общеобразовательными организациями, созданными на основе частной формы собственности" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "228 - Поставка торгово-логистическим центром сельскохозяйственного назначения сельскохозяйственной продукции и продуктов ее переработки, полученных от сельскохозяйственных производителей и сельскохозяйственных кооперативов" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "229 - Поставка машинно-тракторной станцией сельскохозяйственному производителю и сельскохозяйственному кооперативу: 1) работ с использованием сельскохозяйственной техники; 2) услуг по техническому обслуживанию и ремонту сельскохозяйственной техники; 3) запасных частей к сельскохозяйственной технике" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "230 - Поставка кормов для сельскохозяйственной птицы и рыбы, произведенная налогоплательщиком, сельскохозяйственному производителю, осуществляющему деятельность по разведению сельскохозяйственной птицы и рыбы" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "231 - Поставка частными медицинскими организациями услуг гемодиализа лицам с хронической почечной недостаточностью в терминальной стадии" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "232 - Поставка средств идентификации, а также услуг по выдаче и генерации кодов маркировки товаров" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "233 - Поставка транспортных средств, приводимых в движение только электрическим двигателем, производимых на предприятиях Кыргызской Республики" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "299 - Прочие поставки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "300 - Продажа предприятия или самостоятельно функционирующей части предприятия одним налогоплательщиком НДС другому налогоплательщику НДС или субъекту, который становится таковым в момент передачи" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     243ms] [WARNING] [i18n-missing] Missing key "301 - Передача, имущества от собственника, который является налогоплательщиком НДС" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "302 - Передача имущества собственнику при прекращении договора доверительного управления или простого товарищества, если собственник является облагаемым субъектом" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "303 - Поставки Национального банка Кыргызской Республики, за исключением поставок работ и услуг в сфере отдыха, досуга и развлечений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "304 - Передача или возврат имущества, переданного в уставный капитал (фонд, взнос) одним налогоплательщиком НДС другому налогоплательщику НДС или субъекту, который становится таковым в момент передачи или возврата" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "305 - Поставка основных средств по договору финансовой аренды (лизинга)" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "306 - Оказание услуг по организации и проведению религиозных обрядов, ритуалов, церемоний, а также паломничества" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "310 - Корректировка необлагаемой поставки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "399 - Прочие" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "110 - экспорт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "100 - облагаемая 12%" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     244ms] [WARNING] [i18n-missing] Missing key "112 - облагаемая по ставке '0'" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "101 - освобожденная '0'" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "102 - необлагаемая" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "417 - KGS, Кыргызский сом" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "398 - KZT, Казахский тенге" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "860 - UZS, Узбекский сум" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "10 - Стандартная 12%" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "20 - Нулевая 0%" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "70 - Облагаемая 20%" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "90 - Освобожденная" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     245ms] [WARNING] [i18n-missing] Missing key "100 - Необлагаемая поставка" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     246ms] [WARNING] [i18n-missing] Missing key "Способ автомобильной отправки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "Вид поставки ЭТТН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "Способ отправки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "Вид сделки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "Водители/АТС компании" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "Компания перевозчик" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "Самовывоз" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "10 - Оптовая" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "11 - Реализация освобожденным учреждениям" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "20 - Экспорт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     247ms] [WARNING] [i18n-missing] Missing key "30 - Внутреннее перемещение" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "40 - Возврат" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "50 - Реактивное топливо" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "60 - Duty Free" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "70 - Оприходование" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "71 - Списание" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "72 - Списание на торговые площадки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "80 - Оприходование ГСМ" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "81 - Возврат от торговой платформы" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "90 - Агентский товар" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "Автомобильный" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     248ms] [WARNING] [i18n-missing] Missing key "Ж/д транспорт" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     249ms] [WARNING] [i18n-missing] Missing key "Воздушный" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     249ms] [WARNING] [i18n-missing] Missing key "Иной" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     249ms] [WARNING] [i18n-missing] Missing key "Возмездная" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     249ms] [WARNING] [i18n-missing] Missing key "Безвозмездная" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     263ms] [LOG] rendering datatable... @ http://localhost:8080/orders/list:4907
+[     293ms] [LOG] loading translations for module: orders lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     299ms] [WARNING] [i18n-missing] Missing key "Зав.склад" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     299ms] [WARNING] [i18n-missing] Missing key "Реестр" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     299ms] [WARNING] [i18n-missing] Missing key "Одним файлом" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     299ms] [WARNING] [i18n-missing] Missing key "Экспорт для 1С" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     328ms] [WARNING] [i18n-missing] Missing key "Без доп. статуса" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Обычный заказ" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Заказ Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Статус заказа Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Одобрено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Отклонено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Локация есть" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Доп.статус заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Тип заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     329ms] [WARNING] [i18n-missing] Missing key "Дни посещений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "Группа товара" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "Наличие комментария" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "С комментарием" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "Без комментариев" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "С ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "Без ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "Настройка фильтров" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     330ms] [WARNING] [i18n-missing] Missing key "Вы можете показать/скрыть и сортировать фильтры" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     392ms] [WARNING] [i18n-missing] Missing key "Без доп. статуса" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     392ms] [WARNING] [i18n-missing] Missing key "Обычный заказ" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     392ms] [WARNING] [i18n-missing] Missing key "Заказ Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     392ms] [WARNING] [i18n-missing] Missing key "Статус заказа Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     392ms] [WARNING] [i18n-missing] Missing key "Одобрено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     392ms] [WARNING] [i18n-missing] Missing key "Отклонено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     393ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     393ms] [WARNING] [i18n-missing] Missing key "Локация есть" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     393ms] [WARNING] [i18n-missing] Missing key "Доп.статус заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     393ms] [WARNING] [i18n-missing] Missing key "Тип заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     393ms] [WARNING] [i18n-missing] Missing key "Дни посещений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [WARNING] [i18n-missing] Missing key "Группа товара" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [WARNING] [i18n-missing] Missing key "Без примечания" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [WARNING] [i18n-missing] Missing key "Наличие комментария" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [WARNING] [i18n-missing] Missing key "С комментарием" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [WARNING] [i18n-missing] Missing key "Без комментариев" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [WARNING] [i18n-missing] Missing key "С ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     394ms] [WARNING] [i18n-missing] Missing key "Без ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     395ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     395ms] [WARNING] [i18n-missing] Missing key "Настройка фильтров" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     395ms] [WARNING] [i18n-missing] Missing key "Вы можете показать/скрыть и сортировать фильтры" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     407ms] [LOG] ----------loadOrders---------- @ http://localhost:8080/js/orders/worker.js?v=1.6:511
+[     439ms] [TIMEEND] fetchOrders: 32.3681640625 ms @ http://localhost:8080/js/orders/worker.js?v=1.6:100
+[     440ms] [TIMEEND] buildOrders: 0.038818359375 ms @ http://localhost:8080/js/orders/worker.js?v=1.6:399
+[     440ms] [TIMEEND] setClients: 0.0009765625 ms @ http://localhost:8080/js/orders/worker.js?v=1.6:505
+[     440ms] [LOG] ----------loadOrders: done---------- @ http://localhost:8080/js/orders/worker.js?v=1.6:527
+[     445ms] [WARNING] [i18n-missing] Missing key "Без доп. статуса" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Обычный заказ" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Заказ Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Статус заказа Idokon" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Одобрено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Отклонено" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Локация есть" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Доп.статус заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     445ms] [WARNING] [i18n-missing] Missing key "Тип заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     446ms] [WARNING] [i18n-missing] Missing key "Дни посещений" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     446ms] [WARNING] [i18n-missing] Missing key "Группа товара" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "Наличие комментария" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "С комментарием" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "Без комментариев" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "С ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "Без ИНН" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "Время заявки" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "Настройка фильтров" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41
+[     447ms] [WARNING] [i18n-missing] Missing key "Вы можете показать/скрыть и сортировать фильтры" in locale "ru test" @ http://localhost:8080/js/plugins/vue3-i18n-plugin.js:41

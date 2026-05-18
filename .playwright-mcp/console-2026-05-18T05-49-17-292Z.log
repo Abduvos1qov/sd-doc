@@ -1,0 +1,8 @@
+[     106ms] [LOG] loading translations for module: onlineOrder lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     377ms] [INFO] Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools @ http://localhost:8080/js/vue.js:9048
+[     378ms] [INFO] You are running Vue in development mode.
+Make sure to turn on production mode when deploying for production.
+See more tips at https://vuejs.org/guide/deployment.html @ http://localhost:8080/js/vue.js:9057
+[     435ms] [LOG] loading translations for module: onlineOrder lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     497ms] [WARNING] Google Maps JavaScript API has been loaded directly without loading=async. This can result in suboptimal performance. For best-practice loading patterns please see https://goo.gle/js-api-loading @ https://maps.googleapis.com/maps/api/js?key=AIzaSyDUqOUu1JNAhTmB27NiyBvfxBk6TZLNgXo:331

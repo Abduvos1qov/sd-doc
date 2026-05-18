@@ -1,0 +1,478 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - main [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - heading "Подтверждение оплаты" [level=4] [ref=e105]
+          - generic [ref=e108]:
+            - textbox "Datepicker input" [ref=e109] [cursor=pointer]:
+              - /placeholder: ""
+              - text: май 12 - май 18
+            - img [ref=e110] [cursor=pointer]
+          - button "Загрузить" [ref=e115] [cursor=pointer]:
+            - generic [ref=e116]: Загрузить
+        - separator [ref=e117]
+        - generic [ref=e119]:
+          - generic [ref=e121]:
+            - button "Подтверждение" [disabled]:
+              - generic:
+                - generic: 󰗡
+                - text: Подтверждение
+            - button "Удалить оплаты" [disabled]:
+              - generic:
+                - generic: 󰩺
+                - text: Удалить оплаты
+            - button "Импорт оплат" [ref=e122] [cursor=pointer]:
+              - generic [ref=e124]: 󰄹
+              - generic [ref=e125]: Импорт оплат
+              - generic [ref=e127]: 󰍝
+            - generic [ref=e130]:
+              - checkbox "Баланс скрыт" [ref=e134] [cursor=pointer]
+              - generic [ref=e135] [cursor=pointer]: Баланс скрыт
+            - generic [ref=e138]:
+              - generic [ref=e140]: 󰍉
+              - textbox [ref=e142]:
+                - /placeholder: Поиск
+              - text: 󰅙
+            - generic [ref=e143]:
+              - button "Показать по" [ref=e144] [cursor=pointer]:
+                - generic [ref=e145]: Показать по
+                - generic [ref=e147]: 󰍝
+              - button [ref=e148] [cursor=pointer]:
+                - generic [ref=e150]: 󰕭
+              - button "Excel" [ref=e151] [cursor=pointer]:
+                - generic [ref=e152]:
+                  - generic [ref=e153]: Excel
+                  - img [ref=e154]
+          - table [ref=e158]:
+            - rowgroup [ref=e159]:
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e160]:
+                - columnheader [ref=e161]
+                - columnheader "Загрузка..." [ref=e162]:
+                  - alert "Загрузка..." [ref=e163]
+                - columnheader "Загрузка..." [ref=e165]:
+                  - alert "Загрузка..." [ref=e166]
+                - columnheader "Загрузка..." [ref=e168]:
+                  - alert "Загрузка..." [ref=e169]
+                - columnheader "Загрузка..." [ref=e171]:
+                  - alert "Загрузка..." [ref=e172]
+                - columnheader "Загрузка..." [ref=e174]:
+                  - alert "Загрузка..." [ref=e175]
+                - columnheader "Загрузка..." [ref=e177]:
+                  - alert "Загрузка..." [ref=e178]
+                - columnheader "Загрузка..." [ref=e180]:
+                  - alert "Загрузка..." [ref=e181]
+                - columnheader "Загрузка..." [ref=e183]:
+                  - alert "Загрузка..." [ref=e184]
+                - columnheader "Загрузка..." [ref=e186]:
+                  - alert "Загрузка..." [ref=e187]
+                - columnheader "Загрузка..." [ref=e189]:
+                  - alert "Загрузка..." [ref=e190]
+                - columnheader "Загрузка..." [ref=e192]:
+                  - alert "Загрузка..." [ref=e193]
+                - columnheader "Загрузка..." [ref=e195]:
+                  - alert "Загрузка..." [ref=e196]
+                - columnheader "Загрузка..." [ref=e198]:
+                  - alert "Загрузка..." [ref=e199]
+                - columnheader "Загрузка..." [ref=e201]:
+                  - alert "Загрузка..." [ref=e202]
+            - rowgroup [ref=e204]:
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e205]:
+                - cell [ref=e206]
+                - cell "Загрузка..." [ref=e207]:
+                  - alert "Загрузка..." [ref=e208]
+                - cell "Загрузка..." [ref=e210]:
+                  - alert "Загрузка..." [ref=e211]
+                - cell "Загрузка..." [ref=e213]:
+                  - alert "Загрузка..." [ref=e214]
+                - cell "Загрузка..." [ref=e216]:
+                  - alert "Загрузка..." [ref=e217]
+                - cell "Загрузка..." [ref=e219]:
+                  - alert "Загрузка..." [ref=e220]
+                - cell "Загрузка..." [ref=e222]:
+                  - alert "Загрузка..." [ref=e223]
+                - cell "Загрузка..." [ref=e225]:
+                  - alert "Загрузка..." [ref=e226]
+                - cell "Загрузка..." [ref=e228]:
+                  - alert "Загрузка..." [ref=e229]
+                - cell "Загрузка..." [ref=e231]:
+                  - alert "Загрузка..." [ref=e232]
+                - cell "Загрузка..." [ref=e234]:
+                  - alert "Загрузка..." [ref=e235]
+                - cell "Загрузка..." [ref=e237]:
+                  - alert "Загрузка..." [ref=e238]
+                - cell "Загрузка..." [ref=e240]:
+                  - alert "Загрузка..." [ref=e241]
+                - cell "Загрузка..." [ref=e243]:
+                  - alert "Загрузка..." [ref=e244]
+                - cell "Загрузка..." [ref=e246]:
+                  - alert "Загрузка..." [ref=e247]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e249]:
+                - cell [ref=e250]
+                - cell "Загрузка..." [ref=e251]:
+                  - alert "Загрузка..." [ref=e252]
+                - cell "Загрузка..." [ref=e254]:
+                  - alert "Загрузка..." [ref=e255]
+                - cell "Загрузка..." [ref=e257]:
+                  - alert "Загрузка..." [ref=e258]
+                - cell "Загрузка..." [ref=e260]:
+                  - alert "Загрузка..." [ref=e261]
+                - cell "Загрузка..." [ref=e263]:
+                  - alert "Загрузка..." [ref=e264]
+                - cell "Загрузка..." [ref=e266]:
+                  - alert "Загрузка..." [ref=e267]
+                - cell "Загрузка..." [ref=e269]:
+                  - alert "Загрузка..." [ref=e270]
+                - cell "Загрузка..." [ref=e272]:
+                  - alert "Загрузка..." [ref=e273]
+                - cell "Загрузка..." [ref=e275]:
+                  - alert "Загрузка..." [ref=e276]
+                - cell "Загрузка..." [ref=e278]:
+                  - alert "Загрузка..." [ref=e279]
+                - cell "Загрузка..." [ref=e281]:
+                  - alert "Загрузка..." [ref=e282]
+                - cell "Загрузка..." [ref=e284]:
+                  - alert "Загрузка..." [ref=e285]
+                - cell "Загрузка..." [ref=e287]:
+                  - alert "Загрузка..." [ref=e288]
+                - cell "Загрузка..." [ref=e290]:
+                  - alert "Загрузка..." [ref=e291]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e293]:
+                - cell [ref=e294]
+                - cell "Загрузка..." [ref=e295]:
+                  - alert "Загрузка..." [ref=e296]
+                - cell "Загрузка..." [ref=e298]:
+                  - alert "Загрузка..." [ref=e299]
+                - cell "Загрузка..." [ref=e301]:
+                  - alert "Загрузка..." [ref=e302]
+                - cell "Загрузка..." [ref=e304]:
+                  - alert "Загрузка..." [ref=e305]
+                - cell "Загрузка..." [ref=e307]:
+                  - alert "Загрузка..." [ref=e308]
+                - cell "Загрузка..." [ref=e310]:
+                  - alert "Загрузка..." [ref=e311]
+                - cell "Загрузка..." [ref=e313]:
+                  - alert "Загрузка..." [ref=e314]
+                - cell "Загрузка..." [ref=e316]:
+                  - alert "Загрузка..." [ref=e317]
+                - cell "Загрузка..." [ref=e319]:
+                  - alert "Загрузка..." [ref=e320]
+                - cell "Загрузка..." [ref=e322]:
+                  - alert "Загрузка..." [ref=e323]
+                - cell "Загрузка..." [ref=e325]:
+                  - alert "Загрузка..." [ref=e326]
+                - cell "Загрузка..." [ref=e328]:
+                  - alert "Загрузка..." [ref=e329]
+                - cell "Загрузка..." [ref=e331]:
+                  - alert "Загрузка..." [ref=e332]
+                - cell "Загрузка..." [ref=e334]:
+                  - alert "Загрузка..." [ref=e335]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e337]:
+                - cell [ref=e338]
+                - cell "Загрузка..." [ref=e339]:
+                  - alert "Загрузка..." [ref=e340]
+                - cell "Загрузка..." [ref=e342]:
+                  - alert "Загрузка..." [ref=e343]
+                - cell "Загрузка..." [ref=e345]:
+                  - alert "Загрузка..." [ref=e346]
+                - cell "Загрузка..." [ref=e348]:
+                  - alert "Загрузка..." [ref=e349]
+                - cell "Загрузка..." [ref=e351]:
+                  - alert "Загрузка..." [ref=e352]
+                - cell "Загрузка..." [ref=e354]:
+                  - alert "Загрузка..." [ref=e355]
+                - cell "Загрузка..." [ref=e357]:
+                  - alert "Загрузка..." [ref=e358]
+                - cell "Загрузка..." [ref=e360]:
+                  - alert "Загрузка..." [ref=e361]
+                - cell "Загрузка..." [ref=e363]:
+                  - alert "Загрузка..." [ref=e364]
+                - cell "Загрузка..." [ref=e366]:
+                  - alert "Загрузка..." [ref=e367]
+                - cell "Загрузка..." [ref=e369]:
+                  - alert "Загрузка..." [ref=e370]
+                - cell "Загрузка..." [ref=e372]:
+                  - alert "Загрузка..." [ref=e373]
+                - cell "Загрузка..." [ref=e375]:
+                  - alert "Загрузка..." [ref=e376]
+                - cell "Загрузка..." [ref=e378]:
+                  - alert "Загрузка..." [ref=e379]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e381]:
+                - cell [ref=e382]
+                - cell "Загрузка..." [ref=e383]:
+                  - alert "Загрузка..." [ref=e384]
+                - cell "Загрузка..." [ref=e386]:
+                  - alert "Загрузка..." [ref=e387]
+                - cell "Загрузка..." [ref=e389]:
+                  - alert "Загрузка..." [ref=e390]
+                - cell "Загрузка..." [ref=e392]:
+                  - alert "Загрузка..." [ref=e393]
+                - cell "Загрузка..." [ref=e395]:
+                  - alert "Загрузка..." [ref=e396]
+                - cell "Загрузка..." [ref=e398]:
+                  - alert "Загрузка..." [ref=e399]
+                - cell "Загрузка..." [ref=e401]:
+                  - alert "Загрузка..." [ref=e402]
+                - cell "Загрузка..." [ref=e404]:
+                  - alert "Загрузка..." [ref=e405]
+                - cell "Загрузка..." [ref=e407]:
+                  - alert "Загрузка..." [ref=e408]
+                - cell "Загрузка..." [ref=e410]:
+                  - alert "Загрузка..." [ref=e411]
+                - cell "Загрузка..." [ref=e413]:
+                  - alert "Загрузка..." [ref=e414]
+                - cell "Загрузка..." [ref=e416]:
+                  - alert "Загрузка..." [ref=e417]
+                - cell "Загрузка..." [ref=e419]:
+                  - alert "Загрузка..." [ref=e420]
+                - cell "Загрузка..." [ref=e422]:
+                  - alert "Загрузка..." [ref=e423]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e425]:
+                - cell [ref=e426]
+                - cell "Загрузка..." [ref=e427]:
+                  - alert "Загрузка..." [ref=e428]
+                - cell "Загрузка..." [ref=e430]:
+                  - alert "Загрузка..." [ref=e431]
+                - cell "Загрузка..." [ref=e433]:
+                  - alert "Загрузка..." [ref=e434]
+                - cell "Загрузка..." [ref=e436]:
+                  - alert "Загрузка..." [ref=e437]
+                - cell "Загрузка..." [ref=e439]:
+                  - alert "Загрузка..." [ref=e440]
+                - cell "Загрузка..." [ref=e442]:
+                  - alert "Загрузка..." [ref=e443]
+                - cell "Загрузка..." [ref=e445]:
+                  - alert "Загрузка..." [ref=e446]
+                - cell "Загрузка..." [ref=e448]:
+                  - alert "Загрузка..." [ref=e449]
+                - cell "Загрузка..." [ref=e451]:
+                  - alert "Загрузка..." [ref=e452]
+                - cell "Загрузка..." [ref=e454]:
+                  - alert "Загрузка..." [ref=e455]
+                - cell "Загрузка..." [ref=e457]:
+                  - alert "Загрузка..." [ref=e458]
+                - cell "Загрузка..." [ref=e460]:
+                  - alert "Загрузка..." [ref=e461]
+                - cell "Загрузка..." [ref=e463]:
+                  - alert "Загрузка..." [ref=e464]
+                - cell "Загрузка..." [ref=e466]:
+                  - alert "Загрузка..." [ref=e467]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e469]:
+                - cell [ref=e470]
+                - cell "Загрузка..." [ref=e471]:
+                  - alert "Загрузка..." [ref=e472]
+                - cell "Загрузка..." [ref=e474]:
+                  - alert "Загрузка..." [ref=e475]
+                - cell "Загрузка..." [ref=e477]:
+                  - alert "Загрузка..." [ref=e478]
+                - cell "Загрузка..." [ref=e480]:
+                  - alert "Загрузка..." [ref=e481]
+                - cell "Загрузка..." [ref=e483]:
+                  - alert "Загрузка..." [ref=e484]
+                - cell "Загрузка..." [ref=e486]:
+                  - alert "Загрузка..." [ref=e487]
+                - cell "Загрузка..." [ref=e489]:
+                  - alert "Загрузка..." [ref=e490]
+                - cell "Загрузка..." [ref=e492]:
+                  - alert "Загрузка..." [ref=e493]
+                - cell "Загрузка..." [ref=e495]:
+                  - alert "Загрузка..." [ref=e496]
+                - cell "Загрузка..." [ref=e498]:
+                  - alert "Загрузка..." [ref=e499]
+                - cell "Загрузка..." [ref=e501]:
+                  - alert "Загрузка..." [ref=e502]
+                - cell "Загрузка..." [ref=e504]:
+                  - alert "Загрузка..." [ref=e505]
+                - cell "Загрузка..." [ref=e507]:
+                  - alert "Загрузка..." [ref=e508]
+                - cell "Загрузка..." [ref=e510]:
+                  - alert "Загрузка..." [ref=e511]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e513]:
+                - cell [ref=e514]
+                - cell "Загрузка..." [ref=e515]:
+                  - alert "Загрузка..." [ref=e516]
+                - cell "Загрузка..." [ref=e518]:
+                  - alert "Загрузка..." [ref=e519]
+                - cell "Загрузка..." [ref=e521]:
+                  - alert "Загрузка..." [ref=e522]
+                - cell "Загрузка..." [ref=e524]:
+                  - alert "Загрузка..." [ref=e525]
+                - cell "Загрузка..." [ref=e527]:
+                  - alert "Загрузка..." [ref=e528]
+                - cell "Загрузка..." [ref=e530]:
+                  - alert "Загрузка..." [ref=e531]
+                - cell "Загрузка..." [ref=e533]:
+                  - alert "Загрузка..." [ref=e534]
+                - cell "Загрузка..." [ref=e536]:
+                  - alert "Загрузка..." [ref=e537]
+                - cell "Загрузка..." [ref=e539]:
+                  - alert "Загрузка..." [ref=e540]
+                - cell "Загрузка..." [ref=e542]:
+                  - alert "Загрузка..." [ref=e543]
+                - cell "Загрузка..." [ref=e545]:
+                  - alert "Загрузка..." [ref=e546]
+                - cell "Загрузка..." [ref=e548]:
+                  - alert "Загрузка..." [ref=e549]
+                - cell "Загрузка..." [ref=e551]:
+                  - alert "Загрузка..." [ref=e552]
+                - cell "Загрузка..." [ref=e554]:
+                  - alert "Загрузка..." [ref=e555]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e557]:
+                - cell [ref=e558]
+                - cell "Загрузка..." [ref=e559]:
+                  - alert "Загрузка..." [ref=e560]
+                - cell "Загрузка..." [ref=e562]:
+                  - alert "Загрузка..." [ref=e563]
+                - cell "Загрузка..." [ref=e565]:
+                  - alert "Загрузка..." [ref=e566]
+                - cell "Загрузка..." [ref=e568]:
+                  - alert "Загрузка..." [ref=e569]
+                - cell "Загрузка..." [ref=e571]:
+                  - alert "Загрузка..." [ref=e572]
+                - cell "Загрузка..." [ref=e574]:
+                  - alert "Загрузка..." [ref=e575]
+                - cell "Загрузка..." [ref=e577]:
+                  - alert "Загрузка..." [ref=e578]
+                - cell "Загрузка..." [ref=e580]:
+                  - alert "Загрузка..." [ref=e581]
+                - cell "Загрузка..." [ref=e583]:
+                  - alert "Загрузка..." [ref=e584]
+                - cell "Загрузка..." [ref=e586]:
+                  - alert "Загрузка..." [ref=e587]
+                - cell "Загрузка..." [ref=e589]:
+                  - alert "Загрузка..." [ref=e590]
+                - cell "Загрузка..." [ref=e592]:
+                  - alert "Загрузка..." [ref=e593]
+                - cell "Загрузка..." [ref=e595]:
+                  - alert "Загрузка..." [ref=e596]
+                - cell "Загрузка..." [ref=e598]:
+                  - alert "Загрузка..." [ref=e599]
+              - row "Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка... Загрузка..." [ref=e601]:
+                - cell [ref=e602]
+                - cell "Загрузка..." [ref=e603]:
+                  - alert "Загрузка..." [ref=e604]
+                - cell "Загрузка..." [ref=e606]:
+                  - alert "Загрузка..." [ref=e607]
+                - cell "Загрузка..." [ref=e609]:
+                  - alert "Загрузка..." [ref=e610]
+                - cell "Загрузка..." [ref=e612]:
+                  - alert "Загрузка..." [ref=e613]
+                - cell "Загрузка..." [ref=e615]:
+                  - alert "Загрузка..." [ref=e616]
+                - cell "Загрузка..." [ref=e618]:
+                  - alert "Загрузка..." [ref=e619]
+                - cell "Загрузка..." [ref=e621]:
+                  - alert "Загрузка..." [ref=e622]
+                - cell "Загрузка..." [ref=e624]:
+                  - alert "Загрузка..." [ref=e625]
+                - cell "Загрузка..." [ref=e627]:
+                  - alert "Загрузка..." [ref=e628]
+                - cell "Загрузка..." [ref=e630]:
+                  - alert "Загрузка..." [ref=e631]
+                - cell "Загрузка..." [ref=e633]:
+                  - alert "Загрузка..." [ref=e634]
+                - cell "Загрузка..." [ref=e636]:
+                  - alert "Загрузка..." [ref=e637]
+                - cell "Загрузка..." [ref=e639]:
+                  - alert "Загрузка..." [ref=e640]
+                - cell "Загрузка..." [ref=e642]:
+                  - alert "Загрузка..." [ref=e643]
+          - generic [ref=e645]:
+            - generic [ref=e646]: Показаны записи 0 - 0 из 0
+            - navigation "Страница" [ref=e648]:
+              - list [ref=e649]:
+                - listitem [ref=e650]:
+                  - button "Предыдущая" [disabled]:
+                    - generic:
+                      - generic: 󰅁
+                - listitem [ref=e651]:
+                  - button "Следующая" [disabled]:
+                    - generic:
+                      - generic: 󰅂
+  - progressbar [ref=e654]:
+    - img [ref=e655]

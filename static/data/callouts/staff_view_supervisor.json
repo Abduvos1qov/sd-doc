@@ -1,0 +1,15 @@
+{
+  "slug": "staff_view_supervisor",
+  "url": "/staff/view/supervisor",
+  "title": "Supervisors list",
+  "callouts": [
+    {
+      "x": 111,
+      "y": 189,
+      "w": 1309,
+      "h": 60,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

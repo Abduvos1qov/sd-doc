@@ -28,7 +28,21 @@ const config = {
   },
 
   markdown: { mermaid: true },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en', 'ru'],
+        docsRouteBasePath: '/docs',
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      }),
+    ],
+  ],
 
   presets: [
     [
@@ -47,6 +61,18 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'guide',
+        path: 'guide',
+        routeBasePath: 'guide',
+        sidebarPath: require.resolve('./sidebars-guide.js'),
+      },
     ],
   ],
 
@@ -92,6 +118,11 @@ const config = {
             sidebarId: 'qaSidebar',
             position: 'left',
             label: 'QA',
+          },
+          {
+            to: '/guide/welcome',
+            label: 'Guide',
+            position: 'left',
           },
           {
             href: 'https://www.figma.com/board/y2kWMuxLwrpdaCGhVwYYYI',

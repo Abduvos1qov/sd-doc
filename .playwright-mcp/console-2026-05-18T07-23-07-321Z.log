@@ -1,0 +1,3 @@
+[     153ms] [LOG] loading translations for module: staff lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[     238ms] [LOG] rendering datatable... @ http://localhost:8080/staff/view/agent:5863
+[     262ms] [LOG] loading translations for module: staff lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34

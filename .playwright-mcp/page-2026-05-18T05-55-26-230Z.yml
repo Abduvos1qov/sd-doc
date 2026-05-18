@@ -1,0 +1,311 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - banner [ref=e2]:
+      - list [ref=e4]:
+        - listitem [ref=e5]:
+          - link "Супервайзер" [ref=e6] [cursor=pointer]:
+            - /url: /dashboard/supervayzer
+            - generic [ref=e7]: Супервайзер
+        - listitem [ref=e8]:
+          - link "Продажи" [ref=e9] [cursor=pointer]:
+            - /url: /dashboard/sales
+            - generic [ref=e10]: Продажи
+        - listitem [ref=e11]:
+          - link "Финансы" [ref=e12] [cursor=pointer]:
+            - /url: /dashboard/finans
+            - generic [ref=e13]: Финансы
+        - listitem [ref=e14]:
+          - link "Отчеты" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e16]
+            - generic [ref=e17]: Отчеты
+        - listitem [ref=e19]:
+          - link "Касса" [ref=e20] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e21]
+            - generic [ref=e22]: Касса
+        - listitem [ref=e24]:
+          - link "GPS" [ref=e25] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e26]: GPS
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - 'link "Баланс: 55,400,000,000" [ref=e31] [cursor=pointer]':
+            - /url: /dashboard/billing
+            - img [ref=e32]
+            - generic [ref=e34]: "Баланс:"
+            - strong [ref=e35]: 55,400,000,000
+        - listitem [ref=e36]:
+          - link [ref=e37] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e38]
+        - listitem [ref=e40]:
+          - link [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+        - listitem [ref=e45]:
+          - link [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e47]
+    - complementary [ref=e51]:
+      - link [ref=e53] [cursor=pointer]:
+        - /url: /
+        - img [ref=e54]
+      - navigation [ref=e60]:
+        - link "Планы" [ref=e62] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e64]
+          - generic [ref=e65]: Планы
+        - link "Заявки" [ref=e67] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e69]
+          - generic [ref=e70]: Заявки
+        - link "Склад" [ref=e72] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e74]
+          - generic [ref=e75]: Склад
+        - link "Маркировка" [ref=e77] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e79]
+          - generic [ref=e80]: Маркировка
+        - link "Клиенты" [ref=e82] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e84]
+          - generic [ref=e85]: Клиенты
+        - link "Команда" [ref=e87] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e89]
+          - generic [ref=e90]: Команда
+        - link "Аудит 2" [ref=e92] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e94]
+          - generic [ref=e95]: Аудит 2
+        - link "Настройки" [ref=e97] [cursor=pointer]:
+          - /url: /settings/diler
+          - img [ref=e99]
+          - generic [ref=e100]: Настройки
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - list [ref=e103]:
+        - listitem [ref=e104]:
+          - link "Пользователи" [ref=e105]:
+            - /url: /team/auditor/
+      - application [ref=e108]:
+        - tablist [ref=e110]:
+          - tab "Панель настроек" [selected] [ref=e111]:
+            - generic [ref=e112]: Панель настроек
+          - tab "1. Мерчендайзеры" [selected] [ref=e113]:
+            - link "1. Мерчендайзеры" [ref=e114] [cursor=pointer]:
+              - /url: /team/auditor
+          - tab "2. Супервайзеры" [selected] [ref=e115]:
+            - link "2. Супервайзеры" [ref=e116]:
+              - /url: /team/supervisor
+          - tab "3. Агенты" [selected] [ref=e117]:
+            - link "3. Агенты" [ref=e118] [cursor=pointer]:
+              - /url: /team/agent
+        - tabpanel [ref=e120]:
+          - group "Супервайзеры" [ref=e121]:
+            - generic [ref=e122]: Супервайзеры
+            - generic [ref=e123]:
+              - link " Добавить" [ref=e124] [cursor=pointer]:
+                - /url: /team/supervisor/create
+                - generic [ref=e125]:  Добавить
+              - generic [ref=e126]:
+                - list [ref=e127]:
+                  - listitem [ref=e128]:
+                    - link "Активные" [ref=e129]:
+                      - /url: "#active"
+                  - listitem [ref=e130]:
+                    - link "Неактивные" [ref=e131] [cursor=pointer]:
+                      - /url: "#not-active"
+                - generic [ref=e132]:
+                  - generic [ref=e134]:
+                    - generic [ref=e135]:
+                      - link "По 20" [ref=e136] [cursor=pointer]:
+                        - /url: "#"
+                      - link "Показ./Скр. столбцы" [ref=e137] [cursor=pointer]:
+                        - /url: "#"
+                      - link "Excel" [ref=e138] [cursor=pointer]:
+                        - /url: "#"
+                    - generic [ref=e140]:
+                      - text: "Быстрый поиск:"
+                      - searchbox "Быстрый поиск:" [ref=e141]
+                    - grid [ref=e142]:
+                      - rowgroup [ref=e143]:
+                        - 'row "Пользователь: активировать для сортировки столбцы по возрастанию Логин: активировать для сортировки столбцы по возрастанию Версия apk: активировать для сортировки столбцы по возрастанию Последняя синхронизация: активировать для сортировки столбцы по возрастанию : активировать для сортировки столбцы по возрастанию" [ref=e144]':
+                          - 'columnheader "Пользователь: активировать для сортировки столбцы по возрастанию" [ref=e145] [cursor=pointer]': Пользователь
+                          - 'columnheader "Логин: активировать для сортировки столбцы по возрастанию" [ref=e146] [cursor=pointer]': Логин
+                          - 'columnheader "Версия apk: активировать для сортировки столбцы по возрастанию" [ref=e147] [cursor=pointer]': Версия apk
+                          - 'columnheader "Последняя синхронизация: активировать для сортировки столбцы по возрастанию" [ref=e148] [cursor=pointer]': Последняя синхронизация
+                          - 'columnheader ": активировать для сортировки столбцы по возрастанию" [ref=e149] [cursor=pointer]'
+                      - rowgroup [ref=e150]:
+                        - row "Supermen 12345  " [ref=e151]:
+                          - gridcell "Supermen" [ref=e152]
+                          - gridcell "12345" [ref=e153]
+                          - gridcell [ref=e154]
+                          - gridcell [ref=e155]
+                          - gridcell " " [ref=e156]:
+                            - generic [ref=e158] [cursor=pointer]: 
+                            - link "" [ref=e159] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=72
+                              - generic [ref=e160]: 
+                        - row "Dilshod demo4  " [ref=e161]:
+                          - gridcell "Dilshod" [ref=e162]
+                          - gridcell "demo4" [ref=e163]
+                          - gridcell [ref=e164]
+                          - gridcell [ref=e165]
+                          - gridcell " " [ref=e166]:
+                            - generic [ref=e168] [cursor=pointer]: 
+                            - link "" [ref=e169] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=71
+                              - generic [ref=e170]: 
+                        - row "Abdulbosit suppper 3.0.4 2025-08-05 16:46:48 iPhone14,5  " [ref=e171]:
+                          - gridcell "Abdulbosit" [ref=e172]
+                          - gridcell "suppper" [ref=e173]
+                          - gridcell "3.0.4" [ref=e174]
+                          - gridcell "2025-08-05 16:46:48 iPhone14,5" [ref=e175]:
+                            - text: 2025-08-05 16:46:48
+                            - text: iPhone14,5
+                          - gridcell " " [ref=e176]:
+                            - generic [ref=e178] [cursor=pointer]: 
+                            - link "" [ref=e179] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=68
+                              - generic [ref=e180]: 
+                        - row "12345678 12345678  " [ref=e181]:
+                          - gridcell "12345678" [ref=e182]
+                          - gridcell "12345678" [ref=e183]
+                          - gridcell [ref=e184]
+                          - gridcell [ref=e185]
+                          - gridcell " " [ref=e186]:
+                            - generic [ref=e188] [cursor=pointer]: 
+                            - link "" [ref=e189] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=67
+                              - generic [ref=e190]: 
+                        - row "123456 1223  " [ref=e191]:
+                          - gridcell "123456" [ref=e192]
+                          - gridcell "1223" [ref=e193]
+                          - gridcell [ref=e194]
+                          - gridcell [ref=e195]
+                          - gridcell " " [ref=e196]:
+                            - generic [ref=e198] [cursor=pointer]: 
+                            - link "" [ref=e199] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=66
+                              - generic [ref=e200]: 
+                        - row "Supervisor John Редактирую jhon 3.0.12 2025-05-01 12:54:04 23021RAAEG  " [ref=e201]:
+                          - gridcell "Supervisor John Редактирую" [ref=e202]
+                          - gridcell "jhon" [ref=e203]
+                          - gridcell "3.0.12" [ref=e204]
+                          - gridcell "2025-05-01 12:54:04 23021RAAEG" [ref=e205]:
+                            - text: 2025-05-01 12:54:04
+                            - text: 23021RAAEG
+                          - gridcell " " [ref=e206]:
+                            - generic [ref=e208] [cursor=pointer]: 
+                            - link "" [ref=e209] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=63
+                              - generic [ref=e210]: 
+                        - row "super super 123sup 3.0.12 2025-06-11 15:45:03 23021RAAEG  " [ref=e211]:
+                          - gridcell "super super" [ref=e212]
+                          - gridcell "123sup" [ref=e213]
+                          - gridcell "3.0.12" [ref=e214]
+                          - gridcell "2025-06-11 15:45:03 23021RAAEG" [ref=e215]:
+                            - text: 2025-06-11 15:45:03
+                            - text: 23021RAAEG
+                          - gridcell " " [ref=e216]:
+                            - generic [ref=e218] [cursor=pointer]: 
+                            - link "" [ref=e219] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=58
+                              - generic [ref=e220]: 
+                        - row "Javoxir supp 3.0.10 2025-11-18 15:52:14 iPhone13,3  " [ref=e221]:
+                          - gridcell "Javoxir" [ref=e222]
+                          - gridcell "supp" [ref=e223]
+                          - gridcell "3.0.10" [ref=e224]
+                          - gridcell "2025-11-18 15:52:14 iPhone13,3" [ref=e225]:
+                            - text: 2025-11-18 15:52:14
+                            - text: iPhone13,3
+                          - gridcell " " [ref=e226]:
+                            - generic [ref=e228] [cursor=pointer]: 
+                            - link "" [ref=e229] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=57
+                              - generic [ref=e230]: 
+                        - row "Supervisor Mike mike  " [ref=e231]:
+                          - gridcell "Supervisor Mike" [ref=e232]
+                          - gridcell "mike" [ref=e233]
+                          - gridcell [ref=e234]
+                          - gridcell [ref=e235]
+                          - gridcell " " [ref=e236]:
+                            - generic [ref=e238] [cursor=pointer]: 
+                            - link "" [ref=e239] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=53
+                              - generic [ref=e240]: 
+                        - row "last active 123123as  " [ref=e241]:
+                          - gridcell "last active" [ref=e242]
+                          - gridcell "123123as" [ref=e243]
+                          - gridcell [ref=e244]
+                          - gridcell [ref=e245]
+                          - gridcell " " [ref=e246]:
+                            - generic [ref=e248] [cursor=pointer]: 
+                            - link "" [ref=e249] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=50
+                              - generic [ref=e250]: 
+                        - row "123123 frefer2  " [ref=e251]:
+                          - gridcell "123123" [ref=e252]
+                          - gridcell "frefer2" [ref=e253]
+                          - gridcell [ref=e254]
+                          - gridcell [ref=e255]
+                          - gridcell " " [ref=e256]:
+                            - generic [ref=e258] [cursor=pointer]: 
+                            - link "" [ref=e259] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=44
+                              - generic [ref=e260]: 
+                        - row "spp12 8888 3.0.12 2025-05-06 10:53:41 M2003J15SC  " [ref=e261]:
+                          - gridcell "spp12" [ref=e262]
+                          - gridcell "8888" [ref=e263]
+                          - gridcell "3.0.12" [ref=e264]
+                          - gridcell "2025-05-06 10:53:41 M2003J15SC" [ref=e265]:
+                            - text: 2025-05-06 10:53:41
+                            - text: M2003J15SC
+                          - gridcell " " [ref=e266]:
+                            - generic [ref=e268] [cursor=pointer]: 
+                            - link "" [ref=e269] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=41
+                              - generic [ref=e270]: 
+                        - row "New Supervisor 1 nsup  " [ref=e271]:
+                          - gridcell "New Supervisor 1" [ref=e272]
+                          - gridcell "nsup" [ref=e273]
+                          - gridcell [ref=e274]
+                          - gridcell [ref=e275]
+                          - gridcell " " [ref=e276]:
+                            - generic [ref=e278] [cursor=pointer]: 
+                            - link "" [ref=e279] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=38
+                              - generic [ref=e280]: 
+                        - row "super AAA sup1 3.0.18 2026-02-02 14:26:56 iPhone13,3  " [ref=e281]:
+                          - gridcell "super AAA" [ref=e282]
+                          - gridcell "sup1" [ref=e283]
+                          - gridcell "3.0.18" [ref=e284]
+                          - gridcell "2026-02-02 14:26:56 iPhone13,3" [ref=e285]:
+                            - text: 2026-02-02 14:26:56
+                            - text: iPhone13,3
+                          - gridcell " " [ref=e286]:
+                            - generic [ref=e288] [cursor=pointer]: 
+                            - link "" [ref=e289] [cursor=pointer]:
+                              - /url: /team/supervisor/update?id=19
+                              - generic [ref=e290]: 
+                    - status [ref=e291]: 1 - 14 / 14
+                    - list [ref=e293]:
+                      - listitem [ref=e294]:
+                        - link "Пред." [ref=e295]:
+                          - /url: "#"
+                      - listitem [ref=e296] [cursor=pointer]:
+                        - link "1" [ref=e297]:
+                          - /url: "#"
+                      - listitem [ref=e298]:
+                        - link "След." [ref=e299]:
+                          - /url: "#"
+                  - text:                                        
+        - menu "Pagination" [ref=e301]:
+          - listitem [ref=e302]:
+            - menuitem "Предыдущий" [ref=e303] [cursor=pointer]
+          - listitem [ref=e304]:
+            - menuitem "Следующий" [ref=e305] [cursor=pointer]
+  - status [ref=e306]

@@ -1,0 +1,15 @@
+{
+  "slug": "audit_photoReport",
+  "url": "/audit/photoReport",
+  "title": "Photo report",
+  "callouts": [
+    {
+      "x": 126,
+      "y": 369,
+      "w": 1280,
+      "h": 41,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+[     182ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/site/login:0
+[    1677ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:8080/site/login:0
+[    7818ms] [LOG] loading translations for module: dashboard lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34
+[    7998ms] [WARNING] Highcharts warning: Consider including the "accessibility.js" module to make your chart more usable for people with disabilities. Set the "accessibility.enabled" option to false to remove this warning. See https://www.highcharts.com/docs/accessibility/accessibility-module. @ http://localhost:8080/js_plugins/jquery-highcharts-10.3.3/highstock.js:11
+[    8031ms] [LOG] loading translations for module: dashboard lang: ru @ http://localhost:8080/js/plugins/html-i18n-plugin.js?v=4.5:34

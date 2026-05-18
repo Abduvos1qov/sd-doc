@@ -1,0 +1,47 @@
+{
+  "slug": "orders_view_createOrder",
+  "url": "/orders/view/createOrder",
+  "title": "Create order (web)",
+  "callouts": [
+    {
+      "x": 126,
+      "y": 155,
+      "w": 188,
+      "h": 24,
+      "label": "Агент",
+      "kind": "field"
+    },
+    {
+      "x": 384,
+      "y": 155,
+      "w": 188,
+      "h": 24,
+      "label": "Территория",
+      "kind": "field"
+    },
+    {
+      "x": 642,
+      "y": 155,
+      "w": 188,
+      "h": 24,
+      "label": "Категория клиентов",
+      "kind": "field"
+    },
+    {
+      "x": 900,
+      "y": 155,
+      "w": 188,
+      "h": 24,
+      "label": "Дни посещений",
+      "kind": "field"
+    },
+    {
+      "x": 111,
+      "y": 272,
+      "w": 1617,
+      "h": 60,
+      "label": "Data grid",
+      "kind": "grid"
+    }
+  ]
+}
