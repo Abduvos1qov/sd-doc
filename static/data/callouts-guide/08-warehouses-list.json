@@ -1,0 +1,6 @@
+{
+  "callouts": [
+    { "x": 1370, "y": 110, "label": "Step 1: + Add warehouse" },
+    { "x": 200, "y": 240, "label": "Step 2: Click row for details" }
+  ]
+}

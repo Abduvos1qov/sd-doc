@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 380, "y": 200, "label": "Step 1: Pick client" },
+    { "x": 720, "y": 420, "label": "Step 2: Add product line" },
+    { "x": 1300, "y": 800, "label": "Step 3: Save" }
+  ]
+}

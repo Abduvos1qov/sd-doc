@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 950, "y": 180, "label": "Step 1: Search agent" },
+    { "x": 1330, "y": 130, "label": "Step 2: + Add agent" },
+    { "x": 140, "y": 245, "label": "Step 3: Click row to open" }
+  ]
+}

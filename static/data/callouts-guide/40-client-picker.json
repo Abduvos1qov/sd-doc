@@ -1,0 +1,6 @@
+{
+  "callouts": [
+    { "x": 720, "y": 130, "label": "Step 1: Type to search" },
+    { "x": 720, "y": 280, "label": "Step 2: Click a row" }
+  ]
+}

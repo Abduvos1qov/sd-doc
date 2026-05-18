@@ -1,0 +1,6 @@
+{
+  "callouts": [
+    { "x": 1370, "y": 105, "label": "Step 1: + Add expeditor" },
+    { "x": 200, "y": 240, "label": "Step 2: Click row" }
+  ]
+}

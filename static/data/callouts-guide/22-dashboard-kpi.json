@@ -1,0 +1,6 @@
+{
+  "callouts": [
+    { "x": 600, "y": 200, "label": "Step 1: Pick month" },
+    { "x": 720, "y": 380, "label": "Step 2: Drill into agent" }
+  ]
+}

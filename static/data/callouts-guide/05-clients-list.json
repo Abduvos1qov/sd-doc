@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 1100, "y": 110, "label": "Step 1: Search clients" },
+    { "x": 1245, "y": 175, "label": "Step 2: Open filters" },
+    { "x": 1370, "y": 110, "label": "Step 3: + Add client" }
+  ]
+}

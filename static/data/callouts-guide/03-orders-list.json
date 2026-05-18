@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 380, "y": 110, "label": "Step 1: Pick date range" },
+    { "x": 490, "y": 175, "label": "Step 2: Filter by status" },
+    { "x": 1370, "y": 105, "label": "Step 3: + Добавить" }
+  ]
+}
