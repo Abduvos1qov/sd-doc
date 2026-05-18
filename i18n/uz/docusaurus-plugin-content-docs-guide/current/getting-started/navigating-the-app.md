@@ -11,7 +11,7 @@ SalesDoctor har bir funksiyani oz sonli aniq menyularga guruhlaydi. Har bir meny
 
 Har bir sahifaning tepasida:
 
-![SalesDoctor boshqaruv paneli, yuqori panel ko'rinadi](/screens/guide/02-dashboard-home.png)
+![SalesDoctor boshqaruv paneli, yuqori panel ko'rinadi](/screens/guide/02-dashboard-home.webp)
 
 - **Logotip (yuqori chap)** — asosiy boshqaruv paneliga qaytaradi
 - **Bildirishnoma qo'ng'irog'i** — yangi buyurtmalar, yakunlangan yetkazib berishlar, tasdiqlash so'rovlari
@@ -67,11 +67,11 @@ SalesDoctor'dagi har bir ro'yxat sahifasi bir xil uch qatlamli sxema bo'yicha qu
 
 **2. Sarlavha ostidagi filtrlar paneli** — ko'p tanlovli ochiluvchi ro'yxatlar. Ochiluvchi ro'yxatni bossangiz, belgilanadigan ro'yxat ochiladi; bir yoki bir nechta qiymatni tanlang. Jadval darhol yangilanadi.
 
-![Mijozlar ro'yxatining yoyilgan filtrlar paneli](/screens/guide/45-clients-filter-panel.png)
+![Mijozlar ro'yxatining yoyilgan filtrlar paneli](/screens/guide/45-clients-filter-panel.webp)
 
 **3. Forma ichidagi tanlash oynasi** — forma mavjud yozuvni (mijoz, mahsulot, ombor) tanlashni talab qilganda, o'z qidiruv maydoniga ega sahifalangan jadval ochiladi:
 
-![Mijoz tanlash oynasi — qidiruvli sahifalangan jadval](/screens/guide/40-client-picker.png)
+![Mijoz tanlash oynasi — qidiruvli sahifalangan jadval](/screens/guide/40-client-picker.webp)
 
 Bir nechta qoidalar:
 

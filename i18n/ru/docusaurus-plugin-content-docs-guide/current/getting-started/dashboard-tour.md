@@ -11,7 +11,7 @@ title: Обзор дашборда
 
 Кликните на **логотип SalesDoctor** (слева сверху) с любой страницы, чтобы вернуться сюда, или просто откройте `/dashboard/supervayzer`.
 
-![Полный вид дашборда](/screens/guide/02-dashboard-home.png)
+![Полный вид дашборда](/screens/guide/02-dashboard-home.webp)
 
 ## Шаг 2 — Верхняя панель
 

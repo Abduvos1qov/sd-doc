@@ -11,7 +11,7 @@ An **expeditor** delivers orders to clients — usually a driver with a van. Eac
 
 From the menu choose **Команда → Экспедиторы** (Team → Expeditors), or open `/staff/view/expeditor` directly:
 
-![Expeditors list](/screens/guide/19-expeditors-list.png)
+![Expeditors list](/screens/guide/19-expeditors-list.webp)
 
 You see every expeditor with their phone, assigned vehicle, and today's trip status.
 
@@ -19,7 +19,7 @@ You see every expeditor with their phone, assigned vehicle, and today's trip sta
 
 Click **+ Добавить** at the top right. The expeditor creation form opens at `/staff/create/expeditor`:
 
-![Add expeditor form](/screens/guide/31-add-expeditor-form.png)
+![Add expeditor form](/screens/guide/31-add-expeditor-form.webp)
 
 ## Step 3 — Fill in the form
 
@@ -50,7 +50,7 @@ You'll see all of this happening live on your dashboard while they work.
 
 From **Заявки → Рейсы** (Orders → Trips):
 
-![Trips view — today's deliveries](/screens/guide/20-trips-view.png)
+![Trips view — today's deliveries](/screens/guide/20-trips-view.webp)
 
 Each row is one expeditor's trip with:
 

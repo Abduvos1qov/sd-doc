@@ -8,7 +8,7 @@ slug: /welcome
 
 You're about to set up SalesDoctor for your business. This short tour walks you through everything you need on day one — adding your team, your clients, your stock, and capturing your first order — with screenshots at every step.
 
-![SalesDoctor — your dashboard at first sign-in](/screens/guide/02-dashboard-home.png)
+![SalesDoctor — your dashboard at first sign-in](/screens/guide/02-dashboard-home.webp)
 
 ## What SalesDoctor does for you
 

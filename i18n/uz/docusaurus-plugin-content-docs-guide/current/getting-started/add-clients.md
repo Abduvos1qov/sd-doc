@@ -11,7 +11,7 @@ SalesDoctor'da **mijoz** — bu siz tovar sotadigan istalgan joy — do'kon, res
 
 Menyudan **Клиенты → Все клиенты** (Mijozlar → Barcha mijozlar) ni tanlang yoki to'g'ridan-to'g'ri `/clients/client` ni oching:
 
-![Mijozlar ro'yxati — qidiruv qatori, filtrlar va jadval](/screens/guide/05-clients-list.png)
+![Mijozlar ro'yxati — qidiruv qatori, filtrlar va jadval](/screens/guide/05-clients-list.webp)
 
 Ro'yxat har bir mijozni telefoni, manzili, kanali va kredit balansi bilan ko'rsatadi.
 
@@ -54,7 +54,7 @@ Yaxshi GPS keyinroq tashrifni avtomatik tekshirishga imkon beradi.
 
 Agar sizda Excel'da mavjud ro'yxat bo'lsa, `/clients/client/import` manzilidagi import sahifasidan foydalaning:
 
-![Mijozlarni Excel orqali import qilish](/screens/guide/32-clients-import.png)
+![Mijozlarni Excel orqali import qilish](/screens/guide/32-clients-import.webp)
 
 Shablonni yuklab oling, to'ldiring va orqaga yuklang — har bir qator bir o'tishda mijozga aylanadi.
 

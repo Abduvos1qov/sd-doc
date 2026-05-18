@@ -11,7 +11,7 @@ Buyurtma yaratilgandan keyin u aniq bosqichlardan o'tadi. Har bir buyurtma hozir
 
 Menyudan **Заявки → Список заявок** ni tanlang yoki to'g'ridan-to'g'ri `/orders/list` ni oching:
 
-![Holat ustuni bilan buyurtmalar ro'yxati](/screens/guide/03-orders-list.png)
+![Holat ustuni bilan buyurtmalar ro'yxati](/screens/guide/03-orders-list.webp)
 
 Har bir qator — buyurtma. **Статус** ustuni qaysi bosqichda ekanini bildiradi.
 
@@ -34,7 +34,7 @@ Buyurtmalar ro'yxatining yuqori qismida uchta filtr richagi bor.
 
 Ikki oylik taqvimni ochish uchun sana maydonini bosing:
 
-![Sana oralig'i tanlovi ochiq](/screens/guide/42-date-range-picker.png)
+![Sana oralig'i tanlovi ochiq](/screens/guide/42-date-range-picker.webp)
 
 Boshlanish va tugash sanalarini tanlang, so'ng qo'llash uchun tashqi joyni bosing.
 
@@ -42,7 +42,7 @@ Boshlanish va tugash sanalarini tanlang, so'ng qo'llash uchun tashqi joyni bosin
 
 Sana maydonidan chap tomondagi ochiluvchi ro'yxat oraliq qaysi sanaga qo'llanilishini almashtiradi:
 
-![Sana turi ochiluvchi ro'yxati — buyurtma sanasi, jo'natma sanasi, yetkazib berish sanasi](/screens/guide/43-date-type-dropdown.png)
+![Sana turi ochiluvchi ro'yxati — buyurtma sanasi, jo'natma sanasi, yetkazib berish sanasi](/screens/guide/43-date-type-dropdown.webp)
 
 - **Дата заявки** — buyurtma berilgan sana
 - **Дата отгрузки** — tovar omborni tark etgan sana
@@ -52,7 +52,7 @@ Sana maydonidan chap tomondagi ochiluvchi ro'yxat oraliq qaysi sanaga qo'llanili
 
 Sarlavha ostidagi filtr qatorida ko'plab ochiluvchi ro'yxatlar bor — holat, buyurtma turi, mijoz toifasi, hudud, supervayzer, agent, ekspeditor, narx turi, kanal, ombor, mahsulot toifasi:
 
-![Buyurtma holati filtri ochiluvchi ro'yxati ochilgan](/screens/guide/44-status-filter-dropdown.png)
+![Buyurtma holati filtri ochiluvchi ro'yxati ochilgan](/screens/guide/44-status-filter-dropdown.webp)
 
 Bir nechta qiymatni tanlash uchun istalgan ochiluvchi ro'yxatni bosing. Quyidagi jadval filtrlarni o'zgartirganingizda yangilanadi.
 
@@ -72,7 +72,7 @@ To'liq tafsilotlarini ochish uchun istalgan buyurtma qatorini bosing:
 
 Har bir mashina bo'yicha umumiy ko'rinish uchun **Заявки → Рейсы** (Reyslar) ni oching:
 
-![Reyslar ko'rinishi](/screens/guide/20-trips-view.png)
+![Reyslar ko'rinishi](/screens/guide/20-trips-view.webp)
 
 Siz har bir ekspeditorning reysini to'xtashlari, ko'tarayotgan puli va g'ayrioddiyliklari bilan ko'rasiz.
 
@@ -88,7 +88,7 @@ Mijoz ba'zi mahsulotlarni rad etganda ekspeditor uni mobil ilovada qayd etadi. T
 
 O'zgarish bir necha soniyada boshqaruv panelida ko'rinadi. Alohida filtrlangan rad etishlarni `/orders/rejects` da ko'ring:
 
-![Buyurtma rad etishlari / qaytarishlar ro'yxati](/screens/guide/25-orders-rejects.png)
+![Buyurtma rad etishlari / qaytarishlar ro'yxati](/screens/guide/25-orders-rejects.webp)
 
 ### To'liq rad etish
 
@@ -98,7 +98,7 @@ Xuddi shu jarayon, butun buyurtma rad etiladi. Mashina hamma narsani qaytarib ol
 
 Buyurtma xato bekor qilingan bo'lsa, uni `/orders/recovery` dan tiklashingiz mumkin:
 
-![Buyurtmani tiklash ko'rinishi](/screens/guide/26-orders-recovery.png)
+![Buyurtmani tiklash ko'rinishi](/screens/guide/26-orders-recovery.webp)
 
 1. Bekor qilingan buyurtmani toping
 2. **Восстановить** (Tiklash) ni bosing

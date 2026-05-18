@@ -11,7 +11,7 @@ title: Tashriflarni rejalashtirish
 
 Menyudan **Планы → Месяц** (Rejalar → Oylik) ni tanlang yoki to'g'ridan-to'g'ri `/planning/monthly` ni oching:
 
-![Oylik tashrif rejalashtiruvchi — kalendar to'ri](/screens/guide/11-planning-monthly.png)
+![Oylik tashrif rejalashtiruvchi — kalendar to'ri](/screens/guide/11-planning-monthly.webp)
 
 To'r oyning har bir ish kunini va har bir agentning rejalashtirilgan tashriflar sonini ko'rsatadi.
 

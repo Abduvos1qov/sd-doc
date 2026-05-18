@@ -11,7 +11,7 @@ Sometimes stock has to leave inventory without being sold — it's expired, brok
 
 From the menu choose **Склад → Списания** (Warehouse → Write-offs), or open `/stock/excretion` directly:
 
-![Stock write-off list](/screens/guide/63-stock-write-off.png)
+![Stock write-off list](/screens/guide/63-stock-write-off.webp)
 
 You see every write-off ever done — who, when, from which warehouse, what was written off, why.
 

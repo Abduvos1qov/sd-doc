@@ -11,7 +11,7 @@ Agar mijozlaringiz **agent tashrifini kutmasdan** buyurtma bermoqchi bo'lsa, ula
 
 Menyudan **Заявки → Онлайн заявки** (Buyurtmalar → Onlayn buyurtmalar) ni tanlang yoki to'g'ridan-to'g'ri `/onlineOrder/order` ni oching:
 
-![Onlayn buyurtmalar quticha'si](/screens/guide/16-online-orders.png)
+![Onlayn buyurtmalar quticha'si](/screens/guide/16-online-orders.webp)
 
 Ushbu ro'yxat onlayn portal yoki Telegram bot orqali rasmiylashtirilgan har bir buyurtmani ko'rsatadi — mobil ilovada agentlar olgan buyurtmalardan alohida.
 

@@ -11,7 +11,7 @@ Sales **agents** are the people who visit clients and take orders. Each agent ne
 
 From the menu, choose **Команда → Агенты** (Team → Agents), or open `/agents/agent` directly:
 
-![Agents list — top of page with action buttons](/screens/guide/07-agents-list.png)
+![Agents list — top of page with action buttons](/screens/guide/07-agents-list.webp)
 
 The list shows every agent in your team with their phone, supervisor, and active status.
 
@@ -19,7 +19,7 @@ The list shows every agent in your team with their phone, supervisor, and active
 
 Look for the **+ Добавить агента** button at the top right of the list. The form opens as a side panel:
 
-![Add agent form with all fields](/screens/guide/29-add-agent-form.png)
+![Add agent form with all fields](/screens/guide/29-add-agent-form.webp)
 
 ## Step 3 — Fill in the form
 
@@ -48,7 +48,7 @@ From the agent's profile you can now:
 
 Click any agent's name in the list to open their profile page:
 
-![Agent detail page — profile tabs, KPI, sync log, route](/screens/guide/47-agent-detail.png)
+![Agent detail page — profile tabs, KPI, sync log, route](/screens/guide/47-agent-detail.webp)
 
 From here you can:
 - Edit phone, login, supervisor assignment

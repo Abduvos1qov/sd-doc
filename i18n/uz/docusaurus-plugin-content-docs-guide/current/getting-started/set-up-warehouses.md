@@ -11,7 +11,7 @@ title: Omborlarni sozlash
 
 Menyudan **Склад → Склады** (Ombor → Omborlar) ni tanlang yoki to'g'ridan-to'g'ri `/warehouse/list` ni oching:
 
-![Omborlar ro'yxati — barcha filiallar va turlari](/screens/guide/08-warehouses-list.png)
+![Omborlar ro'yxati — barcha filiallar va turlari](/screens/guide/08-warehouses-list.webp)
 
 Ro'yxat har bir omborni turi, mas'ul shaxsi va joriy qoldiq qiymati bilan ko'rsatadi.
 

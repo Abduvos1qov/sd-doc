@@ -27,7 +27,7 @@ The order syncs to the office immediately if there's signal — or queues and sy
 
 From your dashboard you see in real time:
 
-![Dashboard with live team progress](/screens/guide/02-dashboard-home.png)
+![Dashboard with live team progress](/screens/guide/02-dashboard-home.webp)
 
 - Where each agent is on the map
 - Which clients they've visited
@@ -53,7 +53,7 @@ You don't need any special screen to confirm sync — when an agent's order land
 
 Open `/dashboard/kpi` to see each agent's monthly progress:
 
-![Monthly KPI dashboard](/screens/guide/22-dashboard-kpi.png)
+![Monthly KPI dashboard](/screens/guide/22-dashboard-kpi.webp)
 
 The progress bars match what the agent sees on their phone — they know in real time how far they are from each target.
 

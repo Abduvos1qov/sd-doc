@@ -11,7 +11,7 @@ A **client** in SalesDoctor is anywhere you sell goods — a shop, restaurant, k
 
 From the menu choose **Клиенты → Все клиенты** (Clients → All clients), or open `/clients/client` directly:
 
-![Clients list — search bar, filters, and table](/screens/guide/05-clients-list.png)
+![Clients list — search bar, filters, and table](/screens/guide/05-clients-list.webp)
 
 The list shows every client with their phone, address, channel, and credit balance.
 
@@ -54,7 +54,7 @@ Click **Сохранить** (Save). The client appears in the list immediately 
 
 If you have an existing list in Excel, use the import page at `/clients/client/import`:
 
-![Clients Excel import](/screens/guide/32-clients-import.png)
+![Clients Excel import](/screens/guide/32-clients-import.webp)
 
 Download the template, fill it in, upload it back, and every row becomes a client in one pass.
 

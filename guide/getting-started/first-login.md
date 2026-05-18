@@ -13,7 +13,7 @@ Your administrator gives you a link that looks like `https://yourcompany.salesdo
 
 You'll land on the sign-in form:
 
-![Login screen — login, password, "Remember me", "Sign in"](/screens/guide/01-login-screen.png)
+![Login screen — login, password, "Remember me", "Sign in"](/screens/guide/01-login-screen.webp)
 
 ## Step 2 — Enter your login and password
 
@@ -31,7 +31,7 @@ If this is your very first sign-in, ask your administrator to set you up with a 
 
 After a successful sign-in you land on your **home dashboard**. What you see depends on your role:
 
-![Home dashboard after sign-in](/screens/guide/02-dashboard-home.png)
+![Home dashboard after sign-in](/screens/guide/02-dashboard-home.webp)
 
 - **Administrators / managers** — wide overview of all today's numbers
 - **Supervisors** — their team's progress for today

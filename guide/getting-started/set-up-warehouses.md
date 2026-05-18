@@ -11,7 +11,7 @@ A **warehouse** is any place you keep stock — your main depot, a satellite sto
 
 From the menu choose **Склад → Склады** (Warehouse → Warehouses), or open `/warehouse/list` directly:
 
-![Warehouses list — all branches and types](/screens/guide/08-warehouses-list.png)
+![Warehouses list — all branches and types](/screens/guide/08-warehouses-list.webp)
 
 The list shows every warehouse with its type, person responsible, and current balance value.
 

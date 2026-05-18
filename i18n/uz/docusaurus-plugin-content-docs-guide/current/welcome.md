@@ -8,7 +8,7 @@ slug: /welcome
 
 Siz biznesingiz uchun SalesDoctor'ni sozlamoqchisiz. Ushbu qisqa qo'llanma birinchi kundayoq kerak bo'ladigan hamma narsa bo'yicha sizni yetaklab boradi — jamoangizni qo'shish, mijozlaringizni kiritish, ombor qoldig'ini joylash va birinchi buyurtmangizni rasmiylashtirish — har bir qadamda skrinshotlar bilan.
 
-![SalesDoctor — birinchi kirgandagi boshqaruv paneli](/screens/guide/02-dashboard-home.png)
+![SalesDoctor — birinchi kirgandagi boshqaruv paneli](/screens/guide/02-dashboard-home.webp)
 
 ## SalesDoctor siz uchun nima qiladi
 

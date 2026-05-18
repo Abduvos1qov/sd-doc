@@ -11,7 +11,7 @@ SalesDoctor groups every feature into a small number of clear menus. Once you kn
 
 Along the top of every page:
 
-![SalesDoctor dashboard with the top bar visible](/screens/guide/02-dashboard-home.png)
+![SalesDoctor dashboard with the top bar visible](/screens/guide/02-dashboard-home.webp)
 
 - **Logo (top left)** — returns to the home dashboard
 - **Notification bell** — new orders, finished deliveries, approval requests
@@ -67,11 +67,11 @@ Every list page in SalesDoctor follows the same three-layer pattern.
 
 **2. A filter strip below the heading** — multi-select dropdowns. Clicking a dropdown opens a checkable list; pick one or many values. The grid refreshes immediately.
 
-![Clients list filter panel expanded](/screens/guide/45-clients-filter-panel.png)
+![Clients list filter panel expanded](/screens/guide/45-clients-filter-panel.webp)
 
 **3. A picker dialog inside a form** — when the form needs you to pick an existing record (client, product, warehouse), it opens a paged table with its own search:
 
-![Client picker — paged table with search](/screens/guide/40-client-picker.png)
+![Client picker — paged table with search](/screens/guide/40-client-picker.webp)
 
 A few rules of thumb:
 

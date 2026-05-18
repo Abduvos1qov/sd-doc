@@ -11,7 +11,7 @@ After an order is created, it moves through clear stages. Knowing where every or
 
 From the menu choose **Заявки → Список заявок**, or open `/orders/list` directly:
 
-![Orders list with status column](/screens/guide/03-orders-list.png)
+![Orders list with status column](/screens/guide/03-orders-list.webp)
 
 Each row is an order. The **Статус** column tells you which stage it's in.
 
@@ -34,7 +34,7 @@ The orders list has three filter levers at the top.
 
 Click the date field to open a two-month calendar:
 
-![Date range picker open](/screens/guide/42-date-range-picker.png)
+![Date range picker open](/screens/guide/42-date-range-picker.webp)
 
 Pick the start and end dates, then click anywhere outside to apply.
 
@@ -42,7 +42,7 @@ Pick the start and end dates, then click anywhere outside to apply.
 
 The dropdown to the left of the date field switches which date the range applies to:
 
-![Date type dropdown — order date, ship date, delivery date](/screens/guide/43-date-type-dropdown.png)
+![Date type dropdown — order date, ship date, delivery date](/screens/guide/43-date-type-dropdown.webp)
 
 - **Дата заявки** — when the order was placed
 - **Дата отгрузки** — when the goods left the warehouse
@@ -52,7 +52,7 @@ The dropdown to the left of the date field switches which date the range applies
 
 The filter strip below the heading has many dropdowns — status, order type, client category, territory, supervisor, agent, expeditor, price type, channel, warehouse, product category:
 
-![Order status filter dropdown opened](/screens/guide/44-status-filter-dropdown.png)
+![Order status filter dropdown opened](/screens/guide/44-status-filter-dropdown.webp)
 
 Click any dropdown to multi-select values. The grid below refreshes as you change filters.
 
@@ -72,7 +72,7 @@ Click any order row to open its full details:
 
 For a per-van picture, open **Заявки → Рейсы** (Trips):
 
-![Trips view](/screens/guide/20-trips-view.png)
+![Trips view](/screens/guide/20-trips-view.webp)
 
 You see every expeditor's trip with stops, money carried, and anomalies.
 
@@ -88,7 +88,7 @@ When a client refuses some items, your expeditor records it in the mobile app. T
 
 The change shows up on the dashboard within seconds. See refusals filtered separately at `/orders/rejects`:
 
-![Order rejects / returns list](/screens/guide/25-orders-rejects.png)
+![Order rejects / returns list](/screens/guide/25-orders-rejects.webp)
 
 ### Full refusal
 
@@ -98,7 +98,7 @@ Same flow, the entire order is rejected. The van brings everything back.
 
 If an order was cancelled by mistake, you can restore it from `/orders/recovery`:
 
-![Order recovery view](/screens/guide/26-orders-recovery.png)
+![Order recovery view](/screens/guide/26-orders-recovery.webp)
 
 1. Find the cancelled order
 2. Click **Восстановить** (Restore)

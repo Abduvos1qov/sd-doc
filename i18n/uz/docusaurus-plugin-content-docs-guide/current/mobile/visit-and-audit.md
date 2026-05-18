@@ -25,7 +25,7 @@ Butun jarayon har bir do'konda 2–3 daqiqa oladi.
 
 Menyudan **Аудит → Фотоотчет** (Audit → Fotohisobot) ni tanlang yoki to'g'ridan-to'g'ri `/audit/photoReport` ni oching:
 
-![Fotohisobot — bugun har bir agent olgan har bir surat](/screens/guide/15-audit-photoreport.png)
+![Fotohisobot — bugun har bir agent olgan har bir surat](/screens/guide/15-audit-photoreport.webp)
 
 ## Qadam 2 — Filtrlarni qo'llang
 

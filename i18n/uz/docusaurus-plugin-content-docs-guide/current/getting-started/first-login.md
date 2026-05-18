@@ -13,7 +13,7 @@ Administratoringiz sizga `https://yourcompany.salesdoc.io` ko'rinishidagi (yoki 
 
 Tizimga kirish formasi ochiladi:
 
-![Kirish ekrani — login, parol, "Eslab qolish", "Kirish"](/screens/guide/01-login-screen.png)
+![Kirish ekrani — login, parol, "Eslab qolish", "Kirish"](/screens/guide/01-login-screen.webp)
 
 ## Qadam 2 — Login va parolingizni kiriting
 
@@ -31,7 +31,7 @@ Agar bu sizning birinchi kirishingiz bo'lsa, administratoringizdan sizga noyob p
 
 Muvaffaqiyatli kirishdan so'ng siz **asosiy boshqaruv paneliga** tushasiz. Nimani ko'rishingiz roliingizga bog'liq:
 
-![Kirgandan keyingi asosiy boshqaruv paneli](/screens/guide/02-dashboard-home.png)
+![Kirgandan keyingi asosiy boshqaruv paneli](/screens/guide/02-dashboard-home.webp)
 
 - **Administratorlar / menejerlar** — bugungi barcha raqamlarning keng ko'rinishi
 - **Supervayzerlar** — bugun o'z jamoasining holati

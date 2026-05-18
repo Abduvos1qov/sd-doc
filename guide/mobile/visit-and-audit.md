@@ -25,7 +25,7 @@ The whole flow takes 2–3 minutes per shop.
 
 From the menu choose **Аудит → Фотоотчет** (Audit → Photo report), or open `/audit/photoReport` directly:
 
-![Photo report — every photo taken by every agent today](/screens/guide/15-audit-photoreport.png)
+![Photo report — every photo taken by every agent today](/screens/guide/15-audit-photoreport.webp)
 
 ## Step 2 — Apply filters
 

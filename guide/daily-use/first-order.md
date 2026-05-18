@@ -11,7 +11,7 @@ Now that you have agents, clients and stock, you're ready to capture an order. O
 
 From the menu choose **Заявки → Список заявок** (Orders → Orders list), or open `/orders/list` directly:
 
-![Orders list — today's and recent orders](/screens/guide/03-orders-list.png)
+![Orders list — today's and recent orders](/screens/guide/03-orders-list.webp)
 
 Every column is filterable — status, agent, client, date, warehouse.
 
@@ -19,7 +19,7 @@ Every column is filterable — status, agent, client, date, warehouse.
 
 Click the **+ Добавить** button at the top right. You'll land on the new-order form at `/orders/addOrder`:
 
-![New order form — full view from top to product table](/screens/guide/33-new-order-empty.png)
+![New order form — full view from top to product table](/screens/guide/33-new-order-empty.webp)
 
 The form has three sections: the **header** (client, agent, dates), the **product table**, and the **totals row** at the bottom.
 
@@ -35,11 +35,11 @@ The system automatically fills in:
 
 The client picker is a paged table — by default it shows the first 10 of every client you can sell to:
 
-![Client picker — full table of all clients](/screens/guide/40-client-picker.png)
+![Client picker — full table of all clients](/screens/guide/40-client-picker.webp)
 
 Type any part of the client's name in the **Поиск** (Search) box at the top. The table narrows in real time:
 
-![Client picker with "мага" typed — narrowed list](/screens/guide/41-client-picker-search.png)
+![Client picker with "мага" typed — narrowed list](/screens/guide/41-client-picker-search.webp)
 
 Click the row to confirm. The picker closes and the order form moves to the product table.
 
@@ -67,7 +67,7 @@ If your administrator configured discount rules or buy-X-get-Y promotions, they 
 
 Click **Сохранить** (Save). The order moves to status **New** and shows up in the orders list immediately:
 
-![Orders list with the new order at the top](/screens/guide/03-orders-list.png)
+![Orders list with the new order at the top](/screens/guide/03-orders-list.webp)
 
 ## Step 7 — Track the order through its stages
 

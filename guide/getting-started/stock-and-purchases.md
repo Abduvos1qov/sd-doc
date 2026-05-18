@@ -13,7 +13,7 @@ Once warehouses exist, you need to put goods into them. This page covers two eve
 
 From the menu choose **Склад → Поступления** (Warehouse → Purchases), or open `/warehouse/view/listPurchase` directly:
 
-![Purchases list — every supplier receipt](/screens/guide/09-purchases-list.png)
+![Purchases list — every supplier receipt](/screens/guide/09-purchases-list.webp)
 
 You see every supplier receipt — date, supplier, warehouse, total amount, status.
 
@@ -50,7 +50,7 @@ The number on your purchase document should match the supplier's invoice number.
 
 Choose **Склад → Остатки** (Warehouse → Balances), or open `/stock/report` directly:
 
-![Stock balance report — products × warehouses](/screens/guide/10-stock-report.png)
+![Stock balance report — products × warehouses](/screens/guide/10-stock-report.webp)
 
 ### Step 2 — Apply filters
 

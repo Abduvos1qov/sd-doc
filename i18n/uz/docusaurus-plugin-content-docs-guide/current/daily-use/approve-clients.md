@@ -11,7 +11,7 @@ Agent tashrif chogʻida mobil ilovadan yangi mijoz qoʻshganda, mijoz toʻgʻrid
 
 Mijozlar roʻyxatida **Неподтвержденные клиенты** (Tasdiqlanmagan mijozlar) tugmasini bosing yoki toʻgʻridan-toʻgʻri `/clients/approval` manzilini oching:
 
-![Tasdiqlanmagan mijozlar navbati](/screens/guide/62-clients-approval.png)
+![Tasdiqlanmagan mijozlar navbati](/screens/guide/62-clients-approval.webp)
 
 Har bir qator — agent dalada yaratgan, ammo siz hali tekshirmagan mijoz.
 

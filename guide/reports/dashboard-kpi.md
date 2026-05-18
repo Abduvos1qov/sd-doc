@@ -11,7 +11,7 @@ The dashboard is your business pulse — every important number for today, in on
 
 From the menu click the **logo** (top left), or open `/dashboard/supervayzer` directly:
 
-![Supervisor home dashboard with KPI tiles + agent row](/screens/guide/39-supervisor-dashboard-full.png)
+![Supervisor home dashboard with KPI tiles + agent row](/screens/guide/39-supervisor-dashboard-full.webp)
 
 The page splits into three regions:
 
@@ -23,7 +23,7 @@ The page splits into three regions:
 
 Click the **Sales** tile (or open `/dashboard/sales` directly). A sales-focused dashboard opens:
 
-![Sales drill-down — by agent, by region, by product group](/screens/guide/34-dashboard-sales.png)
+![Sales drill-down — by agent, by region, by product group](/screens/guide/34-dashboard-sales.webp)
 
 You see:
 - Sales totals split by **agent**, **region**, **product group**
@@ -35,7 +35,7 @@ You see:
 
 Click the **Debt** tile (or open `/dashboard/finans` directly):
 
-![Finance drill-down — debts, payments, cashbox totals](/screens/guide/35-dashboard-finans.png)
+![Finance drill-down — debts, payments, cashbox totals](/screens/guide/35-dashboard-finans.webp)
 
 This page consolidates:
 - **Total receivable** — what your clients still owe you, broken down by age
@@ -49,7 +49,7 @@ Click any line item to open the client's full transaction history.
 
 Click the **Visits** tile, or open `/report/visit` directly:
 
-![Visit report — coverage map per agent](/screens/guide/37-report-visit.png)
+![Visit report — coverage map per agent](/screens/guide/37-report-visit.webp)
 
 The visit report answers two questions at once:
 - **Coverage** — what fraction of planned clients each agent actually reached
@@ -59,7 +59,7 @@ The visit report answers two questions at once:
 
 For the long view across the whole team, open `/dashboard/kpi`:
 
-![Monthly KPI dashboard — agent-by-agent progress bars](/screens/guide/38-dashboard-kpi-full.png)
+![Monthly KPI dashboard — agent-by-agent progress bars](/screens/guide/38-dashboard-kpi-full.webp)
 
 This is the agent-by-agent monthly progress board. Each agent has their own row with progress bars per indicator.
 

@@ -20,7 +20,7 @@ Ekspeditor — mijozlarga tovar olib boruvchi shaxs. Uning kuni **reys** atrofid
 
 **Заявки → Рейсы** ni oching (`/orders/view/trips`):
 
-![Reyslar ko'rinishi — har bir faol yetkazib berish](/screens/guide/20-trips-view.png)
+![Reyslar ko'rinishi — har bir faol yetkazib berish](/screens/guide/20-trips-view.webp)
 
 Siz bugun chiqib ketgan barcha ekspeditorlarni quyidagilar bilan ko'rasiz:
 
@@ -33,13 +33,13 @@ Siz bugun chiqib ketgan barcha ekspeditorlarni quyidagilar bilan ko'rasiz:
 
 `/orders/list` da **Сегодняшние** (Bugungi) bo'yicha filtrlang va ekspeditor bo'yicha guruhlang — kim nimani yetkazayotganini ko'rish uchun:
 
-![Ekspeditor bo'yicha bugungi buyurtmalar](/screens/guide/03-orders-list.png)
+![Ekspeditor bo'yicha bugungi buyurtmalar](/screens/guide/03-orders-list.webp)
 
 ## Qadam 3 — Kun oxirida naqd pulni tasdiqlang
 
 Ekspeditor qaytganda u naqd pulni kassirga topshiradi. Kassir `/payment/approval` ni ochadi:
 
-![To'lovni tasdiqlash navbati](/screens/guide/21-payment-approval.png)
+![To'lovni tasdiqlash navbati](/screens/guide/21-payment-approval.webp)
 
 Har bir qator — ekspeditor bugun qayd etgan to'lov. Kassir:
 

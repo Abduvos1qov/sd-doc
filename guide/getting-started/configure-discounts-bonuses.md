@@ -11,7 +11,7 @@ Pricing logic lives in three places: **discount rules** (Скидки), **bonus 
 
 Open **Настройки → Скидки** (Settings → Discounts), or `/settings/skidka`:
 
-![Discount rules list](/screens/guide/54-settings-discounts.png)
+![Discount rules list](/screens/guide/54-settings-discounts.webp)
 
 Each rule defines: who gets the discount (client category, channel, agent), on what (product / category), and how much (% or fixed amount).
 
@@ -24,7 +24,7 @@ Click **+ Добавить** to create a rule. Common patterns:
 
 Open **Настройки → Бонусы** (Settings → Bonuses), or `/settings/bonus`:
 
-![Bonus rules list](/screens/guide/55-settings-bonus.png)
+![Bonus rules list](/screens/guide/55-settings-bonus.webp)
 
 Bonus rules are "buy N of product X, get M of product Y free." Examples:
 - "Buy 10 Coca-Cola 0.5L, get 1 free"
@@ -37,7 +37,7 @@ Both rules apply automatically during order capture — agents don't have to rem
 
 Open **Настройки → Канал сбыта** (Settings → Sales channel), or `/settings/channel`:
 
-![Sales channels](/screens/guide/56-settings-channel.png)
+![Sales channels](/screens/guide/56-settings-channel.webp)
 
 Channels classify your clients: small shop / supermarket / restaurant / kiosk / cafe / etc. The channel:
 - Drives discount and bonus eligibility (above)
@@ -50,7 +50,7 @@ Add the channels your business needs — usually 4–8 is enough.
 
 Open **Настройки → Бренд** (Settings → Brand), or `/settings/brand`:
 
-![Brands](/screens/guide/58-settings-brand.png)
+![Brands](/screens/guide/58-settings-brand.webp)
 
 A **brand** is a product family with a single logo / marketing identity (e.g. "Coca-Cola", "Nestlé Nesquik"). The brand:
 - Groups products in the catalog
@@ -61,7 +61,7 @@ A **brand** is a product family with a single logo / marketing identity (e.g. "C
 
 Open **Настройки → Товары** (Settings → Products), or `/settings/product`:
 
-![Products catalog](/screens/guide/57-settings-products.png)
+![Products catalog](/screens/guide/57-settings-products.webp)
 
 Every product needs:
 - Name (Russian, Uzbek if relevant)

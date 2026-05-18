@@ -11,7 +11,7 @@ Boshqaruv paneli — biznesingiz puls'i: kunning eng muhim raqamlari bir joyda. 
 
 Menyudan **logotip** (yuqori chap) tugmasini bosing yoki to'g'ridan-to'g'ri `/dashboard/supervayzer`ni oching:
 
-![Supervayzer bosh boshqaruv paneli — KPI plitkalari va agentlar jadvali](/screens/guide/39-supervisor-dashboard-full.png)
+![Supervayzer bosh boshqaruv paneli — KPI plitkalari va agentlar jadvali](/screens/guide/39-supervisor-dashboard-full.webp)
 
 Sahifa uch zonadan iborat:
 
@@ -23,7 +23,7 @@ Sahifa uch zonadan iborat:
 
 **Sotuv** plitkasini bosing (yoki to'g'ridan-to'g'ri `/dashboard/sales`). Sotuvga oid boshqaruv paneli ochiladi:
 
-![Sotuv batafsil — agent, mintaqa va mahsulot guruhi bo'yicha](/screens/guide/34-dashboard-sales.png)
+![Sotuv batafsil — agent, mintaqa va mahsulot guruhi bo'yicha](/screens/guide/34-dashboard-sales.webp)
 
 Quyidagilarni ko'rasiz:
 - **Agent**, **mintaqa**, **mahsulot guruhi** bo'yicha sotuv yig'indilari
@@ -35,7 +35,7 @@ Quyidagilarni ko'rasiz:
 
 **Qarz** plitkasini bosing (yoki `/dashboard/finans`):
 
-![Moliya batafsil — qarzlar, tushumlar, kassa yig'indilari](/screens/guide/35-dashboard-finans.png)
+![Moliya batafsil — qarzlar, tushumlar, kassa yig'indilari](/screens/guide/35-dashboard-finans.webp)
 
 Bu ekranda jamlangan:
 - **Umumiy debet qarz** — mijozlar sizga qancha qarzdor, muddati bo'yicha bo'lingan
@@ -49,7 +49,7 @@ Istalgan qatorni bosish mijozning to'liq tranzaksiya tarixini ochadi.
 
 **Tashriflar** plitkasini bosing yoki `/report/visit`'ni oching:
 
-![Tashriflar hisoboti — agent bo'yicha qamrov xaritasi](/screens/guide/37-report-visit.png)
+![Tashriflar hisoboti — agent bo'yicha qamrov xaritasi](/screens/guide/37-report-visit.webp)
 
 Tashriflar hisoboti bir vaqtning o'zida ikkita savolga javob beradi:
 - **Qamrov** — rejalashtirilgan mijozlarning qanchasiga agent yetib bordi
@@ -59,7 +59,7 @@ Tashriflar hisoboti bir vaqtning o'zida ikkita savolga javob beradi:
 
 Butun jamoa uchun oylik ko'rinishni ko'rish uchun `/dashboard/kpi`'ni oching:
 
-![Oylik KPI boshqaruv paneli — har bir agent uchun progress satrlari](/screens/guide/38-dashboard-kpi-full.png)
+![Oylik KPI boshqaruv paneli — har bir agent uchun progress satrlari](/screens/guide/38-dashboard-kpi-full.webp)
 
 Bu agentlar bo'yicha oylik progress ekrani. Har agentning o'z qatori, har bir ko'rsatkich uchun progress satri.
 

@@ -11,7 +11,7 @@ If your clients want to order **without waiting for an agent's visit**, you can 
 
 From the menu choose **Заявки → Онлайн заявки** (Orders → Online orders), or open `/onlineOrder/order` directly:
 
-![Online orders inbox](/screens/guide/16-online-orders.png)
+![Online orders inbox](/screens/guide/16-online-orders.webp)
 
 This list shows every order placed via the online portal or Telegram bot — distinct from orders captured by agents on the mobile app.
 

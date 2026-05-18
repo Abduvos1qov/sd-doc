@@ -20,7 +20,7 @@ The expeditor is the person bringing goods to clients. Their day is built around
 
 Open **Заявки → Рейсы** (`/orders/view/trips`):
 
-![Trips view — every active delivery](/screens/guide/20-trips-view.png)
+![Trips view — every active delivery](/screens/guide/20-trips-view.webp)
 
 You see all expeditors out today with:
 
@@ -33,13 +33,13 @@ You see all expeditors out today with:
 
 From `/orders/list`, filter by **Сегодняшние** (Today) and group by expeditor to see who's delivering what:
 
-![Today's orders by expeditor](/screens/guide/03-orders-list.png)
+![Today's orders by expeditor](/screens/guide/03-orders-list.webp)
 
 ## Step 3 — Approve cash at end of day
 
 When the expeditor returns, they hand cash to the cashier. The cashier opens `/payment/approval`:
 
-![Payment approval queue](/screens/guide/21-payment-approval.png)
+![Payment approval queue](/screens/guide/21-payment-approval.webp)
 
 Each row is a payment the expeditor recorded today. The cashier:
 

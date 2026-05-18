@@ -11,7 +11,7 @@ When an agent adds a new client from their mobile app during a visit, the client
 
 From the clients list, click **Неподтвержденные клиенты** (Unconfirmed clients), or open `/clients/approval` directly:
 
-![Unconfirmed clients approval queue](/screens/guide/62-clients-approval.png)
+![Unconfirmed clients approval queue](/screens/guide/62-clients-approval.webp)
 
 Each row is a client an agent created in the field but you haven't reviewed yet.
 

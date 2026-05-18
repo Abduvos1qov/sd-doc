@@ -27,7 +27,7 @@ Agar signal bo'lsa, buyurtma darhol ofisga sinxronlanadi — yoki navbatda turad
 
 Boshqaruv panelingizda real vaqtda quyidagilarni ko'rasiz:
 
-![Jonli jamoa jarayoni bilan boshqaruv paneli](/screens/guide/02-dashboard-home.png)
+![Jonli jamoa jarayoni bilan boshqaruv paneli](/screens/guide/02-dashboard-home.webp)
 
 - Har bir agent xaritada qayerda
 - Qaysi mijozlarga borgan
@@ -53,7 +53,7 @@ Sinxronizatsiyani tasdiqlash uchun maxsus ekran kerak emas — agentning buyurtm
 
 Har bir agentning oylik jarayonini ko'rish uchun `/dashboard/kpi` ni oching:
 
-![Oylik KPI boshqaruv paneli](/screens/guide/22-dashboard-kpi.png)
+![Oylik KPI boshqaruv paneli](/screens/guide/22-dashboard-kpi.webp)
 
 Jarayon chiziqlari agent telefonida ko'radigan narsa bilan mos keladi — ular real vaqtda har bir maqsaddan qancha uzoq ekanini biladi.
 

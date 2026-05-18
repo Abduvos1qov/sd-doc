@@ -13,7 +13,7 @@ Eng ko'p ishlatiladigan ikki hisobot ikkita oddiy savolga javob beradi: **biz qa
 
 Menyudan **Отчеты → По агентам** (Hisobotlar → Agentlar bo'yicha) ni tanlang yoki to'g'ridan-to'g'ri `/report/agent` ni oching:
 
-![Agent savdo hisoboti — filtrlar va jadval](/screens/guide/12-report-agent.png)
+![Agent savdo hisoboti — filtrlar va jadval](/screens/guide/12-report-agent.webp)
 
 ### Qadam 2 — Sanalar oralig'ini tanlang
 
@@ -26,7 +26,7 @@ Yuqori filtr qatorida:
 
 Agent hisoboti sahifasidagi filtrlar qatori shunday ko'rinadi:
 
-![Hisobot filtrlar qatori — mavjud filtrlarning to'liq to'plami](/screens/guide/46-report-filter-strip.png)
+![Hisobot filtrlar qatori — mavjud filtrlarning to'liq to'plami](/screens/guide/46-report-filter-strip.webp)
 
 Filtrlar birgalikda ishlaydi — har biri hisobotni yanada toraytiradi. O'zgartirgandan so'ng yangilash uchun **Сформировать** (Yaratish) tugmasini bosing.
 
@@ -54,7 +54,7 @@ Yuqori o'ng burchakdagi **Excel** tugmasi ko'rayotgan jadvalingizni eksport qila
 
 Menyudan **Клиенты → Оплаты** (Mijozlar → To'lovlar) ni tanlang yoki to'g'ridan-to'g'ri `/clients/finans` ni oching:
 
-![Mijoz to'lovlari va qarzlari](/screens/guide/13-client-payments.png)
+![Mijoz to'lovlari va qarzlari](/screens/guide/13-client-payments.webp)
 
 Siz har bir mijozni joriy balansi bilan ko'rasiz — musbat qarz, nol esa toza degani.
 

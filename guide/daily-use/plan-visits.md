@@ -11,7 +11,7 @@ A **visit plan** tells each agent which clients to visit on which day of the wee
 
 From the menu choose **Планы → Месяц** (Plans → Monthly), or open `/planning/monthly` directly:
 
-![Monthly visit planner — calendar grid](/screens/guide/11-planning-monthly.png)
+![Monthly visit planner — calendar grid](/screens/guide/11-planning-monthly.webp)
 
 The grid shows every working day of the month, with planned visit counts per agent.
 

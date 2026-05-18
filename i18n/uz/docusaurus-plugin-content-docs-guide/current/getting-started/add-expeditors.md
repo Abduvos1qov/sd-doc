@@ -11,7 +11,7 @@ title: Ekspeditor qo'shish
 
 Menyudan **Команда → Экспедиторы** (Jamoa → Ekspeditorlar) ni tanlang yoki to'g'ridan-to'g'ri `/staff/view/expeditor` ni oching:
 
-![Ekspeditorlar ro'yxati](/screens/guide/19-expeditors-list.png)
+![Ekspeditorlar ro'yxati](/screens/guide/19-expeditors-list.webp)
 
 Siz har bir ekspeditorni telefoni, biriktirilgan mashinasi va bugungi reys holati bilan ko'rasiz.
 
@@ -19,7 +19,7 @@ Siz har bir ekspeditorni telefoni, biriktirilgan mashinasi va bugungi reys holat
 
 Yuqori o'ng burchakdagi **+ Добавить** tugmasini bosing. `/staff/create/expeditor` manzilidagi forma ochiladi:
 
-![Ekspeditor qo'shish formasi](/screens/guide/31-add-expeditor-form.png)
+![Ekspeditor qo'shish formasi](/screens/guide/31-add-expeditor-form.webp)
 
 ## Qadam 3 — Formani to'ldiring
 
@@ -50,7 +50,7 @@ Bularning hammasi sodir bo'lib turganida boshqaruv panelingizda jonli ko'rinib t
 
 **Заявки → Рейсы** (Buyurtmalar → Reyslar) dan:
 
-![Reyslar ko'rinishi — bugungi yetkazib berishlar](/screens/guide/20-trips-view.png)
+![Reyslar ko'rinishi — bugungi yetkazib berishlar](/screens/guide/20-trips-view.webp)
 
 Har bir qator — bitta ekspeditorning reysi quyidagilar bilan:
 

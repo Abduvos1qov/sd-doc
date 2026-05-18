@@ -11,7 +11,7 @@ Boshqaruv paneli — bu siz kirgandan keyin ochiladigan sahifa. SalesDoctor'da e
 
 Istalgan sahifadan bu yerga qaytish uchun yuqori chap burchakdagi **SalesDoctor logotipini** bosing yoki to'g'ridan-to'g'ri `/dashboard/supervayzer` manzilini oching.
 
-![To'liq boshqaruv paneli ko'rinishi](/screens/guide/02-dashboard-home.png)
+![To'liq boshqaruv paneli ko'rinishi](/screens/guide/02-dashboard-home.webp)
 
 ## Qadam 2 — Yuqori paneli ko'ring
 

@@ -11,7 +11,7 @@ Endi sizda agentlar, mijozlar va qoldiq bor — buyurtma rasmiylashtirishga tayy
 
 Menyudan **Заявки → Список заявок** (Buyurtmalar → Buyurtmalar ro'yxati) ni tanlang yoki to'g'ridan-to'g'ri `/orders/list` ni oching:
 
-![Buyurtmalar ro'yxati — bugungi va so'nggi buyurtmalar](/screens/guide/03-orders-list.png)
+![Buyurtmalar ro'yxati — bugungi va so'nggi buyurtmalar](/screens/guide/03-orders-list.webp)
 
 Har bir ustun filtrlash mumkin — holat, agent, mijoz, sana, ombor.
 
@@ -19,7 +19,7 @@ Har bir ustun filtrlash mumkin — holat, agent, mijoz, sana, ombor.
 
 Yuqori o'ng burchakdagi **+ Добавить** tugmasini bosing. Siz `/orders/addOrder` manzilidagi yangi buyurtma formasiga tushasiz:
 
-![Yangi buyurtma formasi — sarlavhadan jadvalgacha to'liq ko'rinish](/screens/guide/33-new-order-empty.png)
+![Yangi buyurtma formasi — sarlavhadan jadvalgacha to'liq ko'rinish](/screens/guide/33-new-order-empty.webp)
 
 Forma uchta bo'lakdan iborat: **sarlavha** (mijoz, agent, sanalar), **mahsulotlar jadvali** va pastdagi **jami yig'indi qatori**.
 
@@ -35,11 +35,11 @@ Tizim avtomatik tarzda quyidagilarni to'ldiradi:
 
 Mijoz tanlovi — bu sahifalangan jadval. Standart holatda sotuv qila oladigan barcha mijozlarning birinchi 10 tasi ko'rsatiladi:
 
-![Mijoz tanlovi — barcha mijozlarning to'liq jadvali](/screens/guide/40-client-picker.png)
+![Mijoz tanlovi — barcha mijozlarning to'liq jadvali](/screens/guide/40-client-picker.webp)
 
 Yuqoridagi **Поиск** (Qidiruv) maydoniga mijoz nomining istalgan qismini yozing. Jadval real vaqtda toraytiriladi:
 
-![Mijoz tanlovi "мага" filtri bilan — torayagan ro'yxat](/screens/guide/41-client-picker-search.png)
+![Mijoz tanlovi "мага" filtri bilan — torayagan ro'yxat](/screens/guide/41-client-picker-search.webp)
 
 Tasdiqlash uchun qatorni bosing. Tanlov oynasi yopiladi va buyurtma formasi mahsulotlar jadvaliga o'tadi.
 
@@ -67,7 +67,7 @@ Administratoringiz chegirma qoidalari yoki "X olganga Y bepul" aksiyalarini sozl
 
 **Сохранить** (Saqlash) tugmasini bosing. Buyurtma **Yangi** holatiga o'tadi va darhol buyurtmalar ro'yxatida paydo bo'ladi:
 
-![Buyurtmalar ro'yxati eng tepada yangi buyurtma bilan](/screens/guide/03-orders-list.png)
+![Buyurtmalar ro'yxati eng tepada yangi buyurtma bilan](/screens/guide/03-orders-list.webp)
 
 ## Qadam 7 — Buyurtmani bosqichlar bo'ylab kuzating
 

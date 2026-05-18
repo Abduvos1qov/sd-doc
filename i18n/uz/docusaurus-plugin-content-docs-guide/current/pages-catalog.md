@@ -27,7 +27,7 @@ Barcha skrinshotlar haqiqiy demo tenantdan olingan. Hisobingizda raqamlar va nom
 
 Manzil: `/site/login`
 
-![Login screen](/screens/guide/01-login-screen.png)
+![Login screen](/screens/guide/01-login-screen.webp)
 
 Sahifada nima bor:
 - **Логин** (Login) matn maydoni — odatda telefon raqamingiz yoki tayinlangan foydalanuvchi nomingiz
@@ -44,7 +44,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/dashboard/supervayzer`
 
-![Supervisor home dashboard](/screens/guide/39-supervisor-dashboard-full.png)
+![Supervisor home dashboard](/screens/guide/39-supervisor-dashboard-full.webp)
 
 Sahifada nima bor:
 - Yuqoridagi asosiy KPI plitalari: **Продажи** (Sotuvlar), **Визиты** (Tashriflar), **АКБ** (Faol mijozlar bazasi), **ОКБ** (Umumiy mijozlar bazasi), **Долг** (Qarz), **Заказы в ожидании** (Kutilayotgan buyurtmalar)
@@ -62,7 +62,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/dashboard/sales`
 
-![Sales dashboard](/screens/guide/34-dashboard-sales.png)
+![Sales dashboard](/screens/guide/34-dashboard-sales.webp)
 
 Sahifada nima bor:
 - Agent / mintaqa / mahsulot guruhi bo'yicha taqsimlangan sotuvlar yig'indilari
@@ -78,7 +78,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/dashboard/finans`
 
-![Finance dashboard](/screens/guide/35-dashboard-finans.png)
+![Finance dashboard](/screens/guide/35-dashboard-finans.webp)
 
 Sahifada nima bor:
 - Yoshga qarab guruhlangan asosiy debitorlik raqami (7 kundan kam / 7–30 / 30+ kun)
@@ -93,7 +93,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/dashboard/kpi`
 
-![KPI dashboard](/screens/guide/38-dashboard-kpi-full.png)
+![KPI dashboard](/screens/guide/38-dashboard-kpi-full.webp)
 
 Sahifada nima bor:
 - Har bir agent uchun bitta qator
@@ -125,7 +125,7 @@ Sahifada nima bor:
 
 Manzil: `/orders/list`
 
-![Orders list](/screens/guide/03-orders-list.png)
+![Orders list](/screens/guide/03-orders-list.webp)
 
 Sahifada nima bor:
 - Yuqoridagi filtr qatori: **sana oralig'i**, **holat**, **agent**, **ekspeditor**, **ombor**, **kanal**, **mijoz**, **to'lov usuli**
@@ -144,7 +144,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/orders/addOrder`
 
-![New order full form](/screens/guide/33-new-order-empty.png)
+![New order full form](/screens/guide/33-new-order-empty.webp)
 
 Sahifada nima bor:
 - Sarlavha bloki: **Mijoz** tanlagichi, **Agent** ochiluvchi ro'yxati, **Sana** maydoni, **Ombor** ochiluvchi ro'yxati, **Narx turi** ochiluvchi ro'yxati, **To'lov usuli** ochiluvchi ro'yxati
@@ -156,17 +156,17 @@ Sahifada nima bor:
 
 Keyin qayerga borasiz:
 - **Mijoz maydonini bosing** → mijoz tanlagichi ochiladi
-  - ![Client picker](/screens/guide/40-client-picker.png)
+  - ![Client picker](/screens/guide/40-client-picker.webp)
   - Qidirilishi mumkin bo'lgan ro'yxat, sahifaga 10 ta qator
   - Nomi, telefoni yoki INN bo'yicha qidiring
-  - ![Client picker filtered](/screens/guide/41-client-picker-search.png)
+  - ![Client picker filtered](/screens/guide/41-client-picker-search.webp)
 - **Сохранить** → yangi buyurtma yuqorida bilan buyurtmalar ro'yxatiga qaytadi
 
 ### 2.3 Buyurtma rad etishlari / qaytarishlari
 
 Manzil: `/orders/rejects`
 
-![Order rejects](/screens/guide/25-orders-rejects.png)
+![Order rejects](/screens/guide/25-orders-rejects.webp)
 
 Sahifada nima bor:
 - Ekspeditor yoki mijoz rad etgan buyurtmalar ro'yxati
@@ -177,7 +177,7 @@ Sahifada nima bor:
 
 Manzil: `/orders/recovery`
 
-![Order recovery](/screens/guide/26-orders-recovery.png)
+![Order recovery](/screens/guide/26-orders-recovery.webp)
 
 Sahifada nima bor:
 - Bekor qilingan yoki avto-arxivlangan, lekin hali tiklanishi mumkin bo'lgan buyurtmalar
@@ -188,7 +188,7 @@ Sahifada nima bor:
 
 Manzil: `/orders/view/trips`
 
-![Live trips](/screens/guide/20-trips-view.png)
+![Live trips](/screens/guide/20-trips-view.webp)
 
 Sahifada nima bor:
 - Har bir faol ekspeditor reysi uchun bitta qator
@@ -208,12 +208,12 @@ Keyin qayerga borasiz:
 
 Manzil: `/clients/client`
 
-![Clients list](/screens/guide/05-clients-list.png)
+![Clients list](/screens/guide/05-clients-list.webp)
 
 Sahifada nima bor:
 - Yuqori amal qatori: **Добавить клиента**, **Импорт** (Excel import), **Экспорт**, **На карте** (Xaritada)
 - **Фильтры** havolasi filtr panelini kengaytiradi:
-  - ![Clients filter panel](/screens/guide/45-clients-filter-panel.png)
+  - ![Clients filter panel](/screens/guide/45-clients-filter-panel.webp)
   - Mintaqa / kanal / segment / agent / faollik bayrog'i / qarz bayrog'i
 - Jadval ustunlari: nom, tur, mintaqa, manzil, telefon, agent, oxirgi tashrif, qoldiq
 - Pastda sahifalash
@@ -221,7 +221,7 @@ Sahifada nima bor:
 Keyin qayerga borasiz:
 - **"+ Добавить клиента" tugmasini bosing** → yangi mijoz formasi (yoki agentlarga tashrif vaqtida mobil ilovada yaratish topshirig'i)
 - **"Импорт" tugmasini bosing** → Excel import sahifasi
-  - ![Clients import](/screens/guide/32-clients-import.png)
+  - ![Clients import](/screens/guide/32-clients-import.webp)
   - Shablonni yuklab oling → to'ldiring → yuklang → oldindan ko'rishni ko'ring → tasdiqlang
 - **Qatorni bosing** → mijoz profili (tarix, qarz, suratlar, tashriflar)
 
@@ -229,7 +229,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/clients/finans`
 
-![Client payments](/screens/guide/13-client-payments.png)
+![Client payments](/screens/guide/13-client-payments.webp)
 
 Sahifada nima bor:
 - Mijoz / agent / davr filtr qatori
@@ -245,7 +245,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/clients/view/clientMap`
 
-![Clients on map](/screens/guide/48-clients-on-map.png)
+![Clients on map](/screens/guide/48-clients-on-map.webp)
 
 Sahifada nima bor:
 - To'liq ekranli xarita (OpenStreetMap / Yandex)
@@ -258,7 +258,7 @@ Sahifada nima bor:
 
 Manzil: `/clients/agentRoute`
 
-![Agent route](/screens/guide/49-agent-route.png)
+![Agent route](/screens/guide/49-agent-route.webp)
 
 Sahifada nima bor:
 - Yuqorida agent ochiluvchi ro'yxati
@@ -271,7 +271,7 @@ Sahifada nima bor:
 
 Manzil: `/report/visitingHistory`
 
-![Visit history](/screens/guide/50-visit-history.png)
+![Visit history](/screens/guide/50-visit-history.webp)
 
 Sahifada nima bor:
 - Har bir tashrif o'zgartirishi auditi
@@ -282,7 +282,7 @@ Sahifada nima bor:
 
 Manzil: `/clients/approval`
 
-![Unconfirmed clients](/screens/guide/62-clients-approval.png)
+![Unconfirmed clients](/screens/guide/62-clients-approval.webp)
 
 Dalada qo'shilgan yangi mijozlar faollashishidan oldin shu yerda sizning ko'rib chiqishingizni kutadi.
 
@@ -294,7 +294,7 @@ Dalada qo'shilgan yangi mijozlar faollashishidan oldin shu yerda sizning ko'rib 
 
 Manzil: `/team/auditor`
 
-![Team auditors](/screens/guide/06-team-auditor.png)
+![Team auditors](/screens/guide/06-team-auditor.webp)
 
 Sahifada nima bor:
 - Auditor hisoblari ro'yxati
@@ -305,7 +305,7 @@ Sahifada nima bor:
 
 Manzil: `/staff/view/agent` (shuningdek `/agents/agent` orqali kirish mumkin)
 
-![Agents list](/screens/guide/07-agents-list.png)
+![Agents list](/screens/guide/07-agents-list.webp)
 
 Sahifada nima bor:
 - Ustunlar: nom, telefon, supervayzer, mintaqa, mijozlar soni, oxirgi kirish, holat (faol / bloklangan), oxirgi GPS signali
@@ -314,30 +314,30 @@ Sahifada nima bor:
 
 Keyin qayerga borasiz:
 - **"+ Добавить агента" tugmasini bosing** → agent qo'shish formasi
-  - ![Add agent form](/screens/guide/29-add-agent-form.png)
+  - ![Add agent form](/screens/guide/29-add-agent-form.webp)
   - Maydonlar: to'liq ism, telefon, parol, supervayzer, mintaqa, rol, surat
 - **Qatorni bosing** → agent profili
-  - ![Agent detail](/screens/guide/47-agent-detail.png)
+  - ![Agent detail](/screens/guide/47-agent-detail.webp)
   - Yorliqlar: umumiy ko'rinish, tashriflar, sotuvlar, KPI, qurilmalar, o'zgarishlar jurnali
 
 ### 4.3 Supervayzerlar
 
 Manzil: `/team/supervisor`
 
-![Supervisors list](/screens/guide/17-supervisors-list.png)
+![Supervisors list](/screens/guide/17-supervisors-list.webp)
 
 Sahifada nima bor:
 - Ustunlar: nom, telefon, ularning qo'l ostidagi agentlar soni, mintaqa, oxirgi kirish
 
 Keyin qayerga borasiz:
 - **"+ Добавить" tugmasini bosing** → `/team/supervisor/create`
-  - ![Add supervisor form](/screens/guide/30-add-supervisor-form.png)
+  - ![Add supervisor form](/screens/guide/30-add-supervisor-form.webp)
 
 ### 4.4 Ekspeditorlar
 
 Manzil: `/staff/view/expeditor`
 
-![Expeditors list](/screens/guide/19-expeditors-list.png)
+![Expeditors list](/screens/guide/19-expeditors-list.webp)
 
 Sahifada nima bor:
 - Ustunlar: nom, telefon, yuk mashinasi/transport, ombor, oxirgi reys, holat
@@ -345,14 +345,14 @@ Sahifada nima bor:
 
 Keyin qayerga borasiz:
 - **"+ Добавить" tugmasini bosing** → `/staff/create/expeditor`
-  - ![Add expeditor form](/screens/guide/31-add-expeditor-form.png)
+  - ![Add expeditor form](/screens/guide/31-add-expeditor-form.webp)
   - Maydonlar: to'liq ism, telefon, parol, transport, standart ombor
 
 ### 4.5 Foydalanuvchilar (umumiy)
 
 Manzil: `/team/user`
 
-![Users list](/screens/guide/18-users-list.png)
+![Users list](/screens/guide/18-users-list.webp)
 
 Sahifada nima bor:
 - Rolga qaramay barcha hisoblar (admin / supervayzer / agent / ekspeditor / kassir / auditor)
@@ -367,7 +367,7 @@ Sahifada nima bor:
 
 Manzil: `/warehouse/list`
 
-![Warehouses list](/screens/guide/08-warehouses-list.png)
+![Warehouses list](/screens/guide/08-warehouses-list.webp)
 
 Sahifada nima bor:
 - Har bir jismoniy ombor uchun bitta qator
@@ -378,7 +378,7 @@ Sahifada nima bor:
 
 Manzil: `/warehouse/view/listPurchase`
 
-![Purchases list](/screens/guide/09-purchases-list.png)
+![Purchases list](/screens/guide/09-purchases-list.webp)
 
 Sahifada nima bor:
 - Kiruvchi tovar hujjatlari
@@ -389,7 +389,7 @@ Sahifada nima bor:
 
 Manzil: `/stock/report`
 
-![Stock report](/screens/guide/10-stock-report.png)
+![Stock report](/screens/guide/10-stock-report.webp)
 
 Sahifada nima bor:
 - Har bir ombor, har bir SKU bo'yicha mavjud zaxiraning snapshoti
@@ -400,7 +400,7 @@ Sahifada nima bor:
 
 Manzil: `/inventory/list`
 
-![Inventory list](/screens/guide/51-inventory-list.png)
+![Inventory list](/screens/guide/51-inventory-list.webp)
 
 Sahifada nima bor:
 - Mijozlarga joylashtirilgan brendli jihozlar (muzlatkichlar, javonlar, vitrinalar, belgilar)
@@ -411,7 +411,7 @@ Sahifada nima bor:
 
 Manzil: `/stock/excretion`
 
-![Stock write-off list](/screens/guide/63-stock-write-off.png)
+![Stock write-off list](/screens/guide/63-stock-write-off.webp)
 
 Shikastlangan, muddati o'tgan yoki noto'g'ri hisoblangan tovarni inventardan olib tashlash.
 
@@ -423,7 +423,7 @@ Shikastlangan, muddati o'tgan yoki noto'g'ri hisoblangan tovarni inventardan oli
 
 Manzil: `/planning/monthly`
 
-![Monthly planning](/screens/guide/11-planning-monthly.png)
+![Monthly planning](/screens/guide/11-planning-monthly.webp)
 
 Sahifada nima bor:
 - Chapda agentlar, yuqorida kunlar bilan kalendar-jadval ko'rinishi
@@ -439,7 +439,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/planning/outlet`
 
-![Per-outlet planning](/screens/guide/65-planning-outlet.png)
+![Per-outlet planning](/screens/guide/65-planning-outlet.webp)
 
 Har bir mijoz uchun tashrif kunlarini tanlash (agentga yo'naltirilgan oylik ko'rinishdan farqli o'laroq).
 
@@ -451,11 +451,11 @@ Har bir mijoz uchun tashrif kunlarini tanlash (agentga yo'naltirilgan oylik ko'r
 
 Manzil: `/report/agent`
 
-![Agent report](/screens/guide/12-report-agent.png)
+![Agent report](/screens/guide/12-report-agent.webp)
 
 Sahifada nima bor:
 - Yuqoridagi filtr qatori:
-  - ![Report filter strip](/screens/guide/46-report-filter-strip.png)
+  - ![Report filter strip](/screens/guide/46-report-filter-strip.webp)
 - Pivot jadvali: agent × davr
 - Kataklar: buyurtmalar soni, yalpi sotuvlar, qaytarishlar, sof sotuvlar, yig'ilgan qarz
 - Pastda jami qatori
@@ -464,7 +464,7 @@ Sahifada nima bor:
 
 Manzil: `/report/customer`
 
-![Customer report](/screens/guide/23-report-customer.png)
+![Customer report](/screens/guide/23-report-customer.webp)
 
 Sahifada nima bor:
 - Har bir mijoz uchun bitta qator
@@ -476,7 +476,7 @@ Sahifada nima bor:
 
 Manzil: `/report/visit`
 
-![Visit coverage report](/screens/guide/37-report-visit.png)
+![Visit coverage report](/screens/guide/37-report-visit.webp)
 
 Sahifada nima bor:
 - Har bir agent uchun bitta qator
@@ -487,7 +487,7 @@ Sahifada nima bor:
 
 Manzil: `/report/saleDetail`
 
-![Sale detail report](/screens/guide/60-report-saledetail.png)
+![Sale detail report](/screens/guide/60-report-saledetail.webp)
 
 Har bir sotuvning qator-qator tafsiloti — agent, mijoz, mahsulot, miqdor, narx, chegirma, jami.
 
@@ -495,7 +495,7 @@ Har bir sotuvning qator-qator tafsiloti — agent, mijoz, mahsulot, miqdor, narx
 
 Manzil: `/report/expeditor`
 
-![Expeditor performance](/screens/guide/61-report-expeditor.png)
+![Expeditor performance](/screens/guide/61-report-expeditor.webp)
 
 Kuniga bajarilgan to'xtashlar, yig'ilgan pul, qaytarilgan tovarlar, marshrutdan og'ishlar.
 
@@ -507,7 +507,7 @@ Kuniga bajarilgan to'xtashlar, yig'ilgan pul, qaytarilgan tovarlar, marshrutdan 
 
 Manzil: `/audit/photoReport`
 
-![Photo report](/screens/guide/15-audit-photoreport.png)
+![Photo report](/screens/guide/15-audit-photoreport.webp)
 
 Sahifada nima bor:
 - Tashriflar paytida agentlar tomonidan olingan oxirgi javon suratlari jadvali
@@ -519,7 +519,7 @@ Sahifada nima bor:
 
 Manzil: `/adt/audit`
 
-![ADT audit](/screens/guide/59-adt-audit.png)
+![ADT audit](/screens/guide/59-adt-audit.webp)
 
 Audit v2 ko'rinishi — faqat surat hisobotidan kengroq: javon o'lchovlari va raqobatchi tekshiruvlarini ham o'z ichiga oladi.
 
@@ -527,7 +527,7 @@ Audit v2 ko'rinishi — faqat surat hisobotidan kengroq: javon o'lchovlari va ra
 
 Manzil: `/audit/poll`
 
-![Audit poll](/screens/guide/64-audit-poll.png)
+![Audit poll](/screens/guide/64-audit-poll.webp)
 
 Tashriflar paytida agentlar so'rovnomalari uchun savollar banki.
 
@@ -539,7 +539,7 @@ Tashriflar paytida agentlar so'rovnomalari uchun savollar banki.
 
 Manzil: `/markirovka/view/incomingInvoices`
 
-![Incoming EDI invoices](/screens/guide/24-markirovka-incoming.png)
+![Incoming EDI invoices](/screens/guide/24-markirovka-incoming.webp)
 
 Sahifada nima bor:
 - Yetkazib beruvchilardan olingan EDI yo'l varaqalari kiruvchi qutisi (masalan, sigaret / farma kuzatuv)
@@ -550,7 +550,7 @@ Sahifada nima bor:
 
 Manzil: `/markirovka/view/outgoingInvoices`
 
-![Outgoing EDI invoices](/screens/guide/52-markirovka-outgoing.png)
+![Outgoing EDI invoices](/screens/guide/52-markirovka-outgoing.webp)
 
 Sahifada nima bor:
 - Mijozlaringizga jo'natilgan EDI yo'l varaqalari
@@ -565,7 +565,7 @@ Sahifada nima bor:
 
 Manzil: `/onlineOrder/order`
 
-![Online orders](/screens/guide/16-online-orders.png)
+![Online orders](/screens/guide/16-online-orders.webp)
 
 Sahifada nima bor:
 - Agent ilovasidan tashqarida olingan buyurtmalar — veb-do'kon, B2B portal, Telegram bot
@@ -576,7 +576,7 @@ Sahifada nima bor:
 
 Manzil: `/sms/view/list`
 
-![SMS broadcast](/screens/guide/27-sms-broadcast.png)
+![SMS broadcast](/screens/guide/27-sms-broadcast.webp)
 
 Sahifada nima bor:
 - CRM'dan yuborilgan SMS kampaniyalarining tarixi
@@ -591,7 +591,7 @@ Sahifada nima bor:
 
 Manzil: `/payment/approval`
 
-![Payment approval](/screens/guide/21-payment-approval.png)
+![Payment approval](/screens/guide/21-payment-approval.webp)
 
 Sahifada nima bor:
 - Dala sharoitida agentlar tomonidan yig'ilgan, kassir tasdig'ini kutayotgan to'lovlar
@@ -607,7 +607,7 @@ Sahifada nima bor:
 
 Manzil: `/settings/diler`
 
-![Company profile settings](/screens/guide/14-settings-profile.png)
+![Company profile settings](/screens/guide/14-settings-profile.webp)
 
 Sahifada nima bor:
 - Kompaniya nomi (rus / o'zbek)
@@ -621,7 +621,7 @@ Sahifada nima bor:
 
 Manzil: `/settings/priceType`
 
-![Price types settings](/screens/guide/28-settings-price-type.png)
+![Price types settings](/screens/guide/28-settings-price-type.webp)
 
 Sahifada nima bor:
 - Narx darajalari ro'yxati (Опт / Розница / Спец / Акция / VIP)
@@ -632,7 +632,7 @@ Sahifada nima bor:
 
 Manzil: `/settings/currency`
 
-![Payment methods](/screens/guide/53-settings-payment-type.png)
+![Payment methods](/screens/guide/53-settings-payment-type.webp)
 
 Sahifada nima bor:
 - Qabul qilinadigan to'lov usullari (naqd, bank o'tkazmasi, karta, Click, Payme, Apelsin)
@@ -643,7 +643,7 @@ Sahifada nima bor:
 
 Manzil: `/settings/skidka`
 
-![Discount rules list](/screens/guide/54-settings-discounts.png)
+![Discount rules list](/screens/guide/54-settings-discounts.webp)
 
 Sahifada nima bor:
 - Har bir faol chegirma qoidasi uchun bitta qator
@@ -657,7 +657,7 @@ Keyin qayerga borasiz:
 
 Manzil: `/settings/bonus`
 
-![Bonus rules list](/screens/guide/55-settings-bonus.png)
+![Bonus rules list](/screens/guide/55-settings-bonus.webp)
 
 Sahifada nima bor:
 - "X dan N ta sotib oling, Y dan M ta oling" qoidalari
@@ -667,19 +667,19 @@ Sahifada nima bor:
 
 Manzil: `/settings/channel`
 
-![Sales channels](/screens/guide/56-settings-channel.png)
+![Sales channels](/screens/guide/56-settings-channel.webp)
 
 ### 12.7 Brendlar
 
 Manzil: `/settings/brand`
 
-![Brands](/screens/guide/58-settings-brand.png)
+![Brands](/screens/guide/58-settings-brand.webp)
 
 ### 12.8 Mahsulotlar katalogi
 
 Manzil: `/settings/product`
 
-![Products catalog](/screens/guide/57-settings-products.png)
+![Products catalog](/screens/guide/57-settings-products.webp)
 
 ---
 
@@ -695,14 +695,14 @@ Ushbu vidjetlar CRM bo'ylab har joyda bir xil ishlaydi. Ularni bir marta o'rgani
 ### Filtr qatori (sahifa sarlavhasi ostida)
 - Ko'p tanlovli ochiluvchi ro'yxatlar
 - Filtrlar bir-biri bilan birikadi — agent VA holat VA sana tanlang
-- ![Status filter dropdown example](/screens/guide/44-status-filter-dropdown.png)
+- ![Status filter dropdown example](/screens/guide/44-status-filter-dropdown.webp)
 
 ### Sana oralig'i tanlagichi
-- ![Date range picker](/screens/guide/42-date-range-picker.png)
+- ![Date range picker](/screens/guide/42-date-range-picker.webp)
 - Sana maydonini bosganingizda ikki oylik kalendar ochiladi
 - Tezkor yorliqlar: Сегодня / Вчера / Неделя / Месяц / Квартал
 - Sana turi ochiluvchi ro'yxati (Buyurtma sanasi / Jo'natish sanasi / Yetkazib berish sanasi)
-  - ![Date type dropdown](/screens/guide/43-date-type-dropdown.png)
+  - ![Date type dropdown](/screens/guide/43-date-type-dropdown.webp)
 
 ### "Сбросить фильтр" (Filtrlarni tashlash)
 Doim filtr qatorining o'ng tomonida. Tanlaganlarning hammasini tozalash uchun bir marta bosing.

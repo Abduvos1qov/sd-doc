@@ -11,7 +11,7 @@ The dashboard is the page that opens after you sign in. It's the most-used page 
 
 Click the **SalesDoctor logo** (top left) from any page to come back here, or just open `/dashboard/supervayzer` directly.
 
-![Full dashboard view](/screens/guide/02-dashboard-home.png)
+![Full dashboard view](/screens/guide/02-dashboard-home.webp)
 
 ## Step 2 — Read the top bar
 

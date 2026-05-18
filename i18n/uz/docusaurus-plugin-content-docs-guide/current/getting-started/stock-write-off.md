@@ -11,7 +11,7 @@ Ba'zida tovar sotilmasdan omborni tark etishi kerak bo'ladi — muddati o'tgan, 
 
 Menyudan **Ombor → Hisobdan chiqarish** (Склад → Списания) ni tanlang yoki to'g'ridan-to'g'ri `/stock/excretion` ni oching:
 
-![Hisobdan chiqarishlar ro'yxati](/screens/guide/63-stock-write-off.png)
+![Hisobdan chiqarishlar ro'yxati](/screens/guide/63-stock-write-off.webp)
 
 Siz hozirgacha qilingan barcha hisobdan chiqarishlarni ko'rasiz — kim, qachon, qaysi ombordan, nimani va qanday sabab bilan hisobdan chiqargan.
 

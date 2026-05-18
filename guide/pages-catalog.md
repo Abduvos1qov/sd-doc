@@ -27,7 +27,7 @@ All screenshots come from a real demo tenant. Numbers and names will differ in y
 
 URL: `/site/login`
 
-![Login screen](/screens/guide/01-login-screen.png)
+![Login screen](/screens/guide/01-login-screen.webp)
 
 What's on it:
 - **Логин** (Login) text field — usually your phone number or assigned username
@@ -44,7 +44,7 @@ Where you go next:
 
 URL: `/dashboard/supervayzer`
 
-![Supervisor home dashboard](/screens/guide/39-supervisor-dashboard-full.png)
+![Supervisor home dashboard](/screens/guide/39-supervisor-dashboard-full.webp)
 
 What's on it:
 - Headline KPI tiles across the top: **Продажи** (Sales), **Визиты** (Visits), **АКБ** (Active client base), **ОКБ** (General client base), **Долг** (Debt), **Заказы в ожидании** (Pending orders)
@@ -62,7 +62,7 @@ Where you go next:
 
 URL: `/dashboard/sales`
 
-![Sales dashboard](/screens/guide/34-dashboard-sales.png)
+![Sales dashboard](/screens/guide/34-dashboard-sales.webp)
 
 What's on it:
 - Sales totals broken down by agent / region / product group
@@ -78,7 +78,7 @@ Where you go next:
 
 URL: `/dashboard/finans`
 
-![Finance dashboard](/screens/guide/35-dashboard-finans.png)
+![Finance dashboard](/screens/guide/35-dashboard-finans.webp)
 
 What's on it:
 - Total receivable headline number with aged buckets (less than 7 days / 7–30 / 30+ days)
@@ -93,7 +93,7 @@ Where you go next:
 
 URL: `/dashboard/kpi`
 
-![KPI dashboard](/screens/guide/38-dashboard-kpi-full.png)
+![KPI dashboard](/screens/guide/38-dashboard-kpi-full.webp)
 
 What's on it:
 - One row per agent
@@ -125,7 +125,7 @@ What's on it:
 
 URL: `/orders/list`
 
-![Orders list](/screens/guide/03-orders-list.png)
+![Orders list](/screens/guide/03-orders-list.webp)
 
 What's on it:
 - Filter strip across the top: **date range**, **status**, **agent**, **expeditor**, **warehouse**, **channel**, **client**, **payment method**
@@ -144,7 +144,7 @@ Where you go next:
 
 URL: `/orders/addOrder`
 
-![New order full form](/screens/guide/33-new-order-empty.png)
+![New order full form](/screens/guide/33-new-order-empty.webp)
 
 What's on it:
 - Header block: **Client** picker, **Agent** dropdown, **Date** field, **Warehouse** dropdown, **Price type** dropdown, **Payment method** dropdown
@@ -156,17 +156,17 @@ What's on it:
 
 Where you go next:
 - **Click the client field** → client picker opens
-  - ![Client picker](/screens/guide/40-client-picker.png)
+  - ![Client picker](/screens/guide/40-client-picker.webp)
   - Searchable list, 10 rows per page
   - Search by name, phone, or INN
-  - ![Client picker filtered](/screens/guide/41-client-picker-search.png)
+  - ![Client picker filtered](/screens/guide/41-client-picker-search.webp)
 - **Save** → returns to the orders list with the new order on top
 
 ### 2.3 Order rejects / returns
 
 URL: `/orders/rejects`
 
-![Order rejects](/screens/guide/25-orders-rejects.png)
+![Order rejects](/screens/guide/25-orders-rejects.webp)
 
 What's on it:
 - List of orders the expeditor or client refused
@@ -177,7 +177,7 @@ What's on it:
 
 URL: `/orders/recovery`
 
-![Order recovery](/screens/guide/26-orders-recovery.png)
+![Order recovery](/screens/guide/26-orders-recovery.webp)
 
 What's on it:
 - Orders that were cancelled or auto-archived and can still be revived
@@ -188,7 +188,7 @@ What's on it:
 
 URL: `/orders/view/trips`
 
-![Live trips](/screens/guide/20-trips-view.png)
+![Live trips](/screens/guide/20-trips-view.webp)
 
 What's on it:
 - One row per active expeditor trip
@@ -208,12 +208,12 @@ Where you go next:
 
 URL: `/clients/client`
 
-![Clients list](/screens/guide/05-clients-list.png)
+![Clients list](/screens/guide/05-clients-list.webp)
 
 What's on it:
 - Top action row: **Добавить клиента**, **Импорт** (Excel import), **Экспорт**, **На карте** (On map)
 - **Фильтры** link expands the filter panel:
-  - ![Clients filter panel](/screens/guide/45-clients-filter-panel.png)
+  - ![Clients filter panel](/screens/guide/45-clients-filter-panel.webp)
   - Region / channel / segment / agent / active flag / debt flag
 - Table columns: name, type, region, address, phone, agent, last visit, balance
 - Pagination at the bottom
@@ -221,7 +221,7 @@ What's on it:
 Where you go next:
 - **Click "+ Добавить клиента"** → new-client form (or have agents create in the mobile app while on visit)
 - **Click "Импорт"** → Excel import page
-  - ![Clients import](/screens/guide/32-clients-import.png)
+  - ![Clients import](/screens/guide/32-clients-import.webp)
   - Download template → fill in → upload → preview → confirm
 - **Click row** → client profile (history, debt, photos, visits)
 
@@ -229,7 +229,7 @@ Where you go next:
 
 URL: `/clients/finans`
 
-![Client payments](/screens/guide/13-client-payments.png)
+![Client payments](/screens/guide/13-client-payments.webp)
 
 What's on it:
 - Client / agent / period filter strip
@@ -245,7 +245,7 @@ Where you go next:
 
 URL: `/clients/view/clientMap`
 
-![Clients on map](/screens/guide/48-clients-on-map.png)
+![Clients on map](/screens/guide/48-clients-on-map.webp)
 
 What's on it:
 - Full-screen map (OpenStreetMap / Yandex)
@@ -258,7 +258,7 @@ What's on it:
 
 URL: `/clients/agentRoute`
 
-![Agent route](/screens/guide/49-agent-route.png)
+![Agent route](/screens/guide/49-agent-route.webp)
 
 What's on it:
 - Agent dropdown at the top
@@ -271,7 +271,7 @@ What's on it:
 
 URL: `/report/visitingHistory`
 
-![Visit history](/screens/guide/50-visit-history.png)
+![Visit history](/screens/guide/50-visit-history.webp)
 
 What's on it:
 - Audit log of every visit modification
@@ -282,7 +282,7 @@ What's on it:
 
 URL: `/clients/approval`
 
-![Unconfirmed clients](/screens/guide/62-clients-approval.png)
+![Unconfirmed clients](/screens/guide/62-clients-approval.webp)
 
 Newly-added clients from the field await your review here before going active.
 
@@ -294,7 +294,7 @@ Newly-added clients from the field await your review here before going active.
 
 URL: `/team/auditor`
 
-![Team auditors](/screens/guide/06-team-auditor.png)
+![Team auditors](/screens/guide/06-team-auditor.webp)
 
 What's on it:
 - List of auditor accounts
@@ -305,7 +305,7 @@ What's on it:
 
 URL: `/staff/view/agent` (also reachable as `/agents/agent`)
 
-![Agents list](/screens/guide/07-agents-list.png)
+![Agents list](/screens/guide/07-agents-list.webp)
 
 What's on it:
 - Columns: name, phone, supervisor, region, # of clients, last login, status (active / blocked), last GPS ping
@@ -314,30 +314,30 @@ What's on it:
 
 Where you go next:
 - **Click "+ Добавить агента"** → add agent form
-  - ![Add agent form](/screens/guide/29-add-agent-form.png)
+  - ![Add agent form](/screens/guide/29-add-agent-form.webp)
   - Fields: full name, phone, password, supervisor, region, role, photo
 - **Click a row** → agent profile
-  - ![Agent detail](/screens/guide/47-agent-detail.png)
+  - ![Agent detail](/screens/guide/47-agent-detail.webp)
   - Tabs: overview, visits, sales, KPI, devices, change log
 
 ### 4.3 Supervisors
 
 URL: `/team/supervisor`
 
-![Supervisors list](/screens/guide/17-supervisors-list.png)
+![Supervisors list](/screens/guide/17-supervisors-list.webp)
 
 What's on it:
 - Columns: name, phone, # of agents under them, region, last login
 
 Where you go next:
 - **Click "+ Добавить"** → `/team/supervisor/create`
-  - ![Add supervisor form](/screens/guide/30-add-supervisor-form.png)
+  - ![Add supervisor form](/screens/guide/30-add-supervisor-form.webp)
 
 ### 4.4 Expeditors
 
 URL: `/staff/view/expeditor`
 
-![Expeditors list](/screens/guide/19-expeditors-list.png)
+![Expeditors list](/screens/guide/19-expeditors-list.webp)
 
 What's on it:
 - Columns: name, phone, truck/vehicle, warehouse, last trip, status
@@ -345,14 +345,14 @@ What's on it:
 
 Where you go next:
 - **Click "+ Добавить"** → `/staff/create/expeditor`
-  - ![Add expeditor form](/screens/guide/31-add-expeditor-form.png)
+  - ![Add expeditor form](/screens/guide/31-add-expeditor-form.webp)
   - Fields: full name, phone, password, vehicle, default warehouse
 
 ### 4.5 Users (generic)
 
 URL: `/team/user`
 
-![Users list](/screens/guide/18-users-list.png)
+![Users list](/screens/guide/18-users-list.webp)
 
 What's on it:
 - All accounts regardless of role (admin / supervisor / agent / expeditor / cashier / auditor)
@@ -367,7 +367,7 @@ What's on it:
 
 URL: `/warehouse/list`
 
-![Warehouses list](/screens/guide/08-warehouses-list.png)
+![Warehouses list](/screens/guide/08-warehouses-list.webp)
 
 What's on it:
 - One row per physical warehouse
@@ -378,7 +378,7 @@ What's on it:
 
 URL: `/warehouse/view/listPurchase`
 
-![Purchases list](/screens/guide/09-purchases-list.png)
+![Purchases list](/screens/guide/09-purchases-list.webp)
 
 What's on it:
 - Incoming-stock documents
@@ -389,7 +389,7 @@ What's on it:
 
 URL: `/stock/report`
 
-![Stock report](/screens/guide/10-stock-report.png)
+![Stock report](/screens/guide/10-stock-report.webp)
 
 What's on it:
 - Per-warehouse, per-SKU snapshot of available stock
@@ -400,7 +400,7 @@ What's on it:
 
 URL: `/inventory/list`
 
-![Inventory list](/screens/guide/51-inventory-list.png)
+![Inventory list](/screens/guide/51-inventory-list.webp)
 
 What's on it:
 - Branded equipment placed at clients (fridges, racks, freezers, signage)
@@ -411,7 +411,7 @@ What's on it:
 
 URL: `/stock/excretion`
 
-![Stock write-off list](/screens/guide/63-stock-write-off.png)
+![Stock write-off list](/screens/guide/63-stock-write-off.webp)
 
 Removing damaged, expired or miscounted stock from inventory.
 
@@ -423,7 +423,7 @@ Removing damaged, expired or miscounted stock from inventory.
 
 URL: `/planning/monthly`
 
-![Monthly planning](/screens/guide/11-planning-monthly.png)
+![Monthly planning](/screens/guide/11-planning-monthly.webp)
 
 What's on it:
 - Calendar-grid view with agents on the left, days across the top
@@ -439,7 +439,7 @@ Where you go next:
 
 URL: `/planning/outlet`
 
-![Per-outlet planning](/screens/guide/65-planning-outlet.png)
+![Per-outlet planning](/screens/guide/65-planning-outlet.webp)
 
 Pick visit days per client (vs the agent-centric monthly view).
 
@@ -451,11 +451,11 @@ Pick visit days per client (vs the agent-centric monthly view).
 
 URL: `/report/agent`
 
-![Agent report](/screens/guide/12-report-agent.png)
+![Agent report](/screens/guide/12-report-agent.webp)
 
 What's on it:
 - Filter strip across the top:
-  - ![Report filter strip](/screens/guide/46-report-filter-strip.png)
+  - ![Report filter strip](/screens/guide/46-report-filter-strip.webp)
 - Pivot table: agent × period
 - Cells: order count, gross sales, returns, net sales, debt collected
 - Totals row at the bottom
@@ -464,7 +464,7 @@ What's on it:
 
 URL: `/report/customer`
 
-![Customer report](/screens/guide/23-report-customer.png)
+![Customer report](/screens/guide/23-report-customer.webp)
 
 What's on it:
 - One row per client
@@ -476,7 +476,7 @@ What's on it:
 
 URL: `/report/visit`
 
-![Visit coverage report](/screens/guide/37-report-visit.png)
+![Visit coverage report](/screens/guide/37-report-visit.webp)
 
 What's on it:
 - One row per agent
@@ -487,7 +487,7 @@ What's on it:
 
 URL: `/report/saleDetail`
 
-![Sale detail report](/screens/guide/60-report-saledetail.png)
+![Sale detail report](/screens/guide/60-report-saledetail.webp)
 
 Per-line drill-down of every sale — agent, client, product, quantity, price, discount, total.
 
@@ -495,7 +495,7 @@ Per-line drill-down of every sale — agent, client, product, quantity, price, d
 
 URL: `/report/expeditor`
 
-![Expeditor performance](/screens/guide/61-report-expeditor.png)
+![Expeditor performance](/screens/guide/61-report-expeditor.webp)
 
 Stops completed per day, money collected, returns handled, route deviation.
 
@@ -507,7 +507,7 @@ Stops completed per day, money collected, returns handled, route deviation.
 
 URL: `/audit/photoReport`
 
-![Photo report](/screens/guide/15-audit-photoreport.png)
+![Photo report](/screens/guide/15-audit-photoreport.webp)
 
 What's on it:
 - Grid of recent shelf photos taken by agents during visits
@@ -519,7 +519,7 @@ What's on it:
 
 URL: `/adt/audit`
 
-![ADT audit](/screens/guide/59-adt-audit.png)
+![ADT audit](/screens/guide/59-adt-audit.webp)
 
 The v2 audit surface — broader than the photo-only report, includes shelf measurements and competitor checks.
 
@@ -527,7 +527,7 @@ The v2 audit surface — broader than the photo-only report, includes shelf meas
 
 URL: `/audit/poll`
 
-![Audit poll](/screens/guide/64-audit-poll.png)
+![Audit poll](/screens/guide/64-audit-poll.webp)
 
 Question bank for agent polls during visits.
 
@@ -539,7 +539,7 @@ Question bank for agent polls during visits.
 
 URL: `/markirovka/view/incomingInvoices`
 
-![Incoming EDI invoices](/screens/guide/24-markirovka-incoming.png)
+![Incoming EDI invoices](/screens/guide/24-markirovka-incoming.webp)
 
 What's on it:
 - Inbox of EDI invoices received from suppliers (e.g. cigarette / pharma traceability)
@@ -550,7 +550,7 @@ What's on it:
 
 URL: `/markirovka/view/outgoingInvoices`
 
-![Outgoing EDI invoices](/screens/guide/52-markirovka-outgoing.png)
+![Outgoing EDI invoices](/screens/guide/52-markirovka-outgoing.webp)
 
 What's on it:
 - Sent EDI invoices to your customers
@@ -565,7 +565,7 @@ What's on it:
 
 URL: `/onlineOrder/order`
 
-![Online orders](/screens/guide/16-online-orders.png)
+![Online orders](/screens/guide/16-online-orders.webp)
 
 What's on it:
 - Orders captured outside the agent app — web shop, B2B portal, Telegram bot
@@ -576,7 +576,7 @@ What's on it:
 
 URL: `/sms/view/list`
 
-![SMS broadcast](/screens/guide/27-sms-broadcast.png)
+![SMS broadcast](/screens/guide/27-sms-broadcast.webp)
 
 What's on it:
 - History of SMS campaigns sent from the CRM
@@ -591,7 +591,7 @@ What's on it:
 
 URL: `/payment/approval`
 
-![Payment approval](/screens/guide/21-payment-approval.png)
+![Payment approval](/screens/guide/21-payment-approval.webp)
 
 What's on it:
 - Payments collected by agents in the field, waiting for cashier confirmation
@@ -607,7 +607,7 @@ What's on it:
 
 URL: `/settings/diler`
 
-![Company profile settings](/screens/guide/14-settings-profile.png)
+![Company profile settings](/screens/guide/14-settings-profile.webp)
 
 What's on it:
 - Company name (Russian / Uzbek)
@@ -621,7 +621,7 @@ What's on it:
 
 URL: `/settings/priceType`
 
-![Price types settings](/screens/guide/28-settings-price-type.png)
+![Price types settings](/screens/guide/28-settings-price-type.webp)
 
 What's on it:
 - List of price tiers (Опт / Розница / Спец / Акция / VIP)
@@ -632,7 +632,7 @@ What's on it:
 
 URL: `/settings/currency`
 
-![Payment methods](/screens/guide/53-settings-payment-type.png)
+![Payment methods](/screens/guide/53-settings-payment-type.webp)
 
 What's on it:
 - Accepted payment methods (cash, bank transfer, card, Click, Payme, Apelsin)
@@ -643,7 +643,7 @@ What's on it:
 
 URL: `/settings/skidka`
 
-![Discount rules list](/screens/guide/54-settings-discounts.png)
+![Discount rules list](/screens/guide/54-settings-discounts.webp)
 
 What's on it:
 - One row per active discount rule
@@ -657,7 +657,7 @@ Where you go next:
 
 URL: `/settings/bonus`
 
-![Bonus rules list](/screens/guide/55-settings-bonus.png)
+![Bonus rules list](/screens/guide/55-settings-bonus.webp)
 
 What's on it:
 - "Buy N of X, get M of Y" rules
@@ -667,19 +667,19 @@ What's on it:
 
 URL: `/settings/channel`
 
-![Sales channels](/screens/guide/56-settings-channel.png)
+![Sales channels](/screens/guide/56-settings-channel.webp)
 
 ### 12.7 Brands
 
 URL: `/settings/brand`
 
-![Brands](/screens/guide/58-settings-brand.png)
+![Brands](/screens/guide/58-settings-brand.webp)
 
 ### 12.8 Products catalog
 
 URL: `/settings/product`
 
-![Products catalog](/screens/guide/57-settings-products.png)
+![Products catalog](/screens/guide/57-settings-products.webp)
 
 ---
 
@@ -695,14 +695,14 @@ These widgets behave the same way everywhere in the CRM. Learn them once.
 ### Filter strip (below page heading)
 - Multi-select dropdowns
 - Filters stack with each other — pick agent AND status AND date
-- ![Status filter dropdown example](/screens/guide/44-status-filter-dropdown.png)
+- ![Status filter dropdown example](/screens/guide/44-status-filter-dropdown.webp)
 
 ### Date range picker
-- ![Date range picker](/screens/guide/42-date-range-picker.png)
+- ![Date range picker](/screens/guide/42-date-range-picker.webp)
 - Two-month calendar opens when you click the date field
 - Quick shortcuts: Сегодня / Вчера / Неделя / Месяц / Квартал
 - Date type dropdown (Order date / Ship date / Delivery date)
-  - ![Date type dropdown](/screens/guide/43-date-type-dropdown.png)
+  - ![Date type dropdown](/screens/guide/43-date-type-dropdown.webp)
 
 ### "Сбросить фильтр" (Reset filter)
 Always at the right end of the filter strip. One click to clear everything you've selected.

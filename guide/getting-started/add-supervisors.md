@@ -11,7 +11,7 @@ A **supervisor** oversees a group of agents. They see live progress on the dashb
 
 From the menu choose **Команда → Супервайзеры** (Team → Supervisors), or open `/team/supervisor` directly:
 
-![Supervisors list](/screens/guide/17-supervisors-list.png)
+![Supervisors list](/screens/guide/17-supervisors-list.webp)
 
 The list shows every supervisor with their phone, branch, and the agents who report to them.
 
@@ -19,7 +19,7 @@ The list shows every supervisor with their phone, branch, and the agents who rep
 
 Click **+ Добавить** at the top right. You'll land on the supervisor form at `/team/supervisor/create`:
 
-![Add supervisor form](/screens/guide/30-add-supervisor-form.png)
+![Add supervisor form](/screens/guide/30-add-supervisor-form.webp)
 
 ## Step 3 — Fill in the form
 

@@ -11,7 +11,7 @@ title: Supervayzer qo'shish
 
 Menyudan **Команда → Супервайзеры** (Jamoa → Supervayzerlar) ni tanlang yoki to'g'ridan-to'g'ri `/team/supervisor` ni oching:
 
-![Supervayzerlar ro'yxati](/screens/guide/17-supervisors-list.png)
+![Supervayzerlar ro'yxati](/screens/guide/17-supervisors-list.webp)
 
 Ro'yxat har bir supervayzerni telefoni, filiali va unga qaragan agentlar bilan ko'rsatadi.
 
@@ -19,7 +19,7 @@ Ro'yxat har bir supervayzerni telefoni, filiali va unga qaragan agentlar bilan k
 
 Yuqori o'ng burchakdagi **+ Добавить** tugmasini bosing. `/team/supervisor/create` manzilidagi forma ochiladi:
 
-![Supervayzer qo'shish formasi](/screens/guide/30-add-supervisor-form.png)
+![Supervayzer qo'shish formasi](/screens/guide/30-add-supervisor-form.webp)
 
 ## Qadam 3 — Formani to'ldiring
 

@@ -11,7 +11,7 @@ Narx mantiqi uchta joyda joylashgan: **chegirma qoidalari** (Скидки), **bo
 
 **Настройки → Скидки** (Sozlamalar → Chegirmalar) yoki `/settings/skidka` ni oching:
 
-![Chegirma qoidalari ro'yxati](/screens/guide/54-settings-discounts.png)
+![Chegirma qoidalari ro'yxati](/screens/guide/54-settings-discounts.webp)
 
 Har bir qoida quyidagilarni belgilaydi: kim chegirma oladi (mijoz toifasi, kanal, agent), nimaga (mahsulot / toifa) va qancha (% yoki qat'iy summa).
 
@@ -24,7 +24,7 @@ Qoida yaratish uchun **+ Добавить** tugmasini bosing. Tipik holatlar:
 
 **Настройки → Бонусы** (Sozlamalar → Bonuslar) yoki `/settings/bonus` ni oching:
 
-![Bonus qoidalari ro'yxati](/screens/guide/55-settings-bonus.png)
+![Bonus qoidalari ro'yxati](/screens/guide/55-settings-bonus.webp)
 
 Bonus qoidalari "X mahsulotidan N dona sotib ol — Y mahsulotidan M dona tekin ol" sxemasi bo'yicha ishlaydi. Misollar:
 - "10 dona Coca-Cola 0,5l sotib ol — 1 dona tekin ol"
@@ -37,7 +37,7 @@ Ikkala turdagi qoidalar buyurtmani rasmiylashtirish vaqtida avtomatik qo'llanila
 
 **Настройки → Канал сбыта** (Sozlamalar → Sotuv kanali) yoki `/settings/channel` ni oching:
 
-![Sotuv kanallari](/screens/guide/56-settings-channel.png)
+![Sotuv kanallari](/screens/guide/56-settings-channel.webp)
 
 Kanallar mijozlarni tasniflaydi: kichik do'kon / supermarket / restoran / kiosk / kafe va h.k. Kanal:
 - Chegirma va bonuslarning qo'llanilishini belgilaydi (yuqoriga qarang)
@@ -50,7 +50,7 @@ Biznesingizga kerakli kanallarni qo'shing — odatda 4–8 ta yetarli.
 
 **Настройки → Бренд** (Sozlamalar → Brend) yoki `/settings/brand` ni oching:
 
-![Brendlar](/screens/guide/58-settings-brand.png)
+![Brendlar](/screens/guide/58-settings-brand.webp)
 
 **Brend** — bu yagona logotip va marketing identifikatsiyasiga ega mahsulotlar oilasi (masalan, "Coca-Cola", "Nestlé Nesquik"). Brend:
 - Katalogdagi mahsulotlarni guruhlaydi
@@ -61,7 +61,7 @@ Biznesingizga kerakli kanallarni qo'shing — odatda 4–8 ta yetarli.
 
 **Настройки → Товары** (Sozlamalar → Mahsulotlar) yoki `/settings/product` ni oching:
 
-![Mahsulotlar katalogi](/screens/guide/57-settings-products.png)
+![Mahsulotlar katalogi](/screens/guide/57-settings-products.webp)
 
 Har bir mahsulotga quyidagilar kerak:
 - Nomi (ruscha, agar kerak bo'lsa, o'zbekcha)

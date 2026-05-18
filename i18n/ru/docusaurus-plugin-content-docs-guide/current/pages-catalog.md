@@ -27,7 +27,7 @@ title: Каталог страниц и форм
 
 Адрес: `/site/login`
 
-![Login screen](/screens/guide/01-login-screen.png)
+![Login screen](/screens/guide/01-login-screen.webp)
 
 Что на странице:
 - Поле **Логин** — обычно ваш номер телефона или назначенное имя пользователя
@@ -44,7 +44,7 @@ title: Каталог страниц и форм
 
 Адрес: `/dashboard/supervayzer`
 
-![Supervisor home dashboard](/screens/guide/39-supervisor-dashboard-full.png)
+![Supervisor home dashboard](/screens/guide/39-supervisor-dashboard-full.webp)
 
 Что на странице:
 - Плитки ключевых KPI вверху: **Продажи**, **Визиты**, **АКБ** (активная клиентская база), **ОКБ** (общая клиентская база), **Долг**, **Заказы в ожидании**
@@ -62,7 +62,7 @@ title: Каталог страниц и форм
 
 Адрес: `/dashboard/sales`
 
-![Sales dashboard](/screens/guide/34-dashboard-sales.png)
+![Sales dashboard](/screens/guide/34-dashboard-sales.webp)
 
 Что на странице:
 - Итоги по продажам в разрезе агент / регион / товарная группа
@@ -78,7 +78,7 @@ title: Каталог страниц и форм
 
 Адрес: `/dashboard/finans`
 
-![Finance dashboard](/screens/guide/35-dashboard-finans.png)
+![Finance dashboard](/screens/guide/35-dashboard-finans.webp)
 
 Что на странице:
 - Общая сумма к получению с разбивкой по срокам (менее 7 дней / 7–30 / 30+ дней)
@@ -93,7 +93,7 @@ title: Каталог страниц и форм
 
 Адрес: `/dashboard/kpi`
 
-![KPI dashboard](/screens/guide/38-dashboard-kpi-full.png)
+![KPI dashboard](/screens/guide/38-dashboard-kpi-full.webp)
 
 Что на странице:
 - По одной строке на каждого агента
@@ -125,7 +125,7 @@ title: Каталог страниц и форм
 
 Адрес: `/orders/list`
 
-![Orders list](/screens/guide/03-orders-list.png)
+![Orders list](/screens/guide/03-orders-list.webp)
 
 Что на странице:
 - Полоса фильтров вверху: **диапазон дат**, **статус**, **агент**, **экспедитор**, **склад**, **канал**, **клиент**, **способ оплаты**
@@ -144,7 +144,7 @@ title: Каталог страниц и форм
 
 Адрес: `/orders/addOrder`
 
-![New order full form](/screens/guide/33-new-order-empty.png)
+![New order full form](/screens/guide/33-new-order-empty.webp)
 
 Что на странице:
 - Верхний блок: выбор **клиента**, выпадающий список **агентов**, поле **даты**, выпадающий список **склада**, выпадающий список **типа цены**, выпадающий список **способа оплаты**
@@ -156,17 +156,17 @@ title: Каталог страниц и форм
 
 Куда дальше:
 - **Клик по полю клиента** → открывается выбор клиента
-  - ![Client picker](/screens/guide/40-client-picker.png)
+  - ![Client picker](/screens/guide/40-client-picker.webp)
   - Список с поиском, 10 строк на страницу
   - Поиск по имени, телефону или ИНН
-  - ![Client picker filtered](/screens/guide/41-client-picker-search.png)
+  - ![Client picker filtered](/screens/guide/41-client-picker-search.webp)
 - **Сохранить** → возврат к списку заявок с новой заявкой сверху
 
 ### 2.3 Отказы и возвраты по заявкам
 
 Адрес: `/orders/rejects`
 
-![Order rejects](/screens/guide/25-orders-rejects.png)
+![Order rejects](/screens/guide/25-orders-rejects.webp)
 
 Что на странице:
 - Список заявок, от которых отказался экспедитор или клиент
@@ -177,7 +177,7 @@ title: Каталог страниц и форм
 
 Адрес: `/orders/recovery`
 
-![Order recovery](/screens/guide/26-orders-recovery.png)
+![Order recovery](/screens/guide/26-orders-recovery.webp)
 
 Что на странице:
 - Заявки, которые были отменены или автоматически архивированы, но могут быть восстановлены
@@ -188,7 +188,7 @@ title: Каталог страниц и форм
 
 Адрес: `/orders/view/trips`
 
-![Live trips](/screens/guide/20-trips-view.png)
+![Live trips](/screens/guide/20-trips-view.webp)
 
 Что на странице:
 - По одной строке на активный рейс экспедитора
@@ -208,12 +208,12 @@ title: Каталог страниц и форм
 
 Адрес: `/clients/client`
 
-![Clients list](/screens/guide/05-clients-list.png)
+![Clients list](/screens/guide/05-clients-list.webp)
 
 Что на странице:
 - Верхняя строка действий: **Добавить клиента**, **Импорт** (импорт из Excel), **Экспорт**, **На карте**
 - Ссылка **Фильтры** раскрывает панель фильтров:
-  - ![Clients filter panel](/screens/guide/45-clients-filter-panel.png)
+  - ![Clients filter panel](/screens/guide/45-clients-filter-panel.webp)
   - Регион / канал / сегмент / агент / признак активности / признак долга
 - Столбцы таблицы: имя, тип, регион, адрес, телефон, агент, последний визит, баланс
 - Пагинация внизу
@@ -221,7 +221,7 @@ title: Каталог страниц и форм
 Куда дальше:
 - **Клик «+ Добавить клиента»** → форма нового клиента (или агенты создают клиента в мобильном приложении во время визита)
 - **Клик «Импорт»** → страница импорта из Excel
-  - ![Clients import](/screens/guide/32-clients-import.png)
+  - ![Clients import](/screens/guide/32-clients-import.webp)
   - Скачать шаблон → заполнить → загрузить → предпросмотр → подтвердить
 - **Клик по строке** → профиль клиента (история, долг, фотографии, визиты)
 
@@ -229,7 +229,7 @@ title: Каталог страниц и форм
 
 Адрес: `/clients/finans`
 
-![Client payments](/screens/guide/13-client-payments.png)
+![Client payments](/screens/guide/13-client-payments.webp)
 
 Что на странице:
 - Полоса фильтров клиент / агент / период
@@ -245,7 +245,7 @@ title: Каталог страниц и форм
 
 Адрес: `/clients/view/clientMap`
 
-![Clients on map](/screens/guide/48-clients-on-map.png)
+![Clients on map](/screens/guide/48-clients-on-map.webp)
 
 Что на странице:
 - Полноэкранная карта (OpenStreetMap / Yandex)
@@ -258,7 +258,7 @@ title: Каталог страниц и форм
 
 Адрес: `/clients/agentRoute`
 
-![Agent route](/screens/guide/49-agent-route.png)
+![Agent route](/screens/guide/49-agent-route.webp)
 
 Что на странице:
 - Выпадающий список агента вверху
@@ -271,7 +271,7 @@ title: Каталог страниц и форм
 
 Адрес: `/report/visitingHistory`
 
-![Visit history](/screens/guide/50-visit-history.png)
+![Visit history](/screens/guide/50-visit-history.webp)
 
 Что на странице:
 - Журнал аудита по каждому изменению визита
@@ -282,7 +282,7 @@ title: Каталог страниц и форм
 
 Адрес: `/clients/approval`
 
-![Unconfirmed clients](/screens/guide/62-clients-approval.png)
+![Unconfirmed clients](/screens/guide/62-clients-approval.webp)
 
 Новые клиенты, добавленные с полей, ожидают вашей проверки здесь, прежде чем стать активными.
 
@@ -294,7 +294,7 @@ title: Каталог страниц и форм
 
 Адрес: `/team/auditor`
 
-![Team auditors](/screens/guide/06-team-auditor.png)
+![Team auditors](/screens/guide/06-team-auditor.webp)
 
 Что на странице:
 - Список учётных записей аудиторов
@@ -305,7 +305,7 @@ title: Каталог страниц и форм
 
 Адрес: `/staff/view/agent` (также доступно как `/agents/agent`)
 
-![Agents list](/screens/guide/07-agents-list.png)
+![Agents list](/screens/guide/07-agents-list.webp)
 
 Что на странице:
 - Столбцы: имя, телефон, супервайзер, регион, количество клиентов, последний вход, статус (активен / заблокирован), последний GPS-пинг
@@ -314,30 +314,30 @@ title: Каталог страниц и форм
 
 Куда дальше:
 - **Клик «+ Добавить агента»** → форма добавления агента
-  - ![Add agent form](/screens/guide/29-add-agent-form.png)
+  - ![Add agent form](/screens/guide/29-add-agent-form.webp)
   - Поля: ФИО, телефон, пароль, супервайзер, регион, роль, фотография
 - **Клик по строке** → профиль агента
-  - ![Agent detail](/screens/guide/47-agent-detail.png)
+  - ![Agent detail](/screens/guide/47-agent-detail.webp)
   - Вкладки: обзор, визиты, продажи, KPI, устройства, журнал изменений
 
 ### 4.3 Супервайзеры
 
 Адрес: `/team/supervisor`
 
-![Supervisors list](/screens/guide/17-supervisors-list.png)
+![Supervisors list](/screens/guide/17-supervisors-list.webp)
 
 Что на странице:
 - Столбцы: имя, телефон, количество подчинённых агентов, регион, последний вход
 
 Куда дальше:
 - **Клик «+ Добавить»** → `/team/supervisor/create`
-  - ![Add supervisor form](/screens/guide/30-add-supervisor-form.png)
+  - ![Add supervisor form](/screens/guide/30-add-supervisor-form.webp)
 
 ### 4.4 Экспедиторы
 
 Адрес: `/staff/view/expeditor`
 
-![Expeditors list](/screens/guide/19-expeditors-list.png)
+![Expeditors list](/screens/guide/19-expeditors-list.webp)
 
 Что на странице:
 - Столбцы: имя, телефон, машина / транспорт, склад, последний рейс, статус
@@ -345,14 +345,14 @@ title: Каталог страниц и форм
 
 Куда дальше:
 - **Клик «+ Добавить»** → `/staff/create/expeditor`
-  - ![Add expeditor form](/screens/guide/31-add-expeditor-form.png)
+  - ![Add expeditor form](/screens/guide/31-add-expeditor-form.webp)
   - Поля: ФИО, телефон, пароль, транспорт, склад по умолчанию
 
 ### 4.5 Пользователи (общий список)
 
 Адрес: `/team/user`
 
-![Users list](/screens/guide/18-users-list.png)
+![Users list](/screens/guide/18-users-list.webp)
 
 Что на странице:
 - Все учётные записи независимо от роли (администратор / супервайзер / агент / экспедитор / кассир / аудитор)
@@ -367,7 +367,7 @@ title: Каталог страниц и форм
 
 Адрес: `/warehouse/list`
 
-![Warehouses list](/screens/guide/08-warehouses-list.png)
+![Warehouses list](/screens/guide/08-warehouses-list.webp)
 
 Что на странице:
 - По строке на каждый физический склад
@@ -378,7 +378,7 @@ title: Каталог страниц и форм
 
 Адрес: `/warehouse/view/listPurchase`
 
-![Purchases list](/screens/guide/09-purchases-list.png)
+![Purchases list](/screens/guide/09-purchases-list.webp)
 
 Что на странице:
 - Документы поступления товара
@@ -389,7 +389,7 @@ title: Каталог страниц и форм
 
 Адрес: `/stock/report`
 
-![Stock report](/screens/guide/10-stock-report.png)
+![Stock report](/screens/guide/10-stock-report.webp)
 
 Что на странице:
 - Снимок доступного остатка по каждому складу и SKU
@@ -400,7 +400,7 @@ title: Каталог страниц и форм
 
 Адрес: `/inventory/list`
 
-![Inventory list](/screens/guide/51-inventory-list.png)
+![Inventory list](/screens/guide/51-inventory-list.webp)
 
 Что на странице:
 - Брендированное оборудование, размещённое у клиентов (холодильники, стеллажи, морозильники, вывески)
@@ -411,7 +411,7 @@ title: Каталог страниц и форм
 
 Адрес: `/stock/excretion`
 
-![Stock write-off list](/screens/guide/63-stock-write-off.png)
+![Stock write-off list](/screens/guide/63-stock-write-off.webp)
 
 Списание со склада повреждённого, просроченного или неверно посчитанного товара.
 
@@ -423,7 +423,7 @@ title: Каталог страниц и форм
 
 Адрес: `/planning/monthly`
 
-![Monthly planning](/screens/guide/11-planning-monthly.png)
+![Monthly planning](/screens/guide/11-planning-monthly.webp)
 
 Что на странице:
 - Сеточный календарный вид: агенты слева, дни сверху
@@ -439,7 +439,7 @@ title: Каталог страниц и форм
 
 Адрес: `/planning/outlet`
 
-![Per-outlet planning](/screens/guide/65-planning-outlet.png)
+![Per-outlet planning](/screens/guide/65-planning-outlet.webp)
 
 Выбор дней визитов по каждому клиенту (вместо месячного представления, ориентированного на агентов).
 
@@ -451,11 +451,11 @@ title: Каталог страниц и форм
 
 Адрес: `/report/agent`
 
-![Agent report](/screens/guide/12-report-agent.png)
+![Agent report](/screens/guide/12-report-agent.webp)
 
 Что на странице:
 - Полоса фильтров вверху:
-  - ![Report filter strip](/screens/guide/46-report-filter-strip.png)
+  - ![Report filter strip](/screens/guide/46-report-filter-strip.webp)
 - Сводная таблица: агент × период
 - Ячейки: количество заявок, валовые продажи, возвраты, чистые продажи, собранный долг
 - Строка итогов внизу
@@ -464,7 +464,7 @@ title: Каталог страниц и форм
 
 Адрес: `/report/customer`
 
-![Customer report](/screens/guide/23-report-customer.png)
+![Customer report](/screens/guide/23-report-customer.webp)
 
 Что на странице:
 - По строке на каждого клиента
@@ -476,7 +476,7 @@ title: Каталог страниц и форм
 
 Адрес: `/report/visit`
 
-![Visit coverage report](/screens/guide/37-report-visit.png)
+![Visit coverage report](/screens/guide/37-report-visit.webp)
 
 Что на странице:
 - По строке на каждого агента
@@ -487,7 +487,7 @@ title: Каталог страниц и форм
 
 Адрес: `/report/saleDetail`
 
-![Sale detail report](/screens/guide/60-report-saledetail.png)
+![Sale detail report](/screens/guide/60-report-saledetail.webp)
 
 Построчная детализация каждой продажи — агент, клиент, товар, количество, цена, скидка, итог.
 
@@ -495,7 +495,7 @@ title: Каталог страниц и форм
 
 Адрес: `/report/expeditor`
 
-![Expeditor performance](/screens/guide/61-report-expeditor.png)
+![Expeditor performance](/screens/guide/61-report-expeditor.webp)
 
 Выполненные остановки за день, собранные деньги, обработанные возвраты, отклонения от маршрута.
 
@@ -507,7 +507,7 @@ title: Каталог страниц и форм
 
 Адрес: `/audit/photoReport`
 
-![Photo report](/screens/guide/15-audit-photoreport.png)
+![Photo report](/screens/guide/15-audit-photoreport.webp)
 
 Что на странице:
 - Сетка последних фотографий полок, сделанных агентами во время визитов
@@ -519,7 +519,7 @@ title: Каталог страниц и форм
 
 Адрес: `/adt/audit`
 
-![ADT audit](/screens/guide/59-adt-audit.png)
+![ADT audit](/screens/guide/59-adt-audit.webp)
 
 Версия аудита v2 — шире, чем фотоотчёт: включает замеры полок и проверки конкурентов.
 
@@ -527,7 +527,7 @@ title: Каталог страниц и форм
 
 Адрес: `/audit/poll`
 
-![Audit poll](/screens/guide/64-audit-poll.png)
+![Audit poll](/screens/guide/64-audit-poll.webp)
 
 Банк вопросов для опросов агентов во время визитов.
 
@@ -539,7 +539,7 @@ title: Каталог страниц и форм
 
 Адрес: `/markirovka/view/incomingInvoices`
 
-![Incoming EDI invoices](/screens/guide/24-markirovka-incoming.png)
+![Incoming EDI invoices](/screens/guide/24-markirovka-incoming.webp)
 
 Что на странице:
 - Входящие EDI-накладные от поставщиков (например, сигареты или фарма-прослеживаемость)
@@ -550,7 +550,7 @@ title: Каталог страниц и форм
 
 Адрес: `/markirovka/view/outgoingInvoices`
 
-![Outgoing EDI invoices](/screens/guide/52-markirovka-outgoing.png)
+![Outgoing EDI invoices](/screens/guide/52-markirovka-outgoing.webp)
 
 Что на странице:
 - Отправленные EDI-накладные вашим клиентам
@@ -565,7 +565,7 @@ title: Каталог страниц и форм
 
 Адрес: `/onlineOrder/order`
 
-![Online orders](/screens/guide/16-online-orders.png)
+![Online orders](/screens/guide/16-online-orders.webp)
 
 Что на странице:
 - Заявки, полученные вне приложения агента — веб-магазин, B2B-портал, Telegram-бот
@@ -576,7 +576,7 @@ title: Каталог страниц и форм
 
 Адрес: `/sms/view/list`
 
-![SMS broadcast](/screens/guide/27-sms-broadcast.png)
+![SMS broadcast](/screens/guide/27-sms-broadcast.webp)
 
 Что на странице:
 - История SMS-кампаний, отправленных из CRM
@@ -591,7 +591,7 @@ title: Каталог страниц и форм
 
 Адрес: `/payment/approval`
 
-![Payment approval](/screens/guide/21-payment-approval.png)
+![Payment approval](/screens/guide/21-payment-approval.webp)
 
 Что на странице:
 - Платежи, собранные агентами в полях, ожидающие подтверждения кассиром
@@ -607,7 +607,7 @@ title: Каталог страниц и форм
 
 Адрес: `/settings/diler`
 
-![Company profile settings](/screens/guide/14-settings-profile.png)
+![Company profile settings](/screens/guide/14-settings-profile.webp)
 
 Что на странице:
 - Название компании (на русском и узбекском)
@@ -621,7 +621,7 @@ title: Каталог страниц и форм
 
 Адрес: `/settings/priceType`
 
-![Price types settings](/screens/guide/28-settings-price-type.png)
+![Price types settings](/screens/guide/28-settings-price-type.webp)
 
 Что на странице:
 - Список ценовых уровней (Опт / Розница / Спец / Акция / VIP)
@@ -632,7 +632,7 @@ title: Каталог страниц и форм
 
 Адрес: `/settings/currency`
 
-![Payment methods](/screens/guide/53-settings-payment-type.png)
+![Payment methods](/screens/guide/53-settings-payment-type.webp)
 
 Что на странице:
 - Принимаемые способы оплаты (наличные, банковский перевод, карта, Click, Payme, Apelsin)
@@ -643,7 +643,7 @@ title: Каталог страниц и форм
 
 Адрес: `/settings/skidka`
 
-![Discount rules list](/screens/guide/54-settings-discounts.png)
+![Discount rules list](/screens/guide/54-settings-discounts.webp)
 
 Что на странице:
 - По строке на каждое активное правило скидки
@@ -657,7 +657,7 @@ title: Каталог страниц и форм
 
 Адрес: `/settings/bonus`
 
-![Bonus rules list](/screens/guide/55-settings-bonus.png)
+![Bonus rules list](/screens/guide/55-settings-bonus.webp)
 
 Что на странице:
 - Правила «Купи N штук X — получи M штук Y»
@@ -667,19 +667,19 @@ title: Каталог страниц и форм
 
 Адрес: `/settings/channel`
 
-![Sales channels](/screens/guide/56-settings-channel.png)
+![Sales channels](/screens/guide/56-settings-channel.webp)
 
 ### 12.7 Бренды
 
 Адрес: `/settings/brand`
 
-![Brands](/screens/guide/58-settings-brand.png)
+![Brands](/screens/guide/58-settings-brand.webp)
 
 ### 12.8 Каталог товаров
 
 Адрес: `/settings/product`
 
-![Products catalog](/screens/guide/57-settings-products.png)
+![Products catalog](/screens/guide/57-settings-products.webp)
 
 ---
 
@@ -695,14 +695,14 @@ title: Каталог страниц и форм
 ### Полоса фильтров (под заголовком страницы)
 - Выпадающие списки с множественным выбором
 - Фильтры комбинируются друг с другом — выберите агента И статус И дату
-- ![Status filter dropdown example](/screens/guide/44-status-filter-dropdown.png)
+- ![Status filter dropdown example](/screens/guide/44-status-filter-dropdown.webp)
 
 ### Выбор диапазона дат
-- ![Date range picker](/screens/guide/42-date-range-picker.png)
+- ![Date range picker](/screens/guide/42-date-range-picker.webp)
 - Двухмесячный календарь открывается при клике на поле даты
 - Быстрые ярлыки: Сегодня / Вчера / Неделя / Месяц / Квартал
 - Выпадающий список типа даты (Дата заявки / Дата отгрузки / Дата доставки)
-  - ![Date type dropdown](/screens/guide/43-date-type-dropdown.png)
+  - ![Date type dropdown](/screens/guide/43-date-type-dropdown.webp)
 
 ### «Сбросить фильтр»
 Всегда в правом конце полосы фильтров. Один клик очищает всё выбранное.

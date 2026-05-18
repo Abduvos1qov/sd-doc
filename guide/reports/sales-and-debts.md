@@ -13,7 +13,7 @@ Two of the most-used reports answer two simple questions: **how much have we sol
 
 From the menu choose **Отчеты → По агентам** (Reports → By agent), or open `/report/agent` directly:
 
-![Agent sales report — filters + table](/screens/guide/12-report-agent.png)
+![Agent sales report — filters + table](/screens/guide/12-report-agent.webp)
 
 ### Step 2 — Pick a date range
 
@@ -26,7 +26,7 @@ The top filter strip has:
 
 The filter strip looks like this on the agent report page:
 
-![Report filter strip — full set of available filters](/screens/guide/46-report-filter-strip.png)
+![Report filter strip — full set of available filters](/screens/guide/46-report-filter-strip.webp)
 
 Filters work together — each one further narrows the report. Click **Сформировать** (Generate) to refresh after changing them.
 
@@ -54,7 +54,7 @@ The **Excel** button at the top right exports the table you see — same columns
 
 From the menu choose **Клиенты → Оплаты** (Clients → Payments), or open `/clients/finans` directly:
 
-![Client payments and debts](/screens/guide/13-client-payments.png)
+![Client payments and debts](/screens/guide/13-client-payments.webp)
 
 You see every client with their current balance — positive means debt, zero means clear.
 

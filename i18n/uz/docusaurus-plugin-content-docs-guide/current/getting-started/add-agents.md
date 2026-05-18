@@ -11,7 +11,7 @@ Savdo **agentlari** — bu mijozlarga tashrif buyurib, buyurtma oladigan odamlar
 
 Menyudan **Команда → Агенты** (Jamoa → Agentlar) ni tanlang yoki to'g'ridan-to'g'ri `/agents/agent` ni oching:
 
-![Agentlar ro'yxati — sahifaning tepasida amal tugmalari](/screens/guide/07-agents-list.png)
+![Agentlar ro'yxati — sahifaning tepasida amal tugmalari](/screens/guide/07-agents-list.webp)
 
 Ro'yxat jamoangizdagi har bir agentni telefoni, supervayzeri va faol holati bilan ko'rsatadi.
 
@@ -19,7 +19,7 @@ Ro'yxat jamoangizdagi har bir agentni telefoni, supervayzeri va faol holati bila
 
 Ro'yxatning yuqori o'ng burchagida **+ Добавить агента** tugmasini toping. Forma ochiladi:
 
-![Agent qo'shish formasi — barcha maydonlar](/screens/guide/29-add-agent-form.png)
+![Agent qo'shish formasi — barcha maydonlar](/screens/guide/29-add-agent-form.webp)
 
 ## Qadam 3 — Formani to'ldiring
 
@@ -48,7 +48,7 @@ Agent profilidan endi quyidagilarni qilishingiz mumkin:
 
 Profilni ochish uchun ro'yxatdagi agent ismini bosing:
 
-![Agent profili — KPI, marshrut va tarix bo'limlari](/screens/guide/47-agent-detail.png)
+![Agent profili — KPI, marshrut va tarix bo'limlari](/screens/guide/47-agent-detail.webp)
 
 Bu yerda quyidagilarni qila olasiz:
 - Telefon, login va supervayzerni o'zgartirish

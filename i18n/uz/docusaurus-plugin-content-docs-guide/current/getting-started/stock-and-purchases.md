@@ -13,7 +13,7 @@ Omborlar yaratilgandan keyin ularga tovar joylash kerak. Ushbu sahifa kundalik i
 
 Menyudan **Склад → Поступления** (Ombor → Kirimlar) ni tanlang yoki to'g'ridan-to'g'ri `/warehouse/view/listPurchase` ni oching:
 
-![Kirimlar ro'yxati — yetkazib beruvchining har bir kirimi](/screens/guide/09-purchases-list.png)
+![Kirimlar ro'yxati — yetkazib beruvchining har bir kirimi](/screens/guide/09-purchases-list.webp)
 
 Siz har bir yetkazib beruvchining kirimini — sana, yetkazib beruvchi, ombor, umumiy summa, holatini ko'rasiz.
 
@@ -50,7 +50,7 @@ Sizning kirim hujjatingizdagi raqam yetkazib beruvchining hujjat raqamiga mos ke
 
 **Склад → Остатки** (Ombor → Qoldiqlar) ni tanlang yoki to'g'ridan-to'g'ri `/stock/report` ni oching:
 
-![Qoldiq hisoboti — mahsulotlar × omborlar](/screens/guide/10-stock-report.png)
+![Qoldiq hisoboti — mahsulotlar × omborlar](/screens/guide/10-stock-report.webp)
 
 ### Qadam 2 — Filtrlarni qo'llang
 
