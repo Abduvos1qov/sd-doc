@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 600, "y": 330, "label": "Step 1: Login + name" },
+    { "x": 600, "y": 530, "label": "Step 2: Pick agents" },
+    { "x": 1100, "y": 770, "label": "Step 3: Save" }
+  ]
+}

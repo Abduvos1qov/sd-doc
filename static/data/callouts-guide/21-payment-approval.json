@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 380, "y": 110, "label": "Step 1: Date range" },
+    { "x": 200, "y": 260, "label": "Step 2: Pick row" },
+    { "x": 1300, "y": 260, "label": "Step 3: Approve" }
+  ]
+}

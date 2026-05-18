@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 380, "y": 175, "label": "Step 1: Filter date" },
+    { "x": 720, "y": 175, "label": "Step 2: Pick agent" },
+    { "x": 720, "y": 500, "label": "Step 3: Review photo" }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "callouts": [
+    { "x": 380, "y": 175, "label": "Step 1: Date + agent" },
+    { "x": 720, "y": 350, "label": "Step 2: Review change rows" }
+  ]
+}

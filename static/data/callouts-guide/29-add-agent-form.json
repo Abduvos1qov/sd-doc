@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 600, "y": 330, "label": "Step 1: Login" },
+    { "x": 600, "y": 440, "label": "Step 2: Phone & full name" },
+    { "x": 1100, "y": 800, "label": "Step 3: Save" }
+  ]
+}

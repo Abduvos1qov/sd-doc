@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 720, "y": 320, "label": "Step 1: Download template" },
+    { "x": 720, "y": 500, "label": "Step 2: Upload filled file" },
+    { "x": 720, "y": 680, "label": "Step 3: Confirm import" }
+  ]
+}

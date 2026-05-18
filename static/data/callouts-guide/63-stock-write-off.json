@@ -1,0 +1,6 @@
+{
+  "callouts": [
+    { "x": 1370, "y": 110, "label": "Step 1: + Добавить" },
+    { "x": 200, "y": 280, "label": "Step 2: Click row to view" }
+  ]
+}

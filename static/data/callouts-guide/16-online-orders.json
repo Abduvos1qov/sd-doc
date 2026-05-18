@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 380, "y": 175, "label": "Step 1: Filter Новая" },
+    { "x": 200, "y": 280, "label": "Step 2: Pick a row" },
+    { "x": 1300, "y": 280, "label": "Step 3: Confirm" }
+  ]
+}

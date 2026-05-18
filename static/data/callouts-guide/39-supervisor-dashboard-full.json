@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 280, "y": 280, "label": "Step 1: KPI tiles" },
+    { "x": 720, "y": 700, "label": "Step 2: Period chart" },
+    { "x": 720, "y": 1400, "label": "Step 3: Per-agent table" }
+  ]
+}

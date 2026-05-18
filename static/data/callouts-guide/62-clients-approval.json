@@ -1,0 +1,6 @@
+{
+  "callouts": [
+    { "x": 720, "y": 130, "label": "Step 1: Read pending" },
+    { "x": 1100, "y": 280, "label": "Step 2: Approve / reject / merge" }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "callouts": [
+    { "x": 600, "y": 340, "label": "Step 1: Login + name" },
+    { "x": 600, "y": 520, "label": "Step 2: Vehicle (optional)" },
+    { "x": 1100, "y": 760, "label": "Step 3: Save" }
+  ]
+}
